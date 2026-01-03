@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="1" lineNum="33" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="1" lineNum="34" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="2" lineNum="5" parent="globals/TowerStackApp" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="4" lineNum="37" parent="globals" pc="268435529" symbol="getView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="4" lineNum="38" parent="globals" pc="268435539" symbol="getView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="5" lineNum="5" parent="globals/TowerStackView" pc="268435564" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="6" lineNum="6" parent="globals/TowerStackDelegate" pc="268435583" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="6" lineNum="17" parent="globals/TowerStackDelegate" pc="268435601" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="7" lineNum="13" parent="globals/TowerStackApp" pc="268435621" symbol="onStart"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="8" lineNum="21" parent="globals/TowerStackApp" pc="268435624" symbol="getInitialView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="8" lineNum="22" parent="globals/TowerStackApp" pc="268435626" symbol="getInitialView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="8" lineNum="23" parent="globals/TowerStackApp" pc="268435656" symbol="getInitialView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="9" lineNum="8" parent="globals/TowerStackApp" pc="268435709" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="9" lineNum="9" parent="globals/TowerStackApp" pc="268435711" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="10" lineNum="27" parent="globals/TowerStackApp" pc="268435730" symbol="getView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="10" lineNum="28" parent="globals/TowerStackApp" pc="268435732" symbol="getView"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackApp.mc" id="11" lineNum="17" parent="globals/TowerStackApp" pc="268435741" symbol="onStop"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="12" lineNum="73" parent="globals/TowerStackView" pc="268435744" symbol="updateCyclesValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="12" lineNum="74" parent="globals/TowerStackView" pc="268435748" symbol="updateCyclesValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="12" lineNum="75" parent="globals/TowerStackView" pc="268435774" symbol="updateCyclesValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="12" lineNum="77" parent="globals/TowerStackView" pc="268435802" symbol="updateCyclesValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="12" lineNum="79" parent="globals/TowerStackView" pc="268435822" symbol="updateCyclesValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="14" lineNum="15" parent="globals/TowerStackView" pc="268435839" symbol="onLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="14" lineNum="16" parent="globals/TowerStackView" pc="268435841" symbol="onLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="14" lineNum="18" parent="globals/TowerStackView" pc="268435882" symbol="onLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="14" lineNum="19" parent="globals/TowerStackView" pc="268435906" symbol="onLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="14" lineNum="20" parent="globals/TowerStackView" pc="268435930" symbol="onLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="15" lineNum="10" parent="globals/TowerStackView" pc="268435955" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="15" lineNum="11" parent="globals/TowerStackView" pc="268435957" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="41" parent="globals/TowerStackView" pc="268435976" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="42" parent="globals/TowerStackView" pc="268435980" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="43" parent="globals/TowerStackView" pc="268435987" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="45" parent="globals/TowerStackView" pc="268435994" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="46" parent="globals/TowerStackView" pc="268435996" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="50" parent="globals/TowerStackView" pc="268436016" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="47" parent="globals/TowerStackView" pc="268436039" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="48" parent="globals/TowerStackView" pc="268436046" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="49" parent="globals/TowerStackView" pc="268436053" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="51" parent="globals/TowerStackView" pc="268436056" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="52" parent="globals/TowerStackView" pc="268436063" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="53" parent="globals/TowerStackView" pc="268436070" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="56" parent="globals/TowerStackView" pc="268436074" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="57" parent="globals/TowerStackView" pc="268436094" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="17" lineNum="59" parent="globals/TowerStackView" pc="268436114" symbol="setWaterTypeValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="62" parent="globals/TowerStackView" pc="268436131" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="63" parent="globals/TowerStackView" pc="268436135" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="64" parent="globals/TowerStackView" pc="268436145" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="65" parent="globals/TowerStackView" pc="268436155" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="66" parent="globals/TowerStackView" pc="268436199" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="68" parent="globals/TowerStackView" pc="268436221" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="18" lineNum="70" parent="globals/TowerStackView" pc="268436241" symbol="setTimerValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="19" lineNum="30" parent="globals/TowerStackView" pc="268436258" symbol="onUpdate"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" id="19" lineNum="32" parent="globals/TowerStackView" pc="268436260" symbol="onUpdate"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="31" parent="globals/TowerStackDelegate" pc="268436281" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="32" parent="globals/TowerStackDelegate" pc="268436283" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="33" parent="globals/TowerStackDelegate" pc="268436299" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="34" parent="globals/TowerStackDelegate" pc="268436321" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="36" parent="globals/TowerStackDelegate" pc="268436347" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="20" lineNum="37" parent="globals/TowerStackDelegate" pc="268436381" symbol="startCountdown"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="40" parent="globals/TowerStackDelegate" pc="268436423" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="41" parent="globals/TowerStackDelegate" pc="268436425" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="42" parent="globals/TowerStackDelegate" pc="268436459" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="43" parent="globals/TowerStackDelegate" pc="268436477" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="44" parent="globals/TowerStackDelegate" pc="268436503" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="46" parent="globals/TowerStackDelegate" pc="268436507" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="47" parent="globals/TowerStackDelegate" pc="268436524" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="48" parent="globals/TowerStackDelegate" pc="268436540" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="49" parent="globals/TowerStackDelegate" pc="268436559" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="50" parent="globals/TowerStackDelegate" pc="268436585" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="53" parent="globals/TowerStackDelegate" pc="268436642" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="21" lineNum="54" parent="globals/TowerStackDelegate" pc="268436668" symbol="updateCountdownValue"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="22" lineNum="19" parent="globals/TowerStackDelegate" pc="268436688" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="22" lineNum="20" parent="globals/TowerStackDelegate" pc="268436690" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="23" parent="globals/TowerStackDelegate" pc="268436709" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="24" parent="globals/TowerStackDelegate" pc="268436711" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="25" parent="globals/TowerStackDelegate" pc="268436725" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="26" parent="globals/TowerStackDelegate" pc="268436735" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="28" parent="globals/TowerStackDelegate" pc="268436750" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="13" parent="globals/Rez/Layouts" pc="268436753" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="14" parent="globals/Rez/Layouts" pc="268436765" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="16" parent="globals/Rez/Layouts" pc="268436778" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="18" parent="globals/Rez/Layouts" pc="268436791" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="20" parent="globals/Rez/Layouts" pc="268436922" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="22" parent="globals/Rez/Layouts" pc="268437057" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="25" lineNum="24" parent="globals/Rez/Layouts" pc="268437175" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="29" method="true" symbol="MainLayout"/>
+        <entry id="7" object="true" symbol="TowerStackApp"/>
+        <entry field="true" id="26" symbol="&lt;globals/TowerStackDelegate/&lt;statics&gt;/&lt;&gt;cycleDuration&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="30" symbol="AppName"/>
+        <entry id="25" method="true" symbol="updateCountdownValue"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="22" symbol="&lt;globals/TowerStackDelegate/&lt;&gt;_timer&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="10" object="true" symbol="WaterType"/>
+        <entry id="17" method="true" symbol="setWaterTypeValue"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="6" module="true" symbol="globals/TowerStackDelegate/&lt;statics&gt;"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8" object="true" symbol="TowerStackDelegate"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="27" symbol="&lt;globals/TowerStackDelegate/&lt;statics&gt;/&lt;&gt;cycles&gt;"/>
+        <entry id="18" method="true" symbol="updateCyclesValue"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="24" method="true" symbol="startCountdown"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="20" symbol="&lt;globals/TowerStackDelegate/&lt;&gt;_currentDuration&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="28" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="21" symbol="&lt;globals/TowerStackDelegate/&lt;&gt;_inProgress&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="16" method="true" symbol="setTimerValue"/>
+        <entry field="true" id="19" symbol="&lt;globals/TowerStackDelegate/&lt;&gt;_currentCycle&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/TowerStackDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="13" symbol="&lt;globals/TowerStackView/&lt;&gt;_currentTimerElement&gt;"/>
+        <entry field="true" id="14" symbol="&lt;globals/TowerStackView/&lt;&gt;_cyclesLeftElement&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="12" module="true" symbol="Layouts"/>
+        <entry id="9" object="true" symbol="TowerStackView"/>
+        <entry field="true" id="15" symbol="&lt;globals/TowerStackView/&lt;&gt;_typeTitleElement&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8391945" method="true" symbol="getView"/>
+        <entry field="true" id="11" symbol="&lt;globals/TowerStackApp/&lt;&gt;_view&gt;"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435838" name="cycles" stackId="1" startPc="268435744"/>
+        <entry endPc="268435837" name="s" stackId="2" startPc="268435748"/>
+        <entry endPc="268435837" name="formattedValue" stackId="3" startPc="268435748"/>
+        <entry arg="true" endPc="268435954" name="dc" stackId="1" startPc="268435839"/>
+        <entry arg="true" endPc="268436130" name="waterType" stackId="1" startPc="268435976"/>
+        <entry endPc="268436129" name="label" stackId="2" startPc="268435980"/>
+        <entry endPc="268436129" name="color" stackId="3" startPc="268435980"/>
+        <entry arg="true" endPc="268436257" name="value" stackId="1" startPc="268436131"/>
+        <entry endPc="268436256" name="minutes" stackId="2" startPc="268436135"/>
+        <entry endPc="268436256" name="seconds" stackId="3" startPc="268436135"/>
+        <entry endPc="268436256" name="secondsFormatted" stackId="4" startPc="268436135"/>
+        <entry endPc="268436256" name="formattedTime" stackId="5" startPc="268436135"/>
+        <entry arg="true" endPc="268436280" name="dc" stackId="1" startPc="268436258"/>
+        <entry arg="true" endPc="268437211" name="dc" stackId="1" startPc="268436753"/>
+        <entry endPc="268437211" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268436765"/>
+        <entry endPc="268437211" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268436765"/>
+        <entry endPc="268437211" name="rez_cmp_local_text_type_title" stackId="4" startPc="268436765"/>
+        <entry endPc="268437211" name="rez_cmp_local_text_current_timer" stackId="5" startPc="268436765"/>
+        <entry endPc="268437211" name="rez_cmp_local_text_cycles_left" stackId="6" startPc="268436765"/>
+    </localVars>
+    <deviceInfo deviceVersion="bb3887dffaa22ce965b5fe681a1cee6986d833ca" partNumber="006-B3869-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/TowerStackApp" offset="166" parentId="globals" symbolId="TowerStackApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="253" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/TowerStackView" offset="308" parentId="globals" symbolId="TowerStackView" type="class"/>
+        <dataEntry label="globals/TowerStackDelegate" offset="435" parentId="globals" symbolId="TowerStackDelegate" type="class"/>
+        <dataEntry label="globals/TowerStackDelegate/&lt;statics&gt;" offset="546" parentId="TowerStackDelegate" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/WaterType" offset="593" parentId="globals" symbolId="WaterType" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="640" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="679" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="718" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="TowerStackApp" startPc="268435486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435563" name="getView" startPc="268435529">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435582" name="&lt;init&gt;" parent="TowerStackView" startPc="268435564">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435620" name="&lt;init&gt;" parent="TowerStackDelegate" startPc="268435583">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/TowerStackDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="WaterType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435623" name="onStart" parent="TowerStackApp" startPc="268435621">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435708" name="getInitialView" parent="TowerStackApp" startPc="268435624">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435729" name="initialize" parent="TowerStackApp" startPc="268435709">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435740" name="getView" parent="TowerStackApp" startPc="268435730">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435743" name="onStop" parent="TowerStackApp" startPc="268435741">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435838" name="updateCyclesValue" parent="TowerStackView" startPc="268435744">
+            <param id="cycles"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="TowerStackView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435954" name="onLayout" parent="TowerStackView" startPc="268435839">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435975" name="initialize" parent="TowerStackView" startPc="268435955">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="TowerStackView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436130" name="setWaterTypeValue" parent="TowerStackView" startPc="268435976">
+            <param id="waterType"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436257" name="setTimerValue" parent="TowerStackView" startPc="268436131">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436280" name="onUpdate" parent="TowerStackView" startPc="268436258">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436422" name="startCountdown" parent="TowerStackDelegate" startPc="268436281">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436687" name="updateCountdownValue" parent="TowerStackDelegate" startPc="268436423">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436708" name="initialize" parent="TowerStackDelegate" startPc="268436688">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436752" name="onSelect" parent="TowerStackDelegate" startPc="268436709">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WaterType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437211" name="MainLayout" parent="Layouts" startPc="268436753">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

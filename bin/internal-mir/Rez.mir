@@ -1,0 +1,1677 @@
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Layouts,8,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 9; @symbol_functiondef = [MainLayout,9,17,27]; @symbol_param<0> = [dc,9,28,30]; @symbol_param<0>_type<0> = [Graphics,9,34,42]; @symbol_param<0>_type<1> = [Dc,9,43,45]; @symbol_return<0> = [Array,9,50,55]; @symbol_return<1> = [WatchUi,9,56,63]; @symbol_return<2> = [Drawable,9,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 10 12 ]
+            [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop" ]
+            %rez_cmp_local_var_dc_getHeight.1 = local;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 10 16 46 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 10 49 51 ];
+            symbol [ getHeight %tmp.2 10 52 61 ];
+            %tmp.2 = getv function %tmp.1 :getHeight;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 10 16 46 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 12 12 ]
+            [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.2 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 12 16 45 ];
+            %tmp.4 = lgetv %dc;
+            symbol [ dc %tmp.4 12 48 50 ];
+            symbol [ getWidth %tmp.5 12 51 59 ];
+            %tmp.5 = getv function %tmp.4 :getWidth;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 12 16 45 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop" ]
+            %rez_cmp_local_text_type_title.3 = local;
+            symbol [ rez_cmp_local_text_type_title %rez_cmp_local_text_type_title.3 14 16 45 ];
+            symbol [ WatchUi %tmp.9 14 52 59 ];
+            %tmp.9 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.10 14 60 64 ];
+            %tmp.10 = getv function ? %tmp.9 :Text;
+            %tmp.11 = newd 7;
+            %tmp.13 = const :identifier;
+            symbol [ identifier %tmp.13 14 67 77 const ];
+            %tmp.14 = "type_title";
+            %tmp.15 = dup %tmp.11;
+            %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+            %tmp.18 = const :color;
+            symbol [ color %tmp.18 14 94 99 const ];
+            symbol [ Graphics %tmp.19 14 101 109 ];
+            %tmp.19 = getm $.Toybox.Graphics;
+            symbol [ COLOR_DK_BLUE %tmp.20 14 110 123 ];
+            %tmp.20 = getv %tmp.19 :COLOR_DK_BLUE;
+            %tmp.21 = dup %tmp.16;
+            %tmp.22 = aputv %tmp.21 %tmp.18 %tmp.20;
+            %tmp.24 = const :locX;
+            symbol [ locX %tmp.24 14 126 130 const ];
+            %tmp.25 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.25 14 133 162 ];
+            %tmp.26 = 0.5;
+            %tmp.27 = mul %tmp.25 %tmp.26;
+            %tmp.28 = dup %tmp.22;
+            %tmp.29 = aputv %tmp.28 %tmp.24 %tmp.27;
+            %tmp.31 = const :locY;
+            symbol [ locY %tmp.31 14 172 176 const ];
+            %tmp.32 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.32 14 179 209 ];
+            %tmp.33 = 20;
+            %tmp.34 = 100.0;
+            %tmp.35 = div %tmp.33 %tmp.34;
+            %tmp.36 = mul %tmp.32 %tmp.35;
+            %tmp.37 = dup %tmp.29;
+            %tmp.38 = aputv %tmp.37 %tmp.31 %tmp.36;
+            %tmp.40 = const :text;
+            symbol [ text %tmp.40 14 228 232 const ];
+            %tmp.41 = "COLD";
+            %tmp.42 = dup %tmp.38;
+            %tmp.43 = aputv %tmp.42 %tmp.40 %tmp.41;
+            %tmp.45 = const :justification;
+            symbol [ justification %tmp.45 14 243 256 const ];
+            symbol [ Gfx %tmp.46 14 258 261 ];
+            %tmp.46 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.47 14 262 281 ];
+            %tmp.47 = getv %tmp.46 :TEXT_JUSTIFY_CENTER;
+            %tmp.48 = dup %tmp.43;
+            %tmp.49 = aputv %tmp.48 %tmp.45 %tmp.47;
+            %tmp.51 = const :font;
+            symbol [ font %tmp.51 14 284 288 const ];
+            symbol [ Gfx %tmp.52 14 290 293 ];
+            %tmp.52 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.53 14 294 305 ];
+            %tmp.53 = getv %tmp.52 :FONT_MEDIUM;
+            %tmp.54 = dup %tmp.49;
+            %tmp.55 = aputv %tmp.54 %tmp.51 %tmp.53;
+            %tmp.7 = newc %tmp.10 (%tmp.55);
+            lputv %rez_cmp_local_text_type_title.3 %tmp.7;
+            symbol [ rez_cmp_local_text_type_title %rez_cmp_local_text_type_title.3 14 16 45 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop" ]
+            %rez_cmp_local_text_current_timer.4 = local;
+            symbol [ rez_cmp_local_text_current_timer %rez_cmp_local_text_current_timer.4 16 16 48 ];
+            symbol [ WatchUi %tmp.58 16 55 62 ];
+            %tmp.58 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.59 16 63 67 ];
+            %tmp.59 = getv function ? %tmp.58 :Text;
+            %tmp.60 = newd 6;
+            %tmp.62 = const :identifier;
+            symbol [ identifier %tmp.62 16 70 80 const ];
+            %tmp.63 = "current_timer";
+            %tmp.64 = dup %tmp.60;
+            %tmp.65 = aputv %tmp.64 %tmp.62 %tmp.63;
+            %tmp.67 = const :locX;
+            symbol [ locX %tmp.67 16 100 104 const ];
+            %tmp.68 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.68 16 107 136 ];
+            %tmp.69 = 0.5;
+            %tmp.70 = mul %tmp.68 %tmp.69;
+            %tmp.71 = dup %tmp.65;
+            %tmp.72 = aputv %tmp.71 %tmp.67 %tmp.70;
+            %tmp.74 = const :locY;
+            symbol [ locY %tmp.74 16 146 150 const ];
+            %tmp.75 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.75 16 154 184 ];
+            %tmp.76 = lgetv %dc;
+            symbol [ dc %tmp.76 16 187 189 ];
+            symbol [ getFontHeight %tmp.77 16 190 203 ];
+            %tmp.77 = getv function %tmp.76 :getFontHeight;
+            symbol [ Gfx %tmp.78 16 204 207 ];
+            %tmp.78 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.79 16 208 228 ];
+            %tmp.79 = getv %tmp.78 :FONT_NUMBER_THAI_HOT;
+            %tmp.80 = invoke %tmp.76 %tmp.77(%tmp.79);
+            %tmp.81 = sub %tmp.75 %tmp.80;
+            %tmp.82 = 0.5;
+            %tmp.83 = mul %tmp.81 %tmp.82;
+            %tmp.84 = dup %tmp.72;
+            %tmp.85 = aputv %tmp.84 %tmp.74 %tmp.83;
+            %tmp.87 = const :text;
+            symbol [ text %tmp.87 16 240 244 const ];
+            %tmp.88 = "0:30";
+            %tmp.89 = dup %tmp.85;
+            %tmp.90 = aputv %tmp.89 %tmp.87 %tmp.88;
+            %tmp.92 = const :justification;
+            symbol [ justification %tmp.92 16 255 268 const ];
+            symbol [ Gfx %tmp.93 16 270 273 ];
+            %tmp.93 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.94 16 274 293 ];
+            %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_CENTER;
+            %tmp.95 = dup %tmp.90;
+            %tmp.96 = aputv %tmp.95 %tmp.92 %tmp.94;
+            %tmp.98 = const :font;
+            symbol [ font %tmp.98 16 296 300 const ];
+            symbol [ Gfx %tmp.99 16 302 305 ];
+            %tmp.99 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.100 16 306 326 ];
+            %tmp.100 = getv %tmp.99 :FONT_NUMBER_THAI_HOT;
+            %tmp.101 = dup %tmp.96;
+            %tmp.102 = aputv %tmp.101 %tmp.98 %tmp.100;
+            %tmp.56 = newc %tmp.59 (%tmp.102);
+            lputv %rez_cmp_local_text_current_timer.4 %tmp.56;
+            symbol [ rez_cmp_local_text_current_timer %rez_cmp_local_text_current_timer.4 16 16 48 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop" ]
+            %rez_cmp_local_text_cycles_left.5 = local;
+            symbol [ rez_cmp_local_text_cycles_left %rez_cmp_local_text_cycles_left.5 18 16 46 ];
+            symbol [ WatchUi %tmp.105 18 53 60 ];
+            %tmp.105 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.106 18 61 65 ];
+            %tmp.106 = getv function ? %tmp.105 :Text;
+            %tmp.107 = newd 6;
+            %tmp.109 = const :identifier;
+            symbol [ identifier %tmp.109 18 68 78 const ];
+            %tmp.110 = "cycles_left";
+            %tmp.111 = dup %tmp.107;
+            %tmp.112 = aputv %tmp.111 %tmp.109 %tmp.110;
+            %tmp.114 = const :locX;
+            symbol [ locX %tmp.114 18 96 100 const ];
+            %tmp.115 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.115 18 103 132 ];
+            %tmp.116 = 0.5;
+            %tmp.117 = mul %tmp.115 %tmp.116;
+            %tmp.118 = dup %tmp.112;
+            %tmp.119 = aputv %tmp.118 %tmp.114 %tmp.117;
+            %tmp.121 = const :locY;
+            symbol [ locY %tmp.121 18 142 146 const ];
+            %tmp.122 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.122 18 149 179 ];
+            %tmp.123 = 70;
+            %tmp.124 = 100.0;
+            %tmp.125 = div %tmp.123 %tmp.124;
+            %tmp.126 = mul %tmp.122 %tmp.125;
+            %tmp.127 = dup %tmp.119;
+            %tmp.128 = aputv %tmp.127 %tmp.121 %tmp.126;
+            %tmp.130 = const :text;
+            symbol [ text %tmp.130 18 198 202 const ];
+            %tmp.131 = "5 cycles left";
+            %tmp.132 = dup %tmp.128;
+            %tmp.133 = aputv %tmp.132 %tmp.130 %tmp.131;
+            %tmp.135 = const :justification;
+            symbol [ justification %tmp.135 18 222 235 const ];
+            symbol [ Gfx %tmp.136 18 237 240 ];
+            %tmp.136 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.137 18 241 260 ];
+            %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
+            %tmp.138 = dup %tmp.133;
+            %tmp.139 = aputv %tmp.138 %tmp.135 %tmp.137;
+            %tmp.141 = const :font;
+            symbol [ font %tmp.141 18 263 267 const ];
+            symbol [ Gfx %tmp.142 18 269 272 ];
+            %tmp.142 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.143 18 273 283 ];
+            %tmp.143 = getv %tmp.142 :FONT_SMALL;
+            %tmp.144 = dup %tmp.139;
+            %tmp.145 = aputv %tmp.144 %tmp.141 %tmp.143;
+            %tmp.103 = newc %tmp.106 (%tmp.145);
+            lputv %rez_cmp_local_text_cycles_left.5 %tmp.103;
+            symbol [ rez_cmp_local_text_cycles_left %rez_cmp_local_text_cycles_left.5 18 16 46 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 20 12 ]
+            %tmp.146 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.146 20 120 125 ];
+            symbol [ WatchUi %tmp.146 20 126 133 ];
+            symbol [ Drawable %tmp.146 20 134 142 ];
+            %tmp.147 = lgetv %rez_cmp_local_text_type_title.3;
+            symbol [ rez_cmp_local_text_type_title %tmp.147 20 20 49 ];
+            %tmp.148 = dup %tmp.146;
+            %tmp.149 = aputv %tmp.148 0 %tmp.147;
+            %tmp.150 = lgetv %rez_cmp_local_text_current_timer.4;
+            symbol [ rez_cmp_local_text_current_timer %tmp.150 20 51 83 ];
+            %tmp.151 = dup %tmp.149;
+            %tmp.152 = aputv %tmp.151 1 %tmp.150;
+            %tmp.153 = lgetv %rez_cmp_local_text_cycles_left.5;
+            symbol [ rez_cmp_local_text_cycles_left %tmp.153 20 85 115 ];
+            %tmp.154 = dup %tmp.152;
+            %tmp.155 = aputv %tmp.154 2 %tmp.153;
+            ret %tmp.155;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_bin_gen_006_B4656_00_source_Rez_mcgen_9_74_21_8_stop:
+        }
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 24; @symbol_moduledef = [Strings,24,11,18]; ]
+    module Strings {
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 25; @position = 27; initialized = true; @symbol_vardef = [AppName,25,27,34]; @symbol_type<0> = [ResourceId,25,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 28; @symbol_moduledef = [Styles,28,11,17]; ]
+    module Styles {
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 28; ]
+        <init> {
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 29; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,29,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 29; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 30; @position = 18; @symbol_constdef = [exclude,30,18,25]; @symbol_type<0> = [Boolean,30,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 33; @symbol_moduledef = [system_size__menu_header,33,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 33; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 34; @position = 18; @symbol_constdef = [width,34,18,23]; @symbol_type<0> = [Number,34,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 35; @position = 18; @symbol_constdef = [height,35,18,24]; @symbol_type<0> = [Number,35,28,34]; ]
+            const height as Number = 130;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 38; @symbol_moduledef = [system_loc__hint_button_left_bottom,38,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 38; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 39; @position = 18; @symbol_constdef = [exclude,39,18,25]; @symbol_type<0> = [Boolean,39,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 42; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,42,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 42; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [exclude,43,18,25]; @symbol_type<0> = [Boolean,43,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 46; @symbol_moduledef = [prompt_loc__body_no_title,46,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 46; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [x,47,18,19]; @symbol_type<0> = [Number,47,23,29]; ]
+            const x as Number = 40;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [y,48,18,19]; @symbol_type<0> = [Number,48,23,29]; ]
+            const y as Number = 95;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 51; @symbol_moduledef = [system_icon_dark__about,51,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 51; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [filename,52,18,26]; @symbol_type<0> = [String,52,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__about.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [compress,53,18,26]; @symbol_type<0> = [String,53,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [dithering,54,18,27]; @symbol_type<0> = [String,54,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [automaticPalette,55,18,34]; @symbol_type<0> = [String,55,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 58; @symbol_moduledef = [system_icon_light__question,58,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 58; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [filename,59,18,26]; @symbol_type<0> = [String,59,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__question.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [compress,60,18,26]; @symbol_type<0> = [String,60,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [dithering,61,18,27]; @symbol_type<0> = [String,61,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [automaticPalette,62,18,34]; @symbol_type<0> = [String,62,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 65; @symbol_moduledef = [system_loc__hint_button_left_top,65,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [exclude,66,18,25]; @symbol_type<0> = [Boolean,66,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 69; @symbol_moduledef = [prompt_font__title,69,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 69; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 70 18 ]
+                symbol [ Graphics %tmp.156 70 34 42 ];
+                %tmp.156 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.157 70 43 62 ];
+                %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.158 70 63 71 ];
+                %tmp.158 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.159 70 72 92 ];
+                %tmp.159 = getv %tmp.158 :TEXT_JUSTIFY_VCENTER;
+                %tmp.160 = bitor %tmp.157 %tmp.159;
+                putv self :justification %tmp.160;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 71 18 ]
+                symbol [ Graphics %tmp.161 71 25 33 ];
+                %tmp.161 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.162 71 34 44 ];
+                %tmp.162 = getv %tmp.161 :FONT_XTINY;
+                putv self :font %tmp.162;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [justification,70,18,31]; ]
+            const justification;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [font,71,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 74; @symbol_moduledef = [system_icon_dark__discard,74,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 74; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [filename,75,18,26]; @symbol_type<0> = [String,75,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__discard.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [compress,76,18,26]; @symbol_type<0> = [String,76,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [dithering,77,18,27]; @symbol_type<0> = [String,77,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [automaticPalette,78,18,34]; @symbol_type<0> = [String,78,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 81; @symbol_moduledef = [system_size__menu_item,81,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 81; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [width,82,18,23]; @symbol_type<0> = [Number,82,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [height,83,18,24]; @symbol_type<0> = [Number,83,28,34]; ]
+            const height as Number = 130;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 86; @symbol_moduledef = [system_color_dark__text,86,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 88 18 ]
+                symbol [ Graphics %tmp.163 88 31 39 ];
+                %tmp.163 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.164 88 40 57 ];
+                %tmp.164 = getv %tmp.163 :COLOR_TRANSPARENT;
+                putv self :background %tmp.164;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [color,87,18,23]; @symbol_type<0> = [Number,87,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [background,88,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 91; @symbol_moduledef = [system_icon_destructive__discard,91,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [filename,92,18,26]; @symbol_type<0> = [String,92,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__discard.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [dithering,93,18,27]; @symbol_type<0> = [String,93,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 96; @symbol_moduledef = [system_icon_dark__hint_action_menu,96,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 96; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [filename,97,18,26]; @symbol_type<0> = [String,97,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [dithering,98,18,27]; @symbol_type<0> = [String,98,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 101; @symbol_moduledef = [prompt_size__title,101,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [width,102,18,23]; @symbol_type<0> = [Number,102,27,33]; ]
+            const width as Number = 272;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [height,103,18,24]; @symbol_type<0> = [Number,103,28,34]; ]
+            const height as Number = 70;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 106; @symbol_moduledef = [confirmation_font__body,106,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 107 18 ]
+                symbol [ Graphics %tmp.165 107 34 42 ];
+                %tmp.165 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.166 107 43 62 ];
+                %tmp.166 = getv %tmp.165 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.167 107 63 71 ];
+                %tmp.167 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.168 107 72 92 ];
+                %tmp.168 = getv %tmp.167 :TEXT_JUSTIFY_VCENTER;
+                %tmp.169 = bitor %tmp.166 %tmp.168;
+                putv self :justification %tmp.169;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 108 18 ]
+                symbol [ Graphics %tmp.170 108 25 33 ];
+                %tmp.170 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.171 108 34 43 ];
+                %tmp.171 = getv %tmp.170 :FONT_TINY;
+                putv self :font %tmp.171;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [justification,107,18,31]; ]
+            const justification;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [font,108,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 111; @symbol_moduledef = [system_color_dark__background,111,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [color,112,18,23]; @symbol_type<0> = [Number,112,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [background,113,18,28]; @symbol_type<0> = [Number,113,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 116; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,116,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [exclude,117,18,25]; @symbol_type<0> = [Boolean,117,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 120; @symbol_moduledef = [system_size__launch_icon,120,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 120; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [scaleX,121,18,24]; @symbol_type<0> = [Number,121,28,34]; ]
+            const scaleX as Number = 56;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [scaleY,122,18,24]; @symbol_type<0> = [Number,122,28,34]; ]
+            const scaleY as Number = 56;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [scaleRelativeTo,123,18,33]; @symbol_type<0> = [String,123,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 126; @symbol_moduledef = [confirmation_input__confirm,126,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 126; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 127; @position = 18; @symbol_constdef = [y1,127,18,20]; @symbol_type<0> = [Number,127,24,30]; ]
+            const y1 as Number = 310;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [x1,128,18,20]; @symbol_type<0> = [Number,128,24,30]; ]
+            const x1 as Number = 100;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [y2,129,18,20]; @symbol_type<0> = [Number,129,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [x2,130,18,20]; @symbol_type<0> = [Number,130,24,30]; ]
+            const x2 as Number = 290;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 133; @symbol_moduledef = [prompt_font__body_with_title,133,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 134 18 ]
+                symbol [ Graphics %tmp.172 134 34 42 ];
+                %tmp.172 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.173 134 43 62 ];
+                %tmp.173 = getv %tmp.172 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.173;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 135 18 ]
+                symbol [ Graphics %tmp.174 135 25 33 ];
+                %tmp.174 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.175 135 34 43 ];
+                %tmp.175 = getv %tmp.174 :FONT_TINY;
+                putv self :font %tmp.175;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [justification,134,18,31]; ]
+            const justification;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [font,135,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 138; @symbol_moduledef = [confirmation_loc__body,138,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [x,139,18,19]; @symbol_type<0> = [Number,139,23,29]; ]
+            const x as Number = 40;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [y,140,18,19]; @symbol_type<0> = [Number,140,23,29]; ]
+            const y as Number = 95;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 143; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,143,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 143; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [exclude,144,18,25]; @symbol_type<0> = [Boolean,144,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 147; @symbol_moduledef = [prompt_color_dark__background,147,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 147; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [color,148,18,23]; @symbol_type<0> = [Number,148,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [background,149,18,28]; @symbol_type<0> = [Number,149,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 152; @symbol_moduledef = [system_icon_destructive__hint_action_menu,152,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [filename,153,18,26]; @symbol_type<0> = [String,153,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__hint_action_menu.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [dithering,154,18,27]; @symbol_type<0> = [String,154,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 157; @symbol_moduledef = [system_loc__hint_action_menu,157,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [x,158,18,19]; @symbol_type<0> = [Number,158,23,29]; ]
+            const x as Number = 336;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [y,159,18,19]; @symbol_type<0> = [Number,159,23,29]; ]
+            const y as Number = 74;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 162; @symbol_moduledef = [confirmation_icon__hint_confirm,162,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [filename,163,18,26]; @symbol_type<0> = [String,163,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [dithering,164,18,27]; @symbol_type<0> = [String,164,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 167; @symbol_moduledef = [system_loc__hint_button_left_middle,167,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 168; @position = 18; @symbol_constdef = [exclude,168,18,25]; @symbol_type<0> = [Boolean,168,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 171; @symbol_moduledef = [prompt_size__body_no_title,171,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 171; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [width,172,18,23]; @symbol_type<0> = [Number,172,27,33]; ]
+            const width as Number = 310;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 173; @position = 18; @symbol_constdef = [height,173,18,24]; @symbol_type<0> = [Number,173,28,34]; ]
+            const height as Number = 211;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 176; @symbol_moduledef = [system_icon_light__hint_button_left_top,176,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 176; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [exclude,177,18,25]; @symbol_type<0> = [Boolean,177,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 180; @symbol_moduledef = [prompt_color_light__background,180,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 180; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [color,181,18,23]; @symbol_type<0> = [Number,181,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [background,182,18,28]; @symbol_type<0> = [Number,182,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 185; @symbol_moduledef = [confirmation_input__delete,185,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 185; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [y1,186,18,20]; @symbol_type<0> = [Number,186,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [x1,187,18,20]; @symbol_type<0> = [Number,187,24,30]; ]
+            const x1 as Number = 100;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [y2,188,18,20]; @symbol_type<0> = [Number,188,24,30]; ]
+            const y2 as Number = 90;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [x2,189,18,20]; @symbol_type<0> = [Number,189,24,30]; ]
+            const x2 as Number = 290;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 192; @symbol_moduledef = [system_icon_dark__hint_button_left_top,192,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [exclude,193,18,25]; @symbol_type<0> = [Boolean,193,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 196; @symbol_moduledef = [system_input__action_menu,196,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 196; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 197 18 ]
+                symbol [ WatchUi %tmp.176 197 27 34 ];
+                %tmp.176 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.177 197 35 44 ];
+                %tmp.177 = getv %tmp.176 :KEY_ENTER;
+                putv self :button %tmp.177;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [button,197,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 200; @symbol_moduledef = [system_icon_light__save,200,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 200; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [filename,201,18,26]; @symbol_type<0> = [String,201,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__save.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [compress,202,18,26]; @symbol_type<0> = [String,202,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [dithering,203,18,27]; @symbol_type<0> = [String,203,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [automaticPalette,204,18,34]; @symbol_type<0> = [String,204,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 207; @symbol_moduledef = [prompt_color_light__body,207,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 209 18 ]
+                symbol [ Graphics %tmp.178 209 31 39 ];
+                %tmp.178 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.179 209 40 57 ];
+                %tmp.179 = getv %tmp.178 :COLOR_TRANSPARENT;
+                putv self :background %tmp.179;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [color,208,18,23]; @symbol_type<0> = [Number,208,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [background,209,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 212; @symbol_moduledef = [system_loc__subwindow,212,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 212; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [exclude,213,18,25]; @symbol_type<0> = [Boolean,213,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 216; @symbol_moduledef = [system_icon_light__warning,216,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [filename,217,18,26]; @symbol_type<0> = [String,217,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__warning.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [compress,218,18,26]; @symbol_type<0> = [String,218,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [dithering,219,18,27]; @symbol_type<0> = [String,219,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [automaticPalette,220,18,34]; @symbol_type<0> = [String,220,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 223; @symbol_moduledef = [confirmation_color_light__body,223,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 223; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 225 18 ]
+                symbol [ Graphics %tmp.180 225 31 39 ];
+                %tmp.180 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.181 225 40 57 ];
+                %tmp.181 = getv %tmp.180 :COLOR_TRANSPARENT;
+                putv self :background %tmp.181;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [color,224,18,23]; @symbol_type<0> = [Number,224,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 225; @position = 18; @symbol_constdef = [background,225,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 228; @symbol_moduledef = [confirmation_icon_light__hint_keep,228,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [filename,229,18,26]; @symbol_type<0> = [String,229,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [dithering,230,18,27]; @symbol_type<0> = [String,230,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 233; @symbol_moduledef = [activity_color_light__background,233,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [color,234,18,23]; @symbol_type<0> = [Number,234,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [background,235,18,28]; @symbol_type<0> = [Number,235,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 238; @symbol_moduledef = [system_icon_positive__hint_button_right_top,238,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [filename,239,18,26]; @symbol_type<0> = [String,239,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [dithering,240,18,27]; @symbol_type<0> = [String,240,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 243; @symbol_moduledef = [system_size__screen,243,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [width,244,18,23]; @symbol_type<0> = [Number,244,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [height,245,18,24]; @symbol_type<0> = [Number,245,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 248; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,248,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [filename,249,18,26]; @symbol_type<0> = [String,249,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [dithering,250,18,27]; @symbol_type<0> = [String,250,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 253; @symbol_moduledef = [system_color_light__background,253,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [color,254,18,23]; @symbol_type<0> = [Number,254,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [background,255,18,28]; @symbol_type<0> = [Number,255,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 258; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,258,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [filename,259,18,26]; @symbol_type<0> = [String,259,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [dithering,260,18,27]; @symbol_type<0> = [String,260,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 263; @symbol_moduledef = [confirmation_loc__hint_confirm,263,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [x,264,18,19]; @symbol_type<0> = [Number,264,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [horizontalJustification,265,18,41]; @symbol_type<0> = [String,265,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [y,266,18,19]; @symbol_type<0> = [Number,266,23,29]; ]
+            const y as Number = 310;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 269; @symbol_moduledef = [activity_color_dark__text,269,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 271 18 ]
+                symbol [ Graphics %tmp.182 271 31 39 ];
+                %tmp.182 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.183 271 40 57 ];
+                %tmp.183 = getv %tmp.182 :COLOR_TRANSPARENT;
+                putv self :background %tmp.183;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [color,270,18,23]; @symbol_type<0> = [Number,270,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [background,271,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 274; @symbol_moduledef = [confirmation_input__keep,274,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [y1,275,18,20]; @symbol_type<0> = [Number,275,24,30]; ]
+            const y1 as Number = 310;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [x1,276,18,20]; @symbol_type<0> = [Number,276,24,30]; ]
+            const x1 as Number = 100;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [y2,277,18,20]; @symbol_type<0> = [Number,277,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [x2,278,18,20]; @symbol_type<0> = [Number,278,24,30]; ]
+            const x2 as Number = 290;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 281; @symbol_moduledef = [prompt_loc__body_with_title,281,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 281; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [x,282,18,19]; @symbol_type<0> = [Number,282,23,29]; ]
+            const x as Number = 40;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 283; @position = 18; @symbol_constdef = [y,283,18,19]; @symbol_type<0> = [Number,283,23,29]; ]
+            const y as Number = 139;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 286; @symbol_moduledef = [system_icon_dark__search,286,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 286; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [filename,287,18,26]; @symbol_type<0> = [String,287,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__search.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [compress,288,18,26]; @symbol_type<0> = [String,288,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 289; @position = 18; @symbol_constdef = [dithering,289,18,27]; @symbol_type<0> = [String,289,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [automaticPalette,290,18,34]; @symbol_type<0> = [String,290,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 293; @symbol_moduledef = [activity_color_light__text,293,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 293; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 295 18 ]
+                symbol [ Graphics %tmp.184 295 31 39 ];
+                %tmp.184 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.185 295 40 57 ];
+                %tmp.185 = getv %tmp.184 :COLOR_TRANSPARENT;
+                putv self :background %tmp.185;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [color,294,18,23]; @symbol_type<0> = [Number,294,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [background,295,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 298; @symbol_moduledef = [confirmation_icon__hint_keep,298,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [filename,299,18,26]; @symbol_type<0> = [String,299,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [dithering,300,18,27]; @symbol_type<0> = [String,300,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 303; @symbol_moduledef = [system_icon_dark__save,303,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 303; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [filename,304,18,26]; @symbol_type<0> = [String,304,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__save.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [compress,305,18,26]; @symbol_type<0> = [String,305,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [dithering,306,18,27]; @symbol_type<0> = [String,306,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [automaticPalette,307,18,34]; @symbol_type<0> = [String,307,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 310; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,310,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 310; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [exclude,311,18,25]; @symbol_type<0> = [Boolean,311,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 314; @symbol_moduledef = [system_icon_light__search,314,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 314; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [filename,315,18,26]; @symbol_type<0> = [String,315,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__search.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [compress,316,18,26]; @symbol_type<0> = [String,316,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [dithering,317,18,27]; @symbol_type<0> = [String,317,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [automaticPalette,318,18,34]; @symbol_type<0> = [String,318,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 321; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,321,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [exclude,322,18,25]; @symbol_type<0> = [Boolean,322,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 325; @symbol_moduledef = [system_icon_positive__hint_button_left_top,325,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 325; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [exclude,326,18,25]; @symbol_type<0> = [Boolean,326,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 329; @symbol_moduledef = [system_loc__hint_button_right_bottom,329,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 329; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [x,330,18,19]; @symbol_type<0> = [Number,330,23,29]; ]
+            const x as Number = 337;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [y,331,18,19]; @symbol_type<0> = [Number,331,23,29]; ]
+            const y as Number = 259;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 334; @symbol_moduledef = [confirmation_icon_dark__hint_reject,334,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 334; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [filename,335,18,26]; @symbol_type<0> = [String,335,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [dithering,336,18,27]; @symbol_type<0> = [String,336,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 339; @symbol_moduledef = [confirmation_color_dark__body,339,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 339; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 341 18 ]
+                symbol [ Graphics %tmp.186 341 31 39 ];
+                %tmp.186 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.187 341 40 57 ];
+                %tmp.187 = getv %tmp.186 :COLOR_TRANSPARENT;
+                putv self :background %tmp.187;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [color,340,18,23]; @symbol_type<0> = [Number,340,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [background,341,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 344; @symbol_moduledef = [confirmation_icon_light__hint_confirm,344,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [filename,345,18,26]; @symbol_type<0> = [String,345,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [dithering,346,18,27]; @symbol_type<0> = [String,346,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 349; @symbol_moduledef = [prompt_color_dark__title,349,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 349; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 351 18 ]
+                symbol [ Graphics %tmp.188 351 31 39 ];
+                %tmp.188 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.189 351 40 57 ];
+                %tmp.189 = getv %tmp.188 :COLOR_TRANSPARENT;
+                putv self :background %tmp.189;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [color,350,18,23]; @symbol_type<0> = [Number,350,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [background,351,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 354; @symbol_moduledef = [system_icon_destructive__cancel,354,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 354; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [filename,355,18,26]; @symbol_type<0> = [String,355,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 356; @position = 18; @symbol_constdef = [dithering,356,18,27]; @symbol_type<0> = [String,356,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 359; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,359,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 359; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [filename,360,18,26]; @symbol_type<0> = [String,360,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [dithering,361,18,27]; @symbol_type<0> = [String,361,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 364; @symbol_moduledef = [prompt_loc__title,364,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 364; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [x,365,18,19]; @symbol_type<0> = [Number,365,23,29]; ]
+            const x as Number = 59;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [y,366,18,19]; @symbol_type<0> = [Number,366,23,29]; ]
+            const y as Number = 78;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 369; @symbol_moduledef = [confirmation_font_enhanced_readability__body,369,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 369; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [exclude,370,18,25]; @symbol_type<0> = [Boolean,370,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 373; @symbol_moduledef = [prompt_color_light__title,373,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 373; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 375 18 ]
+                symbol [ Graphics %tmp.190 375 31 39 ];
+                %tmp.190 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.191 375 40 57 ];
+                %tmp.191 = getv %tmp.190 :COLOR_TRANSPARENT;
+                putv self :background %tmp.191;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [color,374,18,23]; @symbol_type<0> = [Number,374,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [background,375,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 378; @symbol_moduledef = [system_icon_dark__hint_button_right_top,378,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [filename,379,18,26]; @symbol_type<0> = [String,379,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [dithering,380,18,27]; @symbol_type<0> = [String,380,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,383,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [exclude,384,18,25]; @symbol_type<0> = [Boolean,384,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 387; @symbol_moduledef = [confirmation_icon_dark__hint_keep,387,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [filename,388,18,26]; @symbol_type<0> = [String,388,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [dithering,389,18,27]; @symbol_type<0> = [String,389,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 392; @symbol_moduledef = [system_icon_light__cancel,392,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [filename,393,18,26]; @symbol_type<0> = [String,393,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__cancel.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [compress,394,18,26]; @symbol_type<0> = [String,394,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [dithering,395,18,27]; @symbol_type<0> = [String,395,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [automaticPalette,396,18,34]; @symbol_type<0> = [String,396,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 399; @symbol_moduledef = [confirmation_icon_light__hint_reject,399,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 399; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [filename,400,18,26]; @symbol_type<0> = [String,400,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [dithering,401,18,27]; @symbol_type<0> = [String,401,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 404; @symbol_moduledef = [system_icon_light__about,404,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [filename,405,18,26]; @symbol_type<0> = [String,405,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__about.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 406; @position = 18; @symbol_constdef = [compress,406,18,26]; @symbol_type<0> = [String,406,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [dithering,407,18,27]; @symbol_type<0> = [String,407,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [automaticPalette,408,18,34]; @symbol_type<0> = [String,408,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 411; @symbol_moduledef = [system_size__toast_icon,411,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [scaleX,412,18,24]; @symbol_type<0> = [Number,412,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [scaleY,413,18,24]; @symbol_type<0> = [Number,413,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [scaleRelativeTo,414,18,33]; @symbol_type<0> = [String,414,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 417; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,417,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 417; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [exclude,418,18,25]; @symbol_type<0> = [Boolean,418,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 421; @symbol_moduledef = [confirmation_icon__hint_reject,421,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [filename,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 426; @symbol_moduledef = [system_icon_light__hint_action_menu,426,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [filename,427,18,26]; @symbol_type<0> = [String,427,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [dithering,428,18,27]; @symbol_type<0> = [String,428,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 431; @symbol_moduledef = [system_icon_light__hint_button_right_middle,431,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [exclude,432,18,25]; @symbol_type<0> = [Boolean,432,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 435; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,435,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [exclude,436,18,25]; @symbol_type<0> = [Boolean,436,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 439; @symbol_moduledef = [confirmation_loc__hint_reject,439,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [x,440,18,19]; @symbol_type<0> = [Number,440,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [horizontalJustification,441,18,41]; @symbol_type<0> = [String,441,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [y,442,18,19]; @symbol_type<0> = [Number,442,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 445; @symbol_moduledef = [confirmation_icon_dark__hint_delete,445,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [dithering,447,18,27]; @symbol_type<0> = [String,447,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 450; @symbol_moduledef = [activity_color_dark__background,450,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 450; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [color,451,18,23]; @symbol_type<0> = [Number,451,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [background,452,18,28]; @symbol_type<0> = [Number,452,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 455; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,455,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 455; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 456; @position = 18; @symbol_constdef = [exclude,456,18,25]; @symbol_type<0> = [Boolean,456,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 459; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,459,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 459; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [exclude,460,18,25]; @symbol_type<0> = [Boolean,460,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 463; @symbol_moduledef = [system_size__menu_icon,463,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 463; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [scaleX,464,18,24]; @symbol_type<0> = [Number,464,28,34]; ]
+            const scaleX as Number = 60;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [scaleY,465,18,24]; @symbol_type<0> = [Number,465,28,34]; ]
+            const scaleY as Number = 60;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [scaleRelativeTo,466,18,33]; @symbol_type<0> = [String,466,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 469; @symbol_moduledef = [system_icon_destructive__warning,469,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 469; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [filename,470,18,26]; @symbol_type<0> = [String,470,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_destructive__warning.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [dithering,471,18,27]; @symbol_type<0> = [String,471,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 474; @symbol_moduledef = [system_loc__hint_button_right_middle,474,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [exclude,475,18,25]; @symbol_type<0> = [Boolean,475,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 478; @symbol_moduledef = [system_icon_dark__cancel,478,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [filename,479,18,26]; @symbol_type<0> = [String,479,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__cancel.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [compress,480,18,26]; @symbol_type<0> = [String,480,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [dithering,481,18,27]; @symbol_type<0> = [String,481,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [automaticPalette,482,18,34]; @symbol_type<0> = [String,482,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 485; @symbol_moduledef = [prompt_size__body_with_title,485,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [width,486,18,23]; @symbol_type<0> = [Number,486,27,33]; ]
+            const width as Number = 310;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [height,487,18,24]; @symbol_type<0> = [Number,487,28,34]; ]
+            const height as Number = 167;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 490; @symbol_moduledef = [system_loc__hint_button_right_top,490,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 490; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [x,491,18,19]; @symbol_type<0> = [Number,491,23,29]; ]
+            const x as Number = 338;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [y,492,18,19]; @symbol_type<0> = [Number,492,23,29]; ]
+            const y as Number = 73;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 495; @symbol_moduledef = [system_color_light__text,495,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 495; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 497 18 ]
+                symbol [ Graphics %tmp.192 497 31 39 ];
+                %tmp.192 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.193 497 40 57 ];
+                %tmp.193 = getv %tmp.192 :COLOR_TRANSPARENT;
+                putv self :background %tmp.193;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [color,496,18,23]; @symbol_type<0> = [Number,496,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [background,497,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 500; @symbol_moduledef = [system_icon_light__check,500,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 500; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [filename,501,18,26]; @symbol_type<0> = [String,501,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__check.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [compress,502,18,26]; @symbol_type<0> = [String,502,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [dithering,503,18,27]; @symbol_type<0> = [String,503,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [automaticPalette,504,18,34]; @symbol_type<0> = [String,504,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 507; @symbol_moduledef = [confirmation_input__reject,507,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 507; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [y1,508,18,20]; @symbol_type<0> = [Number,508,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [x1,509,18,20]; @symbol_type<0> = [Number,509,24,30]; ]
+            const x1 as Number = 100;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [y2,510,18,20]; @symbol_type<0> = [Number,510,24,30]; ]
+            const y2 as Number = 80;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [x2,511,18,20]; @symbol_type<0> = [Number,511,24,30]; ]
+            const x2 as Number = 290;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 514; @symbol_moduledef = [system_icon_light__revert,514,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 514; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [filename,515,18,26]; @symbol_type<0> = [String,515,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__revert.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [compress,516,18,26]; @symbol_type<0> = [String,516,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [dithering,517,18,27]; @symbol_type<0> = [String,517,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [automaticPalette,518,18,34]; @symbol_type<0> = [String,518,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 521; @symbol_moduledef = [system_size__subwindow,521,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 521; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [exclude,522,18,25]; @symbol_type<0> = [Boolean,522,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 525; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,525,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 525; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [exclude,526,18,25]; @symbol_type<0> = [Boolean,526,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 529; @symbol_moduledef = [system_icon_dark__check,529,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [filename,530,18,26]; @symbol_type<0> = [String,530,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__check.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [compress,531,18,26]; @symbol_type<0> = [String,531,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [dithering,532,18,27]; @symbol_type<0> = [String,532,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [automaticPalette,533,18,34]; @symbol_type<0> = [String,533,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 536; @symbol_moduledef = [confirmation_loc__hint_keep,536,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 536; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [x,537,18,19]; @symbol_type<0> = [Number,537,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [horizontalJustification,538,18,41]; @symbol_type<0> = [String,538,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [y,539,18,19]; @symbol_type<0> = [Number,539,23,29]; ]
+            const y as Number = 310;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 542; @symbol_moduledef = [confirmation_loc__hint_delete,542,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [x,543,18,19]; @symbol_type<0> = [Number,543,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [horizontalJustification,544,18,41]; @symbol_type<0> = [String,544,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [y,545,18,19]; @symbol_type<0> = [Number,545,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 548; @symbol_moduledef = [system_icon_positive__hint_action_menu,548,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 548; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [filename,549,18,26]; @symbol_type<0> = [String,549,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [dithering,550,18,27]; @symbol_type<0> = [String,550,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 553; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,553,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [exclude,554,18,25]; @symbol_type<0> = [Boolean,554,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 557; @symbol_moduledef = [system_icon_light__hint_button_left_middle,557,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [exclude,558,18,25]; @symbol_type<0> = [Boolean,558,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 561; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,561,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 561; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [filename,562,18,26]; @symbol_type<0> = [String,562,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [dithering,563,18,27]; @symbol_type<0> = [String,563,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 566; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,566,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 566; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [filename,567,18,26]; @symbol_type<0> = [String,567,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [dithering,568,18,27]; @symbol_type<0> = [String,568,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 571; @symbol_moduledef = [system_icon_dark__revert,571,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [filename,572,18,26]; @symbol_type<0> = [String,572,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__revert.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [compress,573,18,26]; @symbol_type<0> = [String,573,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [dithering,574,18,27]; @symbol_type<0> = [String,574,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [automaticPalette,575,18,34]; @symbol_type<0> = [String,575,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 578; @symbol_moduledef = [confirmation_icon_light__hint_delete,578,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 578; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [filename,579,18,26]; @symbol_type<0> = [String,579,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [dithering,580,18,27]; @symbol_type<0> = [String,580,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 583; @symbol_moduledef = [system_icon_dark__question,583,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [filename,584,18,26]; @symbol_type<0> = [String,584,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__question.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [compress,585,18,26]; @symbol_type<0> = [String,585,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [dithering,586,18,27]; @symbol_type<0> = [String,586,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [automaticPalette,587,18,34]; @symbol_type<0> = [String,587,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 590; @symbol_moduledef = [system_icon_light__discard,590,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 590; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [filename,591,18,26]; @symbol_type<0> = [String,591,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__discard.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [compress,592,18,26]; @symbol_type<0> = [String,592,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [dithering,593,18,27]; @symbol_type<0> = [String,593,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [automaticPalette,594,18,34]; @symbol_type<0> = [String,594,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 597; @symbol_moduledef = [device_info,597,15,26]; ]
+        module device_info {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 599 18 ]
+                symbol [ Toybox %tmp.195 599 32 38 ];
+                %tmp.195 = getv ? :Toybox;
+                symbol [ System %tmp.196 599 39 45 ];
+                %tmp.196 = getv %tmp.195 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.197 599 46 64 ];
+                %tmp.197 = getv %tmp.196 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.197;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [screenWidth,598,18,29]; @symbol_type<0> = [Number,598,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [screenShape,599,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [hasNightMode,600,18,30]; @symbol_type<0> = [Boolean,600,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [hasGpu,601,18,24]; @symbol_type<0> = [Boolean,601,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [screenHeight,602,18,30]; @symbol_type<0> = [Number,602,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [hasTouchScreen,603,18,32]; @symbol_type<0> = [Boolean,603,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,604,18,44]; @symbol_type<0> = [Boolean,604,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 607; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,607,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 607; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [filename,608,18,26]; @symbol_type<0> = [String,608,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [dithering,609,18,27]; @symbol_type<0> = [String,609,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 612; @symbol_moduledef = [prompt_font__body_no_title,612,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 612; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 613 18 ]
+                symbol [ Graphics %tmp.198 613 34 42 ];
+                %tmp.198 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.199 613 43 62 ];
+                %tmp.199 = getv %tmp.198 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.200 613 63 71 ];
+                %tmp.200 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.201 613 72 92 ];
+                %tmp.201 = getv %tmp.200 :TEXT_JUSTIFY_VCENTER;
+                %tmp.202 = bitor %tmp.199 %tmp.201;
+                putv self :justification %tmp.202;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 614 18 ]
+                symbol [ Graphics %tmp.203 614 25 33 ];
+                %tmp.203 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.204 614 34 43 ];
+                %tmp.204 = getv %tmp.203 :FONT_TINY;
+                putv self :font %tmp.204;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [justification,613,18,31]; ]
+            const justification;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [font,614,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 617; @symbol_moduledef = [prompt_size__title_icon,617,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 617; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [scaleX,618,18,24]; @symbol_type<0> = [Float,618,28,33]; ]
+            const scaleX as Float = 0.14;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [scaleRelativeTo,619,18,33]; @symbol_type<0> = [String,619,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 622; @symbol_moduledef = [system_icon_dark__warning,622,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 622; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [filename,623,18,26]; @symbol_type<0> = [String,623,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__warning.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [compress,624,18,26]; @symbol_type<0> = [String,624,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [dithering,625,18,27]; @symbol_type<0> = [String,625,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [automaticPalette,626,18,34]; @symbol_type<0> = [String,626,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 629; @symbol_moduledef = [prompt_loc__title_icon,629,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 629; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [x,630,18,19]; @symbol_type<0> = [Number,630,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [y,631,18,19]; @symbol_type<0> = [Number,631,23,29]; ]
+            const y as Number = 45;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [horizontalJustification,632,18,41]; @symbol_type<0> = [String,632,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [verticalJustification,633,18,39]; @symbol_type<0> = [String,633,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 636; @symbol_moduledef = [prompt_font_enhanced_readability__title,636,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [exclude,637,18,25]; @symbol_type<0> = [Boolean,637,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 640; @symbol_moduledef = [prompt_color_dark__body,640,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 640; ]
+            <init> {
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen" 642 18 ]
+                symbol [ Graphics %tmp.205 642 31 39 ];
+                %tmp.205 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.206 642 40 57 ];
+                %tmp.206 = getv %tmp.205 :COLOR_TRANSPARENT;
+                putv self :background %tmp.206;
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [color,641,18,23]; @symbol_type<0> = [Number,641,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [background,642,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 645; @symbol_moduledef = [confirmation_icon__hint_delete,645,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [filename,646,18,26]; @symbol_type<0> = [String,646,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [dithering,647,18,27]; @symbol_type<0> = [String,647,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 650; @symbol_moduledef = [system_icon_light__hint_button_right_top,650,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 650; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [filename,651,18,26]; @symbol_type<0> = [String,651,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [dithering,652,18,27]; @symbol_type<0> = [String,652,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 655; @symbol_moduledef = [confirmation_size__body,655,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 655; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [width,656,18,23]; @symbol_type<0> = [Number,656,27,33]; ]
+            const width as Number = 310;
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [height,657,18,24]; @symbol_type<0> = [Number,657,28,34]; ]
+            const height as Number = 211;
+        }
+        [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 660; @symbol_moduledef = [system_icon_positive__check,660,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 660; ]
+            <init> {
+            }
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [filename,661,18,26]; @symbol_type<0> = [String,661,30,36]; ]
+            const filename as String = "/Users/christopherthom/Library/Application Support/Garmin/ConnectIQ/Devices/approachs50/system_icon_positive__check.svg";
+            [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [dithering,662,18,27]; @symbol_type<0> = [String,662,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B4656-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

@@ -21,6 +21,12 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     
         return fullScreenWidth;
     }
+    function getDeviceHeight() as Lang.Number {
+        var deviceSettings = System.getDeviceSettings();
+        var fullScreenHeight = deviceSettings.screenHeight;
+    
+        return fullScreenHeight;
+    }
 
     private var _leftBorder = getDeviceWidth()/2 - 40;
     private var _rightBorder = _leftBorder + 80;
@@ -90,7 +96,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             _direction = 1;
         }
         
-        _xPosition += 4 * _direction;
+        _xPosition += (getDeviceHeight()/50) * _direction;
 
         _view.setXPosition(_xPosition);
     }

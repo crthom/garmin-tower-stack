@@ -6,10 +6,7 @@ using Toybox.Math as Math;
 class TowerStackView extends WatchUi.View {
     private var _scoreElement;
     private var _xPosition = 0;
-    private var _previousBlocks = [];
-    private var _colors = [Graphics.COLOR_RED, Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLUE, Graphics.COLOR_PURPLE];
-    private var _currentColorIndex = 0;
-    private var _previousColorIndex = 0;
+    private var _previousBlocks as Array<Array> = [];
     
     var _currentWidth = 80;
     var _score = 0;
@@ -36,7 +33,7 @@ class TowerStackView extends WatchUi.View {
         dc.clear();
         View.onUpdate(dc);
         dc.drawLine(0, 140 + (20 * _score), dc.getWidth(), 140 + (20 * _score));
-        //dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(
             dc.getWidth()/2-40, // x
             120 + (20*_score),                   // y
@@ -46,7 +43,6 @@ class TowerStackView extends WatchUi.View {
         );
         for (var i = 0; i < _previousBlocks.size(); i++) {
             var block = _previousBlocks[i];
-            dc.setColor(_colors[block[3]], Graphics.COLOR_BLACK);
             dc.fillRoundedRectangle(
                 block[0], // x
                 120 + ((_score - (block[1] + 1)) * 20),                   // y
@@ -56,7 +52,7 @@ class TowerStackView extends WatchUi.View {
             );
         }
         // Set color
-        dc.setColor(_colors[_currentColorIndex], Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
 
         // Draw rectangle
         dc.fillRoundedRectangle(
@@ -86,22 +82,9 @@ class TowerStackView extends WatchUi.View {
     }
 
     function newBlock(left as Number, width as Number) as Void {
-        _previousBlocks.add([left, _score, width, _currentColorIndex]);
+        _previousBlocks.add([left, _score, width]);
         System.println(_previousBlocks.toString());
         _xPosition = 0;
-        _previousColorIndex = _currentColorIndex;
-        System.println("Previous Color Index: " + _previousColorIndex.toString());
-        _currentColorIndex = (Math.rand() % _colors.size());
-        System.println("Current Color Index: " + _currentColorIndex.toString());
-        if (_currentColorIndex == _previousColorIndex) {
-           if (_currentColorIndex == _colors.size() - 1) {
-               _currentColorIndex = 0;
-                System.println("Fixed Color Index: " + _currentColorIndex.toString());
-           } else {
-               _currentColorIndex += 1;
-                System.println("Fixed Color Index: " + _currentColorIndex.toString());
-           }
-        }
         WatchUi.requestUpdate();
     }
 }

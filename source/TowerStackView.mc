@@ -31,23 +31,24 @@ class TowerStackView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         dc.clear();
+        var blockHeight = (dc.getHeight() / 14);
         View.onUpdate(dc);
-        dc.drawLine(0, 140 + (20 * _score), dc.getWidth(), 140 + (20 * _score));
+        dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
         dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(
             dc.getWidth()/2-40, // x
-            120 + (20*_score),                   // y
+            (dc.getHeight() * 0.5) + blockHeight + (blockHeight*_score),                   // y
             80,                  // width
-            20,                   // height
+            blockHeight,                   // height
             2                     // corner radius
         );
         for (var i = 0; i < _previousBlocks.size(); i++) {
             var block = _previousBlocks[i];
             dc.fillRoundedRectangle(
                 block[0], // x
-                120 + ((_score - (block[1] + 1)) * 20),                   // y
+                (dc.getHeight() * 0.5) + blockHeight + ((_score - (block[1] + 1)) * blockHeight),                   // y
                 block[2],                  // width
-                20,                   // height
+                blockHeight,                   // height
                 2                     // corner radius
             );
         }
@@ -57,9 +58,9 @@ class TowerStackView extends WatchUi.View {
         // Draw rectangle
         dc.fillRoundedRectangle(
             _xPosition, // x
-            100,                   // y
+            (dc.getHeight() * 0.5),                   // y
             _currentWidth,                  // width
-            20,                   // height
+            blockHeight,                   // height
             2                     // corner radius
         );
     }
@@ -83,7 +84,6 @@ class TowerStackView extends WatchUi.View {
 
     function newBlock(left as Number, width as Number) as Void {
         _previousBlocks.add([left, _score, width]);
-        System.println(_previousBlocks.toString());
         _xPosition = 0;
         WatchUi.requestUpdate();
     }

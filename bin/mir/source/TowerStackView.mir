@@ -23,20 +23,20 @@ class TowerStackView extends WatchUi.View {
         %tmp.6 = aputv %tmp.5 0 %tmp.4;
         symbol [ Graphics %tmp.7 10 47 55 ];
         %tmp.7 = getm $.Toybox.Graphics;
-        symbol [ COLOR_ORANGE %tmp.8 10 56 68 ];
-        %tmp.8 = getv %tmp.7 :COLOR_ORANGE;
+        symbol [ COLOR_DK_BLUE %tmp.8 10 56 69 ];
+        %tmp.8 = getv %tmp.7 :COLOR_DK_BLUE;
         %tmp.9 = dup %tmp.6;
         %tmp.10 = aputv %tmp.9 1 %tmp.8;
-        symbol [ Graphics %tmp.11 10 70 78 ];
+        symbol [ Graphics %tmp.11 10 71 79 ];
         %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.12 10 79 89 ];
+        symbol [ COLOR_BLUE %tmp.12 10 80 90 ];
         %tmp.12 = getv %tmp.11 :COLOR_BLUE;
         %tmp.13 = dup %tmp.10;
         %tmp.14 = aputv %tmp.13 2 %tmp.12;
-        symbol [ Graphics %tmp.15 10 91 99 ];
+        symbol [ Graphics %tmp.15 10 92 100 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.16 10 100 112 ];
-        %tmp.16 = getv %tmp.15 :COLOR_YELLOW;
+        symbol [ COLOR_PURPLE %tmp.16 10 101 113 ];
+        %tmp.16 = getv %tmp.15 :COLOR_PURPLE;
         %tmp.17 = dup %tmp.14;
         %tmp.18 = aputv %tmp.17 3 %tmp.16;
         putv self :_colors %tmp.18;
@@ -110,7 +110,7 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
     }
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 35; @symbol_functiondef = [onUpdate,35,13,21]; @symbol_param<0> = [dc,35,22,24]; @symbol_param<0>_type<0> = [Dc,35,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_35_40_68_4_start:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_35_40_69_4_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 36 8 ]
         %tmp.1 = lgetv %dc;
         symbol [ dc %tmp.1 36 8 10 ];
@@ -149,14 +149,14 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
         %tmp.23 = mul %tmp.20 %tmp.22;
         %tmp.24 = add %tmp.19 %tmp.23;
         invoke %tmp.7 %tmp.8(%tmp.9, %tmp.15, %tmp.18, %tmp.24);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 39 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 40 8 ]
         %tmp.25 = lgetv %dc;
-        symbol [ dc %tmp.25 39 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.26 39 11 31 ];
+        symbol [ dc %tmp.25 40 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.26 40 11 31 ];
         %tmp.26 = getv function %tmp.25 :fillRoundedRectangle;
         %tmp.27 = lgetv %dc;
-        symbol [ dc %tmp.27 40 12 14 ];
-        symbol [ getWidth %tmp.28 40 15 23 ];
+        symbol [ dc %tmp.27 41 12 14 ];
+        symbol [ getWidth %tmp.28 41 15 23 ];
         %tmp.28 = getv function %tmp.27 :getWidth;
         %tmp.29 = invoke %tmp.27 %tmp.28();
         %tmp.30 = 2;
@@ -165,7 +165,7 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
         %tmp.33 = sub %tmp.31 %tmp.32;
         %tmp.34 = 120;
         %tmp.35 = 20;
-        symbol [ _score %tmp.37 41 22 28 ];
+        symbol [ _score %tmp.37 42 22 28 ];
         %tmp.37 = getv ? :_score;
         %tmp.38 = mul %tmp.35 %tmp.37;
         %tmp.39 = add %tmp.34 %tmp.38;
@@ -173,69 +173,69 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
         %tmp.41 = 20;
         %tmp.42 = 2;
         invoke %tmp.25 %tmp.26(%tmp.33, %tmp.39, %tmp.40, %tmp.41, %tmp.42);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 46 8 ]
-        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_init:
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_end" ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 47 8 ]
+        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_init:
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_end" ]
         %i.1 = local;
-        symbol [ i %i.1 46 17 18 ];
+        symbol [ i %i.1 47 17 18 ];
         %tmp.43 = 0;
         lputv %i.1 %tmp.43;
-        symbol [ i %i.1 46 17 18 ];
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_test:
+        symbol [ i %i.1 47 17 18 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_test:
         %tmp.44 = lgetv %i.1;
-        symbol [ i %tmp.44 46 24 25 ];
-        symbol [ _previousBlocks %tmp.46 46 28 43 ];
+        symbol [ i %tmp.44 47 24 25 ];
+        symbol [ _previousBlocks %tmp.46 47 28 43 ];
         %tmp.46 = getv ? :_previousBlocks;
-        symbol [ size %tmp.47 46 44 48 ];
+        symbol [ size %tmp.47 47 44 48 ];
         %tmp.47 = getv function %tmp.46 :size;
         %tmp.48 = invoke %tmp.46 %tmp.47();
         %tmp.49 = lt %tmp.44 %tmp.48;
-        bf %tmp.49 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_begin:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_57_56_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 47 12 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_57_56_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_57_56_8_stop" ]
+        bf %tmp.49 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_begin:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_57_57_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 48 12 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_57_57_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_57_57_8_stop" ]
         %block.2 = local;
-        symbol [ block %block.2 47 16 21 ];
-        symbol [ _previousBlocks %tmp.51 47 24 39 ];
+        symbol [ block %block.2 48 16 21 ];
+        symbol [ _previousBlocks %tmp.51 48 24 39 ];
         %tmp.51 = getv ? :_previousBlocks;
         %tmp.52 = lgetv %i.1;
-        symbol [ i %tmp.52 47 40 41 ];
+        symbol [ i %tmp.52 48 40 41 ];
         %tmp.53 = agetv %tmp.51 %tmp.52;
         lputv %block.2 %tmp.53;
-        symbol [ block %block.2 47 16 21 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 48 12 ]
+        symbol [ block %block.2 48 16 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 49 12 ]
         %tmp.54 = lgetv %dc;
-        symbol [ dc %tmp.54 48 12 14 ];
-        symbol [ setColor %tmp.55 48 15 23 ];
+        symbol [ dc %tmp.54 49 12 14 ];
+        symbol [ setColor %tmp.55 49 15 23 ];
         %tmp.55 = getv function %tmp.54 :setColor;
-        symbol [ _colors %tmp.57 48 24 31 ];
+        symbol [ _colors %tmp.57 49 24 31 ];
         %tmp.57 = getv ? :_colors;
         %tmp.58 = lgetv %block.2;
-        symbol [ block %tmp.58 48 32 37 ];
+        symbol [ block %tmp.58 49 32 37 ];
         %tmp.59 = 3;
         %tmp.60 = agetv %tmp.58 %tmp.59;
         %tmp.61 = agetv %tmp.57 %tmp.60;
-        symbol [ Graphics %tmp.62 48 43 51 ];
+        symbol [ Graphics %tmp.62 49 43 51 ];
         %tmp.62 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.63 48 52 63 ];
+        symbol [ COLOR_BLACK %tmp.63 49 52 63 ];
         %tmp.63 = getv %tmp.62 :COLOR_BLACK;
         invoke %tmp.54 %tmp.55(%tmp.61, %tmp.63);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 49 12 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 50 12 ]
         %tmp.64 = lgetv %dc;
-        symbol [ dc %tmp.64 49 12 14 ];
-        symbol [ fillRoundedRectangle %tmp.65 49 15 35 ];
+        symbol [ dc %tmp.64 50 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.65 50 15 35 ];
         %tmp.65 = getv function %tmp.64 :fillRoundedRectangle;
         %tmp.66 = lgetv %block.2;
-        symbol [ block %tmp.66 50 16 21 ];
+        symbol [ block %tmp.66 51 16 21 ];
         %tmp.67 = 0;
         %tmp.68 = agetv %tmp.66 %tmp.67;
         %tmp.69 = 120;
-        symbol [ _score %tmp.71 51 24 30 ];
+        symbol [ _score %tmp.71 52 24 30 ];
         %tmp.71 = getv ? :_score;
         %tmp.72 = lgetv %block.2;
-        symbol [ block %tmp.72 51 34 39 ];
+        symbol [ block %tmp.72 52 34 39 ];
         %tmp.73 = 1;
         %tmp.74 = agetv %tmp.72 %tmp.73;
         %tmp.75 = 1;
@@ -245,212 +245,264 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
         %tmp.79 = mul %tmp.77 %tmp.78;
         %tmp.80 = add %tmp.69 %tmp.79;
         %tmp.81 = lgetv %block.2;
-        symbol [ block %tmp.81 52 16 21 ];
+        symbol [ block %tmp.81 53 16 21 ];
         %tmp.82 = 2;
         %tmp.83 = agetv %tmp.81 %tmp.82;
         %tmp.84 = 20;
         %tmp.85 = 2;
         invoke %tmp.64 %tmp.65(%tmp.68, %tmp.80, %tmp.83, %tmp.84, %tmp.85);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_57_56_8_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_incr:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 46 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_57_57_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_incr:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 47 ]
         %tmp.88 = lgetv %i.1;
-        symbol [ i %tmp.88 46 52 53 ];
+        symbol [ i %tmp.88 47 52 53 ];
         %tmp.89 = add %tmp.88 1;
         lputv %i.1 %tmp.89;
-        symbol [ i %i.1 46 52 53 ];
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_test;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_46_8_56_8_for_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 58 8 ]
+        symbol [ i %i.1 47 52 53 ];
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_test;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_47_8_57_8_for_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 59 8 ]
         %tmp.90 = lgetv %dc;
-        symbol [ dc %tmp.90 58 8 10 ];
-        symbol [ setColor %tmp.91 58 11 19 ];
+        symbol [ dc %tmp.90 59 8 10 ];
+        symbol [ setColor %tmp.91 59 11 19 ];
         %tmp.91 = getv function %tmp.90 :setColor;
-        symbol [ _colors %tmp.93 58 20 27 ];
+        symbol [ _colors %tmp.93 59 20 27 ];
         %tmp.93 = getv ? :_colors;
-        symbol [ _currentColorIndex %tmp.95 58 28 46 ];
+        symbol [ _currentColorIndex %tmp.95 59 28 46 ];
         %tmp.95 = getv ? :_currentColorIndex;
         %tmp.96 = agetv %tmp.93 %tmp.95;
-        symbol [ Graphics %tmp.97 58 49 57 ];
+        symbol [ Graphics %tmp.97 59 49 57 ];
         %tmp.97 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.98 58 58 69 ];
+        symbol [ COLOR_BLACK %tmp.98 59 58 69 ];
         %tmp.98 = getv %tmp.97 :COLOR_BLACK;
         invoke %tmp.90 %tmp.91(%tmp.96, %tmp.98);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 61 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 62 8 ]
         %tmp.99 = lgetv %dc;
-        symbol [ dc %tmp.99 61 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.100 61 11 31 ];
+        symbol [ dc %tmp.99 62 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.100 62 11 31 ];
         %tmp.100 = getv function %tmp.99 :fillRoundedRectangle;
-        symbol [ _xPosition %tmp.102 62 12 22 ];
+        symbol [ _xPosition %tmp.102 63 12 22 ];
         %tmp.102 = getv ? :_xPosition;
         %tmp.103 = 100;
-        symbol [ _currentWidth %tmp.105 64 12 25 ];
+        symbol [ _currentWidth %tmp.105 65 12 25 ];
         %tmp.105 = getv ? :_currentWidth;
         %tmp.106 = 20;
         %tmp.107 = 2;
         invoke %tmp.99 %tmp.100(%tmp.102, %tmp.103, %tmp.105, %tmp.106, %tmp.107);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_35_40_68_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_35_40_69_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 73; @symbol_functiondef = [onHide,73,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 74; @symbol_functiondef = [onHide,74,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 76; @symbol_functiondef = [setXPosition,76,13,25]; @symbol_param<0> = [x,76,26,27]; @symbol_param<0>_type<0> = [Number,76,31,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 77; @symbol_functiondef = [setXPosition,77,13,25]; @symbol_param<0> = [x,77,26,27]; @symbol_param<0>_type<0> = [Number,77,31,37]; ]
     function setXPosition(x as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_76_47_79_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 77 8 ]
-        %tmp.1 = lgetv %x;
-        symbol [ x %tmp.1 77 21 22 ];
-        symbol [ _xPosition ? 77 8 18 ];
-        putv self :_xPosition %tmp.1;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_77_47_80_4_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 78 8 ]
-        symbol [ WatchUi %tmp.2 78 8 15 ];
+        %tmp.1 = lgetv %x;
+        symbol [ x %tmp.1 78 21 22 ];
+        symbol [ _xPosition ? 78 8 18 ];
+        putv self :_xPosition %tmp.1;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 79 8 ]
+        symbol [ WatchUi %tmp.2 79 8 15 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 78 16 29 ];
+        symbol [ requestUpdate %tmp.3 79 16 29 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_76_47_79_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_77_47_80_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 81; @symbol_functiondef = [updateScore,81,13,24]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 82; @symbol_functiondef = [updateScore,82,13,24]; ]
     function updateScore() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_81_35_85_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 82 8 ]
-        symbol [ _score %tmp.1 82 8 14 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_82_35_86_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 83 8 ]
+        symbol [ _score %tmp.1 83 8 14 ];
         %tmp.1 = getv self :_score;
         %tmp.2 = 1;
         %tmp.3 = add %tmp.1 %tmp.2;
-        symbol [ _score ? 82 8 14 ];
+        symbol [ _score ? 83 8 14 ];
         putv self :_score dup %tmp.3;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 83 8 ]
-        symbol [ _scoreElement %tmp.5 83 8 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 84 8 ]
+        symbol [ _scoreElement %tmp.5 84 8 21 ];
         %tmp.5 = getv ? :_scoreElement;
-        symbol [ setText %tmp.6 83 22 29 ];
+        symbol [ setText %tmp.6 84 22 29 ];
         %tmp.6 = getv function %tmp.5 :setText;
-        symbol [ _score %tmp.8 83 30 36 ];
+        symbol [ _score %tmp.8 84 30 36 ];
         %tmp.8 = getv ? :_score;
-        symbol [ toString %tmp.9 83 37 45 ];
+        symbol [ toString %tmp.9 84 37 45 ];
         %tmp.9 = getv function %tmp.8 :toString;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         invoke %tmp.5 %tmp.6(%tmp.10);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 84 8 ]
-        symbol [ WatchUi %tmp.11 84 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 85 8 ]
+        symbol [ WatchUi %tmp.11 85 8 15 ];
         %tmp.11 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.12 84 16 29 ];
+        symbol [ requestUpdate %tmp.12 85 16 29 ];
         %tmp.12 = getv function %tmp.11 :requestUpdate;
         invoke %tmp.11 %tmp.12();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_81_35_85_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_82_35_86_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 87; @symbol_functiondef = [newBlock,87,13,21]; @symbol_param<0> = [left,87,22,26]; @symbol_param<0>_type<0> = [Number,87,30,36]; @symbol_param<1> = [width,87,38,43]; @symbol_param<1>_type<0> = [Number,87,47,53]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 88; @symbol_functiondef = [newBlock,88,13,21]; @symbol_param<0> = [left,88,22,26]; @symbol_param<0>_type<0> = [Number,88,30,36]; @symbol_param<1> = [width,88,38,43]; @symbol_param<1>_type<0> = [Number,88,47,53]; ]
     function newBlock(left as Number, width as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_87_63_101_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 88 8 ]
-        symbol [ _previousBlocks %tmp.2 88 8 23 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_88_63_106_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 89 8 ]
+        symbol [ _previousBlocks %tmp.2 89 8 23 ];
         %tmp.2 = getv ? :_previousBlocks;
-        symbol [ add %tmp.3 88 24 27 ];
+        symbol [ add %tmp.3 89 24 27 ];
         %tmp.3 = getv function %tmp.2 :add;
         %tmp.4 = newa 4;
         %tmp.5 = lgetv %left;
-        symbol [ left %tmp.5 88 29 33 ];
+        symbol [ left %tmp.5 89 29 33 ];
         %tmp.6 = dup %tmp.4;
         %tmp.7 = aputv %tmp.6 0 %tmp.5;
-        symbol [ _score %tmp.9 88 35 41 ];
+        symbol [ _score %tmp.9 89 35 41 ];
         %tmp.9 = getv ? :_score;
         %tmp.10 = dup %tmp.7;
         %tmp.11 = aputv %tmp.10 1 %tmp.9;
         %tmp.12 = lgetv %width;
-        symbol [ width %tmp.12 88 43 48 ];
+        symbol [ width %tmp.12 89 43 48 ];
         %tmp.13 = dup %tmp.11;
         %tmp.14 = aputv %tmp.13 2 %tmp.12;
-        symbol [ _currentColorIndex %tmp.16 88 50 68 ];
+        symbol [ _currentColorIndex %tmp.16 89 50 68 ];
         %tmp.16 = getv ? :_currentColorIndex;
         %tmp.17 = dup %tmp.14;
         %tmp.18 = aputv %tmp.17 3 %tmp.16;
         invoke %tmp.2 %tmp.3(%tmp.18);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 89 8 ]
-        symbol [ System %tmp.20 89 8 14 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 90 8 ]
+        symbol [ System %tmp.20 90 8 14 ];
         %tmp.20 = getv ? :System;
-        symbol [ println %tmp.21 89 15 22 ];
+        symbol [ println %tmp.21 90 15 22 ];
         %tmp.21 = getv function %tmp.20 :println;
-        symbol [ _previousBlocks %tmp.23 89 23 38 ];
+        symbol [ _previousBlocks %tmp.23 90 23 38 ];
         %tmp.23 = getv ? :_previousBlocks;
-        symbol [ toString %tmp.24 89 39 47 ];
+        symbol [ toString %tmp.24 90 39 47 ];
         %tmp.24 = getv function %tmp.23 :toString;
         %tmp.25 = invoke %tmp.23 %tmp.24();
         invoke %tmp.20 %tmp.21(%tmp.25);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 90 8 ]
-        %tmp.26 = 0;
-        symbol [ _xPosition ? 90 8 18 ];
-        putv self :_xPosition %tmp.26;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 91 8 ]
-        symbol [ _currentColorIndex %tmp.28 91 30 48 ];
-        %tmp.28 = getv ? :_currentColorIndex;
-        symbol [ _previousColorIndex ? 91 8 27 ];
-        putv self :_previousColorIndex %tmp.28;
+        %tmp.26 = 0;
+        symbol [ _xPosition ? 91 8 18 ];
+        putv self :_xPosition %tmp.26;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 92 8 ]
-        symbol [ Math %tmp.29 92 30 34 ];
-        %tmp.29 = getm $.Toybox.Math;
-        symbol [ rand %tmp.30 92 35 39 ];
-        %tmp.30 = getv function %tmp.29 :rand;
-        %tmp.31 = invoke %tmp.29 %tmp.30();
-        symbol [ _colors %tmp.33 92 44 51 ];
-        %tmp.33 = getv ? :_colors;
-        symbol [ size %tmp.34 92 52 56 ];
-        %tmp.34 = getv function %tmp.33 :size;
-        %tmp.35 = invoke %tmp.33 %tmp.34();
-        %tmp.36 = mod %tmp.31 %tmp.35;
-        symbol [ _currentColorIndex ? 92 8 26 ];
-        putv self :_currentColorIndex %tmp.36;
+        symbol [ _currentColorIndex %tmp.28 92 30 48 ];
+        %tmp.28 = getv ? :_currentColorIndex;
+        symbol [ _previousColorIndex ? 92 8 27 ];
+        putv self :_previousColorIndex %tmp.28;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 93 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_8_99_8_if_stmt:
-        symbol [ _currentColorIndex %tmp.38 93 12 30 ];
-        %tmp.38 = getv ? :_currentColorIndex;
-        symbol [ _previousColorIndex %tmp.40 93 34 53 ];
-        %tmp.40 = getv ? :_previousColorIndex;
-        %tmp.41 = eq %tmp.38 %tmp.40;
-        bf %tmp.41 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_8_99_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_8_99_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_55_99_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 94 11 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_stmt:
-        symbol [ _currentColorIndex %tmp.43 94 15 33 ];
-        %tmp.43 = getv ? :_currentColorIndex;
-        symbol [ _colors %tmp.45 94 37 44 ];
-        %tmp.45 = getv ? :_colors;
-        symbol [ size %tmp.46 94 45 49 ];
-        %tmp.46 = getv function %tmp.45 :size;
-        %tmp.47 = invoke %tmp.45 %tmp.46();
-        %tmp.48 = 1;
-        %tmp.49 = sub %tmp.47 %tmp.48;
-        %tmp.50 = eq %tmp.43 %tmp.49;
-        bf %tmp.50 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_57_96_11_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 95 15 ]
-        %tmp.51 = 0;
-        symbol [ _currentColorIndex ? 95 15 33 ];
-        putv self :_currentColorIndex %tmp.51;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_57_96_11_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_else_false:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_18_98_11_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 97 15 ]
-        symbol [ _currentColorIndex %tmp.52 97 15 33 ];
-        %tmp.52 = getv self :_currentColorIndex;
-        %tmp.53 = 1;
-        %tmp.54 = add %tmp.52 %tmp.53;
-        symbol [ _currentColorIndex ? 97 15 33 ];
-        putv self :_currentColorIndex dup %tmp.54;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_18_98_11_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_94_11_98_11_if_end:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_55_99_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_8_99_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_93_8_99_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 100 8 ]
-        symbol [ WatchUi %tmp.55 100 8 15 ];
-        %tmp.55 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.56 100 16 29 ];
-        %tmp.56 = getv function %tmp.55 :requestUpdate;
-        invoke %tmp.55 %tmp.56();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_87_63_101_4_stop:
+        symbol [ System %tmp.30 93 8 14 ];
+        %tmp.30 = getv ? :System;
+        symbol [ println %tmp.31 93 15 22 ];
+        %tmp.31 = getv function %tmp.30 :println;
+        %tmp.32 = "Previous Color Index: ";
+        symbol [ _previousColorIndex %tmp.34 93 50 69 ];
+        %tmp.34 = getv ? :_previousColorIndex;
+        symbol [ toString %tmp.35 93 70 78 ];
+        %tmp.35 = getv function %tmp.34 :toString;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = add %tmp.32 %tmp.36;
+        invoke %tmp.30 %tmp.31(%tmp.37);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 94 8 ]
+        symbol [ Math %tmp.38 94 30 34 ];
+        %tmp.38 = getm $.Toybox.Math;
+        symbol [ rand %tmp.39 94 35 39 ];
+        %tmp.39 = getv function %tmp.38 :rand;
+        %tmp.40 = invoke %tmp.38 %tmp.39();
+        symbol [ _colors %tmp.42 94 44 51 ];
+        %tmp.42 = getv ? :_colors;
+        symbol [ size %tmp.43 94 52 56 ];
+        %tmp.43 = getv function %tmp.42 :size;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        %tmp.45 = mod %tmp.40 %tmp.44;
+        symbol [ _currentColorIndex ? 94 8 26 ];
+        putv self :_currentColorIndex %tmp.45;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 95 8 ]
+        symbol [ System %tmp.47 95 8 14 ];
+        %tmp.47 = getv ? :System;
+        symbol [ println %tmp.48 95 15 22 ];
+        %tmp.48 = getv function %tmp.47 :println;
+        %tmp.49 = "Current Color Index: ";
+        symbol [ _currentColorIndex %tmp.51 95 49 67 ];
+        %tmp.51 = getv ? :_currentColorIndex;
+        symbol [ toString %tmp.52 95 68 76 ];
+        %tmp.52 = getv function %tmp.51 :toString;
+        %tmp.53 = invoke %tmp.51 %tmp.52();
+        %tmp.54 = add %tmp.49 %tmp.53;
+        invoke %tmp.47 %tmp.48(%tmp.54);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 96 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_8_104_8_if_stmt:
+        symbol [ _currentColorIndex %tmp.56 96 12 30 ];
+        %tmp.56 = getv ? :_currentColorIndex;
+        symbol [ _previousColorIndex %tmp.58 96 34 53 ];
+        %tmp.58 = getv ? :_previousColorIndex;
+        %tmp.59 = eq %tmp.56 %tmp.58;
+        bf %tmp.59 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_8_104_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_8_104_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_55_104_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 97 11 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_stmt:
+        symbol [ _currentColorIndex %tmp.61 97 15 33 ];
+        %tmp.61 = getv ? :_currentColorIndex;
+        symbol [ _colors %tmp.63 97 37 44 ];
+        %tmp.63 = getv ? :_colors;
+        symbol [ size %tmp.64 97 45 49 ];
+        %tmp.64 = getv function %tmp.63 :size;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        %tmp.66 = 1;
+        %tmp.67 = sub %tmp.65 %tmp.66;
+        %tmp.68 = eq %tmp.61 %tmp.67;
+        bf %tmp.68 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_57_100_11_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 98 15 ]
+        %tmp.69 = 0;
+        symbol [ _currentColorIndex ? 98 15 33 ];
+        putv self :_currentColorIndex %tmp.69;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 99 16 ]
+        symbol [ System %tmp.71 99 16 22 ];
+        %tmp.71 = getv ? :System;
+        symbol [ println %tmp.72 99 23 30 ];
+        %tmp.72 = getv function %tmp.71 :println;
+        %tmp.73 = "Fixed Color Index: ";
+        symbol [ _currentColorIndex %tmp.75 99 55 73 ];
+        %tmp.75 = getv ? :_currentColorIndex;
+        symbol [ toString %tmp.76 99 74 82 ];
+        %tmp.76 = getv function %tmp.75 :toString;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        %tmp.78 = add %tmp.73 %tmp.77;
+        invoke %tmp.71 %tmp.72(%tmp.78);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_57_100_11_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_100_18_103_11_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 101 15 ]
+        symbol [ _currentColorIndex %tmp.79 101 15 33 ];
+        %tmp.79 = getv self :_currentColorIndex;
+        %tmp.80 = 1;
+        %tmp.81 = add %tmp.79 %tmp.80;
+        symbol [ _currentColorIndex ? 101 15 33 ];
+        putv self :_currentColorIndex dup %tmp.81;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 102 16 ]
+        symbol [ System %tmp.83 102 16 22 ];
+        %tmp.83 = getv ? :System;
+        symbol [ println %tmp.84 102 23 30 ];
+        %tmp.84 = getv function %tmp.83 :println;
+        %tmp.85 = "Fixed Color Index: ";
+        symbol [ _currentColorIndex %tmp.87 102 55 73 ];
+        %tmp.87 = getv ? :_currentColorIndex;
+        symbol [ toString %tmp.88 102 74 82 ];
+        %tmp.88 = getv function %tmp.87 :toString;
+        %tmp.89 = invoke %tmp.87 %tmp.88();
+        %tmp.90 = add %tmp.85 %tmp.89;
+        invoke %tmp.83 %tmp.84(%tmp.90);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_100_18_103_11_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_97_11_103_11_if_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_55_104_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_8_104_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_96_8_104_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 105 8 ]
+        symbol [ WatchUi %tmp.91 105 8 15 ];
+        %tmp.91 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.92 105 16 29 ];
+        %tmp.92 = getv function %tmp.91 :requestUpdate;
+        invoke %tmp.91 %tmp.92();
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_88_63_106_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 1; ]

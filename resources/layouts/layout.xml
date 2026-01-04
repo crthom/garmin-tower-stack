@@ -1,27 +1,10 @@
 <layout id="MainLayout">
     <label
-        id="type_title"
-        color="Graphics.COLOR_DK_BLUE"
-        text="COLD" 
+        id="score"
+        text="0" 
         x="center"
         y="20%"
         font="Gfx.FONT_MEDIUM"
-        justification="Gfx.TEXT_JUSTIFY_CENTER"
-    />
-    <label
-        id="current_timer" 
-        text="0:30" 
-        x="center"
-        y="center"
-        font="Gfx.FONT_NUMBER_THAI_HOT"
-        justification="Gfx.TEXT_JUSTIFY_CENTER"
-    />
-    <label
-        id="cycles_left"
-        text="5 cycles left" 
-        x="center"
-        y="70%"
-        font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
 </layout>

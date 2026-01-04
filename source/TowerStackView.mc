@@ -3,9 +3,8 @@ import Toybox.WatchUi;
 import Toybox.Lang;
 
 class TowerStackView extends WatchUi.View {
-    private var _typeTitleElement;
-    private var _currentTimerElement;
-    private var _cyclesLeftElement;
+    private var _scoreElement;
+    private var _xPosition = 0;
 
     function initialize() {
         View.initialize();
@@ -15,9 +14,7 @@ class TowerStackView extends WatchUi.View {
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
 
-        _typeTitleElement = findDrawableById("type_title");
-        _currentTimerElement = findDrawableById("current_timer");
-        _cyclesLeftElement = findDrawableById("cycles_left");
+        _scoreElement = findDrawableById("score");
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -28,8 +25,28 @@ class TowerStackView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Call the parent onUpdate function to redraw the layout
+        dc.clear();
         View.onUpdate(dc);
+        dc.drawLine(0, 140, dc.getWidth(), 140);
+        dc.fillRoundedRectangle(
+            dc.getWidth()/2-40, // x
+            120,                   // y
+            80,                  // width
+            20,                   // height
+            2                     // corner radius
+        );
+        
+        // Set color
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_DK_BLUE);
+
+        // Draw rectangle
+        dc.fillRoundedRectangle(
+            _xPosition, // x
+            100,                   // y
+            80,                  // width
+            20,                   // height
+            2                     // corner radius
+        );
     }
 
     // Called when this View is removed from the screen. Save the
@@ -38,45 +55,13 @@ class TowerStackView extends WatchUi.View {
     function onHide() as Void {
     }
 
-    function setWaterTypeValue(waterType as Number) as Void{
-        var label = "COLD";
-        var color = Graphics.COLOR_BLUE;
-
-        switch(waterType){
-            case WaterType.Hot:
-                label = "HOT";
-                color = Graphics.COLOR_DK_RED;
-                break;
-            case WaterType.Cold:
-                label = "COLD";
-                color = Graphics.COLOR_DK_BLUE;
-                break;
-        }
-
-        _typeTitleElement.setText(label);
-        _typeTitleElement.setColor(color);
-
+    function setXPosition(x as Number) as Void {
+        _xPosition = x;
         WatchUi.requestUpdate();
     }
 
-    function setTimerValue(value as Number) as Void{
-        var minutes = value/60;
-        var seconds = value%60;
-        var secondsFormatted = seconds>9 ? seconds.toString() : "0" + seconds.toString();
-        var formattedTime = minutes.toString() + ":" + secondsFormatted;
-
-        _currentTimerElement.setText(formattedTime);
-
+    function updateScore(score as Number) as Void {
+        _scoreElement.setText(score.toString());
         WatchUi.requestUpdate();
     }
-
-    function updateCyclesValue(cycles as Number) as Void{
-        var s = cycles == 1 ? "" : "s";
-        var formattedValue = cycles.toString() + " cycle" + s + " left";
-
-        _cyclesLeftElement.setText(formattedValue);
-
-        WatchUi.requestUpdate();
-    }
-
 }

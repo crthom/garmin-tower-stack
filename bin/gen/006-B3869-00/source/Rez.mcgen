@@ -11,17 +11,9 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_var_dc_getHeight = dc.getHeight();
+            var rez_cmp_local_text_score = new WatchUi.Text({:identifier=>"score", :locX=>(dc.getWidth() * 0.5), :locY=>(dc.getHeight() * (20 / 100.0)), :text=>"0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
 
-            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
-
-            var rez_cmp_local_text_type_title = new WatchUi.Text({:identifier=>"type_title", :color=>Graphics.COLOR_DK_BLUE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (20 / 100.0)), :text=>"COLD", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
-
-            var rez_cmp_local_text_current_timer = new WatchUi.Text({:identifier=>"current_timer", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>((rez_cmp_local_var_dc_getHeight - dc.getFontHeight(Gfx.FONT_NUMBER_THAI_HOT)) * 0.5), :text=>"0:30", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
-
-            var rez_cmp_local_text_cycles_left = new WatchUi.Text({:identifier=>"cycles_left", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (70 / 100.0)), :text=>"5 cycles left", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
-
-            return [rez_cmp_local_text_type_title, rez_cmp_local_text_current_timer, rez_cmp_local_text_cycles_left] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_score] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

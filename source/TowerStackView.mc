@@ -1,10 +1,18 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
+using Toybox.Math as Math;
 
 class TowerStackView extends WatchUi.View {
     private var _scoreElement;
     private var _xPosition = 0;
+    private var _previousBlocks = [];
+    private var _colors = [Graphics.COLOR_RED, Graphics.COLOR_ORANGE, Graphics.COLOR_BLUE, Graphics.COLOR_YELLOW];
+    private var _currentColorIndex = 0;
+    private var _previousColorIndex = 0;
+    
+    var _currentWidth = 80;
+    var _score = 0;
 
     function initialize() {
         View.initialize();
@@ -27,23 +35,33 @@ class TowerStackView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         dc.clear();
         View.onUpdate(dc);
-        dc.drawLine(0, 140, dc.getWidth(), 140);
+        dc.drawLine(0, 140 + (20 * _score), dc.getWidth(), 140 + (20 * _score));
         dc.fillRoundedRectangle(
             dc.getWidth()/2-40, // x
-            120,                   // y
+            120 + (20*_score),                   // y
             80,                  // width
             20,                   // height
             2                     // corner radius
         );
-        
+        for (var i = 0; i < _previousBlocks.size(); i++) {
+            var block = _previousBlocks[i];
+            dc.setColor(_colors[block[3]], Graphics.COLOR_BLACK);
+            dc.fillRoundedRectangle(
+                block[0], // x
+                120 + ((_score - (block[1] + 1)) * 20),                   // y
+                block[2],                  // width
+                20,                   // height
+                2                     // corner radius
+            );
+        }
         // Set color
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_DK_BLUE);
+        dc.setColor(_colors[_currentColorIndex], Graphics.COLOR_BLACK);
 
         // Draw rectangle
         dc.fillRoundedRectangle(
             _xPosition, // x
             100,                   // y
-            80,                  // width
+            _currentWidth,                  // width
             20,                   // height
             2                     // corner radius
         );
@@ -60,8 +78,25 @@ class TowerStackView extends WatchUi.View {
         WatchUi.requestUpdate();
     }
 
-    function updateScore(score as Number) as Void {
-        _scoreElement.setText(score.toString());
+    function updateScore() as Void {
+        _score += 1;
+        _scoreElement.setText(_score.toString());
+        WatchUi.requestUpdate();
+    }
+
+    function newBlock(left as Number, width as Number) as Void {
+        _previousBlocks.add([left, _score, width, _currentColorIndex]);
+        System.println(_previousBlocks.toString());
+        _xPosition = 0;
+        _previousColorIndex = _currentColorIndex;
+        _currentColorIndex = (Math.rand() % _colors.size());
+        if (_currentColorIndex == _previousColorIndex) {
+           if (_currentColorIndex == _colors.size() - 1) {
+               _currentColorIndex = 0;
+           } else {
+               _currentColorIndex += 1;
+           }
+        }
         WatchUi.requestUpdate();
     }
 }

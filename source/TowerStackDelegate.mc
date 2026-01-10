@@ -28,10 +28,10 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         return fullScreenHeight;
     }
 
-    private var _leftBorder = getDeviceWidth()/2 - 40;
-    private var _rightBorder = _leftBorder + 80;
-    private var _nextWidth = 80;
-    private var _currentWidth = 80;
+    private var _leftBorder = getDeviceWidth()/2 - (getDeviceWidth()*0.4/2);;
+    private var _rightBorder = _leftBorder + getDeviceWidth()*0.4;
+    private var _nextWidth = getDeviceWidth()*0.4;
+    private var _currentWidth = getDeviceWidth()*0.4;
 
     function initialize() {
         BehaviorDelegate.initialize();
@@ -54,10 +54,10 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         _xPosition = 0;
         _direction = 1;
         _gameOver = false;
-        _leftBorder = getDeviceWidth()/2 - 40;
-        _rightBorder = _leftBorder + 80;
-        _nextWidth = 80;
-        _currentWidth = 80;
+        _leftBorder = getDeviceWidth()/2 - (getDeviceWidth()*0.4/2);
+        _rightBorder = _leftBorder + getDeviceWidth()*0.4;
+        _nextWidth = getDeviceWidth()*0.4;
+        _currentWidth = getDeviceWidth()*0.4;
     }
 
     function updateX() as Void{

@@ -13,7 +13,12 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     private var _timer;
     private var _stoppedX;
     
-    private var _view = getView();
+    private var _view;
+
+    function initialize(view as TowerStackView) {
+        BehaviorDelegate.initialize();
+        _view = view;
+    }
 
     function getDeviceWidth() as Lang.Number {
         var deviceSettings = System.getDeviceSettings();
@@ -33,10 +38,6 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     private var _nextWidth = getDeviceWidth()*0.4;
     private var _currentWidth = getDeviceWidth()*0.4;
 
-    function initialize() {
-        BehaviorDelegate.initialize();
-    }
-
     function onSelect() as Boolean {
         if (_inProgress == false) {
             _inProgress = true;
@@ -44,7 +45,6 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         } else {
             _stoppedX = _xPosition;
         }
-
         return true;
     }
 
@@ -78,6 +78,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             if (_nextWidth <= 0) {
                 _gameOver = true;
                 _inProgress = false;
+                WatchUi.popView(WatchUi.SLIDE_RIGHT);
             } else {
                 _currentWidth = _nextWidth;
                 _stoppedX = null;

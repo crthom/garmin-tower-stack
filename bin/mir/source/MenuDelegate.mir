@@ -1,0 +1,80 @@
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 4; @symbol_classdef = [MenuDelegate,4,6,18]; @symbol_extends<0> = [WatchUi,4,27,34]; @symbol_extends<1> = [BehaviorDelegate,4,35,51]; ]
+class MenuDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_6_26_8_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 10; @symbol_functiondef = [onSelect,10,13,21]; @symbol_return<0> = [Boolean,10,27,34]; ]
+    function onSelect() as Boolean {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_10_35_19_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 11 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_10_35_19_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_10_35_19_4_stop" ]
+        %gameView.1 = local;
+        symbol [ gameView %gameView.1 11 12 20 ];
+        symbol [ TowerStackView %tmp.4 11 27 41 ];
+        %tmp.4 = getv ? :TowerStackView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %gameView.1 %tmp.1;
+        symbol [ gameView %gameView.1 11 12 20 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 13 8 ]
+        symbol [ WatchUi %tmp.5 13 8 15 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.6 13 16 24 ];
+        %tmp.6 = getv function %tmp.5 :pushView;
+        %tmp.7 = lgetv %gameView.1;
+        symbol [ gameView %tmp.7 14 12 20 ];
+        symbol [ TowerStackDelegate %tmp.11 15 16 34 ];
+        %tmp.11 = getv ? :TowerStackDelegate;
+        %tmp.12 = lgetv %gameView.1;
+        symbol [ gameView %tmp.12 15 35 43 ];
+        %tmp.8 = newc %tmp.11 (%tmp.12);
+        symbol [ WatchUi %tmp.13 16 12 19 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.14 16 20 30 ];
+        %tmp.14 = getv %tmp.13 :SLIDE_LEFT;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.14);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 18 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_10_35_19_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 21; @symbol_functiondef = [onBack,21,13,19]; @symbol_return<0> = [Boolean,21,25,32]; ]
+    function onBack() as Boolean {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_21_33_24_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 22 8 ]
+        symbol [ WatchUi %tmp.1 22 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 22 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 22 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.4 22 32 43 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc" 23 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuDelegate_mc_21_33_24_4_stop:
+    }
+}
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -91,10 +91,10 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             }
             return;
         }
-        if (_xPosition == getDeviceWidth()-_currentWidth){
+        if (_xPosition == getDeviceWidth()-_currentWidth || _xPosition > getDeviceWidth()-_currentWidth){
             _direction = -1 ;
         }
-        if (_xPosition == 0){
+        if (_xPosition == 0 || _xPosition < 0){
             _direction = 1;
         }
         

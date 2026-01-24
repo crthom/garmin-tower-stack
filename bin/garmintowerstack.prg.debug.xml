@@ -95,45 +95,45 @@
         <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="90" parent="globals/TowerStackDelegate" pc="268437492" symbol="updateX"/>
         <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="92" parent="globals/TowerStackDelegate" pc="268437510" symbol="updateX"/>
         <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="94" parent="globals/TowerStackDelegate" pc="268437514" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="95" parent="globals/TowerStackDelegate" pc="268437546" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="97" parent="globals/TowerStackDelegate" pc="268437562" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="98" parent="globals/TowerStackDelegate" pc="268437579" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="101" parent="globals/TowerStackDelegate" pc="268437595" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="102" parent="globals/TowerStackDelegate" pc="268437653" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="103" parent="globals/TowerStackDelegate" pc="268437682" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="105" parent="globals/TowerStackDelegate" pc="268437710" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="106" parent="globals/TowerStackDelegate" pc="268437734" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="108" parent="globals/TowerStackDelegate" pc="268437765" symbol="updateX"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="42" parent="globals/TowerStackDelegate" pc="268437792" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="43" parent="globals/TowerStackDelegate" pc="268437794" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="44" parent="globals/TowerStackDelegate" pc="268437808" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="45" parent="globals/TowerStackDelegate" pc="268437818" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="47" parent="globals/TowerStackDelegate" pc="268437833" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="49" parent="globals/TowerStackDelegate" pc="268437849" symbol="onSelect"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="23" parent="globals/TowerStackDelegate" pc="268437852" symbol="getDeviceWidth"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="24" parent="globals/TowerStackDelegate" pc="268437856" symbol="getDeviceWidth"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="25" parent="globals/TowerStackDelegate" pc="268437873" symbol="getDeviceWidth"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="27" parent="globals/TowerStackDelegate" pc="268437883" symbol="getDeviceWidth"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="29" parent="globals/TowerStackDelegate" pc="268437886" symbol="getDeviceHeight"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="30" parent="globals/TowerStackDelegate" pc="268437890" symbol="getDeviceHeight"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="31" parent="globals/TowerStackDelegate" pc="268437907" symbol="getDeviceHeight"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="33" parent="globals/TowerStackDelegate" pc="268437917" symbol="getDeviceHeight"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="18" parent="globals/TowerStackDelegate" pc="268437920" symbol="initialize"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="19" parent="globals/TowerStackDelegate" pc="268437922" symbol="initialize"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="20" parent="globals/TowerStackDelegate" pc="268437940" symbol="initialize"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="52" parent="globals/TowerStackDelegate" pc="268437951" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="53" parent="globals/TowerStackDelegate" pc="268437953" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="54" parent="globals/TowerStackDelegate" pc="268437987" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="55" parent="globals/TowerStackDelegate" pc="268438028" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="56" parent="globals/TowerStackDelegate" pc="268438041" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="57" parent="globals/TowerStackDelegate" pc="268438054" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="58" parent="globals/TowerStackDelegate" pc="268438064" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="59" parent="globals/TowerStackDelegate" pc="268438113" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="60" parent="globals/TowerStackDelegate" pc="268438147" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="61" parent="globals/TowerStackDelegate" pc="268438172" symbol="startGame"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="13" parent="globals/Rez/Layouts" pc="268438198" symbol="MainLayout"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="14" parent="globals/Rez/Layouts" pc="268438210" symbol="MainLayout"/>
-        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="16" parent="globals/Rez/Layouts" pc="268438346" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="95" parent="globals/TowerStackDelegate" pc="268437578" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="97" parent="globals/TowerStackDelegate" pc="268437594" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="98" parent="globals/TowerStackDelegate" pc="268437628" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="101" parent="globals/TowerStackDelegate" pc="268437644" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="102" parent="globals/TowerStackDelegate" pc="268437702" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="103" parent="globals/TowerStackDelegate" pc="268437731" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="105" parent="globals/TowerStackDelegate" pc="268437759" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="106" parent="globals/TowerStackDelegate" pc="268437783" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="23" lineNum="108" parent="globals/TowerStackDelegate" pc="268437814" symbol="updateX"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="42" parent="globals/TowerStackDelegate" pc="268437841" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="43" parent="globals/TowerStackDelegate" pc="268437843" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="44" parent="globals/TowerStackDelegate" pc="268437857" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="45" parent="globals/TowerStackDelegate" pc="268437867" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="47" parent="globals/TowerStackDelegate" pc="268437882" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="24" lineNum="49" parent="globals/TowerStackDelegate" pc="268437898" symbol="onSelect"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="23" parent="globals/TowerStackDelegate" pc="268437901" symbol="getDeviceWidth"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="24" parent="globals/TowerStackDelegate" pc="268437905" symbol="getDeviceWidth"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="25" parent="globals/TowerStackDelegate" pc="268437922" symbol="getDeviceWidth"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="25" lineNum="27" parent="globals/TowerStackDelegate" pc="268437932" symbol="getDeviceWidth"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="29" parent="globals/TowerStackDelegate" pc="268437935" symbol="getDeviceHeight"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="30" parent="globals/TowerStackDelegate" pc="268437939" symbol="getDeviceHeight"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="31" parent="globals/TowerStackDelegate" pc="268437956" symbol="getDeviceHeight"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="26" lineNum="33" parent="globals/TowerStackDelegate" pc="268437966" symbol="getDeviceHeight"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="18" parent="globals/TowerStackDelegate" pc="268437969" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="19" parent="globals/TowerStackDelegate" pc="268437971" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="27" lineNum="20" parent="globals/TowerStackDelegate" pc="268437989" symbol="initialize"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="52" parent="globals/TowerStackDelegate" pc="268438000" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="53" parent="globals/TowerStackDelegate" pc="268438002" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="54" parent="globals/TowerStackDelegate" pc="268438036" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="55" parent="globals/TowerStackDelegate" pc="268438077" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="56" parent="globals/TowerStackDelegate" pc="268438090" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="57" parent="globals/TowerStackDelegate" pc="268438103" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="58" parent="globals/TowerStackDelegate" pc="268438113" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="59" parent="globals/TowerStackDelegate" pc="268438162" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="60" parent="globals/TowerStackDelegate" pc="268438196" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" id="28" lineNum="61" parent="globals/TowerStackDelegate" pc="268438221" symbol="startGame"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="13" parent="globals/Rez/Layouts" pc="268438247" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="14" parent="globals/Rez/Layouts" pc="268438259" symbol="MainLayout"/>
+        <entry filename="/Users/christopherthom/Documents/GitHub/garmin-tower-stack/bin/gen/006-B3869-00/source/Rez.mcgen" id="30" lineNum="16" parent="globals/Rez/Layouts" pc="268438395" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -216,13 +216,13 @@
         <entry endPc="268437006" name="i" stackId="3" startPc="268436877"/>
         <entry endPc="268436993" name="block" stackId="4" startPc="268436877"/>
         <entry arg="true" endPc="268437110" name="x" stackId="1" startPc="268437082"/>
-        <entry endPc="268437885" name="deviceSettings" stackId="1" startPc="268437856"/>
-        <entry endPc="268437885" name="fullScreenWidth" stackId="2" startPc="268437856"/>
-        <entry endPc="268437919" name="deviceSettings" stackId="1" startPc="268437890"/>
-        <entry endPc="268437919" name="fullScreenHeight" stackId="2" startPc="268437890"/>
-        <entry arg="true" endPc="268437950" name="view" stackId="1" startPc="268437920"/>
-        <entry arg="true" endPc="268438362" name="dc" stackId="1" startPc="268438198"/>
-        <entry endPc="268438362" name="rez_cmp_local_text_score" stackId="2" startPc="268438210"/>
+        <entry endPc="268437934" name="deviceSettings" stackId="1" startPc="268437905"/>
+        <entry endPc="268437934" name="fullScreenWidth" stackId="2" startPc="268437905"/>
+        <entry endPc="268437968" name="deviceSettings" stackId="1" startPc="268437939"/>
+        <entry endPc="268437968" name="fullScreenHeight" stackId="2" startPc="268437939"/>
+        <entry arg="true" endPc="268437999" name="view" stackId="1" startPc="268437969"/>
+        <entry arg="true" endPc="268438411" name="dc" stackId="1" startPc="268438247"/>
+        <entry endPc="268438411" name="rez_cmp_local_text_score" stackId="2" startPc="268438259"/>
     </localVars>
     <deviceInfo deviceVersion="bb3887dffaa22ce965b5fe681a1cee6986d833ca" partNumber="006-B3869-00"/>
     <annotations>
@@ -327,29 +327,29 @@
             <param id="x"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437791" name="updateX" parent="TowerStackDelegate" startPc="268437111">
+        <functionEntry accessMode="public" endPc="268437840" name="updateX" parent="TowerStackDelegate" startPc="268437111">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437851" name="onSelect" parent="TowerStackDelegate" startPc="268437792">
+        <functionEntry accessMode="public" endPc="268437900" name="onSelect" parent="TowerStackDelegate" startPc="268437841">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437885" name="getDeviceWidth" parent="TowerStackDelegate" startPc="268437852">
+        <functionEntry accessMode="public" endPc="268437934" name="getDeviceWidth" parent="TowerStackDelegate" startPc="268437901">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437919" name="getDeviceHeight" parent="TowerStackDelegate" startPc="268437886">
+        <functionEntry accessMode="public" endPc="268437968" name="getDeviceHeight" parent="TowerStackDelegate" startPc="268437935">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437950" name="initialize" parent="TowerStackDelegate" startPc="268437920">
+        <functionEntry accessMode="public" endPc="268437999" name="initialize" parent="TowerStackDelegate" startPc="268437969">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438197" name="startGame" parent="TowerStackDelegate" startPc="268437951">
+        <functionEntry accessMode="public" endPc="268438246" name="startGame" parent="TowerStackDelegate" startPc="268438000">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="WaterType">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438362" name="MainLayout" parent="Layouts" startPc="268438198">
+        <functionEntry accessMode="public" endPc="268438411" name="MainLayout" parent="Layouts" startPc="268438247">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

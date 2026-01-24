@@ -30,7 +30,7 @@ class MenuView extends WatchUi.View {
             dc.getWidth() / 2,
             dc.getHeight() / 2,
             Graphics.FONT_LARGE,
-            "Play",
+            "High Score: ",
             Graphics.TEXT_JUSTIFY_CENTER
         );
     }

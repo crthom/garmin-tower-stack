@@ -160,7 +160,7 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_10
         %tmp.73 = getm $.Toybox.Graphics;
         symbol [ FONT_LARGE %tmp.74 32 21 31 ];
         %tmp.74 = getv %tmp.73 :FONT_LARGE;
-        %tmp.75 = "Play";
+        %tmp.75 = "High Score: ";
         symbol [ Graphics %tmp.76 34 12 20 ];
         %tmp.76 = getm $.Toybox.Graphics;
         symbol [ TEXT_JUSTIFY_CENTER %tmp.77 34 21 40 ];

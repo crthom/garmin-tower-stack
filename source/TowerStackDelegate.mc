@@ -37,6 +37,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     private var _rightBorder = _leftBorder + getDeviceWidth()*0.4;
     private var _nextWidth = getDeviceWidth()*0.4;
     private var _currentWidth = getDeviceWidth()*0.4;
+    private var _speed;
 
     function onSelect() as Boolean {
         if (_inProgress == false) {
@@ -97,7 +98,12 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             _direction = 1;
         }
         
-        _xPosition += (getDeviceHeight()/50) * _direction;
+        _speed = (((((_view._score+1)*0.002)+0.1)*(getDeviceHeight()/5)));
+        if (_speed > (getDeviceWidth()/20)) {
+            _speed = (getDeviceWidth()/20);
+        }
+        System.println(_speed);
+        _xPosition += _speed * _direction;
 
         _view.setXPosition(_xPosition);
     }

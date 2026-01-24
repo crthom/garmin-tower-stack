@@ -76,7 +76,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
                 _nextWidth = _rightBorder - _stoppedX;
                 _leftBorder = _stoppedX;
             }
-            if (_nextWidth <= 0) {
+            if (_nextWidth <= 0 || _nextWidth < (getDeviceWidth()*0.01)) {
                 _gameOver = true;
                 _inProgress = false;
                 WatchUi.popView(WatchUi.SLIDE_RIGHT);
@@ -102,7 +102,6 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         if (_speed > (getDeviceWidth()/20)) {
             _speed = (getDeviceWidth()/20);
         }
-        System.println(_speed);
         _xPosition += _speed * _direction;
 
         _view.setXPosition(_xPosition);

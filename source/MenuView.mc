@@ -1,10 +1,29 @@
 using Toybox.WatchUi as WatchUi;
 using Toybox.Graphics as Graphics;
+import Toybox.Lang;
+using Toybox.Application as App;
 
 class MenuView extends WatchUi.View {
+    var highScore as Number;
 
     function initialize() {
         View.initialize();
+
+        highScore = App.Properties.getValue("highScore");
+    }
+
+    function saveHighScore(score as Number) {
+        App.Properties.setValue("highScore", score);
+        highScore = score; // update cached value
+    }
+
+    function onShow() {
+        loadHighScore();
+        WatchUi.requestUpdate();
+    }
+
+    function loadHighScore() {
+        highScore = App.Properties.getValue("highScore");
     }
 
     function onUpdate(dc as Graphics.Dc) {
@@ -30,7 +49,7 @@ class MenuView extends WatchUi.View {
             dc.getWidth() / 2,
             dc.getHeight() / 2,
             Graphics.FONT_LARGE,
-            "High Score: ",
+            "High Score: " + highScore,
             Graphics.TEXT_JUSTIFY_CENTER
         );
     }

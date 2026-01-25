@@ -2,102 +2,172 @@
 using Toybox.WatchUi as :WatchUi;
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Graphics,2,25,33]; ]
 using Toybox.Graphics as :Graphics;
-[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 4; @symbol_classdef = [MenuView,4,6,14]; @symbol_extends<0> = [WatchUi,4,23,30]; @symbol_extends<1> = [View,4,31,35]; ]
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; @symbol_usingAlias = [App,4,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 6; @symbol_classdef = [MenuView,6,6,14]; @symbol_extends<0> = [WatchUi,6,23,30]; @symbol_extends<1> = [View,6,31,35]; ]
 class MenuView extends WatchUi.View {
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 4; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 4; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 7; @position = 8; @symbol_vardef = [highScore,7,8,17]; @symbol_type<0> = [Number,7,21,27]; ]
+    var highScore as Number;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
     function initialize() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_6_26_8_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 7 8 ]
-        symbol [ View %tmp.2 7 8 12 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_9_26_13_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 10 8 ]
+        symbol [ View %tmp.2 10 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 7 13 23 ];
+        symbol [ initialize %tmp.3 10 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_6_26_8_4_stop:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 12 8 ]
+        symbol [ App %tmp.4 12 20 23 ];
+        %tmp.4 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.5 12 24 34 ];
+        %tmp.5 = getv %tmp.4 :Properties;
+        symbol [ getValue %tmp.6 12 35 43 ];
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "highScore";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        symbol [ highScore ? 12 8 17 ];
+        putv self :highScore %tmp.8;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_9_26_13_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 10; @symbol_functiondef = [onUpdate,10,13,21]; @symbol_param<0> = [dc,10,22,24]; @symbol_param<0>_type<0> = [Graphics,10,28,36]; @symbol_param<0>_type<1> = [Dc,10,37,39]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 15; @symbol_functiondef = [saveHighScore,15,13,26]; @symbol_param<0> = [score,15,27,32]; @symbol_param<0>_type<0> = [Number,15,36,42]; ]
+    function saveHighScore(score as Number) {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_15_44_18_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 16 8 ]
+        symbol [ App %tmp.1 16 8 11 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 16 12 22 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 16 23 31 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "highScore";
+        %tmp.5 = lgetv %score;
+        symbol [ score %tmp.5 16 45 50 ];
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 17 8 ]
+        %tmp.6 = lgetv %score;
+        symbol [ score %tmp.6 17 20 25 ];
+        symbol [ highScore ? 17 8 17 ];
+        putv self :highScore %tmp.6;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_15_44_18_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 20; @symbol_functiondef = [onShow,20,13,19]; ]
+    function onShow() {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_20_22_23_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 21 8 ]
+        %tmp.1 = self;
+        symbol [ loadHighScore %tmp.2 21 8 21 ];
+        %tmp.2 = getv function %tmp.1 :loadHighScore;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 22 8 ]
+        symbol [ WatchUi %tmp.3 22 8 15 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.4 22 16 29 ];
+        %tmp.4 = getv function %tmp.3 :requestUpdate;
+        invoke %tmp.3 %tmp.4();
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_20_22_23_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 25; @symbol_functiondef = [loadHighScore,25,13,26]; ]
+    function loadHighScore() {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_25_29_27_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 26 8 ]
+        symbol [ App %tmp.1 26 20 23 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 26 24 34 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 26 35 43 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "highScore";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        symbol [ highScore ? 26 8 17 ];
+        putv self :highScore %tmp.5;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_25_29_27_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 29; @symbol_functiondef = [onUpdate,29,13,21]; @symbol_param<0> = [dc,29,22,24]; @symbol_param<0>_type<0> = [Graphics,29,28,36]; @symbol_param<0>_type<1> = [Dc,29,37,39]; ]
     function onUpdate(dc as Graphics.Dc) {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_10_41_36_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 11 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_29_41_55_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 30 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 11 8 10 ];
-        symbol [ clear %tmp.2 11 11 16 ];
+        symbol [ dc %tmp.1 30 8 10 ];
+        symbol [ clear %tmp.2 30 11 16 ];
         %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 12 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 31 8 ]
         %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 12 8 10 ];
-        symbol [ setColor %tmp.4 12 11 19 ];
+        symbol [ dc %tmp.3 31 8 10 ];
+        symbol [ setColor %tmp.4 31 11 19 ];
         %tmp.4 = getv function %tmp.3 :setColor;
-        symbol [ Graphics %tmp.5 12 20 28 ];
+        symbol [ Graphics %tmp.5 31 20 28 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.6 12 29 38 ];
+        symbol [ COLOR_RED %tmp.6 31 29 38 ];
         %tmp.6 = getv %tmp.5 :COLOR_RED;
-        symbol [ Graphics %tmp.7 12 40 48 ];
+        symbol [ Graphics %tmp.7 31 40 48 ];
         %tmp.7 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.8 12 49 60 ];
+        symbol [ COLOR_BLACK %tmp.8 31 49 60 ];
         %tmp.8 = getv %tmp.7 :COLOR_BLACK;
         invoke %tmp.3 %tmp.4(%tmp.6, %tmp.8);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 13 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 32 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 13 8 10 ];
-        symbol [ drawText %tmp.10 13 11 19 ];
+        symbol [ dc %tmp.9 32 8 10 ];
+        symbol [ drawText %tmp.10 32 11 19 ];
         %tmp.10 = getv function %tmp.9 :drawText;
         %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 14 12 14 ];
-        symbol [ getWidth %tmp.12 14 15 23 ];
+        symbol [ dc %tmp.11 33 12 14 ];
+        symbol [ getWidth %tmp.12 33 15 23 ];
         %tmp.12 = getv function %tmp.11 :getWidth;
         %tmp.13 = invoke %tmp.11 %tmp.12();
         %tmp.14 = 3;
         %tmp.15 = div %tmp.13 %tmp.14;
         %tmp.16 = lgetv %dc;
-        symbol [ dc %tmp.16 15 12 14 ];
-        symbol [ getHeight %tmp.17 15 15 24 ];
+        symbol [ dc %tmp.16 34 12 14 ];
+        symbol [ getHeight %tmp.17 34 15 24 ];
         %tmp.17 = getv function %tmp.16 :getHeight;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         %tmp.19 = 2;
         %tmp.20 = div %tmp.18 %tmp.19;
         %tmp.21 = 40;
         %tmp.22 = sub %tmp.20 %tmp.21;
-        symbol [ Graphics %tmp.23 16 12 20 ];
+        symbol [ Graphics %tmp.23 35 12 20 ];
         %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.24 16 21 31 ];
+        symbol [ FONT_LARGE %tmp.24 35 21 31 ];
         %tmp.24 = getv %tmp.23 :FONT_LARGE;
         %tmp.25 = "Tower";
-        symbol [ Graphics %tmp.26 18 12 20 ];
+        symbol [ Graphics %tmp.26 37 12 20 ];
         %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.27 18 21 40 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.27 37 21 40 ];
         %tmp.27 = getv %tmp.26 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.9 %tmp.10(%tmp.15, %tmp.22, %tmp.24, %tmp.25, %tmp.27);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 20 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 39 8 ]
         %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 20 8 10 ];
-        symbol [ setColor %tmp.29 20 11 19 ];
+        symbol [ dc %tmp.28 39 8 10 ];
+        symbol [ setColor %tmp.29 39 11 19 ];
         %tmp.29 = getv function %tmp.28 :setColor;
-        symbol [ Graphics %tmp.30 20 20 28 ];
+        symbol [ Graphics %tmp.30 39 20 28 ];
         %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.31 20 29 39 ];
+        symbol [ COLOR_BLUE %tmp.31 39 29 39 ];
         %tmp.31 = getv %tmp.30 :COLOR_BLUE;
-        symbol [ Graphics %tmp.32 20 41 49 ];
+        symbol [ Graphics %tmp.32 39 41 49 ];
         %tmp.32 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.33 20 50 61 ];
+        symbol [ COLOR_BLACK %tmp.33 39 50 61 ];
         %tmp.33 = getv %tmp.32 :COLOR_BLACK;
         invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 21 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 40 8 ]
         %tmp.34 = lgetv %dc;
-        symbol [ dc %tmp.34 21 8 10 ];
-        symbol [ drawText %tmp.35 21 11 19 ];
+        symbol [ dc %tmp.34 40 8 10 ];
+        symbol [ drawText %tmp.35 40 11 19 ];
         %tmp.35 = getv function %tmp.34 :drawText;
         %tmp.36 = lgetv %dc;
-        symbol [ dc %tmp.36 22 12 14 ];
-        symbol [ getWidth %tmp.37 22 15 23 ];
+        symbol [ dc %tmp.36 41 12 14 ];
+        symbol [ getWidth %tmp.37 41 15 23 ];
         %tmp.37 = getv function %tmp.36 :getWidth;
         %tmp.38 = invoke %tmp.36 %tmp.37();
         %tmp.39 = 3;
@@ -105,68 +175,71 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_10
         %tmp.41 = 70;
         %tmp.42 = add %tmp.40 %tmp.41;
         %tmp.43 = lgetv %dc;
-        symbol [ dc %tmp.43 23 12 14 ];
-        symbol [ getHeight %tmp.44 23 15 24 ];
+        symbol [ dc %tmp.43 42 12 14 ];
+        symbol [ getHeight %tmp.44 42 15 24 ];
         %tmp.44 = getv function %tmp.43 :getHeight;
         %tmp.45 = invoke %tmp.43 %tmp.44();
         %tmp.46 = 2;
         %tmp.47 = div %tmp.45 %tmp.46;
         %tmp.48 = 40;
         %tmp.49 = sub %tmp.47 %tmp.48;
-        symbol [ Graphics %tmp.50 24 12 20 ];
+        symbol [ Graphics %tmp.50 43 12 20 ];
         %tmp.50 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.51 24 21 31 ];
+        symbol [ FONT_LARGE %tmp.51 43 21 31 ];
         %tmp.51 = getv %tmp.50 :FONT_LARGE;
         %tmp.52 = "Stack";
-        symbol [ Graphics %tmp.53 26 12 20 ];
+        symbol [ Graphics %tmp.53 45 12 20 ];
         %tmp.53 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.54 26 21 40 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.54 45 21 40 ];
         %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.34 %tmp.35(%tmp.42, %tmp.49, %tmp.51, %tmp.52, %tmp.54);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 28 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 47 8 ]
         %tmp.55 = lgetv %dc;
-        symbol [ dc %tmp.55 28 8 10 ];
-        symbol [ setColor %tmp.56 28 11 19 ];
+        symbol [ dc %tmp.55 47 8 10 ];
+        symbol [ setColor %tmp.56 47 11 19 ];
         %tmp.56 = getv function %tmp.55 :setColor;
-        symbol [ Graphics %tmp.57 28 20 28 ];
+        symbol [ Graphics %tmp.57 47 20 28 ];
         %tmp.57 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.58 28 29 40 ];
+        symbol [ COLOR_WHITE %tmp.58 47 29 40 ];
         %tmp.58 = getv %tmp.57 :COLOR_WHITE;
-        symbol [ Graphics %tmp.59 28 42 50 ];
+        symbol [ Graphics %tmp.59 47 42 50 ];
         %tmp.59 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.60 28 51 62 ];
+        symbol [ COLOR_BLACK %tmp.60 47 51 62 ];
         %tmp.60 = getv %tmp.59 :COLOR_BLACK;
         invoke %tmp.55 %tmp.56(%tmp.58, %tmp.60);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 29 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 48 8 ]
         %tmp.61 = lgetv %dc;
-        symbol [ dc %tmp.61 29 8 10 ];
-        symbol [ drawText %tmp.62 29 11 19 ];
+        symbol [ dc %tmp.61 48 8 10 ];
+        symbol [ drawText %tmp.62 48 11 19 ];
         %tmp.62 = getv function %tmp.61 :drawText;
         %tmp.63 = lgetv %dc;
-        symbol [ dc %tmp.63 30 12 14 ];
-        symbol [ getWidth %tmp.64 30 15 23 ];
+        symbol [ dc %tmp.63 49 12 14 ];
+        symbol [ getWidth %tmp.64 49 15 23 ];
         %tmp.64 = getv function %tmp.63 :getWidth;
         %tmp.65 = invoke %tmp.63 %tmp.64();
         %tmp.66 = 2;
         %tmp.67 = div %tmp.65 %tmp.66;
         %tmp.68 = lgetv %dc;
-        symbol [ dc %tmp.68 31 12 14 ];
-        symbol [ getHeight %tmp.69 31 15 24 ];
+        symbol [ dc %tmp.68 50 12 14 ];
+        symbol [ getHeight %tmp.69 50 15 24 ];
         %tmp.69 = getv function %tmp.68 :getHeight;
         %tmp.70 = invoke %tmp.68 %tmp.69();
         %tmp.71 = 2;
         %tmp.72 = div %tmp.70 %tmp.71;
-        symbol [ Graphics %tmp.73 32 12 20 ];
+        symbol [ Graphics %tmp.73 51 12 20 ];
         %tmp.73 = getm $.Toybox.Graphics;
-        symbol [ FONT_LARGE %tmp.74 32 21 31 ];
+        symbol [ FONT_LARGE %tmp.74 51 21 31 ];
         %tmp.74 = getv %tmp.73 :FONT_LARGE;
         %tmp.75 = "High Score: ";
-        symbol [ Graphics %tmp.76 34 12 20 ];
-        %tmp.76 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.77 34 21 40 ];
-        %tmp.77 = getv %tmp.76 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.61 %tmp.62(%tmp.67, %tmp.72, %tmp.74, %tmp.75, %tmp.77);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_10_41_36_4_stop:
+        symbol [ highScore %tmp.77 52 29 38 ];
+        %tmp.77 = getv ? :highScore;
+        %tmp.78 = add %tmp.75 %tmp.77;
+        symbol [ Graphics %tmp.79 53 12 20 ];
+        %tmp.79 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.80 53 21 40 ];
+        %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.61 %tmp.62(%tmp.67, %tmp.72, %tmp.74, %tmp.78, %tmp.80);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_29_41_55_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 1; ]

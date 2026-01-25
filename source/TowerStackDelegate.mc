@@ -2,6 +2,8 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Timer;
+import Toybox.Lang;
+using Toybox.Application as App;
 
 class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     
@@ -14,10 +16,22 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     private var _stoppedX;
     
     private var _view;
-
+    var highScore as Number;
+    
     function initialize(view as TowerStackView) {
         BehaviorDelegate.initialize();
         _view = view;
+
+        highScore = App.Properties.getValue("highScore");
+    }
+
+    function saveHighScore(score as Number) {
+        App.Properties.setValue("highScore", score);
+        highScore = score; // update cached value
+    }
+
+    function loadHighScore() as Number {
+        return highScore; // always safe
     }
 
     function getDeviceWidth() as Lang.Number {
@@ -79,6 +93,9 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             if (_nextWidth <= 0 || _nextWidth < (getDeviceWidth()*0.01)) {
                 _gameOver = true;
                 _inProgress = false;
+                if (_view._score > highScore) {
+                    saveHighScore(_view._score);
+                }
                 WatchUi.popView(WatchUi.SLIDE_RIGHT);
             } else {
                 _currentWidth = _nextWidth;

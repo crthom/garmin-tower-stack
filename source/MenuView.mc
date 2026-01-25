@@ -31,15 +31,15 @@ class MenuView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
         dc.drawText(
             dc.getWidth() / 3,
-            dc.getHeight() / 2 - 40,
+            dc.getHeight() / 2 - dc.getHeight() / 3.5,
             Graphics.FONT_LARGE,
             "Tower",
             Graphics.TEXT_JUSTIFY_CENTER
         );
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
         dc.drawText(
-            dc.getWidth() / 3 + 70,
-            dc.getHeight() / 2 - 40,
+            dc.getWidth() / 3 + dc.getWidth()/3,
+            dc.getHeight() / 2 - dc.getHeight() / 3.5,
             Graphics.FONT_LARGE,
             "Stack",
             Graphics.TEXT_JUSTIFY_CENTER
@@ -48,8 +48,16 @@ class MenuView extends WatchUi.View {
         dc.drawText(
             dc.getWidth() / 2,
             dc.getHeight() / 2,
-            Graphics.FONT_LARGE,
+            Graphics.FONT_SMALL,
             "High Score: " + highScore,
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(
+            dc.getWidth() / 2,
+            dc.getHeight() / 2 + dc.getHeight() / 6,
+            Graphics.FONT_SMALL,
+            "Select to Start",
             Graphics.TEXT_JUSTIFY_CENTER
         );
     }

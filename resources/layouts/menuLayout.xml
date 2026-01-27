@@ -4,7 +4,15 @@
         text="High score: 0" 
         x="center"
         y="center"
-        font="Gfx.FONT_MEDIUM"
+        font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="Start"
+        text="Select to start" 
+        x="center"
+        y="70%"
+        font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
 </layout>

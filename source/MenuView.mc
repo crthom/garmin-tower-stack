@@ -2,6 +2,7 @@ using Toybox.WatchUi as WatchUi;
 using Toybox.Graphics as Graphics;
 import Toybox.Lang;
 using Toybox.Application as App;
+using Toybox.Rez
 
 class MenuView extends WatchUi.View {
     var highScore as Number;
@@ -26,8 +27,17 @@ class MenuView extends WatchUi.View {
         highScore = App.Properties.getValue("highScore");
     }
 
+    // Load your resources here
+    function onLayout(dc as Dc) as Void {
+        setLayout(Rez.Layouts.MainLayout(dc));
+
+        _highScoreElement = findDrawableById("HighScore");
+    }
+
     function onUpdate(dc as Graphics.Dc) {
         dc.clear();
+         _highScoreElement.setText("High Score: " + highScore.toString());
+        View.onUpdate(dc);
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
         dc.drawText(
             dc.getWidth() / 3,
@@ -42,14 +52,6 @@ class MenuView extends WatchUi.View {
             dc.getHeight() / 2 - dc.getHeight() / 3.5,
             Graphics.FONT_LARGE,
             "Stack",
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(
-            dc.getWidth() / 2,
-            dc.getHeight() / 2,
-            Graphics.FONT_SMALL,
-            "High Score: " + highScore,
             Graphics.TEXT_JUSTIFY_CENTER
         );
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);

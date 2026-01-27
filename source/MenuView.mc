@@ -29,14 +29,14 @@ class MenuView extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        setLayout(Rez.Layouts.MenuLayout(dc));
 
         _highScoreElement = findDrawableById("HighScore");
     }
 
     function onUpdate(dc as Graphics.Dc) {
         dc.clear();
-         _highScoreElement.setText("High Score: " + highScore.toString());
+        _highScoreElement.setText("High Score: " + highScore.toString());
         View.onUpdate(dc);
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
         dc.drawText(

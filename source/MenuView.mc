@@ -54,13 +54,5 @@ class MenuView extends WatchUi.View {
             "Stack",
             Graphics.TEXT_JUSTIFY_CENTER
         );
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(
-            dc.getWidth() / 2,
-            dc.getHeight() / 2 + dc.getHeight() / 6,
-            Graphics.FONT_SMALL,
-            "Select to Start",
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
     }
 }

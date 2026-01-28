@@ -17,6 +17,25 @@ class CustomizeDelegate extends WatchUi.BehaviorDelegate {
 
     function onSelect() as Boolean {
         saveSelectedGradient(_view._gradientIndex);
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onPreviousPage() as Boolean {
+        _view._gradientIndex -= 1;
+        if (_view._gradientIndex < 0) {
+            _view._gradientIndex = _view._gradients.size() - 1;
+        }
+        WatchUi.requestUpdate();
+        return true;
+    }
+
+    function onNextPage() as Boolean {
+        _view._gradientIndex += 1;
+        if (_view._gradientIndex >= _view._gradients.size()) {
+            _view._gradientIndex = 0;
+        }
+        WatchUi.requestUpdate();
         return true;
     }
 }

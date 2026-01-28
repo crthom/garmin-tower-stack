@@ -1,0 +1,71 @@
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; @symbol_usingAlias = [App,3,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 5; @symbol_classdef = [CustomizeDelegate,5,6,23]; @symbol_extends<0> = [WatchUi,5,32,39]; @symbol_extends<1> = [BehaviorDelegate,5,40,56]; ]
+class CustomizeDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 7; @position = 16; @symbol_vardef = [_view,7,16,21]; ]
+    private
+    var _view;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; @symbol_param<0> = [view,9,24,28]; @symbol_param<0>_type<0> = [CustomizeView,9,32,45]; ]
+    function initialize(view as CustomizeView) as Void {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_9_47_13_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc" 10 8 ]
+        symbol [ BehaviorDelegate %tmp.2 10 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 10 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc" 12 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 12 16 20 ];
+        symbol [ _view ? 12 8 13 ];
+        putv self :_view %tmp.4;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_9_47_13_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 14; @symbol_functiondef = [saveSelectedGradient,14,13,33]; @symbol_param<0> = [index,14,34,39]; @symbol_param<0>_type<0> = [Number,14,43,49]; ]
+    function saveSelectedGradient(index as Number) {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_14_51_16_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc" 15 8 ]
+        symbol [ App %tmp.1 15 8 11 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 15 12 22 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ setValue %tmp.3 15 23 31 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "selectedGradientIndex";
+        %tmp.5 = lgetv %index;
+        symbol [ index %tmp.5 15 57 62 ];
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_14_51_16_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 18; @symbol_functiondef = [onSelect,18,13,21]; @symbol_return<0> = [Boolean,18,27,34]; ]
+    function onSelect() as Boolean {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_18_35_21_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc" 19 8 ]
+        %tmp.1 = self;
+        symbol [ saveSelectedGradient %tmp.2 19 8 28 ];
+        %tmp.2 = getv function %tmp.1 :saveSelectedGradient;
+        symbol [ _view %tmp.4 19 29 34 ];
+        %tmp.4 = getv ? :_view;
+        symbol [ _gradientIndex %tmp.5 19 35 49 ];
+        %tmp.5 = getv %tmp.4 :_gradientIndex;
+        invoke %tmp.1 %tmp.2(%tmp.5);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc" 20 8 ]
+        %tmp.6 = true;
+        ret %tmp.6;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeDelegate_mc_18_35_21_4_stop:
+    }
+}
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeDelegate.mc"; @line = 1; ]
+<init> {
+}

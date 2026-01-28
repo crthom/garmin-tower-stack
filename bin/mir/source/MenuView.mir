@@ -126,7 +126,7 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_32
     }
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 38; @symbol_functiondef = [onUpdate,38,13,21]; @symbol_param<0> = [dc,38,22,24]; @symbol_param<0>_type<0> = [Graphics,38,28,36]; @symbol_param<0>_type<1> = [Dc,38,37,39]; ]
     function onUpdate(dc as Graphics.Dc) {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_38_41_42_4_start:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_38_41_43_4_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 39 8 ]
         %tmp.1 = lgetv %dc;
         symbol [ dc %tmp.1 39 8 10 ];
@@ -134,27 +134,32 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_38
         %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 40 8 ]
-        symbol [ _highScoreElement %tmp.4 40 8 25 ];
-        %tmp.4 = getv ? :_highScoreElement;
-        symbol [ setText %tmp.5 40 26 33 ];
-        %tmp.5 = getv function %tmp.4 :setText;
-        %tmp.6 = "High Score: ";
-        symbol [ highScore %tmp.8 40 51 60 ];
-        %tmp.8 = getv ? :highScore;
-        symbol [ toString %tmp.9 40 61 69 ];
-        %tmp.9 = getv function %tmp.8 :toString;
-        %tmp.10 = invoke %tmp.8 %tmp.9();
-        %tmp.11 = add %tmp.6 %tmp.10;
-        invoke %tmp.4 %tmp.5(%tmp.11);
+        %tmp.3 = self;
+        symbol [ loadHighScore %tmp.4 40 8 21 ];
+        %tmp.4 = getv function %tmp.3 :loadHighScore;
+        invoke %tmp.3 %tmp.4();
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 41 8 ]
-        symbol [ View %tmp.13 41 8 12 ];
-        %tmp.13 = getv ? :View;
-        symbol [ onUpdate %tmp.14 41 13 21 ];
-        %tmp.14 = getv function %tmp.13 :onUpdate;
-        %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 41 22 24 ];
-        invoke %tmp.13 %tmp.14(%tmp.15);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_38_41_42_4_stop:
+        symbol [ _highScoreElement %tmp.6 41 8 25 ];
+        %tmp.6 = getv ? :_highScoreElement;
+        symbol [ setText %tmp.7 41 26 33 ];
+        %tmp.7 = getv function %tmp.6 :setText;
+        %tmp.8 = "High Score: ";
+        symbol [ highScore %tmp.10 41 51 60 ];
+        %tmp.10 = getv ? :highScore;
+        symbol [ toString %tmp.11 41 61 69 ];
+        %tmp.11 = getv function %tmp.10 :toString;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = add %tmp.8 %tmp.12;
+        invoke %tmp.6 %tmp.7(%tmp.13);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc" 42 8 ]
+        symbol [ View %tmp.15 42 8 12 ];
+        %tmp.15 = getv ? :View;
+        symbol [ onUpdate %tmp.16 42 13 21 ];
+        %tmp.16 = getv function %tmp.15 :onUpdate;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 42 22 24 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_MenuView_mc_38_41_43_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/MenuView.mc"; @line = 1; ]

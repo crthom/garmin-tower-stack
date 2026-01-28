@@ -6,17 +6,19 @@ import Toybox.WatchUi;
 import Toybox.Lang;
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Math,4,13,17]; @symbol_usingAlias = [Math,4,21,25]; ]
 using Toybox.Math as :Math;
-[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 6; @symbol_classdef = [TowerStackView,6,6,20]; @symbol_extends<0> = [WatchUi,6,29,36]; @symbol_extends<1> = [View,6,37,41]; ]
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Application,5,13,24]; @symbol_usingAlias = [App,5,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 7; @symbol_classdef = [TowerStackView,7,6,20]; @symbol_extends<0> = [WatchUi,7,29,36]; @symbol_extends<1> = [View,7,37,41]; ]
 class TowerStackView extends WatchUi.View {
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 6; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 7; ]
     <init> {
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 9 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 10 16 ]
         %tmp.1 = newa 0;
         putv self :_previousBlocks %tmp.1;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 16 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 18 16 ]
         %tmp.2 = newa 33;
         %tmp.3 = self;
-        symbol [ rgbToDec %tmp.4 17 8 16 ];
+        symbol [ rgbToDec %tmp.4 19 8 16 ];
         %tmp.4 = getv function %tmp.3 :rgbToDec;
         %tmp.5 = 8;
         %tmp.6 = 78;
@@ -25,7 +27,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.9 = dup %tmp.2;
         %tmp.10 = aputv %tmp.9 0 %tmp.8;
         %tmp.11 = self;
-        symbol [ rgbToDec %tmp.12 18 8 16 ];
+        symbol [ rgbToDec %tmp.12 20 8 16 ];
         %tmp.12 = getv function %tmp.11 :rgbToDec;
         %tmp.13 = 11;
         %tmp.14 = 72;
@@ -34,7 +36,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.17 = dup %tmp.10;
         %tmp.18 = aputv %tmp.17 1 %tmp.16;
         %tmp.19 = self;
-        symbol [ rgbToDec %tmp.20 19 8 16 ];
+        symbol [ rgbToDec %tmp.20 21 8 16 ];
         %tmp.20 = getv function %tmp.19 :rgbToDec;
         %tmp.21 = 22;
         %tmp.22 = 52;
@@ -43,7 +45,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.25 = dup %tmp.18;
         %tmp.26 = aputv %tmp.25 2 %tmp.24;
         %tmp.27 = self;
-        symbol [ rgbToDec %tmp.28 20 8 16 ];
+        symbol [ rgbToDec %tmp.28 22 8 16 ];
         %tmp.28 = getv function %tmp.27 :rgbToDec;
         %tmp.29 = 34;
         %tmp.30 = 36;
@@ -52,7 +54,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.33 = dup %tmp.26;
         %tmp.34 = aputv %tmp.33 3 %tmp.32;
         %tmp.35 = self;
-        symbol [ rgbToDec %tmp.36 21 8 16 ];
+        symbol [ rgbToDec %tmp.36 23 8 16 ];
         %tmp.36 = getv function %tmp.35 :rgbToDec;
         %tmp.37 = 42;
         %tmp.38 = 25;
@@ -61,7 +63,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.41 = dup %tmp.34;
         %tmp.42 = aputv %tmp.41 4 %tmp.40;
         %tmp.43 = self;
-        symbol [ rgbToDec %tmp.44 22 8 16 ];
+        symbol [ rgbToDec %tmp.44 24 8 16 ];
         %tmp.44 = getv function %tmp.43 :rgbToDec;
         %tmp.45 = 68;
         %tmp.46 = 18;
@@ -70,7 +72,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.49 = dup %tmp.42;
         %tmp.50 = aputv %tmp.49 5 %tmp.48;
         %tmp.51 = self;
-        symbol [ rgbToDec %tmp.52 23 8 16 ];
+        symbol [ rgbToDec %tmp.52 25 8 16 ];
         %tmp.52 = getv function %tmp.51 :rgbToDec;
         %tmp.53 = 104;
         %tmp.54 = 18;
@@ -79,7 +81,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.57 = dup %tmp.50;
         %tmp.58 = aputv %tmp.57 6 %tmp.56;
         %tmp.59 = self;
-        symbol [ rgbToDec %tmp.60 24 8 16 ];
+        symbol [ rgbToDec %tmp.60 26 8 16 ];
         %tmp.60 = getv function %tmp.59 :rgbToDec;
         %tmp.61 = 157;
         %tmp.62 = 17;
@@ -88,7 +90,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.65 = dup %tmp.58;
         %tmp.66 = aputv %tmp.65 7 %tmp.64;
         %tmp.67 = self;
-        symbol [ rgbToDec %tmp.68 25 8 16 ];
+        symbol [ rgbToDec %tmp.68 27 8 16 ];
         %tmp.68 = getv function %tmp.67 :rgbToDec;
         %tmp.69 = 196;
         %tmp.70 = 16;
@@ -97,7 +99,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.73 = dup %tmp.66;
         %tmp.74 = aputv %tmp.73 8 %tmp.72;
         %tmp.75 = self;
-        symbol [ rgbToDec %tmp.76 26 8 16 ];
+        symbol [ rgbToDec %tmp.76 28 8 16 ];
         %tmp.76 = getv function %tmp.75 :rgbToDec;
         %tmp.77 = 213;
         %tmp.78 = 12;
@@ -106,7 +108,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.81 = dup %tmp.74;
         %tmp.82 = aputv %tmp.81 9 %tmp.80;
         %tmp.83 = self;
-        symbol [ rgbToDec %tmp.84 27 8 16 ];
+        symbol [ rgbToDec %tmp.84 29 8 16 ];
         %tmp.84 = getv function %tmp.83 :rgbToDec;
         %tmp.85 = 247;
         %tmp.86 = 23;
@@ -115,7 +117,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.89 = dup %tmp.82;
         %tmp.90 = aputv %tmp.89 10 %tmp.88;
         %tmp.91 = self;
-        symbol [ rgbToDec %tmp.92 28 8 16 ];
+        symbol [ rgbToDec %tmp.92 30 8 16 ];
         %tmp.92 = getv function %tmp.91 :rgbToDec;
         %tmp.93 = 254;
         %tmp.94 = 34;
@@ -124,7 +126,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.97 = dup %tmp.90;
         %tmp.98 = aputv %tmp.97 11 %tmp.96;
         %tmp.99 = self;
-        symbol [ rgbToDec %tmp.100 29 8 16 ];
+        symbol [ rgbToDec %tmp.100 31 8 16 ];
         %tmp.100 = getv function %tmp.99 :rgbToDec;
         %tmp.101 = 255;
         %tmp.102 = 60;
@@ -133,7 +135,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.105 = dup %tmp.98;
         %tmp.106 = aputv %tmp.105 12 %tmp.104;
         %tmp.107 = self;
-        symbol [ rgbToDec %tmp.108 30 8 16 ];
+        symbol [ rgbToDec %tmp.108 32 8 16 ];
         %tmp.108 = getv function %tmp.107 :rgbToDec;
         %tmp.109 = 255;
         %tmp.110 = 92;
@@ -142,7 +144,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.113 = dup %tmp.106;
         %tmp.114 = aputv %tmp.113 13 %tmp.112;
         %tmp.115 = self;
-        symbol [ rgbToDec %tmp.116 31 8 16 ];
+        symbol [ rgbToDec %tmp.116 33 8 16 ];
         %tmp.116 = getv function %tmp.115 :rgbToDec;
         %tmp.117 = 253;
         %tmp.118 = 122;
@@ -151,7 +153,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.121 = dup %tmp.114;
         %tmp.122 = aputv %tmp.121 14 %tmp.120;
         %tmp.123 = self;
-        symbol [ rgbToDec %tmp.124 32 8 16 ];
+        symbol [ rgbToDec %tmp.124 34 8 16 ];
         %tmp.124 = getv function %tmp.123 :rgbToDec;
         %tmp.125 = 255;
         %tmp.126 = 138;
@@ -160,7 +162,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.129 = dup %tmp.122;
         %tmp.130 = aputv %tmp.129 15 %tmp.128;
         %tmp.131 = self;
-        symbol [ rgbToDec %tmp.132 33 8 16 ];
+        symbol [ rgbToDec %tmp.132 35 8 16 ];
         %tmp.132 = getv function %tmp.131 :rgbToDec;
         %tmp.133 = 254;
         %tmp.134 = 154;
@@ -169,7 +171,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.137 = dup %tmp.130;
         %tmp.138 = aputv %tmp.137 16 %tmp.136;
         %tmp.139 = self;
-        symbol [ rgbToDec %tmp.140 34 8 16 ];
+        symbol [ rgbToDec %tmp.140 36 8 16 ];
         %tmp.140 = getv function %tmp.139 :rgbToDec;
         %tmp.141 = 255;
         %tmp.142 = 138;
@@ -178,7 +180,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.145 = dup %tmp.138;
         %tmp.146 = aputv %tmp.145 17 %tmp.144;
         %tmp.147 = self;
-        symbol [ rgbToDec %tmp.148 35 8 16 ];
+        symbol [ rgbToDec %tmp.148 37 8 16 ];
         %tmp.148 = getv function %tmp.147 :rgbToDec;
         %tmp.149 = 253;
         %tmp.150 = 122;
@@ -187,7 +189,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.153 = dup %tmp.146;
         %tmp.154 = aputv %tmp.153 18 %tmp.152;
         %tmp.155 = self;
-        symbol [ rgbToDec %tmp.156 36 8 16 ];
+        symbol [ rgbToDec %tmp.156 38 8 16 ];
         %tmp.156 = getv function %tmp.155 :rgbToDec;
         %tmp.157 = 255;
         %tmp.158 = 92;
@@ -196,7 +198,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.161 = dup %tmp.154;
         %tmp.162 = aputv %tmp.161 19 %tmp.160;
         %tmp.163 = self;
-        symbol [ rgbToDec %tmp.164 37 8 16 ];
+        symbol [ rgbToDec %tmp.164 39 8 16 ];
         %tmp.164 = getv function %tmp.163 :rgbToDec;
         %tmp.165 = 255;
         %tmp.166 = 60;
@@ -205,7 +207,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.169 = dup %tmp.162;
         %tmp.170 = aputv %tmp.169 20 %tmp.168;
         %tmp.171 = self;
-        symbol [ rgbToDec %tmp.172 38 8 16 ];
+        symbol [ rgbToDec %tmp.172 40 8 16 ];
         %tmp.172 = getv function %tmp.171 :rgbToDec;
         %tmp.173 = 254;
         %tmp.174 = 34;
@@ -214,7 +216,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.177 = dup %tmp.170;
         %tmp.178 = aputv %tmp.177 21 %tmp.176;
         %tmp.179 = self;
-        symbol [ rgbToDec %tmp.180 39 8 16 ];
+        symbol [ rgbToDec %tmp.180 41 8 16 ];
         %tmp.180 = getv function %tmp.179 :rgbToDec;
         %tmp.181 = 247;
         %tmp.182 = 23;
@@ -223,7 +225,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.185 = dup %tmp.178;
         %tmp.186 = aputv %tmp.185 22 %tmp.184;
         %tmp.187 = self;
-        symbol [ rgbToDec %tmp.188 40 8 16 ];
+        symbol [ rgbToDec %tmp.188 42 8 16 ];
         %tmp.188 = getv function %tmp.187 :rgbToDec;
         %tmp.189 = 213;
         %tmp.190 = 12;
@@ -232,7 +234,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.193 = dup %tmp.186;
         %tmp.194 = aputv %tmp.193 23 %tmp.192;
         %tmp.195 = self;
-        symbol [ rgbToDec %tmp.196 41 8 16 ];
+        symbol [ rgbToDec %tmp.196 43 8 16 ];
         %tmp.196 = getv function %tmp.195 :rgbToDec;
         %tmp.197 = 196;
         %tmp.198 = 16;
@@ -241,7 +243,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.201 = dup %tmp.194;
         %tmp.202 = aputv %tmp.201 24 %tmp.200;
         %tmp.203 = self;
-        symbol [ rgbToDec %tmp.204 42 8 16 ];
+        symbol [ rgbToDec %tmp.204 44 8 16 ];
         %tmp.204 = getv function %tmp.203 :rgbToDec;
         %tmp.205 = 157;
         %tmp.206 = 17;
@@ -250,7 +252,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.209 = dup %tmp.202;
         %tmp.210 = aputv %tmp.209 25 %tmp.208;
         %tmp.211 = self;
-        symbol [ rgbToDec %tmp.212 43 8 16 ];
+        symbol [ rgbToDec %tmp.212 45 8 16 ];
         %tmp.212 = getv function %tmp.211 :rgbToDec;
         %tmp.213 = 104;
         %tmp.214 = 18;
@@ -259,7 +261,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.217 = dup %tmp.210;
         %tmp.218 = aputv %tmp.217 26 %tmp.216;
         %tmp.219 = self;
-        symbol [ rgbToDec %tmp.220 44 8 16 ];
+        symbol [ rgbToDec %tmp.220 46 8 16 ];
         %tmp.220 = getv function %tmp.219 :rgbToDec;
         %tmp.221 = 68;
         %tmp.222 = 18;
@@ -268,7 +270,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.225 = dup %tmp.218;
         %tmp.226 = aputv %tmp.225 27 %tmp.224;
         %tmp.227 = self;
-        symbol [ rgbToDec %tmp.228 45 8 16 ];
+        symbol [ rgbToDec %tmp.228 47 8 16 ];
         %tmp.228 = getv function %tmp.227 :rgbToDec;
         %tmp.229 = 42;
         %tmp.230 = 25;
@@ -277,7 +279,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.233 = dup %tmp.226;
         %tmp.234 = aputv %tmp.233 28 %tmp.232;
         %tmp.235 = self;
-        symbol [ rgbToDec %tmp.236 46 8 16 ];
+        symbol [ rgbToDec %tmp.236 48 8 16 ];
         %tmp.236 = getv function %tmp.235 :rgbToDec;
         %tmp.237 = 34;
         %tmp.238 = 36;
@@ -286,7 +288,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.241 = dup %tmp.234;
         %tmp.242 = aputv %tmp.241 29 %tmp.240;
         %tmp.243 = self;
-        symbol [ rgbToDec %tmp.244 47 8 16 ];
+        symbol [ rgbToDec %tmp.244 49 8 16 ];
         %tmp.244 = getv function %tmp.243 :rgbToDec;
         %tmp.245 = 22;
         %tmp.246 = 52;
@@ -295,7 +297,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.249 = dup %tmp.242;
         %tmp.250 = aputv %tmp.249 30 %tmp.248;
         %tmp.251 = self;
-        symbol [ rgbToDec %tmp.252 48 8 16 ];
+        symbol [ rgbToDec %tmp.252 50 8 16 ];
         %tmp.252 = getv function %tmp.251 :rgbToDec;
         %tmp.253 = 11;
         %tmp.254 = 72;
@@ -304,7 +306,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.257 = dup %tmp.250;
         %tmp.258 = aputv %tmp.257 31 %tmp.256;
         %tmp.259 = self;
-        symbol [ rgbToDec %tmp.260 49 8 16 ];
+        symbol [ rgbToDec %tmp.260 51 8 16 ];
         %tmp.260 = getv function %tmp.259 :rgbToDec;
         %tmp.261 = 8;
         %tmp.262 = 78;
@@ -313,10 +315,10 @@ class TowerStackView extends WatchUi.View {
         %tmp.265 = dup %tmp.258;
         %tmp.266 = aputv %tmp.265 32 %tmp.264;
         putv self :_blueRedColorGradient %tmp.266;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 53 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 55 16 ]
         %tmp.267 = newa 33;
         %tmp.268 = self;
-        symbol [ rgbToDec %tmp.269 54 8 16 ];
+        symbol [ rgbToDec %tmp.269 56 8 16 ];
         %tmp.269 = getv function %tmp.268 :rgbToDec;
         %tmp.270 = 103;
         %tmp.271 = 27;
@@ -325,7 +327,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.274 = dup %tmp.267;
         %tmp.275 = aputv %tmp.274 0 %tmp.273;
         %tmp.276 = self;
-        symbol [ rgbToDec %tmp.277 55 8 16 ];
+        symbol [ rgbToDec %tmp.277 57 8 16 ];
         %tmp.277 = getv function %tmp.276 :rgbToDec;
         %tmp.278 = 102;
         %tmp.279 = 43;
@@ -334,7 +336,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.282 = dup %tmp.275;
         %tmp.283 = aputv %tmp.282 1 %tmp.281;
         %tmp.284 = self;
-        symbol [ rgbToDec %tmp.285 56 8 16 ];
+        symbol [ rgbToDec %tmp.285 58 8 16 ];
         %tmp.285 = getv function %tmp.284 :rgbToDec;
         %tmp.286 = 101;
         %tmp.287 = 55;
@@ -343,7 +345,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.290 = dup %tmp.283;
         %tmp.291 = aputv %tmp.290 2 %tmp.289;
         %tmp.292 = self;
-        symbol [ rgbToDec %tmp.293 57 8 16 ];
+        symbol [ rgbToDec %tmp.293 59 8 16 ];
         %tmp.293 = getv function %tmp.292 :rgbToDec;
         %tmp.294 = 99;
         %tmp.295 = 67;
@@ -352,7 +354,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.298 = dup %tmp.291;
         %tmp.299 = aputv %tmp.298 3 %tmp.297;
         %tmp.300 = self;
-        symbol [ rgbToDec %tmp.301 58 8 16 ];
+        symbol [ rgbToDec %tmp.301 60 8 16 ];
         %tmp.301 = getv function %tmp.300 :rgbToDec;
         %tmp.302 = 98;
         %tmp.303 = 77;
@@ -361,7 +363,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.306 = dup %tmp.299;
         %tmp.307 = aputv %tmp.306 4 %tmp.305;
         %tmp.308 = self;
-        symbol [ rgbToDec %tmp.309 59 8 16 ];
+        symbol [ rgbToDec %tmp.309 61 8 16 ];
         %tmp.309 = getv function %tmp.308 :rgbToDec;
         %tmp.310 = 97;
         %tmp.311 = 87;
@@ -370,7 +372,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.314 = dup %tmp.307;
         %tmp.315 = aputv %tmp.314 5 %tmp.313;
         %tmp.316 = self;
-        symbol [ rgbToDec %tmp.317 60 8 16 ];
+        symbol [ rgbToDec %tmp.317 62 8 16 ];
         %tmp.317 = getv function %tmp.316 :rgbToDec;
         %tmp.318 = 96;
         %tmp.319 = 96;
@@ -379,7 +381,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.322 = dup %tmp.315;
         %tmp.323 = aputv %tmp.322 6 %tmp.321;
         %tmp.324 = self;
-        symbol [ rgbToDec %tmp.325 61 8 16 ];
+        symbol [ rgbToDec %tmp.325 63 8 16 ];
         %tmp.325 = getv function %tmp.324 :rgbToDec;
         %tmp.326 = 95;
         %tmp.327 = 106;
@@ -388,7 +390,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.330 = dup %tmp.323;
         %tmp.331 = aputv %tmp.330 7 %tmp.329;
         %tmp.332 = self;
-        symbol [ rgbToDec %tmp.333 62 8 16 ];
+        symbol [ rgbToDec %tmp.333 64 8 16 ];
         %tmp.333 = getv function %tmp.332 :rgbToDec;
         %tmp.334 = 94;
         %tmp.335 = 115;
@@ -397,7 +399,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.338 = dup %tmp.331;
         %tmp.339 = aputv %tmp.338 8 %tmp.337;
         %tmp.340 = self;
-        symbol [ rgbToDec %tmp.341 63 8 16 ];
+        symbol [ rgbToDec %tmp.341 65 8 16 ];
         %tmp.341 = getv function %tmp.340 :rgbToDec;
         %tmp.342 = 95;
         %tmp.343 = 124;
@@ -406,7 +408,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.346 = dup %tmp.339;
         %tmp.347 = aputv %tmp.346 9 %tmp.345;
         %tmp.348 = self;
-        symbol [ rgbToDec %tmp.349 64 8 16 ];
+        symbol [ rgbToDec %tmp.349 66 8 16 ];
         %tmp.349 = getv function %tmp.348 :rgbToDec;
         %tmp.350 = 96;
         %tmp.351 = 133;
@@ -415,7 +417,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.354 = dup %tmp.347;
         %tmp.355 = aputv %tmp.354 10 %tmp.353;
         %tmp.356 = self;
-        symbol [ rgbToDec %tmp.357 65 8 16 ];
+        symbol [ rgbToDec %tmp.357 67 8 16 ];
         %tmp.357 = getv function %tmp.356 :rgbToDec;
         %tmp.358 = 97;
         %tmp.359 = 141;
@@ -424,7 +426,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.362 = dup %tmp.355;
         %tmp.363 = aputv %tmp.362 11 %tmp.361;
         %tmp.364 = self;
-        symbol [ rgbToDec %tmp.365 66 8 16 ];
+        symbol [ rgbToDec %tmp.365 68 8 16 ];
         %tmp.365 = getv function %tmp.364 :rgbToDec;
         %tmp.366 = 100;
         %tmp.367 = 150;
@@ -433,7 +435,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.370 = dup %tmp.363;
         %tmp.371 = aputv %tmp.370 12 %tmp.369;
         %tmp.372 = self;
-        symbol [ rgbToDec %tmp.373 67 8 16 ];
+        symbol [ rgbToDec %tmp.373 69 8 16 ];
         %tmp.373 = getv function %tmp.372 :rgbToDec;
         %tmp.374 = 103;
         %tmp.375 = 158;
@@ -442,7 +444,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.378 = dup %tmp.371;
         %tmp.379 = aputv %tmp.378 13 %tmp.377;
         %tmp.380 = self;
-        symbol [ rgbToDec %tmp.381 68 8 16 ];
+        symbol [ rgbToDec %tmp.381 70 8 16 ];
         %tmp.381 = getv function %tmp.380 :rgbToDec;
         %tmp.382 = 107;
         %tmp.383 = 167;
@@ -451,7 +453,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.386 = dup %tmp.379;
         %tmp.387 = aputv %tmp.386 14 %tmp.385;
         %tmp.388 = self;
-        symbol [ rgbToDec %tmp.389 69 8 16 ];
+        symbol [ rgbToDec %tmp.389 71 8 16 ];
         %tmp.389 = getv function %tmp.388 :rgbToDec;
         %tmp.390 = 112;
         %tmp.391 = 175;
@@ -460,7 +462,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.394 = dup %tmp.387;
         %tmp.395 = aputv %tmp.394 15 %tmp.393;
         %tmp.396 = self;
-        symbol [ rgbToDec %tmp.397 70 8 16 ];
+        symbol [ rgbToDec %tmp.397 72 8 16 ];
         %tmp.397 = getv function %tmp.396 :rgbToDec;
         %tmp.398 = 118;
         %tmp.399 = 183;
@@ -469,7 +471,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.402 = dup %tmp.395;
         %tmp.403 = aputv %tmp.402 16 %tmp.401;
         %tmp.404 = self;
-        symbol [ rgbToDec %tmp.405 71 8 16 ];
+        symbol [ rgbToDec %tmp.405 73 8 16 ];
         %tmp.405 = getv function %tmp.404 :rgbToDec;
         %tmp.406 = 112;
         %tmp.407 = 175;
@@ -478,7 +480,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.410 = dup %tmp.403;
         %tmp.411 = aputv %tmp.410 17 %tmp.409;
         %tmp.412 = self;
-        symbol [ rgbToDec %tmp.413 72 8 16 ];
+        symbol [ rgbToDec %tmp.413 74 8 16 ];
         %tmp.413 = getv function %tmp.412 :rgbToDec;
         %tmp.414 = 107;
         %tmp.415 = 167;
@@ -487,7 +489,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.418 = dup %tmp.411;
         %tmp.419 = aputv %tmp.418 18 %tmp.417;
         %tmp.420 = self;
-        symbol [ rgbToDec %tmp.421 73 8 16 ];
+        symbol [ rgbToDec %tmp.421 75 8 16 ];
         %tmp.421 = getv function %tmp.420 :rgbToDec;
         %tmp.422 = 103;
         %tmp.423 = 158;
@@ -496,7 +498,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.426 = dup %tmp.419;
         %tmp.427 = aputv %tmp.426 19 %tmp.425;
         %tmp.428 = self;
-        symbol [ rgbToDec %tmp.429 74 8 16 ];
+        symbol [ rgbToDec %tmp.429 76 8 16 ];
         %tmp.429 = getv function %tmp.428 :rgbToDec;
         %tmp.430 = 100;
         %tmp.431 = 150;
@@ -505,7 +507,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.434 = dup %tmp.427;
         %tmp.435 = aputv %tmp.434 20 %tmp.433;
         %tmp.436 = self;
-        symbol [ rgbToDec %tmp.437 75 8 16 ];
+        symbol [ rgbToDec %tmp.437 77 8 16 ];
         %tmp.437 = getv function %tmp.436 :rgbToDec;
         %tmp.438 = 97;
         %tmp.439 = 141;
@@ -514,7 +516,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.442 = dup %tmp.435;
         %tmp.443 = aputv %tmp.442 21 %tmp.441;
         %tmp.444 = self;
-        symbol [ rgbToDec %tmp.445 76 8 16 ];
+        symbol [ rgbToDec %tmp.445 78 8 16 ];
         %tmp.445 = getv function %tmp.444 :rgbToDec;
         %tmp.446 = 96;
         %tmp.447 = 133;
@@ -523,7 +525,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.450 = dup %tmp.443;
         %tmp.451 = aputv %tmp.450 22 %tmp.449;
         %tmp.452 = self;
-        symbol [ rgbToDec %tmp.453 77 8 16 ];
+        symbol [ rgbToDec %tmp.453 79 8 16 ];
         %tmp.453 = getv function %tmp.452 :rgbToDec;
         %tmp.454 = 95;
         %tmp.455 = 124;
@@ -532,7 +534,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.458 = dup %tmp.451;
         %tmp.459 = aputv %tmp.458 23 %tmp.457;
         %tmp.460 = self;
-        symbol [ rgbToDec %tmp.461 78 8 16 ];
+        symbol [ rgbToDec %tmp.461 80 8 16 ];
         %tmp.461 = getv function %tmp.460 :rgbToDec;
         %tmp.462 = 94;
         %tmp.463 = 115;
@@ -541,7 +543,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.466 = dup %tmp.459;
         %tmp.467 = aputv %tmp.466 24 %tmp.465;
         %tmp.468 = self;
-        symbol [ rgbToDec %tmp.469 79 8 16 ];
+        symbol [ rgbToDec %tmp.469 81 8 16 ];
         %tmp.469 = getv function %tmp.468 :rgbToDec;
         %tmp.470 = 95;
         %tmp.471 = 106;
@@ -550,7 +552,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.474 = dup %tmp.467;
         %tmp.475 = aputv %tmp.474 25 %tmp.473;
         %tmp.476 = self;
-        symbol [ rgbToDec %tmp.477 80 8 16 ];
+        symbol [ rgbToDec %tmp.477 82 8 16 ];
         %tmp.477 = getv function %tmp.476 :rgbToDec;
         %tmp.478 = 96;
         %tmp.479 = 96;
@@ -559,7 +561,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.482 = dup %tmp.475;
         %tmp.483 = aputv %tmp.482 26 %tmp.481;
         %tmp.484 = self;
-        symbol [ rgbToDec %tmp.485 81 8 16 ];
+        symbol [ rgbToDec %tmp.485 83 8 16 ];
         %tmp.485 = getv function %tmp.484 :rgbToDec;
         %tmp.486 = 97;
         %tmp.487 = 87;
@@ -568,7 +570,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.490 = dup %tmp.483;
         %tmp.491 = aputv %tmp.490 27 %tmp.489;
         %tmp.492 = self;
-        symbol [ rgbToDec %tmp.493 82 8 16 ];
+        symbol [ rgbToDec %tmp.493 84 8 16 ];
         %tmp.493 = getv function %tmp.492 :rgbToDec;
         %tmp.494 = 98;
         %tmp.495 = 77;
@@ -577,7 +579,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.498 = dup %tmp.491;
         %tmp.499 = aputv %tmp.498 28 %tmp.497;
         %tmp.500 = self;
-        symbol [ rgbToDec %tmp.501 83 8 16 ];
+        symbol [ rgbToDec %tmp.501 85 8 16 ];
         %tmp.501 = getv function %tmp.500 :rgbToDec;
         %tmp.502 = 99;
         %tmp.503 = 67;
@@ -586,7 +588,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.506 = dup %tmp.499;
         %tmp.507 = aputv %tmp.506 29 %tmp.505;
         %tmp.508 = self;
-        symbol [ rgbToDec %tmp.509 84 8 16 ];
+        symbol [ rgbToDec %tmp.509 86 8 16 ];
         %tmp.509 = getv function %tmp.508 :rgbToDec;
         %tmp.510 = 102;
         %tmp.511 = 43;
@@ -595,7 +597,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.514 = dup %tmp.507;
         %tmp.515 = aputv %tmp.514 30 %tmp.513;
         %tmp.516 = self;
-        symbol [ rgbToDec %tmp.517 85 8 16 ];
+        symbol [ rgbToDec %tmp.517 87 8 16 ];
         %tmp.517 = getv function %tmp.516 :rgbToDec;
         %tmp.518 = 101;
         %tmp.519 = 55;
@@ -604,7 +606,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.522 = dup %tmp.515;
         %tmp.523 = aputv %tmp.522 31 %tmp.521;
         %tmp.524 = self;
-        symbol [ rgbToDec %tmp.525 86 8 16 ];
+        symbol [ rgbToDec %tmp.525 88 8 16 ];
         %tmp.525 = getv function %tmp.524 :rgbToDec;
         %tmp.526 = 103;
         %tmp.527 = 27;
@@ -613,10 +615,10 @@ class TowerStackView extends WatchUi.View {
         %tmp.530 = dup %tmp.523;
         %tmp.531 = aputv %tmp.530 32 %tmp.529;
         putv self :_purpleBlueColorGradient %tmp.531;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 90 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 92 16 ]
         %tmp.532 = newa 31;
         %tmp.533 = self;
-        symbol [ rgbToDec %tmp.534 91 8 16 ];
+        symbol [ rgbToDec %tmp.534 93 8 16 ];
         %tmp.534 = getv function %tmp.533 :rgbToDec;
         %tmp.535 = 34;
         %tmp.536 = 139;
@@ -625,7 +627,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.539 = dup %tmp.532;
         %tmp.540 = aputv %tmp.539 0 %tmp.538;
         %tmp.541 = self;
-        symbol [ rgbToDec %tmp.542 92 8 16 ];
+        symbol [ rgbToDec %tmp.542 94 8 16 ];
         %tmp.542 = getv function %tmp.541 :rgbToDec;
         %tmp.543 = 40;
         %tmp.544 = 134;
@@ -634,7 +636,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.547 = dup %tmp.540;
         %tmp.548 = aputv %tmp.547 1 %tmp.546;
         %tmp.549 = self;
-        symbol [ rgbToDec %tmp.550 93 8 16 ];
+        symbol [ rgbToDec %tmp.550 95 8 16 ];
         %tmp.550 = getv function %tmp.549 :rgbToDec;
         %tmp.551 = 46;
         %tmp.552 = 129;
@@ -643,7 +645,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.555 = dup %tmp.548;
         %tmp.556 = aputv %tmp.555 2 %tmp.554;
         %tmp.557 = self;
-        symbol [ rgbToDec %tmp.558 94 8 16 ];
+        symbol [ rgbToDec %tmp.558 96 8 16 ];
         %tmp.558 = getv function %tmp.557 :rgbToDec;
         %tmp.559 = 52;
         %tmp.560 = 124;
@@ -652,7 +654,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.563 = dup %tmp.556;
         %tmp.564 = aputv %tmp.563 3 %tmp.562;
         %tmp.565 = self;
-        symbol [ rgbToDec %tmp.566 95 8 16 ];
+        symbol [ rgbToDec %tmp.566 97 8 16 ];
         %tmp.566 = getv function %tmp.565 :rgbToDec;
         %tmp.567 = 58;
         %tmp.568 = 119;
@@ -661,7 +663,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.571 = dup %tmp.564;
         %tmp.572 = aputv %tmp.571 4 %tmp.570;
         %tmp.573 = self;
-        symbol [ rgbToDec %tmp.574 96 8 16 ];
+        symbol [ rgbToDec %tmp.574 98 8 16 ];
         %tmp.574 = getv function %tmp.573 :rgbToDec;
         %tmp.575 = 64;
         %tmp.576 = 114;
@@ -670,7 +672,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.579 = dup %tmp.572;
         %tmp.580 = aputv %tmp.579 5 %tmp.578;
         %tmp.581 = self;
-        symbol [ rgbToDec %tmp.582 97 8 16 ];
+        symbol [ rgbToDec %tmp.582 99 8 16 ];
         %tmp.582 = getv function %tmp.581 :rgbToDec;
         %tmp.583 = 70;
         %tmp.584 = 109;
@@ -679,7 +681,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.587 = dup %tmp.580;
         %tmp.588 = aputv %tmp.587 6 %tmp.586;
         %tmp.589 = self;
-        symbol [ rgbToDec %tmp.590 98 8 16 ];
+        symbol [ rgbToDec %tmp.590 100 8 16 ];
         %tmp.590 = getv function %tmp.589 :rgbToDec;
         %tmp.591 = 76;
         %tmp.592 = 104;
@@ -688,7 +690,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.595 = dup %tmp.588;
         %tmp.596 = aputv %tmp.595 7 %tmp.594;
         %tmp.597 = self;
-        symbol [ rgbToDec %tmp.598 99 8 16 ];
+        symbol [ rgbToDec %tmp.598 101 8 16 ];
         %tmp.598 = getv function %tmp.597 :rgbToDec;
         %tmp.599 = 82;
         %tmp.600 = 99;
@@ -697,7 +699,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.603 = dup %tmp.596;
         %tmp.604 = aputv %tmp.603 8 %tmp.602;
         %tmp.605 = self;
-        symbol [ rgbToDec %tmp.606 100 8 16 ];
+        symbol [ rgbToDec %tmp.606 102 8 16 ];
         %tmp.606 = getv function %tmp.605 :rgbToDec;
         %tmp.607 = 88;
         %tmp.608 = 94;
@@ -706,7 +708,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.611 = dup %tmp.604;
         %tmp.612 = aputv %tmp.611 9 %tmp.610;
         %tmp.613 = self;
-        symbol [ rgbToDec %tmp.614 101 8 16 ];
+        symbol [ rgbToDec %tmp.614 103 8 16 ];
         %tmp.614 = getv function %tmp.613 :rgbToDec;
         %tmp.615 = 94;
         %tmp.616 = 89;
@@ -715,7 +717,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.619 = dup %tmp.612;
         %tmp.620 = aputv %tmp.619 10 %tmp.618;
         %tmp.621 = self;
-        symbol [ rgbToDec %tmp.622 102 8 16 ];
+        symbol [ rgbToDec %tmp.622 104 8 16 ];
         %tmp.622 = getv function %tmp.621 :rgbToDec;
         %tmp.623 = 100;
         %tmp.624 = 84;
@@ -724,7 +726,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.627 = dup %tmp.620;
         %tmp.628 = aputv %tmp.627 11 %tmp.626;
         %tmp.629 = self;
-        symbol [ rgbToDec %tmp.630 103 8 16 ];
+        symbol [ rgbToDec %tmp.630 105 8 16 ];
         %tmp.630 = getv function %tmp.629 :rgbToDec;
         %tmp.631 = 106;
         %tmp.632 = 79;
@@ -733,7 +735,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.635 = dup %tmp.628;
         %tmp.636 = aputv %tmp.635 12 %tmp.634;
         %tmp.637 = self;
-        symbol [ rgbToDec %tmp.638 104 8 16 ];
+        symbol [ rgbToDec %tmp.638 106 8 16 ];
         %tmp.638 = getv function %tmp.637 :rgbToDec;
         %tmp.639 = 112;
         %tmp.640 = 74;
@@ -742,7 +744,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.643 = dup %tmp.636;
         %tmp.644 = aputv %tmp.643 13 %tmp.642;
         %tmp.645 = self;
-        symbol [ rgbToDec %tmp.646 105 8 16 ];
+        symbol [ rgbToDec %tmp.646 107 8 16 ];
         %tmp.646 = getv function %tmp.645 :rgbToDec;
         %tmp.647 = 118;
         %tmp.648 = 69;
@@ -751,7 +753,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.651 = dup %tmp.644;
         %tmp.652 = aputv %tmp.651 14 %tmp.650;
         %tmp.653 = self;
-        symbol [ rgbToDec %tmp.654 106 8 16 ];
+        symbol [ rgbToDec %tmp.654 108 8 16 ];
         %tmp.654 = getv function %tmp.653 :rgbToDec;
         %tmp.655 = 124;
         %tmp.656 = 64;
@@ -760,7 +762,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.659 = dup %tmp.652;
         %tmp.660 = aputv %tmp.659 15 %tmp.658;
         %tmp.661 = self;
-        symbol [ rgbToDec %tmp.662 107 8 16 ];
+        symbol [ rgbToDec %tmp.662 109 8 16 ];
         %tmp.662 = getv function %tmp.661 :rgbToDec;
         %tmp.663 = 118;
         %tmp.664 = 69;
@@ -769,7 +771,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.667 = dup %tmp.660;
         %tmp.668 = aputv %tmp.667 16 %tmp.666;
         %tmp.669 = self;
-        symbol [ rgbToDec %tmp.670 108 8 16 ];
+        symbol [ rgbToDec %tmp.670 110 8 16 ];
         %tmp.670 = getv function %tmp.669 :rgbToDec;
         %tmp.671 = 112;
         %tmp.672 = 74;
@@ -778,7 +780,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.675 = dup %tmp.668;
         %tmp.676 = aputv %tmp.675 17 %tmp.674;
         %tmp.677 = self;
-        symbol [ rgbToDec %tmp.678 109 8 16 ];
+        symbol [ rgbToDec %tmp.678 111 8 16 ];
         %tmp.678 = getv function %tmp.677 :rgbToDec;
         %tmp.679 = 106;
         %tmp.680 = 79;
@@ -787,7 +789,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.683 = dup %tmp.676;
         %tmp.684 = aputv %tmp.683 18 %tmp.682;
         %tmp.685 = self;
-        symbol [ rgbToDec %tmp.686 110 8 16 ];
+        symbol [ rgbToDec %tmp.686 112 8 16 ];
         %tmp.686 = getv function %tmp.685 :rgbToDec;
         %tmp.687 = 100;
         %tmp.688 = 84;
@@ -796,7 +798,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.691 = dup %tmp.684;
         %tmp.692 = aputv %tmp.691 19 %tmp.690;
         %tmp.693 = self;
-        symbol [ rgbToDec %tmp.694 111 8 16 ];
+        symbol [ rgbToDec %tmp.694 113 8 16 ];
         %tmp.694 = getv function %tmp.693 :rgbToDec;
         %tmp.695 = 94;
         %tmp.696 = 89;
@@ -805,7 +807,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.699 = dup %tmp.692;
         %tmp.700 = aputv %tmp.699 20 %tmp.698;
         %tmp.701 = self;
-        symbol [ rgbToDec %tmp.702 112 8 16 ];
+        symbol [ rgbToDec %tmp.702 114 8 16 ];
         %tmp.702 = getv function %tmp.701 :rgbToDec;
         %tmp.703 = 88;
         %tmp.704 = 94;
@@ -814,7 +816,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.707 = dup %tmp.700;
         %tmp.708 = aputv %tmp.707 21 %tmp.706;
         %tmp.709 = self;
-        symbol [ rgbToDec %tmp.710 113 8 16 ];
+        symbol [ rgbToDec %tmp.710 115 8 16 ];
         %tmp.710 = getv function %tmp.709 :rgbToDec;
         %tmp.711 = 82;
         %tmp.712 = 99;
@@ -823,7 +825,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.715 = dup %tmp.708;
         %tmp.716 = aputv %tmp.715 22 %tmp.714;
         %tmp.717 = self;
-        symbol [ rgbToDec %tmp.718 114 8 16 ];
+        symbol [ rgbToDec %tmp.718 116 8 16 ];
         %tmp.718 = getv function %tmp.717 :rgbToDec;
         %tmp.719 = 76;
         %tmp.720 = 104;
@@ -832,7 +834,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.723 = dup %tmp.716;
         %tmp.724 = aputv %tmp.723 23 %tmp.722;
         %tmp.725 = self;
-        symbol [ rgbToDec %tmp.726 115 8 16 ];
+        symbol [ rgbToDec %tmp.726 117 8 16 ];
         %tmp.726 = getv function %tmp.725 :rgbToDec;
         %tmp.727 = 70;
         %tmp.728 = 109;
@@ -841,7 +843,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.731 = dup %tmp.724;
         %tmp.732 = aputv %tmp.731 24 %tmp.730;
         %tmp.733 = self;
-        symbol [ rgbToDec %tmp.734 116 8 16 ];
+        symbol [ rgbToDec %tmp.734 118 8 16 ];
         %tmp.734 = getv function %tmp.733 :rgbToDec;
         %tmp.735 = 64;
         %tmp.736 = 114;
@@ -850,7 +852,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.739 = dup %tmp.732;
         %tmp.740 = aputv %tmp.739 25 %tmp.738;
         %tmp.741 = self;
-        symbol [ rgbToDec %tmp.742 117 8 16 ];
+        symbol [ rgbToDec %tmp.742 119 8 16 ];
         %tmp.742 = getv function %tmp.741 :rgbToDec;
         %tmp.743 = 58;
         %tmp.744 = 119;
@@ -859,7 +861,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.747 = dup %tmp.740;
         %tmp.748 = aputv %tmp.747 26 %tmp.746;
         %tmp.749 = self;
-        symbol [ rgbToDec %tmp.750 118 8 16 ];
+        symbol [ rgbToDec %tmp.750 120 8 16 ];
         %tmp.750 = getv function %tmp.749 :rgbToDec;
         %tmp.751 = 52;
         %tmp.752 = 124;
@@ -868,7 +870,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.755 = dup %tmp.748;
         %tmp.756 = aputv %tmp.755 27 %tmp.754;
         %tmp.757 = self;
-        symbol [ rgbToDec %tmp.758 119 8 16 ];
+        symbol [ rgbToDec %tmp.758 121 8 16 ];
         %tmp.758 = getv function %tmp.757 :rgbToDec;
         %tmp.759 = 46;
         %tmp.760 = 129;
@@ -877,7 +879,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.763 = dup %tmp.756;
         %tmp.764 = aputv %tmp.763 28 %tmp.762;
         %tmp.765 = self;
-        symbol [ rgbToDec %tmp.766 120 8 16 ];
+        symbol [ rgbToDec %tmp.766 122 8 16 ];
         %tmp.766 = getv function %tmp.765 :rgbToDec;
         %tmp.767 = 40;
         %tmp.768 = 134;
@@ -886,7 +888,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.771 = dup %tmp.764;
         %tmp.772 = aputv %tmp.771 29 %tmp.770;
         %tmp.773 = self;
-        symbol [ rgbToDec %tmp.774 121 8 16 ];
+        symbol [ rgbToDec %tmp.774 123 8 16 ];
         %tmp.774 = getv function %tmp.773 :rgbToDec;
         %tmp.775 = 34;
         %tmp.776 = 139;
@@ -895,10 +897,10 @@ class TowerStackView extends WatchUi.View {
         %tmp.779 = dup %tmp.772;
         %tmp.780 = aputv %tmp.779 30 %tmp.778;
         putv self :_forestGreenBrownGradient %tmp.780;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 125 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 127 16 ]
         %tmp.781 = newa 33;
         %tmp.782 = self;
-        symbol [ rgbToDec %tmp.783 126 8 16 ];
+        symbol [ rgbToDec %tmp.783 128 8 16 ];
         %tmp.783 = getv function %tmp.782 :rgbToDec;
         %tmp.784 = 255;
         %tmp.785 = 105;
@@ -907,7 +909,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.788 = dup %tmp.781;
         %tmp.789 = aputv %tmp.788 0 %tmp.787;
         %tmp.790 = self;
-        symbol [ rgbToDec %tmp.791 127 8 16 ];
+        symbol [ rgbToDec %tmp.791 129 8 16 ];
         %tmp.791 = getv function %tmp.790 :rgbToDec;
         %tmp.792 = 255;
         %tmp.793 = 112;
@@ -916,7 +918,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.796 = dup %tmp.789;
         %tmp.797 = aputv %tmp.796 1 %tmp.795;
         %tmp.798 = self;
-        symbol [ rgbToDec %tmp.799 128 8 16 ];
+        symbol [ rgbToDec %tmp.799 130 8 16 ];
         %tmp.799 = getv function %tmp.798 :rgbToDec;
         %tmp.800 = 255;
         %tmp.801 = 119;
@@ -925,7 +927,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.804 = dup %tmp.797;
         %tmp.805 = aputv %tmp.804 2 %tmp.803;
         %tmp.806 = self;
-        symbol [ rgbToDec %tmp.807 129 8 16 ];
+        symbol [ rgbToDec %tmp.807 131 8 16 ];
         %tmp.807 = getv function %tmp.806 :rgbToDec;
         %tmp.808 = 255;
         %tmp.809 = 126;
@@ -934,7 +936,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.812 = dup %tmp.805;
         %tmp.813 = aputv %tmp.812 3 %tmp.811;
         %tmp.814 = self;
-        symbol [ rgbToDec %tmp.815 130 8 16 ];
+        symbol [ rgbToDec %tmp.815 132 8 16 ];
         %tmp.815 = getv function %tmp.814 :rgbToDec;
         %tmp.816 = 255;
         %tmp.817 = 133;
@@ -943,7 +945,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.820 = dup %tmp.813;
         %tmp.821 = aputv %tmp.820 4 %tmp.819;
         %tmp.822 = self;
-        symbol [ rgbToDec %tmp.823 131 8 16 ];
+        symbol [ rgbToDec %tmp.823 133 8 16 ];
         %tmp.823 = getv function %tmp.822 :rgbToDec;
         %tmp.824 = 255;
         %tmp.825 = 140;
@@ -952,7 +954,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.828 = dup %tmp.821;
         %tmp.829 = aputv %tmp.828 5 %tmp.827;
         %tmp.830 = self;
-        symbol [ rgbToDec %tmp.831 132 8 16 ];
+        symbol [ rgbToDec %tmp.831 134 8 16 ];
         %tmp.831 = getv function %tmp.830 :rgbToDec;
         %tmp.832 = 255;
         %tmp.833 = 147;
@@ -961,7 +963,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.836 = dup %tmp.829;
         %tmp.837 = aputv %tmp.836 6 %tmp.835;
         %tmp.838 = self;
-        symbol [ rgbToDec %tmp.839 133 8 16 ];
+        symbol [ rgbToDec %tmp.839 135 8 16 ];
         %tmp.839 = getv function %tmp.838 :rgbToDec;
         %tmp.840 = 255;
         %tmp.841 = 154;
@@ -970,7 +972,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.844 = dup %tmp.837;
         %tmp.845 = aputv %tmp.844 7 %tmp.843;
         %tmp.846 = self;
-        symbol [ rgbToDec %tmp.847 134 8 16 ];
+        symbol [ rgbToDec %tmp.847 136 8 16 ];
         %tmp.847 = getv function %tmp.846 :rgbToDec;
         %tmp.848 = 255;
         %tmp.849 = 161;
@@ -979,7 +981,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.852 = dup %tmp.845;
         %tmp.853 = aputv %tmp.852 8 %tmp.851;
         %tmp.854 = self;
-        symbol [ rgbToDec %tmp.855 135 8 16 ];
+        symbol [ rgbToDec %tmp.855 137 8 16 ];
         %tmp.855 = getv function %tmp.854 :rgbToDec;
         %tmp.856 = 255;
         %tmp.857 = 168;
@@ -988,7 +990,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.860 = dup %tmp.853;
         %tmp.861 = aputv %tmp.860 9 %tmp.859;
         %tmp.862 = self;
-        symbol [ rgbToDec %tmp.863 136 8 16 ];
+        symbol [ rgbToDec %tmp.863 138 8 16 ];
         %tmp.863 = getv function %tmp.862 :rgbToDec;
         %tmp.864 = 255;
         %tmp.865 = 175;
@@ -997,7 +999,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.868 = dup %tmp.861;
         %tmp.869 = aputv %tmp.868 10 %tmp.867;
         %tmp.870 = self;
-        symbol [ rgbToDec %tmp.871 137 8 16 ];
+        symbol [ rgbToDec %tmp.871 139 8 16 ];
         %tmp.871 = getv function %tmp.870 :rgbToDec;
         %tmp.872 = 255;
         %tmp.873 = 182;
@@ -1006,7 +1008,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.876 = dup %tmp.869;
         %tmp.877 = aputv %tmp.876 11 %tmp.875;
         %tmp.878 = self;
-        symbol [ rgbToDec %tmp.879 138 8 16 ];
+        symbol [ rgbToDec %tmp.879 140 8 16 ];
         %tmp.879 = getv function %tmp.878 :rgbToDec;
         %tmp.880 = 255;
         %tmp.881 = 189;
@@ -1015,7 +1017,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.884 = dup %tmp.877;
         %tmp.885 = aputv %tmp.884 12 %tmp.883;
         %tmp.886 = self;
-        symbol [ rgbToDec %tmp.887 139 8 16 ];
+        symbol [ rgbToDec %tmp.887 141 8 16 ];
         %tmp.887 = getv function %tmp.886 :rgbToDec;
         %tmp.888 = 255;
         %tmp.889 = 196;
@@ -1024,7 +1026,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.892 = dup %tmp.885;
         %tmp.893 = aputv %tmp.892 13 %tmp.891;
         %tmp.894 = self;
-        symbol [ rgbToDec %tmp.895 140 8 16 ];
+        symbol [ rgbToDec %tmp.895 142 8 16 ];
         %tmp.895 = getv function %tmp.894 :rgbToDec;
         %tmp.896 = 255;
         %tmp.897 = 203;
@@ -1033,7 +1035,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.900 = dup %tmp.893;
         %tmp.901 = aputv %tmp.900 14 %tmp.899;
         %tmp.902 = self;
-        symbol [ rgbToDec %tmp.903 141 8 16 ];
+        symbol [ rgbToDec %tmp.903 143 8 16 ];
         %tmp.903 = getv function %tmp.902 :rgbToDec;
         %tmp.904 = 255;
         %tmp.905 = 210;
@@ -1042,7 +1044,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.908 = dup %tmp.901;
         %tmp.909 = aputv %tmp.908 15 %tmp.907;
         %tmp.910 = self;
-        symbol [ rgbToDec %tmp.911 142 8 16 ];
+        symbol [ rgbToDec %tmp.911 144 8 16 ];
         %tmp.911 = getv function %tmp.910 :rgbToDec;
         %tmp.912 = 255;
         %tmp.913 = 217;
@@ -1051,7 +1053,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.916 = dup %tmp.909;
         %tmp.917 = aputv %tmp.916 16 %tmp.915;
         %tmp.918 = self;
-        symbol [ rgbToDec %tmp.919 143 8 16 ];
+        symbol [ rgbToDec %tmp.919 145 8 16 ];
         %tmp.919 = getv function %tmp.918 :rgbToDec;
         %tmp.920 = 255;
         %tmp.921 = 210;
@@ -1060,7 +1062,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.924 = dup %tmp.917;
         %tmp.925 = aputv %tmp.924 17 %tmp.923;
         %tmp.926 = self;
-        symbol [ rgbToDec %tmp.927 144 8 16 ];
+        symbol [ rgbToDec %tmp.927 146 8 16 ];
         %tmp.927 = getv function %tmp.926 :rgbToDec;
         %tmp.928 = 255;
         %tmp.929 = 203;
@@ -1069,7 +1071,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.932 = dup %tmp.925;
         %tmp.933 = aputv %tmp.932 18 %tmp.931;
         %tmp.934 = self;
-        symbol [ rgbToDec %tmp.935 145 8 16 ];
+        symbol [ rgbToDec %tmp.935 147 8 16 ];
         %tmp.935 = getv function %tmp.934 :rgbToDec;
         %tmp.936 = 255;
         %tmp.937 = 196;
@@ -1078,7 +1080,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.940 = dup %tmp.933;
         %tmp.941 = aputv %tmp.940 19 %tmp.939;
         %tmp.942 = self;
-        symbol [ rgbToDec %tmp.943 146 8 16 ];
+        symbol [ rgbToDec %tmp.943 148 8 16 ];
         %tmp.943 = getv function %tmp.942 :rgbToDec;
         %tmp.944 = 255;
         %tmp.945 = 189;
@@ -1087,7 +1089,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.948 = dup %tmp.941;
         %tmp.949 = aputv %tmp.948 20 %tmp.947;
         %tmp.950 = self;
-        symbol [ rgbToDec %tmp.951 147 8 16 ];
+        symbol [ rgbToDec %tmp.951 149 8 16 ];
         %tmp.951 = getv function %tmp.950 :rgbToDec;
         %tmp.952 = 255;
         %tmp.953 = 182;
@@ -1096,7 +1098,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.956 = dup %tmp.949;
         %tmp.957 = aputv %tmp.956 21 %tmp.955;
         %tmp.958 = self;
-        symbol [ rgbToDec %tmp.959 148 8 16 ];
+        symbol [ rgbToDec %tmp.959 150 8 16 ];
         %tmp.959 = getv function %tmp.958 :rgbToDec;
         %tmp.960 = 255;
         %tmp.961 = 175;
@@ -1105,7 +1107,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.964 = dup %tmp.957;
         %tmp.965 = aputv %tmp.964 22 %tmp.963;
         %tmp.966 = self;
-        symbol [ rgbToDec %tmp.967 149 8 16 ];
+        symbol [ rgbToDec %tmp.967 151 8 16 ];
         %tmp.967 = getv function %tmp.966 :rgbToDec;
         %tmp.968 = 255;
         %tmp.969 = 168;
@@ -1114,7 +1116,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.972 = dup %tmp.965;
         %tmp.973 = aputv %tmp.972 23 %tmp.971;
         %tmp.974 = self;
-        symbol [ rgbToDec %tmp.975 150 8 16 ];
+        symbol [ rgbToDec %tmp.975 152 8 16 ];
         %tmp.975 = getv function %tmp.974 :rgbToDec;
         %tmp.976 = 255;
         %tmp.977 = 161;
@@ -1123,7 +1125,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.980 = dup %tmp.973;
         %tmp.981 = aputv %tmp.980 24 %tmp.979;
         %tmp.982 = self;
-        symbol [ rgbToDec %tmp.983 151 8 16 ];
+        symbol [ rgbToDec %tmp.983 153 8 16 ];
         %tmp.983 = getv function %tmp.982 :rgbToDec;
         %tmp.984 = 255;
         %tmp.985 = 154;
@@ -1132,7 +1134,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.988 = dup %tmp.981;
         %tmp.989 = aputv %tmp.988 25 %tmp.987;
         %tmp.990 = self;
-        symbol [ rgbToDec %tmp.991 152 8 16 ];
+        symbol [ rgbToDec %tmp.991 154 8 16 ];
         %tmp.991 = getv function %tmp.990 :rgbToDec;
         %tmp.992 = 255;
         %tmp.993 = 147;
@@ -1141,7 +1143,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.996 = dup %tmp.989;
         %tmp.997 = aputv %tmp.996 26 %tmp.995;
         %tmp.998 = self;
-        symbol [ rgbToDec %tmp.999 153 8 16 ];
+        symbol [ rgbToDec %tmp.999 155 8 16 ];
         %tmp.999 = getv function %tmp.998 :rgbToDec;
         %tmp.1000 = 255;
         %tmp.1001 = 140;
@@ -1150,7 +1152,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1004 = dup %tmp.997;
         %tmp.1005 = aputv %tmp.1004 27 %tmp.1003;
         %tmp.1006 = self;
-        symbol [ rgbToDec %tmp.1007 154 8 16 ];
+        symbol [ rgbToDec %tmp.1007 156 8 16 ];
         %tmp.1007 = getv function %tmp.1006 :rgbToDec;
         %tmp.1008 = 255;
         %tmp.1009 = 133;
@@ -1159,7 +1161,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1012 = dup %tmp.1005;
         %tmp.1013 = aputv %tmp.1012 28 %tmp.1011;
         %tmp.1014 = self;
-        symbol [ rgbToDec %tmp.1015 155 8 16 ];
+        symbol [ rgbToDec %tmp.1015 157 8 16 ];
         %tmp.1015 = getv function %tmp.1014 :rgbToDec;
         %tmp.1016 = 255;
         %tmp.1017 = 126;
@@ -1168,7 +1170,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1020 = dup %tmp.1013;
         %tmp.1021 = aputv %tmp.1020 29 %tmp.1019;
         %tmp.1022 = self;
-        symbol [ rgbToDec %tmp.1023 156 8 16 ];
+        symbol [ rgbToDec %tmp.1023 158 8 16 ];
         %tmp.1023 = getv function %tmp.1022 :rgbToDec;
         %tmp.1024 = 255;
         %tmp.1025 = 119;
@@ -1177,7 +1179,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1028 = dup %tmp.1021;
         %tmp.1029 = aputv %tmp.1028 30 %tmp.1027;
         %tmp.1030 = self;
-        symbol [ rgbToDec %tmp.1031 157 8 16 ];
+        symbol [ rgbToDec %tmp.1031 159 8 16 ];
         %tmp.1031 = getv function %tmp.1030 :rgbToDec;
         %tmp.1032 = 255;
         %tmp.1033 = 112;
@@ -1186,7 +1188,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1036 = dup %tmp.1029;
         %tmp.1037 = aputv %tmp.1036 31 %tmp.1035;
         %tmp.1038 = self;
-        symbol [ rgbToDec %tmp.1039 158 8 16 ];
+        symbol [ rgbToDec %tmp.1039 160 8 16 ];
         %tmp.1039 = getv function %tmp.1038 :rgbToDec;
         %tmp.1040 = 255;
         %tmp.1041 = 105;
@@ -1195,10 +1197,10 @@ class TowerStackView extends WatchUi.View {
         %tmp.1044 = dup %tmp.1037;
         %tmp.1045 = aputv %tmp.1044 32 %tmp.1043;
         putv self :_pinkTanColorGradient %tmp.1045;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 162 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 164 16 ]
         %tmp.1046 = newa 34;
         %tmp.1047 = self;
-        symbol [ rgbToDec %tmp.1048 163 8 16 ];
+        symbol [ rgbToDec %tmp.1048 165 8 16 ];
         %tmp.1048 = getv function %tmp.1047 :rgbToDec;
         %tmp.1049 = 148;
         %tmp.1050 = 0;
@@ -1207,7 +1209,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1053 = dup %tmp.1046;
         %tmp.1054 = aputv %tmp.1053 0 %tmp.1052;
         %tmp.1055 = self;
-        symbol [ rgbToDec %tmp.1056 164 8 16 ];
+        symbol [ rgbToDec %tmp.1056 166 8 16 ];
         %tmp.1056 = getv function %tmp.1055 :rgbToDec;
         %tmp.1057 = 120;
         %tmp.1058 = 0;
@@ -1216,7 +1218,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1061 = dup %tmp.1054;
         %tmp.1062 = aputv %tmp.1061 1 %tmp.1060;
         %tmp.1063 = self;
-        symbol [ rgbToDec %tmp.1064 165 8 16 ];
+        symbol [ rgbToDec %tmp.1064 167 8 16 ];
         %tmp.1064 = getv function %tmp.1063 :rgbToDec;
         %tmp.1065 = 90;
         %tmp.1066 = 0;
@@ -1225,7 +1227,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1069 = dup %tmp.1062;
         %tmp.1070 = aputv %tmp.1069 2 %tmp.1068;
         %tmp.1071 = self;
-        symbol [ rgbToDec %tmp.1072 166 8 16 ];
+        symbol [ rgbToDec %tmp.1072 168 8 16 ];
         %tmp.1072 = getv function %tmp.1071 :rgbToDec;
         %tmp.1073 = 60;
         %tmp.1074 = 40;
@@ -1234,7 +1236,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1077 = dup %tmp.1070;
         %tmp.1078 = aputv %tmp.1077 3 %tmp.1076;
         %tmp.1079 = self;
-        symbol [ rgbToDec %tmp.1080 167 8 16 ];
+        symbol [ rgbToDec %tmp.1080 169 8 16 ];
         %tmp.1080 = getv function %tmp.1079 :rgbToDec;
         %tmp.1081 = 30;
         %tmp.1082 = 80;
@@ -1243,7 +1245,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1085 = dup %tmp.1078;
         %tmp.1086 = aputv %tmp.1085 4 %tmp.1084;
         %tmp.1087 = self;
-        symbol [ rgbToDec %tmp.1088 168 8 16 ];
+        symbol [ rgbToDec %tmp.1088 170 8 16 ];
         %tmp.1088 = getv function %tmp.1087 :rgbToDec;
         %tmp.1089 = 0;
         %tmp.1090 = 120;
@@ -1252,7 +1254,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1093 = dup %tmp.1086;
         %tmp.1094 = aputv %tmp.1093 5 %tmp.1092;
         %tmp.1095 = self;
-        symbol [ rgbToDec %tmp.1096 169 8 16 ];
+        symbol [ rgbToDec %tmp.1096 171 8 16 ];
         %tmp.1096 = getv function %tmp.1095 :rgbToDec;
         %tmp.1097 = 0;
         %tmp.1098 = 145;
@@ -1261,7 +1263,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1101 = dup %tmp.1094;
         %tmp.1102 = aputv %tmp.1101 6 %tmp.1100;
         %tmp.1103 = self;
-        symbol [ rgbToDec %tmp.1104 170 8 16 ];
+        symbol [ rgbToDec %tmp.1104 172 8 16 ];
         %tmp.1104 = getv function %tmp.1103 :rgbToDec;
         %tmp.1105 = 0;
         %tmp.1106 = 170;
@@ -1270,7 +1272,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1109 = dup %tmp.1102;
         %tmp.1110 = aputv %tmp.1109 7 %tmp.1108;
         %tmp.1111 = self;
-        symbol [ rgbToDec %tmp.1112 171 8 16 ];
+        symbol [ rgbToDec %tmp.1112 173 8 16 ];
         %tmp.1112 = getv function %tmp.1111 :rgbToDec;
         %tmp.1113 = 0;
         %tmp.1114 = 200;
@@ -1279,7 +1281,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1117 = dup %tmp.1110;
         %tmp.1118 = aputv %tmp.1117 8 %tmp.1116;
         %tmp.1119 = self;
-        symbol [ rgbToDec %tmp.1120 172 8 16 ];
+        symbol [ rgbToDec %tmp.1120 174 8 16 ];
         %tmp.1120 = getv function %tmp.1119 :rgbToDec;
         %tmp.1121 = 0;
         %tmp.1122 = 230;
@@ -1288,7 +1290,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1125 = dup %tmp.1118;
         %tmp.1126 = aputv %tmp.1125 9 %tmp.1124;
         %tmp.1127 = self;
-        symbol [ rgbToDec %tmp.1128 173 8 16 ];
+        symbol [ rgbToDec %tmp.1128 175 8 16 ];
         %tmp.1128 = getv function %tmp.1127 :rgbToDec;
         %tmp.1129 = 0;
         %tmp.1130 = 255;
@@ -1297,7 +1299,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1133 = dup %tmp.1126;
         %tmp.1134 = aputv %tmp.1133 10 %tmp.1132;
         %tmp.1135 = self;
-        symbol [ rgbToDec %tmp.1136 174 8 16 ];
+        symbol [ rgbToDec %tmp.1136 176 8 16 ];
         %tmp.1136 = getv function %tmp.1135 :rgbToDec;
         %tmp.1137 = 0;
         %tmp.1138 = 255;
@@ -1306,7 +1308,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1141 = dup %tmp.1134;
         %tmp.1142 = aputv %tmp.1141 11 %tmp.1140;
         %tmp.1143 = self;
-        symbol [ rgbToDec %tmp.1144 175 8 16 ];
+        symbol [ rgbToDec %tmp.1144 177 8 16 ];
         %tmp.1144 = getv function %tmp.1143 :rgbToDec;
         %tmp.1145 = 0;
         %tmp.1146 = 255;
@@ -1315,7 +1317,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1149 = dup %tmp.1142;
         %tmp.1150 = aputv %tmp.1149 12 %tmp.1148;
         %tmp.1151 = self;
-        symbol [ rgbToDec %tmp.1152 176 8 16 ];
+        symbol [ rgbToDec %tmp.1152 178 8 16 ];
         %tmp.1152 = getv function %tmp.1151 :rgbToDec;
         %tmp.1153 = 0;
         %tmp.1154 = 255;
@@ -1324,7 +1326,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1157 = dup %tmp.1150;
         %tmp.1158 = aputv %tmp.1157 13 %tmp.1156;
         %tmp.1159 = self;
-        symbol [ rgbToDec %tmp.1160 177 8 16 ];
+        symbol [ rgbToDec %tmp.1160 179 8 16 ];
         %tmp.1160 = getv function %tmp.1159 :rgbToDec;
         %tmp.1161 = 0;
         %tmp.1162 = 255;
@@ -1333,7 +1335,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1165 = dup %tmp.1158;
         %tmp.1166 = aputv %tmp.1165 14 %tmp.1164;
         %tmp.1167 = self;
-        symbol [ rgbToDec %tmp.1168 178 8 16 ];
+        symbol [ rgbToDec %tmp.1168 180 8 16 ];
         %tmp.1168 = getv function %tmp.1167 :rgbToDec;
         %tmp.1169 = 80;
         %tmp.1170 = 255;
@@ -1342,7 +1344,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1173 = dup %tmp.1166;
         %tmp.1174 = aputv %tmp.1173 15 %tmp.1172;
         %tmp.1175 = self;
-        symbol [ rgbToDec %tmp.1176 179 8 16 ];
+        symbol [ rgbToDec %tmp.1176 181 8 16 ];
         %tmp.1176 = getv function %tmp.1175 :rgbToDec;
         %tmp.1177 = 140;
         %tmp.1178 = 255;
@@ -1351,7 +1353,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1181 = dup %tmp.1174;
         %tmp.1182 = aputv %tmp.1181 16 %tmp.1180;
         %tmp.1183 = self;
-        symbol [ rgbToDec %tmp.1184 180 8 16 ];
+        symbol [ rgbToDec %tmp.1184 182 8 16 ];
         %tmp.1184 = getv function %tmp.1183 :rgbToDec;
         %tmp.1185 = 200;
         %tmp.1186 = 255;
@@ -1360,7 +1362,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1189 = dup %tmp.1182;
         %tmp.1190 = aputv %tmp.1189 17 %tmp.1188;
         %tmp.1191 = self;
-        symbol [ rgbToDec %tmp.1192 181 8 16 ];
+        symbol [ rgbToDec %tmp.1192 183 8 16 ];
         %tmp.1192 = getv function %tmp.1191 :rgbToDec;
         %tmp.1193 = 230;
         %tmp.1194 = 255;
@@ -1369,7 +1371,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1197 = dup %tmp.1190;
         %tmp.1198 = aputv %tmp.1197 18 %tmp.1196;
         %tmp.1199 = self;
-        symbol [ rgbToDec %tmp.1200 182 8 16 ];
+        symbol [ rgbToDec %tmp.1200 184 8 16 ];
         %tmp.1200 = getv function %tmp.1199 :rgbToDec;
         %tmp.1201 = 255;
         %tmp.1202 = 255;
@@ -1378,7 +1380,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1205 = dup %tmp.1198;
         %tmp.1206 = aputv %tmp.1205 19 %tmp.1204;
         %tmp.1207 = self;
-        symbol [ rgbToDec %tmp.1208 183 8 16 ];
+        symbol [ rgbToDec %tmp.1208 185 8 16 ];
         %tmp.1208 = getv function %tmp.1207 :rgbToDec;
         %tmp.1209 = 255;
         %tmp.1210 = 220;
@@ -1387,7 +1389,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1213 = dup %tmp.1206;
         %tmp.1214 = aputv %tmp.1213 20 %tmp.1212;
         %tmp.1215 = self;
-        symbol [ rgbToDec %tmp.1216 184 8 16 ];
+        symbol [ rgbToDec %tmp.1216 186 8 16 ];
         %tmp.1216 = getv function %tmp.1215 :rgbToDec;
         %tmp.1217 = 255;
         %tmp.1218 = 190;
@@ -1396,7 +1398,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1221 = dup %tmp.1214;
         %tmp.1222 = aputv %tmp.1221 21 %tmp.1220;
         %tmp.1223 = self;
-        symbol [ rgbToDec %tmp.1224 185 8 16 ];
+        symbol [ rgbToDec %tmp.1224 187 8 16 ];
         %tmp.1224 = getv function %tmp.1223 :rgbToDec;
         %tmp.1225 = 255;
         %tmp.1226 = 160;
@@ -1405,7 +1407,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1229 = dup %tmp.1222;
         %tmp.1230 = aputv %tmp.1229 22 %tmp.1228;
         %tmp.1231 = self;
-        symbol [ rgbToDec %tmp.1232 186 8 16 ];
+        symbol [ rgbToDec %tmp.1232 188 8 16 ];
         %tmp.1232 = getv function %tmp.1231 :rgbToDec;
         %tmp.1233 = 255;
         %tmp.1234 = 120;
@@ -1414,7 +1416,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1237 = dup %tmp.1230;
         %tmp.1238 = aputv %tmp.1237 23 %tmp.1236;
         %tmp.1239 = self;
-        symbol [ rgbToDec %tmp.1240 187 8 16 ];
+        symbol [ rgbToDec %tmp.1240 189 8 16 ];
         %tmp.1240 = getv function %tmp.1239 :rgbToDec;
         %tmp.1241 = 255;
         %tmp.1242 = 80;
@@ -1423,7 +1425,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1245 = dup %tmp.1238;
         %tmp.1246 = aputv %tmp.1245 24 %tmp.1244;
         %tmp.1247 = self;
-        symbol [ rgbToDec %tmp.1248 188 8 16 ];
+        symbol [ rgbToDec %tmp.1248 190 8 16 ];
         %tmp.1248 = getv function %tmp.1247 :rgbToDec;
         %tmp.1249 = 255;
         %tmp.1250 = 40;
@@ -1432,7 +1434,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1253 = dup %tmp.1246;
         %tmp.1254 = aputv %tmp.1253 25 %tmp.1252;
         %tmp.1255 = self;
-        symbol [ rgbToDec %tmp.1256 189 8 16 ];
+        symbol [ rgbToDec %tmp.1256 191 8 16 ];
         %tmp.1256 = getv function %tmp.1255 :rgbToDec;
         %tmp.1257 = 255;
         %tmp.1258 = 0;
@@ -1441,7 +1443,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1261 = dup %tmp.1254;
         %tmp.1262 = aputv %tmp.1261 26 %tmp.1260;
         %tmp.1263 = self;
-        symbol [ rgbToDec %tmp.1264 190 8 16 ];
+        symbol [ rgbToDec %tmp.1264 192 8 16 ];
         %tmp.1264 = getv function %tmp.1263 :rgbToDec;
         %tmp.1265 = 255;
         %tmp.1266 = 0;
@@ -1450,7 +1452,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1269 = dup %tmp.1262;
         %tmp.1270 = aputv %tmp.1269 27 %tmp.1268;
         %tmp.1271 = self;
-        symbol [ rgbToDec %tmp.1272 191 8 16 ];
+        symbol [ rgbToDec %tmp.1272 193 8 16 ];
         %tmp.1272 = getv function %tmp.1271 :rgbToDec;
         %tmp.1273 = 255;
         %tmp.1274 = 0;
@@ -1459,7 +1461,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1277 = dup %tmp.1270;
         %tmp.1278 = aputv %tmp.1277 28 %tmp.1276;
         %tmp.1279 = self;
-        symbol [ rgbToDec %tmp.1280 192 8 16 ];
+        symbol [ rgbToDec %tmp.1280 194 8 16 ];
         %tmp.1280 = getv function %tmp.1279 :rgbToDec;
         %tmp.1281 = 255;
         %tmp.1282 = 0;
@@ -1468,7 +1470,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1285 = dup %tmp.1278;
         %tmp.1286 = aputv %tmp.1285 29 %tmp.1284;
         %tmp.1287 = self;
-        symbol [ rgbToDec %tmp.1288 193 8 16 ];
+        symbol [ rgbToDec %tmp.1288 195 8 16 ];
         %tmp.1288 = getv function %tmp.1287 :rgbToDec;
         %tmp.1289 = 230;
         %tmp.1290 = 0;
@@ -1477,7 +1479,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1293 = dup %tmp.1286;
         %tmp.1294 = aputv %tmp.1293 30 %tmp.1292;
         %tmp.1295 = self;
-        symbol [ rgbToDec %tmp.1296 194 8 16 ];
+        symbol [ rgbToDec %tmp.1296 196 8 16 ];
         %tmp.1296 = getv function %tmp.1295 :rgbToDec;
         %tmp.1297 = 200;
         %tmp.1298 = 0;
@@ -1486,7 +1488,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1301 = dup %tmp.1294;
         %tmp.1302 = aputv %tmp.1301 31 %tmp.1300;
         %tmp.1303 = self;
-        symbol [ rgbToDec %tmp.1304 195 8 16 ];
+        symbol [ rgbToDec %tmp.1304 197 8 16 ];
         %tmp.1304 = getv function %tmp.1303 :rgbToDec;
         %tmp.1305 = 170;
         %tmp.1306 = 0;
@@ -1495,7 +1497,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1309 = dup %tmp.1302;
         %tmp.1310 = aputv %tmp.1309 32 %tmp.1308;
         %tmp.1311 = self;
-        symbol [ rgbToDec %tmp.1312 196 8 16 ];
+        symbol [ rgbToDec %tmp.1312 198 8 16 ];
         %tmp.1312 = getv function %tmp.1311 :rgbToDec;
         %tmp.1313 = 148;
         %tmp.1314 = 0;
@@ -1504,10 +1506,10 @@ class TowerStackView extends WatchUi.View {
         %tmp.1317 = dup %tmp.1310;
         %tmp.1318 = aputv %tmp.1317 33 %tmp.1316;
         putv self :_rainbowColorGradient %tmp.1318;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 200 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 202 16 ]
         %tmp.1319 = newa 33;
         %tmp.1320 = self;
-        symbol [ rgbToDec %tmp.1321 201 8 16 ];
+        symbol [ rgbToDec %tmp.1321 203 8 16 ];
         %tmp.1321 = getv function %tmp.1320 :rgbToDec;
         %tmp.1322 = 0;
         %tmp.1323 = 200;
@@ -1516,7 +1518,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1326 = dup %tmp.1319;
         %tmp.1327 = aputv %tmp.1326 0 %tmp.1325;
         %tmp.1328 = self;
-        symbol [ rgbToDec %tmp.1329 202 8 16 ];
+        symbol [ rgbToDec %tmp.1329 204 8 16 ];
         %tmp.1329 = getv function %tmp.1328 :rgbToDec;
         %tmp.1330 = 0;
         %tmp.1331 = 196;
@@ -1525,7 +1527,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1334 = dup %tmp.1327;
         %tmp.1335 = aputv %tmp.1334 1 %tmp.1333;
         %tmp.1336 = self;
-        symbol [ rgbToDec %tmp.1337 203 8 16 ];
+        symbol [ rgbToDec %tmp.1337 205 8 16 ];
         %tmp.1337 = getv function %tmp.1336 :rgbToDec;
         %tmp.1338 = 0;
         %tmp.1339 = 192;
@@ -1534,7 +1536,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1342 = dup %tmp.1335;
         %tmp.1343 = aputv %tmp.1342 2 %tmp.1341;
         %tmp.1344 = self;
-        symbol [ rgbToDec %tmp.1345 204 8 16 ];
+        symbol [ rgbToDec %tmp.1345 206 8 16 ];
         %tmp.1345 = getv function %tmp.1344 :rgbToDec;
         %tmp.1346 = 0;
         %tmp.1347 = 188;
@@ -1543,7 +1545,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1350 = dup %tmp.1343;
         %tmp.1351 = aputv %tmp.1350 3 %tmp.1349;
         %tmp.1352 = self;
-        symbol [ rgbToDec %tmp.1353 205 8 16 ];
+        symbol [ rgbToDec %tmp.1353 207 8 16 ];
         %tmp.1353 = getv function %tmp.1352 :rgbToDec;
         %tmp.1354 = 0;
         %tmp.1355 = 184;
@@ -1552,7 +1554,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1358 = dup %tmp.1351;
         %tmp.1359 = aputv %tmp.1358 4 %tmp.1357;
         %tmp.1360 = self;
-        symbol [ rgbToDec %tmp.1361 206 8 16 ];
+        symbol [ rgbToDec %tmp.1361 208 8 16 ];
         %tmp.1361 = getv function %tmp.1360 :rgbToDec;
         %tmp.1362 = 0;
         %tmp.1363 = 180;
@@ -1561,7 +1563,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1366 = dup %tmp.1359;
         %tmp.1367 = aputv %tmp.1366 5 %tmp.1365;
         %tmp.1368 = self;
-        symbol [ rgbToDec %tmp.1369 207 8 16 ];
+        symbol [ rgbToDec %tmp.1369 209 8 16 ];
         %tmp.1369 = getv function %tmp.1368 :rgbToDec;
         %tmp.1370 = 0;
         %tmp.1371 = 176;
@@ -1570,7 +1572,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1374 = dup %tmp.1367;
         %tmp.1375 = aputv %tmp.1374 6 %tmp.1373;
         %tmp.1376 = self;
-        symbol [ rgbToDec %tmp.1377 208 8 16 ];
+        symbol [ rgbToDec %tmp.1377 210 8 16 ];
         %tmp.1377 = getv function %tmp.1376 :rgbToDec;
         %tmp.1378 = 0;
         %tmp.1379 = 172;
@@ -1579,7 +1581,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1382 = dup %tmp.1375;
         %tmp.1383 = aputv %tmp.1382 7 %tmp.1381;
         %tmp.1384 = self;
-        symbol [ rgbToDec %tmp.1385 209 8 16 ];
+        symbol [ rgbToDec %tmp.1385 211 8 16 ];
         %tmp.1385 = getv function %tmp.1384 :rgbToDec;
         %tmp.1386 = 0;
         %tmp.1387 = 168;
@@ -1588,7 +1590,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1390 = dup %tmp.1383;
         %tmp.1391 = aputv %tmp.1390 8 %tmp.1389;
         %tmp.1392 = self;
-        symbol [ rgbToDec %tmp.1393 210 8 16 ];
+        symbol [ rgbToDec %tmp.1393 212 8 16 ];
         %tmp.1393 = getv function %tmp.1392 :rgbToDec;
         %tmp.1394 = 0;
         %tmp.1395 = 164;
@@ -1597,7 +1599,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1398 = dup %tmp.1391;
         %tmp.1399 = aputv %tmp.1398 9 %tmp.1397;
         %tmp.1400 = self;
-        symbol [ rgbToDec %tmp.1401 211 8 16 ];
+        symbol [ rgbToDec %tmp.1401 213 8 16 ];
         %tmp.1401 = getv function %tmp.1400 :rgbToDec;
         %tmp.1402 = 0;
         %tmp.1403 = 160;
@@ -1606,7 +1608,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1406 = dup %tmp.1399;
         %tmp.1407 = aputv %tmp.1406 10 %tmp.1405;
         %tmp.1408 = self;
-        symbol [ rgbToDec %tmp.1409 212 8 16 ];
+        symbol [ rgbToDec %tmp.1409 214 8 16 ];
         %tmp.1409 = getv function %tmp.1408 :rgbToDec;
         %tmp.1410 = 0;
         %tmp.1411 = 156;
@@ -1615,7 +1617,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1414 = dup %tmp.1407;
         %tmp.1415 = aputv %tmp.1414 11 %tmp.1413;
         %tmp.1416 = self;
-        symbol [ rgbToDec %tmp.1417 213 8 16 ];
+        symbol [ rgbToDec %tmp.1417 215 8 16 ];
         %tmp.1417 = getv function %tmp.1416 :rgbToDec;
         %tmp.1418 = 0;
         %tmp.1419 = 152;
@@ -1624,7 +1626,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1422 = dup %tmp.1415;
         %tmp.1423 = aputv %tmp.1422 12 %tmp.1421;
         %tmp.1424 = self;
-        symbol [ rgbToDec %tmp.1425 214 8 16 ];
+        symbol [ rgbToDec %tmp.1425 216 8 16 ];
         %tmp.1425 = getv function %tmp.1424 :rgbToDec;
         %tmp.1426 = 0;
         %tmp.1427 = 148;
@@ -1633,7 +1635,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1430 = dup %tmp.1423;
         %tmp.1431 = aputv %tmp.1430 13 %tmp.1429;
         %tmp.1432 = self;
-        symbol [ rgbToDec %tmp.1433 215 8 16 ];
+        symbol [ rgbToDec %tmp.1433 217 8 16 ];
         %tmp.1433 = getv function %tmp.1432 :rgbToDec;
         %tmp.1434 = 0;
         %tmp.1435 = 144;
@@ -1642,7 +1644,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1438 = dup %tmp.1431;
         %tmp.1439 = aputv %tmp.1438 14 %tmp.1437;
         %tmp.1440 = self;
-        symbol [ rgbToDec %tmp.1441 216 8 16 ];
+        symbol [ rgbToDec %tmp.1441 218 8 16 ];
         %tmp.1441 = getv function %tmp.1440 :rgbToDec;
         %tmp.1442 = 0;
         %tmp.1443 = 140;
@@ -1651,7 +1653,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1446 = dup %tmp.1439;
         %tmp.1447 = aputv %tmp.1446 15 %tmp.1445;
         %tmp.1448 = self;
-        symbol [ rgbToDec %tmp.1449 217 8 16 ];
+        symbol [ rgbToDec %tmp.1449 219 8 16 ];
         %tmp.1449 = getv function %tmp.1448 :rgbToDec;
         %tmp.1450 = 0;
         %tmp.1451 = 136;
@@ -1660,7 +1662,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1454 = dup %tmp.1447;
         %tmp.1455 = aputv %tmp.1454 16 %tmp.1453;
         %tmp.1456 = self;
-        symbol [ rgbToDec %tmp.1457 218 8 16 ];
+        symbol [ rgbToDec %tmp.1457 220 8 16 ];
         %tmp.1457 = getv function %tmp.1456 :rgbToDec;
         %tmp.1458 = 0;
         %tmp.1459 = 140;
@@ -1669,7 +1671,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1462 = dup %tmp.1455;
         %tmp.1463 = aputv %tmp.1462 17 %tmp.1461;
         %tmp.1464 = self;
-        symbol [ rgbToDec %tmp.1465 219 8 16 ];
+        symbol [ rgbToDec %tmp.1465 221 8 16 ];
         %tmp.1465 = getv function %tmp.1464 :rgbToDec;
         %tmp.1466 = 0;
         %tmp.1467 = 144;
@@ -1678,7 +1680,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1470 = dup %tmp.1463;
         %tmp.1471 = aputv %tmp.1470 18 %tmp.1469;
         %tmp.1472 = self;
-        symbol [ rgbToDec %tmp.1473 220 8 16 ];
+        symbol [ rgbToDec %tmp.1473 222 8 16 ];
         %tmp.1473 = getv function %tmp.1472 :rgbToDec;
         %tmp.1474 = 0;
         %tmp.1475 = 148;
@@ -1687,7 +1689,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1478 = dup %tmp.1471;
         %tmp.1479 = aputv %tmp.1478 19 %tmp.1477;
         %tmp.1480 = self;
-        symbol [ rgbToDec %tmp.1481 221 8 16 ];
+        symbol [ rgbToDec %tmp.1481 223 8 16 ];
         %tmp.1481 = getv function %tmp.1480 :rgbToDec;
         %tmp.1482 = 0;
         %tmp.1483 = 152;
@@ -1696,7 +1698,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1486 = dup %tmp.1479;
         %tmp.1487 = aputv %tmp.1486 20 %tmp.1485;
         %tmp.1488 = self;
-        symbol [ rgbToDec %tmp.1489 222 8 16 ];
+        symbol [ rgbToDec %tmp.1489 224 8 16 ];
         %tmp.1489 = getv function %tmp.1488 :rgbToDec;
         %tmp.1490 = 0;
         %tmp.1491 = 156;
@@ -1705,7 +1707,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1494 = dup %tmp.1487;
         %tmp.1495 = aputv %tmp.1494 21 %tmp.1493;
         %tmp.1496 = self;
-        symbol [ rgbToDec %tmp.1497 223 8 16 ];
+        symbol [ rgbToDec %tmp.1497 225 8 16 ];
         %tmp.1497 = getv function %tmp.1496 :rgbToDec;
         %tmp.1498 = 0;
         %tmp.1499 = 160;
@@ -1714,7 +1716,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1502 = dup %tmp.1495;
         %tmp.1503 = aputv %tmp.1502 22 %tmp.1501;
         %tmp.1504 = self;
-        symbol [ rgbToDec %tmp.1505 224 8 16 ];
+        symbol [ rgbToDec %tmp.1505 226 8 16 ];
         %tmp.1505 = getv function %tmp.1504 :rgbToDec;
         %tmp.1506 = 0;
         %tmp.1507 = 164;
@@ -1723,7 +1725,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1510 = dup %tmp.1503;
         %tmp.1511 = aputv %tmp.1510 23 %tmp.1509;
         %tmp.1512 = self;
-        symbol [ rgbToDec %tmp.1513 225 8 16 ];
+        symbol [ rgbToDec %tmp.1513 227 8 16 ];
         %tmp.1513 = getv function %tmp.1512 :rgbToDec;
         %tmp.1514 = 0;
         %tmp.1515 = 168;
@@ -1732,7 +1734,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1518 = dup %tmp.1511;
         %tmp.1519 = aputv %tmp.1518 24 %tmp.1517;
         %tmp.1520 = self;
-        symbol [ rgbToDec %tmp.1521 226 8 16 ];
+        symbol [ rgbToDec %tmp.1521 228 8 16 ];
         %tmp.1521 = getv function %tmp.1520 :rgbToDec;
         %tmp.1522 = 0;
         %tmp.1523 = 172;
@@ -1741,7 +1743,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1526 = dup %tmp.1519;
         %tmp.1527 = aputv %tmp.1526 25 %tmp.1525;
         %tmp.1528 = self;
-        symbol [ rgbToDec %tmp.1529 227 8 16 ];
+        symbol [ rgbToDec %tmp.1529 229 8 16 ];
         %tmp.1529 = getv function %tmp.1528 :rgbToDec;
         %tmp.1530 = 0;
         %tmp.1531 = 176;
@@ -1750,7 +1752,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1534 = dup %tmp.1527;
         %tmp.1535 = aputv %tmp.1534 26 %tmp.1533;
         %tmp.1536 = self;
-        symbol [ rgbToDec %tmp.1537 228 8 16 ];
+        symbol [ rgbToDec %tmp.1537 230 8 16 ];
         %tmp.1537 = getv function %tmp.1536 :rgbToDec;
         %tmp.1538 = 0;
         %tmp.1539 = 180;
@@ -1759,7 +1761,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1542 = dup %tmp.1535;
         %tmp.1543 = aputv %tmp.1542 27 %tmp.1541;
         %tmp.1544 = self;
-        symbol [ rgbToDec %tmp.1545 229 8 16 ];
+        symbol [ rgbToDec %tmp.1545 231 8 16 ];
         %tmp.1545 = getv function %tmp.1544 :rgbToDec;
         %tmp.1546 = 0;
         %tmp.1547 = 184;
@@ -1768,7 +1770,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1550 = dup %tmp.1543;
         %tmp.1551 = aputv %tmp.1550 28 %tmp.1549;
         %tmp.1552 = self;
-        symbol [ rgbToDec %tmp.1553 230 8 16 ];
+        symbol [ rgbToDec %tmp.1553 232 8 16 ];
         %tmp.1553 = getv function %tmp.1552 :rgbToDec;
         %tmp.1554 = 0;
         %tmp.1555 = 188;
@@ -1777,7 +1779,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1558 = dup %tmp.1551;
         %tmp.1559 = aputv %tmp.1558 29 %tmp.1557;
         %tmp.1560 = self;
-        symbol [ rgbToDec %tmp.1561 231 8 16 ];
+        symbol [ rgbToDec %tmp.1561 233 8 16 ];
         %tmp.1561 = getv function %tmp.1560 :rgbToDec;
         %tmp.1562 = 0;
         %tmp.1563 = 192;
@@ -1786,7 +1788,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1566 = dup %tmp.1559;
         %tmp.1567 = aputv %tmp.1566 30 %tmp.1565;
         %tmp.1568 = self;
-        symbol [ rgbToDec %tmp.1569 232 8 16 ];
+        symbol [ rgbToDec %tmp.1569 234 8 16 ];
         %tmp.1569 = getv function %tmp.1568 :rgbToDec;
         %tmp.1570 = 0;
         %tmp.1571 = 196;
@@ -1795,7 +1797,7 @@ class TowerStackView extends WatchUi.View {
         %tmp.1574 = dup %tmp.1567;
         %tmp.1575 = aputv %tmp.1574 31 %tmp.1573;
         %tmp.1576 = self;
-        symbol [ rgbToDec %tmp.1577 233 8 16 ];
+        symbol [ rgbToDec %tmp.1577 235 8 16 ];
         %tmp.1577 = getv function %tmp.1576 :rgbToDec;
         %tmp.1578 = 0;
         %tmp.1579 = 200;
@@ -1804,498 +1806,585 @@ class TowerStackView extends WatchUi.View {
         %tmp.1582 = dup %tmp.1575;
         %tmp.1583 = aputv %tmp.1582 32 %tmp.1581;
         putv self :_tealBlueColorGradient %tmp.1583;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 243 8 ]
-        %tmp.1584 = self;
-        symbol [ getDeviceWidth %tmp.1585 243 24 38 ];
-        %tmp.1585 = getv function %tmp.1584 :getDeviceWidth;
-        %tmp.1586 = invoke %tmp.1584 %tmp.1585();
-        %tmp.1587 = 0.4;
-        %tmp.1588 = mul %tmp.1586 %tmp.1587;
-        putv self :_currentWidth %tmp.1588;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 238 8 ]
+        %tmp.1584 = newa 6;
+        symbol [ _blueRedColorGradient %tmp.1586 239 8 29 ];
+        %tmp.1586 = getv ? :_blueRedColorGradient;
+        %tmp.1587 = dup %tmp.1584;
+        %tmp.1588 = aputv %tmp.1587 0 %tmp.1586;
+        symbol [ _forestGreenBrownGradient %tmp.1590 240 8 33 ];
+        %tmp.1590 = getv ? :_forestGreenBrownGradient;
+        %tmp.1591 = dup %tmp.1588;
+        %tmp.1592 = aputv %tmp.1591 1 %tmp.1590;
+        symbol [ _pinkTanColorGradient %tmp.1594 241 8 29 ];
+        %tmp.1594 = getv ? :_pinkTanColorGradient;
+        %tmp.1595 = dup %tmp.1592;
+        %tmp.1596 = aputv %tmp.1595 2 %tmp.1594;
+        symbol [ _purpleBlueColorGradient %tmp.1598 242 8 32 ];
+        %tmp.1598 = getv ? :_purpleBlueColorGradient;
+        %tmp.1599 = dup %tmp.1596;
+        %tmp.1600 = aputv %tmp.1599 3 %tmp.1598;
+        symbol [ _tealBlueColorGradient %tmp.1602 243 8 30 ];
+        %tmp.1602 = getv ? :_tealBlueColorGradient;
+        %tmp.1603 = dup %tmp.1600;
+        %tmp.1604 = aputv %tmp.1603 4 %tmp.1602;
+        symbol [ _rainbowColorGradient %tmp.1606 244 8 29 ];
+        %tmp.1606 = getv ? :_rainbowColorGradient;
+        %tmp.1607 = dup %tmp.1604;
+        %tmp.1608 = aputv %tmp.1607 5 %tmp.1606;
+        putv self :_gradients %tmp.1608;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 254 8 ]
+        %tmp.1609 = self;
+        symbol [ getDeviceWidth %tmp.1610 254 24 38 ];
+        %tmp.1610 = getv function %tmp.1609 :getDeviceWidth;
+        %tmp.1611 = invoke %tmp.1609 %tmp.1610();
+        %tmp.1612 = 0.4;
+        %tmp.1613 = mul %tmp.1611 %tmp.1612;
+        putv self :_currentWidth %tmp.1613;
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 6; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 7; @position = 16; @symbol_vardef = [_scoreElement,7,16,29]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 8; @position = 16; @symbol_vardef = [_scoreElement,8,16,29]; ]
     private
     var _scoreElement;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 8; @position = 16; @symbol_vardef = [_xPosition,8,16,26]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 9; @position = 16; @symbol_vardef = [_xPosition,9,16,26]; ]
     private
     var _xPosition = 0;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 9; @position = 16; @symbol_vardef = [_previousBlocks,9,16,31]; @symbol_type<0> = [Array,9,35,40]; @symbol_type<1> = [Array,9,41,46]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 10; @position = 16; @symbol_vardef = [_previousBlocks,10,16,31]; @symbol_type<0> = [Array,10,35,40]; @symbol_type<1> = [Array,10,41,46]; ]
     private
     var _previousBlocks as Array<Array>;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 11; @symbol_functiondef = [rgbToDec,11,13,21]; @symbol_param<0> = [rr,11,23,25]; @symbol_param<1> = [gg,11,27,29]; @symbol_param<2> = [bb,11,31,33]; @symbol_return<0> = [Number,11,39,45]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 11; @position = 16; @symbol_vardef = [_selectedGradient,11,16,33]; ]
+    private
+    var _selectedGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 13; @symbol_functiondef = [rgbToDec,13,13,21]; @symbol_param<0> = [rr,13,23,25]; @symbol_param<1> = [gg,13,27,29]; @symbol_param<2> = [bb,13,31,33]; @symbol_return<0> = [Number,13,39,45]; ]
     function rgbToDec(rr, gg, bb) as Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_11_46_13_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 12 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_13_46_15_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 14 8 ]
         %tmp.1 = lgetv %rr;
-        symbol [ rr %tmp.1 12 15 17 ];
+        symbol [ rr %tmp.1 14 15 17 ];
         %tmp.2 = 65536;
         %tmp.3 = mul %tmp.1 %tmp.2;
         %tmp.4 = lgetv %gg;
-        symbol [ gg %tmp.4 12 26 28 ];
+        symbol [ gg %tmp.4 14 26 28 ];
         %tmp.5 = 256;
         %tmp.6 = mul %tmp.4 %tmp.5;
         %tmp.7 = add %tmp.3 %tmp.6;
         %tmp.8 = lgetv %bb;
-        symbol [ bb %tmp.8 12 35 37 ];
+        symbol [ bb %tmp.8 14 35 37 ];
         %tmp.9 = add %tmp.7 %tmp.8;
         ret %tmp.9;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_11_46_13_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_13_46_15_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 16; @position = 16; @symbol_vardef = [_blueRedColorGradient,16,16,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 18; @position = 16; @symbol_vardef = [_blueRedColorGradient,18,16,37]; ]
     private
     var _blueRedColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 53; @position = 16; @symbol_vardef = [_purpleBlueColorGradient,53,16,40]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 55; @position = 16; @symbol_vardef = [_purpleBlueColorGradient,55,16,40]; ]
     private
     var _purpleBlueColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 90; @position = 16; @symbol_vardef = [_forestGreenBrownGradient,90,16,41]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 92; @position = 16; @symbol_vardef = [_forestGreenBrownGradient,92,16,41]; ]
     private
     var _forestGreenBrownGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 125; @position = 16; @symbol_vardef = [_pinkTanColorGradient,125,16,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 127; @position = 16; @symbol_vardef = [_pinkTanColorGradient,127,16,37]; ]
     private
     var _pinkTanColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 162; @position = 16; @symbol_vardef = [_rainbowColorGradient,162,16,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 164; @position = 16; @symbol_vardef = [_rainbowColorGradient,164,16,37]; ]
     private
     var _rainbowColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 200; @position = 16; @symbol_vardef = [_tealBlueColorGradient,200,16,38]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 202; @position = 16; @symbol_vardef = [_tealBlueColorGradient,202,16,38]; ]
     private
     var _tealBlueColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 236; @symbol_functiondef = [getDeviceWidth,236,13,27]; @symbol_return<0> = [Lang,236,33,37]; @symbol_return<1> = [Number,236,38,44]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 238; @position = 8; @symbol_vardef = [_gradients,238,8,18]; @symbol_type<0> = [Array,238,22,27]; ]
+    var _gradients as Array;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 247; @symbol_functiondef = [getDeviceWidth,247,13,27]; @symbol_return<0> = [Lang,247,33,37]; @symbol_return<1> = [Number,247,38,44]; ]
     function getDeviceWidth() as Lang.Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 237 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_stop" ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 248 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_stop" ]
         %deviceSettings.1 = local;
-        symbol [ deviceSettings %deviceSettings.1 237 12 26 ];
-        symbol [ System %tmp.2 237 29 35 ];
+        symbol [ deviceSettings %deviceSettings.1 248 12 26 ];
+        symbol [ System %tmp.2 248 29 35 ];
         %tmp.2 = getv ? :System;
-        symbol [ getDeviceSettings %tmp.3 237 36 53 ];
+        symbol [ getDeviceSettings %tmp.3 248 36 53 ];
         %tmp.3 = getv function %tmp.2 :getDeviceSettings;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %deviceSettings.1 %tmp.4;
-        symbol [ deviceSettings %deviceSettings.1 237 12 26 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 238 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_stop" ]
+        symbol [ deviceSettings %deviceSettings.1 248 12 26 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 249 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_stop" ]
         %fullScreenWidth.2 = local;
-        symbol [ fullScreenWidth %fullScreenWidth.2 238 12 27 ];
+        symbol [ fullScreenWidth %fullScreenWidth.2 249 12 27 ];
         %tmp.5 = lgetv %deviceSettings.1;
-        symbol [ deviceSettings %tmp.5 238 30 44 ];
-        symbol [ screenWidth %tmp.6 238 45 56 ];
+        symbol [ deviceSettings %tmp.5 249 30 44 ];
+        symbol [ screenWidth %tmp.6 249 45 56 ];
         %tmp.6 = getv %tmp.5 :screenWidth;
         lputv %fullScreenWidth.2 %tmp.6;
-        symbol [ fullScreenWidth %fullScreenWidth.2 238 12 27 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 240 8 ]
+        symbol [ fullScreenWidth %fullScreenWidth.2 249 12 27 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 251 8 ]
         %tmp.7 = lgetv %fullScreenWidth.2;
-        symbol [ fullScreenWidth %tmp.7 240 15 30 ];
+        symbol [ fullScreenWidth %tmp.7 251 15 30 ];
         ret %tmp.7;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_236_45_241_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_247_45_252_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 243; @position = 8; @symbol_vardef = [_currentWidth,243,8,21]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 254; @position = 8; @symbol_vardef = [_currentWidth,254,8,21]; ]
     var _currentWidth;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 244; @position = 8; @symbol_vardef = [_score,244,8,14]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 255; @position = 8; @symbol_vardef = [_score,255,8,14]; ]
     var _score = 0;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 246; @symbol_functiondef = [initialize,246,13,23]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 257; @symbol_functiondef = [initialize,257,13,23]; ]
     function initialize() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_246_26_248_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 247 8 ]
-        symbol [ View %tmp.2 247 8 12 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_257_26_261_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 258 8 ]
+        symbol [ View %tmp.2 258 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 247 13 23 ];
+        symbol [ initialize %tmp.3 258 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_246_26_248_4_stop:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 260 8 ]
+        symbol [ App %tmp.4 260 28 31 ];
+        %tmp.4 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.5 260 32 42 ];
+        %tmp.5 = getv %tmp.4 :Properties;
+        symbol [ getValue %tmp.6 260 43 51 ];
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "selectedGradientIndex";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        symbol [ _selectedGradient ? 260 8 25 ];
+        putv self :_selectedGradient %tmp.8;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_257_26_261_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 251; @symbol_functiondef = [onLayout,251,13,21]; @symbol_param<0> = [dc,251,22,24]; @symbol_param<0>_type<0> = [Dc,251,28,30]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 263; @symbol_functiondef = [loadGradient,263,13,25]; ]
+    function loadGradient() {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_263_28_265_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 264 8 ]
+        symbol [ App %tmp.1 264 28 31 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 264 32 42 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 264 43 51 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "selectedGradientIndex";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        symbol [ _selectedGradient ? 264 8 25 ];
+        putv self :_selectedGradient %tmp.5;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_263_28_265_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 269; @symbol_functiondef = [onLayout,269,13,21]; @symbol_param<0> = [dc,269,22,24]; @symbol_param<0>_type<0> = [Dc,269,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_251_40_255_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 252 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_269_40_273_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 270 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 252 8 17 ];
+        symbol [ setLayout %tmp.2 270 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 252 18 21 ];
+        symbol [ Rez %tmp.4 270 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 252 22 29 ];
+        symbol [ Layouts %tmp.5 270 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ MainLayout %tmp.6 252 30 40 ];
+        symbol [ MainLayout %tmp.6 270 30 40 ];
         %tmp.6 = getv function %tmp.5 :MainLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 252 41 43 ];
+        symbol [ dc %tmp.7 270 41 43 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 254 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 272 8 ]
         %tmp.9 = self;
-        symbol [ findDrawableById %tmp.10 254 24 40 ];
+        symbol [ findDrawableById %tmp.10 272 24 40 ];
         %tmp.10 = getv function %tmp.9 :findDrawableById;
         %tmp.11 = "score";
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
-        symbol [ _scoreElement ? 254 8 21 ];
+        symbol [ _scoreElement ? 272 8 21 ];
         putv self :_scoreElement %tmp.12;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_251_40_255_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_269_40_273_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 260; @symbol_functiondef = [onShow,260,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 278; @symbol_functiondef = [onShow,278,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 264; @symbol_functiondef = [onUpdate,264,13,21]; @symbol_param<0> = [dc,264,22,24]; @symbol_param<0>_type<0> = [Dc,264,28,30]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 282; @symbol_functiondef = [onUpdate,282,13,21]; @symbol_param<0> = [dc,282,22,24]; @symbol_param<0>_type<0> = [Dc,282,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_264_40_300_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 265 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_282_40_319_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 283 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 265 8 10 ];
-        symbol [ clear %tmp.2 265 11 16 ];
+        symbol [ dc %tmp.1 283 8 10 ];
+        symbol [ clear %tmp.2 283 11 16 ];
         %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 266 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_264_40_300_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_264_40_300_4_stop" ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 284 8 ]
+        %tmp.3 = self;
+        symbol [ loadGradient %tmp.4 284 8 20 ];
+        %tmp.4 = getv function %tmp.3 :loadGradient;
+        invoke %tmp.3 %tmp.4();
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 285 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_282_40_319_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_282_40_319_4_stop" ]
         %blockHeight.1 = local;
-        symbol [ blockHeight %blockHeight.1 266 12 23 ];
-        %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 266 27 29 ];
-        symbol [ getHeight %tmp.4 266 30 39 ];
-        %tmp.4 = getv function %tmp.3 :getHeight;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        %tmp.6 = 14;
-        %tmp.7 = div %tmp.5 %tmp.6;
-        lputv %blockHeight.1 %tmp.7;
-        symbol [ blockHeight %blockHeight.1 266 12 23 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 267 8 ]
-        symbol [ View %tmp.9 267 8 12 ];
-        %tmp.9 = getv ? :View;
-        symbol [ onUpdate %tmp.10 267 13 21 ];
-        %tmp.10 = getv function %tmp.9 :onUpdate;
-        %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 267 22 24 ];
-        invoke %tmp.9 %tmp.10(%tmp.11);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 268 8 ]
-        %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 268 8 10 ];
-        symbol [ drawLine %tmp.13 268 11 19 ];
-        %tmp.13 = getv function %tmp.12 :drawLine;
-        %tmp.14 = 0;
-        %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 268 24 26 ];
-        symbol [ getHeight %tmp.16 268 27 36 ];
-        %tmp.16 = getv function %tmp.15 :getHeight;
-        %tmp.17 = invoke %tmp.15 %tmp.16();
-        %tmp.18 = 0.5;
-        %tmp.19 = mul %tmp.17 %tmp.18;
-        %tmp.20 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.20 268 49 60 ];
-        %tmp.21 = 2;
-        %tmp.22 = mul %tmp.20 %tmp.21;
-        %tmp.23 = add %tmp.19 %tmp.22;
-        %tmp.24 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.24 268 69 80 ];
-        symbol [ _score %tmp.26 268 83 89 ];
-        %tmp.26 = getv ? :_score;
-        %tmp.27 = mul %tmp.24 %tmp.26;
-        %tmp.28 = add %tmp.23 %tmp.27;
-        %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 268 92 94 ];
-        symbol [ getWidth %tmp.30 268 95 103 ];
-        %tmp.30 = getv function %tmp.29 :getWidth;
-        %tmp.31 = invoke %tmp.29 %tmp.30();
-        %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 268 108 110 ];
-        symbol [ getHeight %tmp.33 268 111 120 ];
-        %tmp.33 = getv function %tmp.32 :getHeight;
-        %tmp.34 = invoke %tmp.32 %tmp.33();
-        %tmp.35 = 0.5;
-        %tmp.36 = mul %tmp.34 %tmp.35;
-        %tmp.37 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.37 268 133 144 ];
-        %tmp.38 = 2;
-        %tmp.39 = mul %tmp.37 %tmp.38;
-        %tmp.40 = add %tmp.36 %tmp.39;
-        %tmp.41 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.41 268 153 164 ];
-        symbol [ _score %tmp.43 268 167 173 ];
-        %tmp.43 = getv ? :_score;
-        %tmp.44 = mul %tmp.41 %tmp.43;
-        %tmp.45 = add %tmp.40 %tmp.44;
-        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.28, %tmp.31, %tmp.45);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 269 8 ]
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 269 8 10 ];
-        symbol [ setColor %tmp.47 269 11 19 ];
-        %tmp.47 = getv function %tmp.46 :setColor;
-        symbol [ _forestGreenBrownGradient %tmp.49 269 20 45 ];
-        %tmp.49 = getv ? :_forestGreenBrownGradient;
-        %tmp.50 = 0;
-        %tmp.51 = agetv %tmp.49 %tmp.50;
-        symbol [ Graphics %tmp.52 269 50 58 ];
-        %tmp.52 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.53 269 59 70 ];
-        %tmp.53 = getv %tmp.52 :COLOR_BLACK;
-        invoke %tmp.46 %tmp.47(%tmp.51, %tmp.53);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 270 8 ]
-        %tmp.54 = lgetv %dc;
-        symbol [ dc %tmp.54 270 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.55 270 11 31 ];
-        %tmp.55 = getv function %tmp.54 :fillRoundedRectangle;
-        %tmp.56 = lgetv %dc;
-        symbol [ dc %tmp.56 271 12 14 ];
-        symbol [ getWidth %tmp.57 271 15 23 ];
-        %tmp.57 = getv function %tmp.56 :getWidth;
-        %tmp.58 = invoke %tmp.56 %tmp.57();
-        %tmp.59 = 2;
-        %tmp.60 = div %tmp.58 %tmp.59;
-        %tmp.61 = self;
-        symbol [ getDeviceWidth %tmp.62 271 29 43 ];
-        %tmp.62 = getv function %tmp.61 :getDeviceWidth;
+        symbol [ blockHeight %blockHeight.1 285 12 23 ];
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 285 27 29 ];
+        symbol [ getHeight %tmp.6 285 30 39 ];
+        %tmp.6 = getv function %tmp.5 :getHeight;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = 14;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %blockHeight.1 %tmp.9;
+        symbol [ blockHeight %blockHeight.1 285 12 23 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 286 8 ]
+        symbol [ View %tmp.11 286 8 12 ];
+        %tmp.11 = getv ? :View;
+        symbol [ onUpdate %tmp.12 286 13 21 ];
+        %tmp.12 = getv function %tmp.11 :onUpdate;
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 286 22 24 ];
+        invoke %tmp.11 %tmp.12(%tmp.13);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 287 8 ]
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 287 8 10 ];
+        symbol [ drawLine %tmp.15 287 11 19 ];
+        %tmp.15 = getv function %tmp.14 :drawLine;
+        %tmp.16 = 0;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 287 24 26 ];
+        symbol [ getHeight %tmp.18 287 27 36 ];
+        %tmp.18 = getv function %tmp.17 :getHeight;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 0.5;
+        %tmp.21 = mul %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.22 287 49 60 ];
+        %tmp.23 = 2;
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = add %tmp.21 %tmp.24;
+        %tmp.26 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.26 287 69 80 ];
+        symbol [ _score %tmp.28 287 83 89 ];
+        %tmp.28 = getv ? :_score;
+        %tmp.29 = mul %tmp.26 %tmp.28;
+        %tmp.30 = add %tmp.25 %tmp.29;
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 287 92 94 ];
+        symbol [ getWidth %tmp.32 287 95 103 ];
+        %tmp.32 = getv function %tmp.31 :getWidth;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 287 108 110 ];
+        symbol [ getHeight %tmp.35 287 111 120 ];
+        %tmp.35 = getv function %tmp.34 :getHeight;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = 0.5;
+        %tmp.38 = mul %tmp.36 %tmp.37;
+        %tmp.39 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.39 287 133 144 ];
+        %tmp.40 = 2;
+        %tmp.41 = mul %tmp.39 %tmp.40;
+        %tmp.42 = add %tmp.38 %tmp.41;
+        %tmp.43 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.43 287 153 164 ];
+        symbol [ _score %tmp.45 287 167 173 ];
+        %tmp.45 = getv ? :_score;
+        %tmp.46 = mul %tmp.43 %tmp.45;
+        %tmp.47 = add %tmp.42 %tmp.46;
+        invoke %tmp.14 %tmp.15(%tmp.16, %tmp.30, %tmp.33, %tmp.47);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 288 8 ]
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 288 8 10 ];
+        symbol [ setColor %tmp.49 288 11 19 ];
+        %tmp.49 = getv function %tmp.48 :setColor;
+        symbol [ _gradients %tmp.51 288 20 30 ];
+        %tmp.51 = getv ? :_gradients;
+        symbol [ _selectedGradient %tmp.53 288 31 48 ];
+        %tmp.53 = getv ? :_selectedGradient;
+        %tmp.54 = agetv %tmp.51 %tmp.53;
+        %tmp.55 = 0;
+        %tmp.56 = agetv %tmp.54 %tmp.55;
+        symbol [ Graphics %tmp.57 288 54 62 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.58 288 63 74 ];
+        %tmp.58 = getv %tmp.57 :COLOR_BLACK;
+        invoke %tmp.48 %tmp.49(%tmp.56, %tmp.58);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 289 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 289 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.60 289 11 31 ];
+        %tmp.60 = getv function %tmp.59 :fillRoundedRectangle;
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 290 12 14 ];
+        symbol [ getWidth %tmp.62 290 15 23 ];
+        %tmp.62 = getv function %tmp.61 :getWidth;
         %tmp.63 = invoke %tmp.61 %tmp.62();
-        %tmp.64 = 0.4;
-        %tmp.65 = mul %tmp.63 %tmp.64;
-        %tmp.66 = 2;
-        %tmp.67 = div %tmp.65 %tmp.66;
-        %tmp.68 = sub %tmp.60 %tmp.67;
-        %tmp.69 = lgetv %dc;
-        symbol [ dc %tmp.69 272 13 15 ];
-        symbol [ getHeight %tmp.70 272 16 25 ];
-        %tmp.70 = getv function %tmp.69 :getHeight;
-        %tmp.71 = invoke %tmp.69 %tmp.70();
-        %tmp.72 = 0.5;
-        %tmp.73 = mul %tmp.71 %tmp.72;
-        %tmp.74 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.74 272 37 48 ];
-        %tmp.75 = add %tmp.73 %tmp.74;
-        %tmp.76 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.76 272 52 63 ];
-        symbol [ _score %tmp.78 272 64 70 ];
-        %tmp.78 = getv ? :_score;
-        %tmp.79 = mul %tmp.76 %tmp.78;
-        %tmp.80 = add %tmp.75 %tmp.79;
-        %tmp.81 = self;
-        symbol [ getDeviceWidth %tmp.82 273 13 27 ];
-        %tmp.82 = getv function %tmp.81 :getDeviceWidth;
-        %tmp.83 = invoke %tmp.81 %tmp.82();
-        %tmp.84 = 0.4;
-        %tmp.85 = mul %tmp.83 %tmp.84;
-        %tmp.86 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.86 274 12 23 ];
-        %tmp.87 = 2;
-        invoke %tmp.54 %tmp.55(%tmp.68, %tmp.80, %tmp.85, %tmp.86, %tmp.87);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 277 8 ]
-        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_init:
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_end" ]
+        %tmp.64 = 2;
+        %tmp.65 = div %tmp.63 %tmp.64;
+        %tmp.66 = self;
+        symbol [ getDeviceWidth %tmp.67 290 29 43 ];
+        %tmp.67 = getv function %tmp.66 :getDeviceWidth;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.69 = 0.4;
+        %tmp.70 = mul %tmp.68 %tmp.69;
+        %tmp.71 = 2;
+        %tmp.72 = div %tmp.70 %tmp.71;
+        %tmp.73 = sub %tmp.65 %tmp.72;
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 291 13 15 ];
+        symbol [ getHeight %tmp.75 291 16 25 ];
+        %tmp.75 = getv function %tmp.74 :getHeight;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = 0.5;
+        %tmp.78 = mul %tmp.76 %tmp.77;
+        %tmp.79 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.79 291 37 48 ];
+        %tmp.80 = add %tmp.78 %tmp.79;
+        %tmp.81 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.81 291 52 63 ];
+        symbol [ _score %tmp.83 291 64 70 ];
+        %tmp.83 = getv ? :_score;
+        %tmp.84 = mul %tmp.81 %tmp.83;
+        %tmp.85 = add %tmp.80 %tmp.84;
+        %tmp.86 = self;
+        symbol [ getDeviceWidth %tmp.87 292 13 27 ];
+        %tmp.87 = getv function %tmp.86 :getDeviceWidth;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        %tmp.89 = 0.4;
+        %tmp.90 = mul %tmp.88 %tmp.89;
+        %tmp.91 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.91 293 12 23 ];
+        %tmp.92 = 2;
+        invoke %tmp.59 %tmp.60(%tmp.73, %tmp.85, %tmp.90, %tmp.91, %tmp.92);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 296 8 ]
+        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_init:
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_end" ]
         %i.2 = local;
-        symbol [ i %i.2 277 17 18 ];
-        %tmp.88 = 0;
-        lputv %i.2 %tmp.88;
-        symbol [ i %i.2 277 17 18 ];
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_test:
-        %tmp.89 = lgetv %i.2;
-        symbol [ i %tmp.89 277 24 25 ];
-        symbol [ _previousBlocks %tmp.91 277 28 43 ];
-        %tmp.91 = getv ? :_previousBlocks;
-        symbol [ size %tmp.92 277 44 48 ];
-        %tmp.92 = getv function %tmp.91 :size;
-        %tmp.93 = invoke %tmp.91 %tmp.92();
-        %tmp.94 = lt %tmp.89 %tmp.93;
-        bf %tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_begin:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_57_287_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 278 12 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_57_287_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_57_287_8_stop" ]
-        %block.3 = local;
-        symbol [ block %block.3 278 16 21 ];
-        symbol [ _previousBlocks %tmp.96 278 24 39 ];
+        symbol [ i %i.2 296 17 18 ];
+        %tmp.93 = 0;
+        lputv %i.2 %tmp.93;
+        symbol [ i %i.2 296 17 18 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_test:
+        %tmp.94 = lgetv %i.2;
+        symbol [ i %tmp.94 296 24 25 ];
+        symbol [ _previousBlocks %tmp.96 296 28 43 ];
         %tmp.96 = getv ? :_previousBlocks;
-        %tmp.97 = lgetv %i.2;
-        symbol [ i %tmp.97 278 40 41 ];
-        %tmp.98 = agetv %tmp.96 %tmp.97;
-        lputv %block.3 %tmp.98;
-        symbol [ block %block.3 278 16 21 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 279 12 ]
-        %tmp.99 = lgetv %dc;
-        symbol [ dc %tmp.99 279 12 14 ];
-        symbol [ setColor %tmp.100 279 15 23 ];
-        %tmp.100 = getv function %tmp.99 :setColor;
-        symbol [ _forestGreenBrownGradient %tmp.102 279 24 49 ];
-        %tmp.102 = getv ? :_forestGreenBrownGradient;
-        %tmp.103 = lgetv %i.2;
-        symbol [ i %tmp.103 279 51 52 ];
-        %tmp.104 = 32;
-        %tmp.105 = mod %tmp.103 %tmp.104;
-        %tmp.106 = agetv %tmp.102 %tmp.105;
-        symbol [ Graphics %tmp.107 279 59 67 ];
-        %tmp.107 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.108 279 68 79 ];
-        %tmp.108 = getv %tmp.107 :COLOR_BLACK;
-        invoke %tmp.99 %tmp.100(%tmp.106, %tmp.108);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 280 12 ]
-        %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 280 12 14 ];
-        symbol [ fillRoundedRectangle %tmp.110 280 15 35 ];
-        %tmp.110 = getv function %tmp.109 :fillRoundedRectangle;
-        %tmp.111 = lgetv %block.3;
-        symbol [ block %tmp.111 281 16 21 ];
-        %tmp.112 = 0;
-        %tmp.113 = agetv %tmp.111 %tmp.112;
-        %tmp.114 = lgetv %dc;
-        symbol [ dc %tmp.114 282 17 19 ];
-        symbol [ getHeight %tmp.115 282 20 29 ];
-        %tmp.115 = getv function %tmp.114 :getHeight;
-        %tmp.116 = invoke %tmp.114 %tmp.115();
-        %tmp.117 = 0.5;
-        %tmp.118 = mul %tmp.116 %tmp.117;
-        %tmp.119 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.119 282 41 52 ];
-        %tmp.120 = add %tmp.118 %tmp.119;
-        symbol [ _score %tmp.122 282 57 63 ];
-        %tmp.122 = getv ? :_score;
-        %tmp.123 = lgetv %block.3;
-        symbol [ block %tmp.123 282 67 72 ];
-        %tmp.124 = 1;
-        %tmp.125 = agetv %tmp.123 %tmp.124;
-        %tmp.126 = 1;
-        %tmp.127 = add %tmp.125 %tmp.126;
-        %tmp.128 = sub %tmp.122 %tmp.127;
-        %tmp.129 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.129 282 84 95 ];
-        %tmp.130 = mul %tmp.128 %tmp.129;
-        %tmp.131 = add %tmp.120 %tmp.130;
-        %tmp.132 = lgetv %block.3;
-        symbol [ block %tmp.132 283 16 21 ];
-        %tmp.133 = 2;
-        %tmp.134 = agetv %tmp.132 %tmp.133;
-        %tmp.135 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.135 284 16 27 ];
-        %tmp.136 = 2;
-        invoke %tmp.109 %tmp.110(%tmp.113, %tmp.131, %tmp.134, %tmp.135, %tmp.136);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_57_287_8_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_incr:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 277 ]
-        %tmp.139 = lgetv %i.2;
-        symbol [ i %tmp.139 277 52 53 ];
-        %tmp.140 = add %tmp.139 1;
-        lputv %i.2 %tmp.140;
-        symbol [ i %i.2 277 52 53 ];
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_test;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_277_8_287_8_for_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 290 8 ]
-        %tmp.141 = lgetv %dc;
-        symbol [ dc %tmp.141 290 8 10 ];
-        symbol [ setColor %tmp.142 290 11 19 ];
-        %tmp.142 = getv function %tmp.141 :setColor;
-        symbol [ _forestGreenBrownGradient %tmp.144 290 20 45 ];
-        %tmp.144 = getv ? :_forestGreenBrownGradient;
-        symbol [ _score %tmp.146 290 46 52 ];
-        %tmp.146 = getv ? :_score;
-        %tmp.147 = 32;
-        %tmp.148 = mod %tmp.146 %tmp.147;
-        %tmp.149 = agetv %tmp.144 %tmp.148;
-        symbol [ Graphics %tmp.150 290 58 66 ];
-        %tmp.150 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.151 290 67 78 ];
-        %tmp.151 = getv %tmp.150 :COLOR_BLACK;
-        invoke %tmp.141 %tmp.142(%tmp.149, %tmp.151);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 293 8 ]
-        %tmp.152 = lgetv %dc;
-        symbol [ dc %tmp.152 293 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.153 293 11 31 ];
-        %tmp.153 = getv function %tmp.152 :fillRoundedRectangle;
-        symbol [ _xPosition %tmp.155 294 12 22 ];
-        %tmp.155 = getv ? :_xPosition;
-        %tmp.156 = lgetv %dc;
-        symbol [ dc %tmp.156 295 13 15 ];
-        symbol [ getHeight %tmp.157 295 16 25 ];
-        %tmp.157 = getv function %tmp.156 :getHeight;
-        %tmp.158 = invoke %tmp.156 %tmp.157();
-        %tmp.159 = 0.5;
-        %tmp.160 = mul %tmp.158 %tmp.159;
-        symbol [ _currentWidth %tmp.162 296 12 25 ];
-        %tmp.162 = getv ? :_currentWidth;
-        %tmp.163 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.163 297 12 23 ];
-        %tmp.164 = 2;
-        invoke %tmp.152 %tmp.153(%tmp.155, %tmp.160, %tmp.162, %tmp.163, %tmp.164);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_264_40_300_4_stop:
+        symbol [ size %tmp.97 296 44 48 ];
+        %tmp.97 = getv function %tmp.96 :size;
+        %tmp.98 = invoke %tmp.96 %tmp.97();
+        %tmp.99 = lt %tmp.94 %tmp.98;
+        bf %tmp.99 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_begin:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_57_306_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 297 12 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_57_306_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_57_306_8_stop" ]
+        %block.3 = local;
+        symbol [ block %block.3 297 16 21 ];
+        symbol [ _previousBlocks %tmp.101 297 24 39 ];
+        %tmp.101 = getv ? :_previousBlocks;
+        %tmp.102 = lgetv %i.2;
+        symbol [ i %tmp.102 297 40 41 ];
+        %tmp.103 = agetv %tmp.101 %tmp.102;
+        lputv %block.3 %tmp.103;
+        symbol [ block %block.3 297 16 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 298 12 ]
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 298 12 14 ];
+        symbol [ setColor %tmp.105 298 15 23 ];
+        %tmp.105 = getv function %tmp.104 :setColor;
+        symbol [ _gradients %tmp.107 298 24 34 ];
+        %tmp.107 = getv ? :_gradients;
+        symbol [ _selectedGradient %tmp.109 298 35 52 ];
+        %tmp.109 = getv ? :_selectedGradient;
+        %tmp.110 = agetv %tmp.107 %tmp.109;
+        %tmp.111 = lgetv %i.2;
+        symbol [ i %tmp.111 298 55 56 ];
+        symbol [ _gradients %tmp.113 298 58 68 ];
+        %tmp.113 = getv ? :_gradients;
+        symbol [ _selectedGradient %tmp.115 298 69 86 ];
+        %tmp.115 = getv ? :_selectedGradient;
+        %tmp.116 = agetv %tmp.113 %tmp.115;
+        symbol [ size %tmp.117 298 88 92 ];
+        %tmp.117 = getv function %tmp.116 :size;
+        %tmp.118 = invoke %tmp.116 %tmp.117();
+        %tmp.119 = mod %tmp.111 %tmp.118;
+        %tmp.120 = agetv %tmp.110 %tmp.119;
+        symbol [ Graphics %tmp.121 298 97 105 ];
+        %tmp.121 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.122 298 106 117 ];
+        %tmp.122 = getv %tmp.121 :COLOR_BLACK;
+        invoke %tmp.104 %tmp.105(%tmp.120, %tmp.122);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 299 12 ]
+        %tmp.123 = lgetv %dc;
+        symbol [ dc %tmp.123 299 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.124 299 15 35 ];
+        %tmp.124 = getv function %tmp.123 :fillRoundedRectangle;
+        %tmp.125 = lgetv %block.3;
+        symbol [ block %tmp.125 300 16 21 ];
+        %tmp.126 = 0;
+        %tmp.127 = agetv %tmp.125 %tmp.126;
+        %tmp.128 = lgetv %dc;
+        symbol [ dc %tmp.128 301 17 19 ];
+        symbol [ getHeight %tmp.129 301 20 29 ];
+        %tmp.129 = getv function %tmp.128 :getHeight;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        %tmp.131 = 0.5;
+        %tmp.132 = mul %tmp.130 %tmp.131;
+        %tmp.133 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.133 301 41 52 ];
+        %tmp.134 = add %tmp.132 %tmp.133;
+        symbol [ _score %tmp.136 301 57 63 ];
+        %tmp.136 = getv ? :_score;
+        %tmp.137 = lgetv %block.3;
+        symbol [ block %tmp.137 301 67 72 ];
+        %tmp.138 = 1;
+        %tmp.139 = agetv %tmp.137 %tmp.138;
+        %tmp.140 = 1;
+        %tmp.141 = add %tmp.139 %tmp.140;
+        %tmp.142 = sub %tmp.136 %tmp.141;
+        %tmp.143 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.143 301 84 95 ];
+        %tmp.144 = mul %tmp.142 %tmp.143;
+        %tmp.145 = add %tmp.134 %tmp.144;
+        %tmp.146 = lgetv %block.3;
+        symbol [ block %tmp.146 302 16 21 ];
+        %tmp.147 = 2;
+        %tmp.148 = agetv %tmp.146 %tmp.147;
+        %tmp.149 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.149 303 16 27 ];
+        %tmp.150 = 2;
+        invoke %tmp.123 %tmp.124(%tmp.127, %tmp.145, %tmp.148, %tmp.149, %tmp.150);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_57_306_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_incr:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 296 ]
+        %tmp.153 = lgetv %i.2;
+        symbol [ i %tmp.153 296 52 53 ];
+        %tmp.154 = add %tmp.153 1;
+        lputv %i.2 %tmp.154;
+        symbol [ i %i.2 296 52 53 ];
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_test;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_296_8_306_8_for_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 309 8 ]
+        %tmp.155 = lgetv %dc;
+        symbol [ dc %tmp.155 309 8 10 ];
+        symbol [ setColor %tmp.156 309 11 19 ];
+        %tmp.156 = getv function %tmp.155 :setColor;
+        symbol [ _gradients %tmp.158 309 20 30 ];
+        %tmp.158 = getv ? :_gradients;
+        symbol [ _selectedGradient %tmp.160 309 31 48 ];
+        %tmp.160 = getv ? :_selectedGradient;
+        %tmp.161 = agetv %tmp.158 %tmp.160;
+        symbol [ _score %tmp.163 309 50 56 ];
+        %tmp.163 = getv ? :_score;
+        symbol [ _gradients %tmp.165 309 57 67 ];
+        %tmp.165 = getv ? :_gradients;
+        symbol [ _selectedGradient %tmp.167 309 68 85 ];
+        %tmp.167 = getv ? :_selectedGradient;
+        %tmp.168 = agetv %tmp.165 %tmp.167;
+        symbol [ size %tmp.169 309 87 91 ];
+        %tmp.169 = getv function %tmp.168 :size;
+        %tmp.170 = invoke %tmp.168 %tmp.169();
+        %tmp.171 = mod %tmp.163 %tmp.170;
+        %tmp.172 = agetv %tmp.161 %tmp.171;
+        symbol [ Graphics %tmp.173 309 96 104 ];
+        %tmp.173 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.174 309 105 116 ];
+        %tmp.174 = getv %tmp.173 :COLOR_BLACK;
+        invoke %tmp.155 %tmp.156(%tmp.172, %tmp.174);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 312 8 ]
+        %tmp.175 = lgetv %dc;
+        symbol [ dc %tmp.175 312 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.176 312 11 31 ];
+        %tmp.176 = getv function %tmp.175 :fillRoundedRectangle;
+        symbol [ _xPosition %tmp.178 313 12 22 ];
+        %tmp.178 = getv ? :_xPosition;
+        %tmp.179 = lgetv %dc;
+        symbol [ dc %tmp.179 314 13 15 ];
+        symbol [ getHeight %tmp.180 314 16 25 ];
+        %tmp.180 = getv function %tmp.179 :getHeight;
+        %tmp.181 = invoke %tmp.179 %tmp.180();
+        %tmp.182 = 0.5;
+        %tmp.183 = mul %tmp.181 %tmp.182;
+        symbol [ _currentWidth %tmp.185 315 12 25 ];
+        %tmp.185 = getv ? :_currentWidth;
+        %tmp.186 = lgetv %blockHeight.1;
+        symbol [ blockHeight %tmp.186 316 12 23 ];
+        %tmp.187 = 2;
+        invoke %tmp.175 %tmp.176(%tmp.178, %tmp.183, %tmp.185, %tmp.186, %tmp.187);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_282_40_319_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 305; @symbol_functiondef = [onHide,305,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 324; @symbol_functiondef = [onHide,324,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 308; @symbol_functiondef = [setXPosition,308,13,25]; @symbol_param<0> = [x,308,26,27]; @symbol_param<0>_type<0> = [Number,308,31,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 327; @symbol_functiondef = [setXPosition,327,13,25]; @symbol_param<0> = [x,327,26,27]; @symbol_param<0>_type<0> = [Number,327,31,37]; ]
     function setXPosition(x as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_308_47_311_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 309 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_327_47_330_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 328 8 ]
         %tmp.1 = lgetv %x;
-        symbol [ x %tmp.1 309 21 22 ];
-        symbol [ _xPosition ? 309 8 18 ];
+        symbol [ x %tmp.1 328 21 22 ];
+        symbol [ _xPosition ? 328 8 18 ];
         putv self :_xPosition %tmp.1;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 310 8 ]
-        symbol [ WatchUi %tmp.2 310 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 329 8 ]
+        symbol [ WatchUi %tmp.2 329 8 15 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 310 16 29 ];
+        symbol [ requestUpdate %tmp.3 329 16 29 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_308_47_311_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_327_47_330_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 313; @symbol_functiondef = [updateScore,313,13,24]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 332; @symbol_functiondef = [updateScore,332,13,24]; ]
     function updateScore() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_313_35_317_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 314 8 ]
-        symbol [ _score %tmp.1 314 8 14 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_332_35_336_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 333 8 ]
+        symbol [ _score %tmp.1 333 8 14 ];
         %tmp.1 = getv self :_score;
         %tmp.2 = 1;
         %tmp.3 = add %tmp.1 %tmp.2;
-        symbol [ _score ? 314 8 14 ];
+        symbol [ _score ? 333 8 14 ];
         putv self :_score dup %tmp.3;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 315 8 ]
-        symbol [ _scoreElement %tmp.5 315 8 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 334 8 ]
+        symbol [ _scoreElement %tmp.5 334 8 21 ];
         %tmp.5 = getv ? :_scoreElement;
-        symbol [ setText %tmp.6 315 22 29 ];
+        symbol [ setText %tmp.6 334 22 29 ];
         %tmp.6 = getv function %tmp.5 :setText;
-        symbol [ _score %tmp.8 315 30 36 ];
+        symbol [ _score %tmp.8 334 30 36 ];
         %tmp.8 = getv ? :_score;
-        symbol [ toString %tmp.9 315 37 45 ];
+        symbol [ toString %tmp.9 334 37 45 ];
         %tmp.9 = getv function %tmp.8 :toString;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         invoke %tmp.5 %tmp.6(%tmp.10);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 316 8 ]
-        symbol [ WatchUi %tmp.11 316 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 335 8 ]
+        symbol [ WatchUi %tmp.11 335 8 15 ];
         %tmp.11 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.12 316 16 29 ];
+        symbol [ requestUpdate %tmp.12 335 16 29 ];
         %tmp.12 = getv function %tmp.11 :requestUpdate;
         invoke %tmp.11 %tmp.12();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_313_35_317_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_332_35_336_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 319; @symbol_functiondef = [newBlock,319,13,21]; @symbol_param<0> = [left,319,22,26]; @symbol_param<0>_type<0> = [Number,319,30,36]; @symbol_param<1> = [width,319,38,43]; @symbol_param<1>_type<0> = [Number,319,47,53]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 338; @symbol_functiondef = [newBlock,338,13,21]; @symbol_param<0> = [left,338,22,26]; @symbol_param<0>_type<0> = [Number,338,30,36]; @symbol_param<1> = [width,338,38,43]; @symbol_param<1>_type<0> = [Number,338,47,53]; ]
     function newBlock(left as Number, width as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_319_63_323_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 320 8 ]
-        symbol [ _previousBlocks %tmp.2 320 8 23 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_338_63_342_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 339 8 ]
+        symbol [ _previousBlocks %tmp.2 339 8 23 ];
         %tmp.2 = getv ? :_previousBlocks;
-        symbol [ add %tmp.3 320 24 27 ];
+        symbol [ add %tmp.3 339 24 27 ];
         %tmp.3 = getv function %tmp.2 :add;
         %tmp.4 = newa 3;
         %tmp.5 = lgetv %left;
-        symbol [ left %tmp.5 320 29 33 ];
+        symbol [ left %tmp.5 339 29 33 ];
         %tmp.6 = dup %tmp.4;
         %tmp.7 = aputv %tmp.6 0 %tmp.5;
-        symbol [ _score %tmp.9 320 35 41 ];
+        symbol [ _score %tmp.9 339 35 41 ];
         %tmp.9 = getv ? :_score;
         %tmp.10 = dup %tmp.7;
         %tmp.11 = aputv %tmp.10 1 %tmp.9;
         %tmp.12 = lgetv %width;
-        symbol [ width %tmp.12 320 43 48 ];
+        symbol [ width %tmp.12 339 43 48 ];
         %tmp.13 = dup %tmp.11;
         %tmp.14 = aputv %tmp.13 2 %tmp.12;
         invoke %tmp.2 %tmp.3(%tmp.14);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 321 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 340 8 ]
         %tmp.15 = 0;
-        symbol [ _xPosition ? 321 8 18 ];
+        symbol [ _xPosition ? 340 8 18 ];
         putv self :_xPosition %tmp.15;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 322 8 ]
-        symbol [ WatchUi %tmp.16 322 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 341 8 ]
+        symbol [ WatchUi %tmp.16 341 8 15 ];
         %tmp.16 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.17 322 16 29 ];
+        symbol [ requestUpdate %tmp.17 341 16 29 ];
         %tmp.17 = getv function %tmp.16 :requestUpdate;
         invoke %tmp.16 %tmp.17();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_319_63_323_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_338_63_342_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 1; ]

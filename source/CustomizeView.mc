@@ -4,19 +4,25 @@ import Toybox.Lang;
 using Toybox.Application as App;
 import Toybox.Graphics;
 
-class MenuView extends WatchUi.View {
+class CustomizeView extends WatchUi.View {
     var highScore as Number;
     private var _highScoreElement;
+    
+    var _gradientIndex = 0;
+
+    var _gradients as Array = [
+        "Thermal shift",
+        "Forest",
+        "Rose sand",
+        "Indigo Drift",
+        "Ocean flow",
+        "Rainbow",
+    ];
 
     function initialize() {
         View.initialize();
 
         highScore = App.Properties.getValue("highScore");
-    }
-
-    function saveHighScore(score as Number) {
-        App.Properties.setValue("highScore", score);
-        highScore = score; // update cached value
     }
 
     function onShow() {
@@ -30,15 +36,23 @@ class MenuView extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc as Graphics.Dc) as Void {
-        setLayout(Rez.Layouts.MenuLayout(dc));
+        setLayout(Rez.Layouts.CustomizeLayout(dc));
 
-        _highScoreElement = findDrawableById("highScore");
     }
 
     function onUpdate(dc as Graphics.Dc) {
         dc.clear();
         loadHighScore();
-        _highScoreElement.setText("High Score: " + highScore.toString());
         View.onUpdate(dc);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
+        dc.drawLine(0, (dc.getHeight() * 0.3), dc.getWidth(), (dc.getHeight() * 0.3));
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(
+            dc.getWidth()/2,
+            dc.getHeight()/2,
+            Graphics.FONT_LARGE,
+            _gradients[_gradientIndex],
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
     }
 }

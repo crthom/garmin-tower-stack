@@ -18,6 +18,17 @@ class MenuDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
+    function onPreviousPage() as Boolean {
+        var customizeView = new CustomizeView();
+
+        WatchUi.pushView(
+            customizeView,
+            new CustomizeDelegate(customizeView),
+            WatchUi.SLIDE_RIGHT
+        );
+        return true;
+    }
+
     function onBack() as Boolean {
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
         return true;

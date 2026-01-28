@@ -1,0 +1,11 @@
+<layout id="CustomizeLayout">
+    <label
+        id="header"
+        text="Tower Color" 
+        x="center"
+        y="15%"
+        font="Gfx.FONT_LARGE"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+        color="Gfx.COLOR_PURPLE"
+    />
+</layout>

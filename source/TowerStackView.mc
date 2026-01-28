@@ -8,6 +8,46 @@ class TowerStackView extends WatchUi.View {
     private var _xPosition = 0;
     private var _previousBlocks as Array<Array> = [];
 
+    function rgbToDec( rr, gg, bb ) as Number {
+        return rr*65536 + gg*256 + bb;
+    }
+
+    private var _colorGradient = [
+        rgbToDec(8, 78, 199),
+        rgbToDec(11, 72, 182),
+        rgbToDec(22, 52, 147),
+        rgbToDec(34, 36, 114),
+        rgbToDec(42, 25, 90),
+        rgbToDec(68, 18, 71),
+        rgbToDec(104, 18, 62),
+        rgbToDec(157, 17, 53),
+        rgbToDec(196, 16, 49),
+        rgbToDec(213, 12, 40),
+        rgbToDec(247, 23, 31),
+        rgbToDec(254, 34, 26),
+        rgbToDec(255, 60, 20),
+        rgbToDec(255, 92, 17),
+        rgbToDec(253, 122, 11),
+        rgbToDec(255, 138, 16),
+        rgbToDec(254, 154, 17),
+        rgbToDec(255, 138, 16),
+        rgbToDec(253, 122, 11),
+        rgbToDec(255, 92, 17),
+        rgbToDec(255, 60, 20),
+        rgbToDec(254, 34, 26),
+        rgbToDec(247, 23, 31),
+        rgbToDec(213, 12, 40),
+        rgbToDec(196, 16, 49),
+        rgbToDec(157, 17, 53),
+        rgbToDec(104, 18, 62),
+        rgbToDec(68, 18, 71),
+        rgbToDec(42, 25, 90),
+        rgbToDec(34, 36, 114),
+        rgbToDec(22, 52, 147),
+        rgbToDec(11, 72, 182),
+        rgbToDec(8, 78, 199),
+    ];
+
     function getDeviceWidth() as Lang.Number {
         var deviceSettings = System.getDeviceSettings();
         var fullScreenWidth = deviceSettings.screenWidth;
@@ -41,7 +81,7 @@ class TowerStackView extends WatchUi.View {
         var blockHeight = (dc.getHeight() / 14);
         View.onUpdate(dc);
         dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
-        dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
+        dc.setColor(_colorGradient[0], Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(
             dc.getWidth()/2-(getDeviceWidth()*0.4/2), // x
             (dc.getHeight() * 0.5) + blockHeight + (blockHeight*_score),                   // y
@@ -51,7 +91,7 @@ class TowerStackView extends WatchUi.View {
         );
         for (var i = 0; i < _previousBlocks.size(); i++) {
             var block = _previousBlocks[i];
-            dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
+            dc.setColor(_colorGradient[(i)%30], Graphics.COLOR_BLACK);
             dc.fillRoundedRectangle(
                 block[0], // x
                 (dc.getHeight() * 0.5) + blockHeight + ((_score - (block[1] + 1)) * blockHeight),                   // y
@@ -62,7 +102,7 @@ class TowerStackView extends WatchUi.View {
         }
 
         // Set color
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
+        dc.setColor(_colorGradient[_score%30], Graphics.COLOR_BLACK);
 
         // Draw rectangle
         dc.fillRoundedRectangle(

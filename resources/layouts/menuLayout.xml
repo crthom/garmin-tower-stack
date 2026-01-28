@@ -1,15 +1,42 @@
 <layout id="MenuLayout">
     <label
-        id="HighScore"
+        id="title1"
+        text="Tower" 
+        x="30%"
+        y="15%"
+        font="Gfx.FONT_LARGE"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+        color="Gfx.COLOR_BLUE"
+    />
+    <label
+        id="title2"
+        text="Stack" 
+        x="70%"
+        y="15%"
+        font="Gfx.FONT_LARGE"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+        color="Gfx.COLOR_RED"
+    />
+    <label
+        id="highScore"
         text="High score: 0" 
         x="center"
-        y="center"
+        y="40%"
+        font="Gfx.FONT_SMALL"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+        color="Gfx.COLOR_PURPLE"
+    />
+    <label
+        id="start"
+        text="New Game [select]" 
+        x="center"
+        y="55%"
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
     <label
-        id="Start"
-        text="Select to start" 
+        id="customize"
+        text="Customize [up]" 
         x="center"
         y="70%"
         font="Gfx.FONT_SMALL"

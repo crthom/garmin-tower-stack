@@ -1222,14 +1222,314 @@ class TowerStackView extends WatchUi.View {
         %tmp.1068 = dup %tmp.1061;
         %tmp.1069 = aputv %tmp.1068 32 %tmp.1067;
         putv self :_tealBlueColorGradient %tmp.1069;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 167 8 ]
-        %tmp.1070 = self;
-        symbol [ getDeviceWidth %tmp.1071 167 24 38 ];
-        %tmp.1071 = getv function %tmp.1070 :getDeviceWidth;
-        %tmp.1072 = invoke %tmp.1070 %tmp.1071();
-        %tmp.1073 = 0.4;
-        %tmp.1074 = mul %tmp.1072 %tmp.1073;
-        putv self :_currentWidth %tmp.1074;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 160 16 ]
+        %tmp.1070 = newa 33;
+        %tmp.1071 = self;
+        symbol [ rgbToDec %tmp.1072 161 8 16 ];
+        %tmp.1072 = getv function %tmp.1071 :rgbToDec;
+        %tmp.1073 = 255;
+        %tmp.1074 = 105;
+        %tmp.1075 = 180;
+        %tmp.1076 = invoke %tmp.1071 %tmp.1072(%tmp.1073, %tmp.1074, %tmp.1075);
+        %tmp.1077 = dup %tmp.1070;
+        %tmp.1078 = aputv %tmp.1077 0 %tmp.1076;
+        %tmp.1079 = self;
+        symbol [ rgbToDec %tmp.1080 162 8 16 ];
+        %tmp.1080 = getv function %tmp.1079 :rgbToDec;
+        %tmp.1081 = 255;
+        %tmp.1082 = 112;
+        %tmp.1083 = 176;
+        %tmp.1084 = invoke %tmp.1079 %tmp.1080(%tmp.1081, %tmp.1082, %tmp.1083);
+        %tmp.1085 = dup %tmp.1078;
+        %tmp.1086 = aputv %tmp.1085 1 %tmp.1084;
+        %tmp.1087 = self;
+        symbol [ rgbToDec %tmp.1088 163 8 16 ];
+        %tmp.1088 = getv function %tmp.1087 :rgbToDec;
+        %tmp.1089 = 255;
+        %tmp.1090 = 119;
+        %tmp.1091 = 172;
+        %tmp.1092 = invoke %tmp.1087 %tmp.1088(%tmp.1089, %tmp.1090, %tmp.1091);
+        %tmp.1093 = dup %tmp.1086;
+        %tmp.1094 = aputv %tmp.1093 2 %tmp.1092;
+        %tmp.1095 = self;
+        symbol [ rgbToDec %tmp.1096 164 8 16 ];
+        %tmp.1096 = getv function %tmp.1095 :rgbToDec;
+        %tmp.1097 = 255;
+        %tmp.1098 = 126;
+        %tmp.1099 = 168;
+        %tmp.1100 = invoke %tmp.1095 %tmp.1096(%tmp.1097, %tmp.1098, %tmp.1099);
+        %tmp.1101 = dup %tmp.1094;
+        %tmp.1102 = aputv %tmp.1101 3 %tmp.1100;
+        %tmp.1103 = self;
+        symbol [ rgbToDec %tmp.1104 165 8 16 ];
+        %tmp.1104 = getv function %tmp.1103 :rgbToDec;
+        %tmp.1105 = 255;
+        %tmp.1106 = 133;
+        %tmp.1107 = 164;
+        %tmp.1108 = invoke %tmp.1103 %tmp.1104(%tmp.1105, %tmp.1106, %tmp.1107);
+        %tmp.1109 = dup %tmp.1102;
+        %tmp.1110 = aputv %tmp.1109 4 %tmp.1108;
+        %tmp.1111 = self;
+        symbol [ rgbToDec %tmp.1112 166 8 16 ];
+        %tmp.1112 = getv function %tmp.1111 :rgbToDec;
+        %tmp.1113 = 255;
+        %tmp.1114 = 140;
+        %tmp.1115 = 160;
+        %tmp.1116 = invoke %tmp.1111 %tmp.1112(%tmp.1113, %tmp.1114, %tmp.1115);
+        %tmp.1117 = dup %tmp.1110;
+        %tmp.1118 = aputv %tmp.1117 5 %tmp.1116;
+        %tmp.1119 = self;
+        symbol [ rgbToDec %tmp.1120 167 8 16 ];
+        %tmp.1120 = getv function %tmp.1119 :rgbToDec;
+        %tmp.1121 = 255;
+        %tmp.1122 = 147;
+        %tmp.1123 = 156;
+        %tmp.1124 = invoke %tmp.1119 %tmp.1120(%tmp.1121, %tmp.1122, %tmp.1123);
+        %tmp.1125 = dup %tmp.1118;
+        %tmp.1126 = aputv %tmp.1125 6 %tmp.1124;
+        %tmp.1127 = self;
+        symbol [ rgbToDec %tmp.1128 168 8 16 ];
+        %tmp.1128 = getv function %tmp.1127 :rgbToDec;
+        %tmp.1129 = 255;
+        %tmp.1130 = 154;
+        %tmp.1131 = 152;
+        %tmp.1132 = invoke %tmp.1127 %tmp.1128(%tmp.1129, %tmp.1130, %tmp.1131);
+        %tmp.1133 = dup %tmp.1126;
+        %tmp.1134 = aputv %tmp.1133 7 %tmp.1132;
+        %tmp.1135 = self;
+        symbol [ rgbToDec %tmp.1136 169 8 16 ];
+        %tmp.1136 = getv function %tmp.1135 :rgbToDec;
+        %tmp.1137 = 255;
+        %tmp.1138 = 161;
+        %tmp.1139 = 148;
+        %tmp.1140 = invoke %tmp.1135 %tmp.1136(%tmp.1137, %tmp.1138, %tmp.1139);
+        %tmp.1141 = dup %tmp.1134;
+        %tmp.1142 = aputv %tmp.1141 8 %tmp.1140;
+        %tmp.1143 = self;
+        symbol [ rgbToDec %tmp.1144 170 8 16 ];
+        %tmp.1144 = getv function %tmp.1143 :rgbToDec;
+        %tmp.1145 = 255;
+        %tmp.1146 = 168;
+        %tmp.1147 = 144;
+        %tmp.1148 = invoke %tmp.1143 %tmp.1144(%tmp.1145, %tmp.1146, %tmp.1147);
+        %tmp.1149 = dup %tmp.1142;
+        %tmp.1150 = aputv %tmp.1149 9 %tmp.1148;
+        %tmp.1151 = self;
+        symbol [ rgbToDec %tmp.1152 171 8 16 ];
+        %tmp.1152 = getv function %tmp.1151 :rgbToDec;
+        %tmp.1153 = 255;
+        %tmp.1154 = 175;
+        %tmp.1155 = 140;
+        %tmp.1156 = invoke %tmp.1151 %tmp.1152(%tmp.1153, %tmp.1154, %tmp.1155);
+        %tmp.1157 = dup %tmp.1150;
+        %tmp.1158 = aputv %tmp.1157 10 %tmp.1156;
+        %tmp.1159 = self;
+        symbol [ rgbToDec %tmp.1160 172 8 16 ];
+        %tmp.1160 = getv function %tmp.1159 :rgbToDec;
+        %tmp.1161 = 255;
+        %tmp.1162 = 182;
+        %tmp.1163 = 136;
+        %tmp.1164 = invoke %tmp.1159 %tmp.1160(%tmp.1161, %tmp.1162, %tmp.1163);
+        %tmp.1165 = dup %tmp.1158;
+        %tmp.1166 = aputv %tmp.1165 11 %tmp.1164;
+        %tmp.1167 = self;
+        symbol [ rgbToDec %tmp.1168 173 8 16 ];
+        %tmp.1168 = getv function %tmp.1167 :rgbToDec;
+        %tmp.1169 = 255;
+        %tmp.1170 = 189;
+        %tmp.1171 = 132;
+        %tmp.1172 = invoke %tmp.1167 %tmp.1168(%tmp.1169, %tmp.1170, %tmp.1171);
+        %tmp.1173 = dup %tmp.1166;
+        %tmp.1174 = aputv %tmp.1173 12 %tmp.1172;
+        %tmp.1175 = self;
+        symbol [ rgbToDec %tmp.1176 174 8 16 ];
+        %tmp.1176 = getv function %tmp.1175 :rgbToDec;
+        %tmp.1177 = 255;
+        %tmp.1178 = 196;
+        %tmp.1179 = 128;
+        %tmp.1180 = invoke %tmp.1175 %tmp.1176(%tmp.1177, %tmp.1178, %tmp.1179);
+        %tmp.1181 = dup %tmp.1174;
+        %tmp.1182 = aputv %tmp.1181 13 %tmp.1180;
+        %tmp.1183 = self;
+        symbol [ rgbToDec %tmp.1184 175 8 16 ];
+        %tmp.1184 = getv function %tmp.1183 :rgbToDec;
+        %tmp.1185 = 255;
+        %tmp.1186 = 203;
+        %tmp.1187 = 124;
+        %tmp.1188 = invoke %tmp.1183 %tmp.1184(%tmp.1185, %tmp.1186, %tmp.1187);
+        %tmp.1189 = dup %tmp.1182;
+        %tmp.1190 = aputv %tmp.1189 14 %tmp.1188;
+        %tmp.1191 = self;
+        symbol [ rgbToDec %tmp.1192 176 8 16 ];
+        %tmp.1192 = getv function %tmp.1191 :rgbToDec;
+        %tmp.1193 = 255;
+        %tmp.1194 = 210;
+        %tmp.1195 = 120;
+        %tmp.1196 = invoke %tmp.1191 %tmp.1192(%tmp.1193, %tmp.1194, %tmp.1195);
+        %tmp.1197 = dup %tmp.1190;
+        %tmp.1198 = aputv %tmp.1197 15 %tmp.1196;
+        %tmp.1199 = self;
+        symbol [ rgbToDec %tmp.1200 177 8 16 ];
+        %tmp.1200 = getv function %tmp.1199 :rgbToDec;
+        %tmp.1201 = 255;
+        %tmp.1202 = 217;
+        %tmp.1203 = 116;
+        %tmp.1204 = invoke %tmp.1199 %tmp.1200(%tmp.1201, %tmp.1202, %tmp.1203);
+        %tmp.1205 = dup %tmp.1198;
+        %tmp.1206 = aputv %tmp.1205 16 %tmp.1204;
+        %tmp.1207 = self;
+        symbol [ rgbToDec %tmp.1208 178 8 16 ];
+        %tmp.1208 = getv function %tmp.1207 :rgbToDec;
+        %tmp.1209 = 255;
+        %tmp.1210 = 210;
+        %tmp.1211 = 120;
+        %tmp.1212 = invoke %tmp.1207 %tmp.1208(%tmp.1209, %tmp.1210, %tmp.1211);
+        %tmp.1213 = dup %tmp.1206;
+        %tmp.1214 = aputv %tmp.1213 17 %tmp.1212;
+        %tmp.1215 = self;
+        symbol [ rgbToDec %tmp.1216 179 8 16 ];
+        %tmp.1216 = getv function %tmp.1215 :rgbToDec;
+        %tmp.1217 = 255;
+        %tmp.1218 = 203;
+        %tmp.1219 = 124;
+        %tmp.1220 = invoke %tmp.1215 %tmp.1216(%tmp.1217, %tmp.1218, %tmp.1219);
+        %tmp.1221 = dup %tmp.1214;
+        %tmp.1222 = aputv %tmp.1221 18 %tmp.1220;
+        %tmp.1223 = self;
+        symbol [ rgbToDec %tmp.1224 180 8 16 ];
+        %tmp.1224 = getv function %tmp.1223 :rgbToDec;
+        %tmp.1225 = 255;
+        %tmp.1226 = 196;
+        %tmp.1227 = 128;
+        %tmp.1228 = invoke %tmp.1223 %tmp.1224(%tmp.1225, %tmp.1226, %tmp.1227);
+        %tmp.1229 = dup %tmp.1222;
+        %tmp.1230 = aputv %tmp.1229 19 %tmp.1228;
+        %tmp.1231 = self;
+        symbol [ rgbToDec %tmp.1232 181 8 16 ];
+        %tmp.1232 = getv function %tmp.1231 :rgbToDec;
+        %tmp.1233 = 255;
+        %tmp.1234 = 189;
+        %tmp.1235 = 132;
+        %tmp.1236 = invoke %tmp.1231 %tmp.1232(%tmp.1233, %tmp.1234, %tmp.1235);
+        %tmp.1237 = dup %tmp.1230;
+        %tmp.1238 = aputv %tmp.1237 20 %tmp.1236;
+        %tmp.1239 = self;
+        symbol [ rgbToDec %tmp.1240 182 8 16 ];
+        %tmp.1240 = getv function %tmp.1239 :rgbToDec;
+        %tmp.1241 = 255;
+        %tmp.1242 = 182;
+        %tmp.1243 = 136;
+        %tmp.1244 = invoke %tmp.1239 %tmp.1240(%tmp.1241, %tmp.1242, %tmp.1243);
+        %tmp.1245 = dup %tmp.1238;
+        %tmp.1246 = aputv %tmp.1245 21 %tmp.1244;
+        %tmp.1247 = self;
+        symbol [ rgbToDec %tmp.1248 183 8 16 ];
+        %tmp.1248 = getv function %tmp.1247 :rgbToDec;
+        %tmp.1249 = 255;
+        %tmp.1250 = 175;
+        %tmp.1251 = 140;
+        %tmp.1252 = invoke %tmp.1247 %tmp.1248(%tmp.1249, %tmp.1250, %tmp.1251);
+        %tmp.1253 = dup %tmp.1246;
+        %tmp.1254 = aputv %tmp.1253 22 %tmp.1252;
+        %tmp.1255 = self;
+        symbol [ rgbToDec %tmp.1256 184 8 16 ];
+        %tmp.1256 = getv function %tmp.1255 :rgbToDec;
+        %tmp.1257 = 255;
+        %tmp.1258 = 168;
+        %tmp.1259 = 144;
+        %tmp.1260 = invoke %tmp.1255 %tmp.1256(%tmp.1257, %tmp.1258, %tmp.1259);
+        %tmp.1261 = dup %tmp.1254;
+        %tmp.1262 = aputv %tmp.1261 23 %tmp.1260;
+        %tmp.1263 = self;
+        symbol [ rgbToDec %tmp.1264 185 8 16 ];
+        %tmp.1264 = getv function %tmp.1263 :rgbToDec;
+        %tmp.1265 = 255;
+        %tmp.1266 = 161;
+        %tmp.1267 = 148;
+        %tmp.1268 = invoke %tmp.1263 %tmp.1264(%tmp.1265, %tmp.1266, %tmp.1267);
+        %tmp.1269 = dup %tmp.1262;
+        %tmp.1270 = aputv %tmp.1269 24 %tmp.1268;
+        %tmp.1271 = self;
+        symbol [ rgbToDec %tmp.1272 186 8 16 ];
+        %tmp.1272 = getv function %tmp.1271 :rgbToDec;
+        %tmp.1273 = 255;
+        %tmp.1274 = 154;
+        %tmp.1275 = 152;
+        %tmp.1276 = invoke %tmp.1271 %tmp.1272(%tmp.1273, %tmp.1274, %tmp.1275);
+        %tmp.1277 = dup %tmp.1270;
+        %tmp.1278 = aputv %tmp.1277 25 %tmp.1276;
+        %tmp.1279 = self;
+        symbol [ rgbToDec %tmp.1280 187 8 16 ];
+        %tmp.1280 = getv function %tmp.1279 :rgbToDec;
+        %tmp.1281 = 255;
+        %tmp.1282 = 147;
+        %tmp.1283 = 156;
+        %tmp.1284 = invoke %tmp.1279 %tmp.1280(%tmp.1281, %tmp.1282, %tmp.1283);
+        %tmp.1285 = dup %tmp.1278;
+        %tmp.1286 = aputv %tmp.1285 26 %tmp.1284;
+        %tmp.1287 = self;
+        symbol [ rgbToDec %tmp.1288 188 8 16 ];
+        %tmp.1288 = getv function %tmp.1287 :rgbToDec;
+        %tmp.1289 = 255;
+        %tmp.1290 = 140;
+        %tmp.1291 = 160;
+        %tmp.1292 = invoke %tmp.1287 %tmp.1288(%tmp.1289, %tmp.1290, %tmp.1291);
+        %tmp.1293 = dup %tmp.1286;
+        %tmp.1294 = aputv %tmp.1293 27 %tmp.1292;
+        %tmp.1295 = self;
+        symbol [ rgbToDec %tmp.1296 189 8 16 ];
+        %tmp.1296 = getv function %tmp.1295 :rgbToDec;
+        %tmp.1297 = 255;
+        %tmp.1298 = 133;
+        %tmp.1299 = 164;
+        %tmp.1300 = invoke %tmp.1295 %tmp.1296(%tmp.1297, %tmp.1298, %tmp.1299);
+        %tmp.1301 = dup %tmp.1294;
+        %tmp.1302 = aputv %tmp.1301 28 %tmp.1300;
+        %tmp.1303 = self;
+        symbol [ rgbToDec %tmp.1304 190 8 16 ];
+        %tmp.1304 = getv function %tmp.1303 :rgbToDec;
+        %tmp.1305 = 255;
+        %tmp.1306 = 126;
+        %tmp.1307 = 168;
+        %tmp.1308 = invoke %tmp.1303 %tmp.1304(%tmp.1305, %tmp.1306, %tmp.1307);
+        %tmp.1309 = dup %tmp.1302;
+        %tmp.1310 = aputv %tmp.1309 29 %tmp.1308;
+        %tmp.1311 = self;
+        symbol [ rgbToDec %tmp.1312 191 8 16 ];
+        %tmp.1312 = getv function %tmp.1311 :rgbToDec;
+        %tmp.1313 = 255;
+        %tmp.1314 = 119;
+        %tmp.1315 = 172;
+        %tmp.1316 = invoke %tmp.1311 %tmp.1312(%tmp.1313, %tmp.1314, %tmp.1315);
+        %tmp.1317 = dup %tmp.1310;
+        %tmp.1318 = aputv %tmp.1317 30 %tmp.1316;
+        %tmp.1319 = self;
+        symbol [ rgbToDec %tmp.1320 192 8 16 ];
+        %tmp.1320 = getv function %tmp.1319 :rgbToDec;
+        %tmp.1321 = 255;
+        %tmp.1322 = 112;
+        %tmp.1323 = 176;
+        %tmp.1324 = invoke %tmp.1319 %tmp.1320(%tmp.1321, %tmp.1322, %tmp.1323);
+        %tmp.1325 = dup %tmp.1318;
+        %tmp.1326 = aputv %tmp.1325 31 %tmp.1324;
+        %tmp.1327 = self;
+        symbol [ rgbToDec %tmp.1328 193 8 16 ];
+        %tmp.1328 = getv function %tmp.1327 :rgbToDec;
+        %tmp.1329 = 255;
+        %tmp.1330 = 105;
+        %tmp.1331 = 180;
+        %tmp.1332 = invoke %tmp.1327 %tmp.1328(%tmp.1329, %tmp.1330, %tmp.1331);
+        %tmp.1333 = dup %tmp.1326;
+        %tmp.1334 = aputv %tmp.1333 32 %tmp.1332;
+        putv self :_pinkTanColorGradient %tmp.1334;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 203 8 ]
+        %tmp.1335 = self;
+        symbol [ getDeviceWidth %tmp.1336 203 24 38 ];
+        %tmp.1336 = getv function %tmp.1335 :getDeviceWidth;
+        %tmp.1337 = invoke %tmp.1335 %tmp.1336();
+        %tmp.1338 = 0.4;
+        %tmp.1339 = mul %tmp.1337 %tmp.1338;
+        putv self :_currentWidth %tmp.1339;
     }
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 6; ]
     static
@@ -1275,187 +1575,190 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 124; @position = 16; @symbol_vardef = [_tealBlueColorGradient,124,16,38]; ]
     private
     var _tealBlueColorGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 160; @symbol_functiondef = [getDeviceWidth,160,13,27]; @symbol_return<0> = [Lang,160,33,37]; @symbol_return<1> = [Number,160,38,44]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 160; @position = 16; @symbol_vardef = [_pinkTanColorGradient,160,16,37]; ]
+    private
+    var _pinkTanColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 196; @symbol_functiondef = [getDeviceWidth,196,13,27]; @symbol_return<0> = [Lang,196,33,37]; @symbol_return<1> = [Number,196,38,44]; ]
     function getDeviceWidth() as Lang.Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 161 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_stop" ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 197 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_stop" ]
         %deviceSettings.1 = local;
-        symbol [ deviceSettings %deviceSettings.1 161 12 26 ];
-        symbol [ System %tmp.2 161 29 35 ];
+        symbol [ deviceSettings %deviceSettings.1 197 12 26 ];
+        symbol [ System %tmp.2 197 29 35 ];
         %tmp.2 = getv ? :System;
-        symbol [ getDeviceSettings %tmp.3 161 36 53 ];
+        symbol [ getDeviceSettings %tmp.3 197 36 53 ];
         %tmp.3 = getv function %tmp.2 :getDeviceSettings;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %deviceSettings.1 %tmp.4;
-        symbol [ deviceSettings %deviceSettings.1 161 12 26 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 162 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_stop" ]
+        symbol [ deviceSettings %deviceSettings.1 197 12 26 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 198 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_stop" ]
         %fullScreenWidth.2 = local;
-        symbol [ fullScreenWidth %fullScreenWidth.2 162 12 27 ];
+        symbol [ fullScreenWidth %fullScreenWidth.2 198 12 27 ];
         %tmp.5 = lgetv %deviceSettings.1;
-        symbol [ deviceSettings %tmp.5 162 30 44 ];
-        symbol [ screenWidth %tmp.6 162 45 56 ];
+        symbol [ deviceSettings %tmp.5 198 30 44 ];
+        symbol [ screenWidth %tmp.6 198 45 56 ];
         %tmp.6 = getv %tmp.5 :screenWidth;
         lputv %fullScreenWidth.2 %tmp.6;
-        symbol [ fullScreenWidth %fullScreenWidth.2 162 12 27 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 164 8 ]
+        symbol [ fullScreenWidth %fullScreenWidth.2 198 12 27 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 200 8 ]
         %tmp.7 = lgetv %fullScreenWidth.2;
-        symbol [ fullScreenWidth %tmp.7 164 15 30 ];
+        symbol [ fullScreenWidth %tmp.7 200 15 30 ];
         ret %tmp.7;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_160_45_165_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_196_45_201_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 167; @position = 8; @symbol_vardef = [_currentWidth,167,8,21]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 203; @position = 8; @symbol_vardef = [_currentWidth,203,8,21]; ]
     var _currentWidth;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 168; @position = 8; @symbol_vardef = [_score,168,8,14]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 204; @position = 8; @symbol_vardef = [_score,204,8,14]; ]
     var _score = 0;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 170; @symbol_functiondef = [initialize,170,13,23]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 206; @symbol_functiondef = [initialize,206,13,23]; ]
     function initialize() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_170_26_172_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 171 8 ]
-        symbol [ View %tmp.2 171 8 12 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_206_26_208_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 207 8 ]
+        symbol [ View %tmp.2 207 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 171 13 23 ];
+        symbol [ initialize %tmp.3 207 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_170_26_172_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_206_26_208_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 175; @symbol_functiondef = [onLayout,175,13,21]; @symbol_param<0> = [dc,175,22,24]; @symbol_param<0>_type<0> = [Dc,175,28,30]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 211; @symbol_functiondef = [onLayout,211,13,21]; @symbol_param<0> = [dc,211,22,24]; @symbol_param<0>_type<0> = [Dc,211,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_175_40_179_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 176 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_211_40_215_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 212 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 176 8 17 ];
+        symbol [ setLayout %tmp.2 212 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 176 18 21 ];
+        symbol [ Rez %tmp.4 212 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 176 22 29 ];
+        symbol [ Layouts %tmp.5 212 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ MainLayout %tmp.6 176 30 40 ];
+        symbol [ MainLayout %tmp.6 212 30 40 ];
         %tmp.6 = getv function %tmp.5 :MainLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 176 41 43 ];
+        symbol [ dc %tmp.7 212 41 43 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 178 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 214 8 ]
         %tmp.9 = self;
-        symbol [ findDrawableById %tmp.10 178 24 40 ];
+        symbol [ findDrawableById %tmp.10 214 24 40 ];
         %tmp.10 = getv function %tmp.9 :findDrawableById;
         %tmp.11 = "score";
         %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
-        symbol [ _scoreElement ? 178 8 21 ];
+        symbol [ _scoreElement ? 214 8 21 ];
         putv self :_scoreElement %tmp.12;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_175_40_179_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_211_40_215_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 184; @symbol_functiondef = [onShow,184,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 220; @symbol_functiondef = [onShow,220,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 188; @symbol_functiondef = [onUpdate,188,13,21]; @symbol_param<0> = [dc,188,22,24]; @symbol_param<0>_type<0> = [Dc,188,28,30]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 224; @symbol_functiondef = [onUpdate,224,13,21]; @symbol_param<0> = [dc,224,22,24]; @symbol_param<0>_type<0> = [Dc,224,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_188_40_224_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 189 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_224_40_260_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 225 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 189 8 10 ];
-        symbol [ clear %tmp.2 189 11 16 ];
+        symbol [ dc %tmp.1 225 8 10 ];
+        symbol [ clear %tmp.2 225 11 16 ];
         %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 190 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_188_40_224_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_188_40_224_4_stop" ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 226 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_224_40_260_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_224_40_260_4_stop" ]
         %blockHeight.1 = local;
-        symbol [ blockHeight %blockHeight.1 190 12 23 ];
+        symbol [ blockHeight %blockHeight.1 226 12 23 ];
         %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 190 27 29 ];
-        symbol [ getHeight %tmp.4 190 30 39 ];
+        symbol [ dc %tmp.3 226 27 29 ];
+        symbol [ getHeight %tmp.4 226 30 39 ];
         %tmp.4 = getv function %tmp.3 :getHeight;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         %tmp.6 = 14;
         %tmp.7 = div %tmp.5 %tmp.6;
         lputv %blockHeight.1 %tmp.7;
-        symbol [ blockHeight %blockHeight.1 190 12 23 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 191 8 ]
-        symbol [ View %tmp.9 191 8 12 ];
+        symbol [ blockHeight %blockHeight.1 226 12 23 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 227 8 ]
+        symbol [ View %tmp.9 227 8 12 ];
         %tmp.9 = getv ? :View;
-        symbol [ onUpdate %tmp.10 191 13 21 ];
+        symbol [ onUpdate %tmp.10 227 13 21 ];
         %tmp.10 = getv function %tmp.9 :onUpdate;
         %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 191 22 24 ];
+        symbol [ dc %tmp.11 227 22 24 ];
         invoke %tmp.9 %tmp.10(%tmp.11);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 192 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 228 8 ]
         %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 192 8 10 ];
-        symbol [ drawLine %tmp.13 192 11 19 ];
+        symbol [ dc %tmp.12 228 8 10 ];
+        symbol [ drawLine %tmp.13 228 11 19 ];
         %tmp.13 = getv function %tmp.12 :drawLine;
         %tmp.14 = 0;
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 192 24 26 ];
-        symbol [ getHeight %tmp.16 192 27 36 ];
+        symbol [ dc %tmp.15 228 24 26 ];
+        symbol [ getHeight %tmp.16 228 27 36 ];
         %tmp.16 = getv function %tmp.15 :getHeight;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         %tmp.18 = 0.5;
         %tmp.19 = mul %tmp.17 %tmp.18;
         %tmp.20 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.20 192 49 60 ];
+        symbol [ blockHeight %tmp.20 228 49 60 ];
         %tmp.21 = 2;
         %tmp.22 = mul %tmp.20 %tmp.21;
         %tmp.23 = add %tmp.19 %tmp.22;
         %tmp.24 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.24 192 69 80 ];
-        symbol [ _score %tmp.26 192 83 89 ];
+        symbol [ blockHeight %tmp.24 228 69 80 ];
+        symbol [ _score %tmp.26 228 83 89 ];
         %tmp.26 = getv ? :_score;
         %tmp.27 = mul %tmp.24 %tmp.26;
         %tmp.28 = add %tmp.23 %tmp.27;
         %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 192 92 94 ];
-        symbol [ getWidth %tmp.30 192 95 103 ];
+        symbol [ dc %tmp.29 228 92 94 ];
+        symbol [ getWidth %tmp.30 228 95 103 ];
         %tmp.30 = getv function %tmp.29 :getWidth;
         %tmp.31 = invoke %tmp.29 %tmp.30();
         %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 192 108 110 ];
-        symbol [ getHeight %tmp.33 192 111 120 ];
+        symbol [ dc %tmp.32 228 108 110 ];
+        symbol [ getHeight %tmp.33 228 111 120 ];
         %tmp.33 = getv function %tmp.32 :getHeight;
         %tmp.34 = invoke %tmp.32 %tmp.33();
         %tmp.35 = 0.5;
         %tmp.36 = mul %tmp.34 %tmp.35;
         %tmp.37 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.37 192 133 144 ];
+        symbol [ blockHeight %tmp.37 228 133 144 ];
         %tmp.38 = 2;
         %tmp.39 = mul %tmp.37 %tmp.38;
         %tmp.40 = add %tmp.36 %tmp.39;
         %tmp.41 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.41 192 153 164 ];
-        symbol [ _score %tmp.43 192 167 173 ];
+        symbol [ blockHeight %tmp.41 228 153 164 ];
+        symbol [ _score %tmp.43 228 167 173 ];
         %tmp.43 = getv ? :_score;
         %tmp.44 = mul %tmp.41 %tmp.43;
         %tmp.45 = add %tmp.40 %tmp.44;
         invoke %tmp.12 %tmp.13(%tmp.14, %tmp.28, %tmp.31, %tmp.45);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 193 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 229 8 ]
         %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 193 8 10 ];
-        symbol [ setColor %tmp.47 193 11 19 ];
+        symbol [ dc %tmp.46 229 8 10 ];
+        symbol [ setColor %tmp.47 229 11 19 ];
         %tmp.47 = getv function %tmp.46 :setColor;
-        symbol [ _tealBlueColorGradient %tmp.49 193 20 42 ];
-        %tmp.49 = getv ? :_tealBlueColorGradient;
+        symbol [ _pinkTanColorGradient %tmp.49 229 20 41 ];
+        %tmp.49 = getv ? :_pinkTanColorGradient;
         %tmp.50 = 0;
         %tmp.51 = agetv %tmp.49 %tmp.50;
-        symbol [ Graphics %tmp.52 193 47 55 ];
+        symbol [ Graphics %tmp.52 229 46 54 ];
         %tmp.52 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.53 193 56 67 ];
+        symbol [ COLOR_BLACK %tmp.53 229 55 66 ];
         %tmp.53 = getv %tmp.52 :COLOR_BLACK;
         invoke %tmp.46 %tmp.47(%tmp.51, %tmp.53);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 194 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 230 8 ]
         %tmp.54 = lgetv %dc;
-        symbol [ dc %tmp.54 194 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.55 194 11 31 ];
+        symbol [ dc %tmp.54 230 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.55 230 11 31 ];
         %tmp.55 = getv function %tmp.54 :fillRoundedRectangle;
         %tmp.56 = lgetv %dc;
-        symbol [ dc %tmp.56 195 12 14 ];
-        symbol [ getWidth %tmp.57 195 15 23 ];
+        symbol [ dc %tmp.56 231 12 14 ];
+        symbol [ getWidth %tmp.57 231 15 23 ];
         %tmp.57 = getv function %tmp.56 :getWidth;
         %tmp.58 = invoke %tmp.56 %tmp.57();
         %tmp.59 = 2;
         %tmp.60 = div %tmp.58 %tmp.59;
         %tmp.61 = self;
-        symbol [ getDeviceWidth %tmp.62 195 29 43 ];
+        symbol [ getDeviceWidth %tmp.62 231 29 43 ];
         %tmp.62 = getv function %tmp.61 :getDeviceWidth;
         %tmp.63 = invoke %tmp.61 %tmp.62();
         %tmp.64 = 0.4;
@@ -1464,250 +1767,250 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView
         %tmp.67 = div %tmp.65 %tmp.66;
         %tmp.68 = sub %tmp.60 %tmp.67;
         %tmp.69 = lgetv %dc;
-        symbol [ dc %tmp.69 196 13 15 ];
-        symbol [ getHeight %tmp.70 196 16 25 ];
+        symbol [ dc %tmp.69 232 13 15 ];
+        symbol [ getHeight %tmp.70 232 16 25 ];
         %tmp.70 = getv function %tmp.69 :getHeight;
         %tmp.71 = invoke %tmp.69 %tmp.70();
         %tmp.72 = 0.5;
         %tmp.73 = mul %tmp.71 %tmp.72;
         %tmp.74 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.74 196 37 48 ];
+        symbol [ blockHeight %tmp.74 232 37 48 ];
         %tmp.75 = add %tmp.73 %tmp.74;
         %tmp.76 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.76 196 52 63 ];
-        symbol [ _score %tmp.78 196 64 70 ];
+        symbol [ blockHeight %tmp.76 232 52 63 ];
+        symbol [ _score %tmp.78 232 64 70 ];
         %tmp.78 = getv ? :_score;
         %tmp.79 = mul %tmp.76 %tmp.78;
         %tmp.80 = add %tmp.75 %tmp.79;
         %tmp.81 = self;
-        symbol [ getDeviceWidth %tmp.82 197 13 27 ];
+        symbol [ getDeviceWidth %tmp.82 233 13 27 ];
         %tmp.82 = getv function %tmp.81 :getDeviceWidth;
         %tmp.83 = invoke %tmp.81 %tmp.82();
         %tmp.84 = 0.4;
         %tmp.85 = mul %tmp.83 %tmp.84;
         %tmp.86 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.86 198 12 23 ];
+        symbol [ blockHeight %tmp.86 234 12 23 ];
         %tmp.87 = 2;
         invoke %tmp.54 %tmp.55(%tmp.68, %tmp.80, %tmp.85, %tmp.86, %tmp.87);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 201 8 ]
-        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_init:
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_end" ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 237 8 ]
+        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_init:
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_end" ]
         %i.2 = local;
-        symbol [ i %i.2 201 17 18 ];
+        symbol [ i %i.2 237 17 18 ];
         %tmp.88 = 0;
         lputv %i.2 %tmp.88;
-        symbol [ i %i.2 201 17 18 ];
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_test:
+        symbol [ i %i.2 237 17 18 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_test:
         %tmp.89 = lgetv %i.2;
-        symbol [ i %tmp.89 201 24 25 ];
-        symbol [ _previousBlocks %tmp.91 201 28 43 ];
+        symbol [ i %tmp.89 237 24 25 ];
+        symbol [ _previousBlocks %tmp.91 237 28 43 ];
         %tmp.91 = getv ? :_previousBlocks;
-        symbol [ size %tmp.92 201 44 48 ];
+        symbol [ size %tmp.92 237 44 48 ];
         %tmp.92 = getv function %tmp.91 :size;
         %tmp.93 = invoke %tmp.91 %tmp.92();
         %tmp.94 = lt %tmp.89 %tmp.93;
-        bf %tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_begin:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_57_211_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 202 12 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_57_211_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_57_211_8_stop" ]
+        bf %tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_begin:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_57_247_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 238 12 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_57_247_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_57_247_8_stop" ]
         %block.3 = local;
-        symbol [ block %block.3 202 16 21 ];
-        symbol [ _previousBlocks %tmp.96 202 24 39 ];
+        symbol [ block %block.3 238 16 21 ];
+        symbol [ _previousBlocks %tmp.96 238 24 39 ];
         %tmp.96 = getv ? :_previousBlocks;
         %tmp.97 = lgetv %i.2;
-        symbol [ i %tmp.97 202 40 41 ];
+        symbol [ i %tmp.97 238 40 41 ];
         %tmp.98 = agetv %tmp.96 %tmp.97;
         lputv %block.3 %tmp.98;
-        symbol [ block %block.3 202 16 21 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 203 12 ]
+        symbol [ block %block.3 238 16 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 239 12 ]
         %tmp.99 = lgetv %dc;
-        symbol [ dc %tmp.99 203 12 14 ];
-        symbol [ setColor %tmp.100 203 15 23 ];
+        symbol [ dc %tmp.99 239 12 14 ];
+        symbol [ setColor %tmp.100 239 15 23 ];
         %tmp.100 = getv function %tmp.99 :setColor;
-        symbol [ _tealBlueColorGradient %tmp.102 203 24 46 ];
-        %tmp.102 = getv ? :_tealBlueColorGradient;
+        symbol [ _pinkTanColorGradient %tmp.102 239 24 45 ];
+        %tmp.102 = getv ? :_pinkTanColorGradient;
         %tmp.103 = lgetv %i.2;
-        symbol [ i %tmp.103 203 48 49 ];
+        symbol [ i %tmp.103 239 47 48 ];
         %tmp.104 = 32;
         %tmp.105 = mod %tmp.103 %tmp.104;
         %tmp.106 = agetv %tmp.102 %tmp.105;
-        symbol [ Graphics %tmp.107 203 56 64 ];
+        symbol [ Graphics %tmp.107 239 55 63 ];
         %tmp.107 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.108 203 65 76 ];
+        symbol [ COLOR_BLACK %tmp.108 239 64 75 ];
         %tmp.108 = getv %tmp.107 :COLOR_BLACK;
         invoke %tmp.99 %tmp.100(%tmp.106, %tmp.108);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 204 12 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 240 12 ]
         %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 204 12 14 ];
-        symbol [ fillRoundedRectangle %tmp.110 204 15 35 ];
+        symbol [ dc %tmp.109 240 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.110 240 15 35 ];
         %tmp.110 = getv function %tmp.109 :fillRoundedRectangle;
         %tmp.111 = lgetv %block.3;
-        symbol [ block %tmp.111 205 16 21 ];
+        symbol [ block %tmp.111 241 16 21 ];
         %tmp.112 = 0;
         %tmp.113 = agetv %tmp.111 %tmp.112;
         %tmp.114 = lgetv %dc;
-        symbol [ dc %tmp.114 206 17 19 ];
-        symbol [ getHeight %tmp.115 206 20 29 ];
+        symbol [ dc %tmp.114 242 17 19 ];
+        symbol [ getHeight %tmp.115 242 20 29 ];
         %tmp.115 = getv function %tmp.114 :getHeight;
         %tmp.116 = invoke %tmp.114 %tmp.115();
         %tmp.117 = 0.5;
         %tmp.118 = mul %tmp.116 %tmp.117;
         %tmp.119 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.119 206 41 52 ];
+        symbol [ blockHeight %tmp.119 242 41 52 ];
         %tmp.120 = add %tmp.118 %tmp.119;
-        symbol [ _score %tmp.122 206 57 63 ];
+        symbol [ _score %tmp.122 242 57 63 ];
         %tmp.122 = getv ? :_score;
         %tmp.123 = lgetv %block.3;
-        symbol [ block %tmp.123 206 67 72 ];
+        symbol [ block %tmp.123 242 67 72 ];
         %tmp.124 = 1;
         %tmp.125 = agetv %tmp.123 %tmp.124;
         %tmp.126 = 1;
         %tmp.127 = add %tmp.125 %tmp.126;
         %tmp.128 = sub %tmp.122 %tmp.127;
         %tmp.129 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.129 206 84 95 ];
+        symbol [ blockHeight %tmp.129 242 84 95 ];
         %tmp.130 = mul %tmp.128 %tmp.129;
         %tmp.131 = add %tmp.120 %tmp.130;
         %tmp.132 = lgetv %block.3;
-        symbol [ block %tmp.132 207 16 21 ];
+        symbol [ block %tmp.132 243 16 21 ];
         %tmp.133 = 2;
         %tmp.134 = agetv %tmp.132 %tmp.133;
         %tmp.135 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.135 208 16 27 ];
+        symbol [ blockHeight %tmp.135 244 16 27 ];
         %tmp.136 = 2;
         invoke %tmp.109 %tmp.110(%tmp.113, %tmp.131, %tmp.134, %tmp.135, %tmp.136);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_57_211_8_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_incr:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 201 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_57_247_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_incr:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 237 ]
         %tmp.139 = lgetv %i.2;
-        symbol [ i %tmp.139 201 52 53 ];
+        symbol [ i %tmp.139 237 52 53 ];
         %tmp.140 = add %tmp.139 1;
         lputv %i.2 %tmp.140;
-        symbol [ i %i.2 201 52 53 ];
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_test;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_201_8_211_8_for_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 214 8 ]
+        symbol [ i %i.2 237 52 53 ];
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_test;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_8_247_8_for_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 250 8 ]
         %tmp.141 = lgetv %dc;
-        symbol [ dc %tmp.141 214 8 10 ];
-        symbol [ setColor %tmp.142 214 11 19 ];
+        symbol [ dc %tmp.141 250 8 10 ];
+        symbol [ setColor %tmp.142 250 11 19 ];
         %tmp.142 = getv function %tmp.141 :setColor;
-        symbol [ _tealBlueColorGradient %tmp.144 214 20 42 ];
-        %tmp.144 = getv ? :_tealBlueColorGradient;
-        symbol [ _score %tmp.146 214 43 49 ];
+        symbol [ _pinkTanColorGradient %tmp.144 250 20 41 ];
+        %tmp.144 = getv ? :_pinkTanColorGradient;
+        symbol [ _score %tmp.146 250 42 48 ];
         %tmp.146 = getv ? :_score;
         %tmp.147 = 32;
         %tmp.148 = mod %tmp.146 %tmp.147;
         %tmp.149 = agetv %tmp.144 %tmp.148;
-        symbol [ Graphics %tmp.150 214 55 63 ];
+        symbol [ Graphics %tmp.150 250 54 62 ];
         %tmp.150 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.151 214 64 75 ];
+        symbol [ COLOR_BLACK %tmp.151 250 63 74 ];
         %tmp.151 = getv %tmp.150 :COLOR_BLACK;
         invoke %tmp.141 %tmp.142(%tmp.149, %tmp.151);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 217 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 253 8 ]
         %tmp.152 = lgetv %dc;
-        symbol [ dc %tmp.152 217 8 10 ];
-        symbol [ fillRoundedRectangle %tmp.153 217 11 31 ];
+        symbol [ dc %tmp.152 253 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.153 253 11 31 ];
         %tmp.153 = getv function %tmp.152 :fillRoundedRectangle;
-        symbol [ _xPosition %tmp.155 218 12 22 ];
+        symbol [ _xPosition %tmp.155 254 12 22 ];
         %tmp.155 = getv ? :_xPosition;
         %tmp.156 = lgetv %dc;
-        symbol [ dc %tmp.156 219 13 15 ];
-        symbol [ getHeight %tmp.157 219 16 25 ];
+        symbol [ dc %tmp.156 255 13 15 ];
+        symbol [ getHeight %tmp.157 255 16 25 ];
         %tmp.157 = getv function %tmp.156 :getHeight;
         %tmp.158 = invoke %tmp.156 %tmp.157();
         %tmp.159 = 0.5;
         %tmp.160 = mul %tmp.158 %tmp.159;
-        symbol [ _currentWidth %tmp.162 220 12 25 ];
+        symbol [ _currentWidth %tmp.162 256 12 25 ];
         %tmp.162 = getv ? :_currentWidth;
         %tmp.163 = lgetv %blockHeight.1;
-        symbol [ blockHeight %tmp.163 221 12 23 ];
+        symbol [ blockHeight %tmp.163 257 12 23 ];
         %tmp.164 = 2;
         invoke %tmp.152 %tmp.153(%tmp.155, %tmp.160, %tmp.162, %tmp.163, %tmp.164);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_188_40_224_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_224_40_260_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 229; @symbol_functiondef = [onHide,229,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 265; @symbol_functiondef = [onHide,265,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 232; @symbol_functiondef = [setXPosition,232,13,25]; @symbol_param<0> = [x,232,26,27]; @symbol_param<0>_type<0> = [Number,232,31,37]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 268; @symbol_functiondef = [setXPosition,268,13,25]; @symbol_param<0> = [x,268,26,27]; @symbol_param<0>_type<0> = [Number,268,31,37]; ]
     function setXPosition(x as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_232_47_235_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 233 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_268_47_271_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 269 8 ]
         %tmp.1 = lgetv %x;
-        symbol [ x %tmp.1 233 21 22 ];
-        symbol [ _xPosition ? 233 8 18 ];
+        symbol [ x %tmp.1 269 21 22 ];
+        symbol [ _xPosition ? 269 8 18 ];
         putv self :_xPosition %tmp.1;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 234 8 ]
-        symbol [ WatchUi %tmp.2 234 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 270 8 ]
+        symbol [ WatchUi %tmp.2 270 8 15 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 234 16 29 ];
+        symbol [ requestUpdate %tmp.3 270 16 29 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_232_47_235_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_268_47_271_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 237; @symbol_functiondef = [updateScore,237,13,24]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 273; @symbol_functiondef = [updateScore,273,13,24]; ]
     function updateScore() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_35_241_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 238 8 ]
-        symbol [ _score %tmp.1 238 8 14 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_273_35_277_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 274 8 ]
+        symbol [ _score %tmp.1 274 8 14 ];
         %tmp.1 = getv self :_score;
         %tmp.2 = 1;
         %tmp.3 = add %tmp.1 %tmp.2;
-        symbol [ _score ? 238 8 14 ];
+        symbol [ _score ? 274 8 14 ];
         putv self :_score dup %tmp.3;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 239 8 ]
-        symbol [ _scoreElement %tmp.5 239 8 21 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 275 8 ]
+        symbol [ _scoreElement %tmp.5 275 8 21 ];
         %tmp.5 = getv ? :_scoreElement;
-        symbol [ setText %tmp.6 239 22 29 ];
+        symbol [ setText %tmp.6 275 22 29 ];
         %tmp.6 = getv function %tmp.5 :setText;
-        symbol [ _score %tmp.8 239 30 36 ];
+        symbol [ _score %tmp.8 275 30 36 ];
         %tmp.8 = getv ? :_score;
-        symbol [ toString %tmp.9 239 37 45 ];
+        symbol [ toString %tmp.9 275 37 45 ];
         %tmp.9 = getv function %tmp.8 :toString;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         invoke %tmp.5 %tmp.6(%tmp.10);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 240 8 ]
-        symbol [ WatchUi %tmp.11 240 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 276 8 ]
+        symbol [ WatchUi %tmp.11 276 8 15 ];
         %tmp.11 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.12 240 16 29 ];
+        symbol [ requestUpdate %tmp.12 276 16 29 ];
         %tmp.12 = getv function %tmp.11 :requestUpdate;
         invoke %tmp.11 %tmp.12();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_237_35_241_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_273_35_277_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 243; @symbol_functiondef = [newBlock,243,13,21]; @symbol_param<0> = [left,243,22,26]; @symbol_param<0>_type<0> = [Number,243,30,36]; @symbol_param<1> = [width,243,38,43]; @symbol_param<1>_type<0> = [Number,243,47,53]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 279; @symbol_functiondef = [newBlock,279,13,21]; @symbol_param<0> = [left,279,22,26]; @symbol_param<0>_type<0> = [Number,279,30,36]; @symbol_param<1> = [width,279,38,43]; @symbol_param<1>_type<0> = [Number,279,47,53]; ]
     function newBlock(left as Number, width as Number) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_243_63_247_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 244 8 ]
-        symbol [ _previousBlocks %tmp.2 244 8 23 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_279_63_283_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 280 8 ]
+        symbol [ _previousBlocks %tmp.2 280 8 23 ];
         %tmp.2 = getv ? :_previousBlocks;
-        symbol [ add %tmp.3 244 24 27 ];
+        symbol [ add %tmp.3 280 24 27 ];
         %tmp.3 = getv function %tmp.2 :add;
         %tmp.4 = newa 3;
         %tmp.5 = lgetv %left;
-        symbol [ left %tmp.5 244 29 33 ];
+        symbol [ left %tmp.5 280 29 33 ];
         %tmp.6 = dup %tmp.4;
         %tmp.7 = aputv %tmp.6 0 %tmp.5;
-        symbol [ _score %tmp.9 244 35 41 ];
+        symbol [ _score %tmp.9 280 35 41 ];
         %tmp.9 = getv ? :_score;
         %tmp.10 = dup %tmp.7;
         %tmp.11 = aputv %tmp.10 1 %tmp.9;
         %tmp.12 = lgetv %width;
-        symbol [ width %tmp.12 244 43 48 ];
+        symbol [ width %tmp.12 280 43 48 ];
         %tmp.13 = dup %tmp.11;
         %tmp.14 = aputv %tmp.13 2 %tmp.12;
         invoke %tmp.2 %tmp.3(%tmp.14);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 245 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 281 8 ]
         %tmp.15 = 0;
-        symbol [ _xPosition ? 245 8 18 ];
+        symbol [ _xPosition ? 281 8 18 ];
         putv self :_xPosition %tmp.15;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 246 8 ]
-        symbol [ WatchUi %tmp.16 246 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc" 282 8 ]
+        symbol [ WatchUi %tmp.16 282 8 15 ];
         %tmp.16 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.17 246 16 29 ];
+        symbol [ requestUpdate %tmp.17 282 16 29 ];
         %tmp.17 = getv function %tmp.16 :requestUpdate;
         invoke %tmp.16 %tmp.17();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_243_63_247_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackView_mc_279_63_283_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackView.mc"; @line = 1; ]

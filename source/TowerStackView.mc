@@ -12,6 +12,7 @@ class TowerStackView extends WatchUi.View {
         return rr*65536 + gg*256 + bb;
     }
 
+    //unlocked at high score of 25 
     private var _blueRedColorGradient = [
         rgbToDec(8, 78, 199),
         rgbToDec(11, 72, 182),
@@ -48,6 +49,7 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(8, 78, 199),
     ];
 
+    //unlocked at high score of 30 
     private var _purpleBlueColorGradient = [
         rgbToDec(103, 27, 162),
         rgbToDec(102, 43, 171),
@@ -84,6 +86,79 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(103, 27, 162),
     ];
 
+    //unlocked at high score of 35
+    private var _forestGreenBrownGradient = [
+        rgbToDec(34, 139, 34),
+        rgbToDec(40, 134, 30),
+        rgbToDec(46, 129, 26),
+        rgbToDec(52, 124, 22),
+        rgbToDec(58, 119, 18),
+        rgbToDec(64, 114, 14),
+        rgbToDec(70, 109, 10),
+        rgbToDec(76, 104, 6),
+        rgbToDec(82, 99, 2),
+        rgbToDec(88, 94, 0),
+        rgbToDec(94, 89, 0),
+        rgbToDec(100, 84, 0),
+        rgbToDec(106, 79, 0),
+        rgbToDec(112, 74, 0),
+        rgbToDec(118, 69, 0),
+        rgbToDec(124, 64, 0),
+        rgbToDec(118, 69, 0),
+        rgbToDec(112, 74, 0),
+        rgbToDec(106, 79, 0),
+        rgbToDec(100, 84, 0),
+        rgbToDec(94, 89, 0),
+        rgbToDec(88, 94, 0),
+        rgbToDec(82, 99, 2),
+        rgbToDec(76, 104, 6),
+        rgbToDec(70, 109, 10),
+        rgbToDec(64, 114, 14),
+        rgbToDec(58, 119, 18),
+        rgbToDec(52, 124, 22),
+        rgbToDec(46, 129, 26),
+        rgbToDec(40, 134, 30),
+        rgbToDec(34, 139, 34),
+];
+    
+    //unlocked at high score of 40 
+    private var _pinkTanColorGradient = [
+        rgbToDec(255, 105, 180),
+        rgbToDec(255, 112, 176),
+        rgbToDec(255, 119, 172),
+        rgbToDec(255, 126, 168),
+        rgbToDec(255, 133, 164),
+        rgbToDec(255, 140, 160),
+        rgbToDec(255, 147, 156),
+        rgbToDec(255, 154, 152),
+        rgbToDec(255, 161, 148),
+        rgbToDec(255, 168, 144),
+        rgbToDec(255, 175, 140),
+        rgbToDec(255, 182, 136),
+        rgbToDec(255, 189, 132),
+        rgbToDec(255, 196, 128),
+        rgbToDec(255, 203, 124),
+        rgbToDec(255, 210, 120),
+        rgbToDec(255, 217, 116),
+        rgbToDec(255, 210, 120),
+        rgbToDec(255, 203, 124),
+        rgbToDec(255, 196, 128),
+        rgbToDec(255, 189, 132),
+        rgbToDec(255, 182, 136),
+        rgbToDec(255, 175, 140),
+        rgbToDec(255, 168, 144),
+        rgbToDec(255, 161, 148),
+        rgbToDec(255, 154, 152),
+        rgbToDec(255, 147, 156),
+        rgbToDec(255, 140, 160),
+        rgbToDec(255, 133, 164),
+        rgbToDec(255, 126, 168),
+        rgbToDec(255, 119, 172),
+        rgbToDec(255, 112, 176),
+        rgbToDec(255, 105, 180),
+    ];
+    
+    //unlocked at high score of 50 
     private var _rainbowColorGradient = [
         rgbToDec(148, 0, 211),
         rgbToDec(120, 0, 230),
@@ -121,6 +196,7 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(148, 0, 211),
     ];
 
+    //starter gradient
     private var _tealBlueColorGradient = [
         rgbToDec(0, 200, 180),
         rgbToDec(0, 196, 183),
@@ -157,42 +233,6 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(0, 200, 180),
     ];
 
-    private var _pinkTanColorGradient = [
-        rgbToDec(255, 105, 180),
-        rgbToDec(255, 112, 176),
-        rgbToDec(255, 119, 172),
-        rgbToDec(255, 126, 168),
-        rgbToDec(255, 133, 164),
-        rgbToDec(255, 140, 160),
-        rgbToDec(255, 147, 156),
-        rgbToDec(255, 154, 152),
-        rgbToDec(255, 161, 148),
-        rgbToDec(255, 168, 144),
-        rgbToDec(255, 175, 140),
-        rgbToDec(255, 182, 136),
-        rgbToDec(255, 189, 132),
-        rgbToDec(255, 196, 128),
-        rgbToDec(255, 203, 124),
-        rgbToDec(255, 210, 120),
-        rgbToDec(255, 217, 116),
-        rgbToDec(255, 210, 120),
-        rgbToDec(255, 203, 124),
-        rgbToDec(255, 196, 128),
-        rgbToDec(255, 189, 132),
-        rgbToDec(255, 182, 136),
-        rgbToDec(255, 175, 140),
-        rgbToDec(255, 168, 144),
-        rgbToDec(255, 161, 148),
-        rgbToDec(255, 154, 152),
-        rgbToDec(255, 147, 156),
-        rgbToDec(255, 140, 160),
-        rgbToDec(255, 133, 164),
-        rgbToDec(255, 126, 168),
-        rgbToDec(255, 119, 172),
-        rgbToDec(255, 112, 176),
-        rgbToDec(255, 105, 180),
-    ];
-
     function getDeviceWidth() as Lang.Number {
         var deviceSettings = System.getDeviceSettings();
         var fullScreenWidth = deviceSettings.screenWidth;
@@ -226,7 +266,7 @@ class TowerStackView extends WatchUi.View {
         var blockHeight = (dc.getHeight() / 14);
         View.onUpdate(dc);
         dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
-        dc.setColor(_pinkTanColorGradient[0], Graphics.COLOR_BLACK);
+        dc.setColor(_forestGreenBrownGradient[0], Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(
             dc.getWidth()/2-(getDeviceWidth()*0.4/2), // x
             (dc.getHeight() * 0.5) + blockHeight + (blockHeight*_score),                   // y
@@ -236,7 +276,7 @@ class TowerStackView extends WatchUi.View {
         );
         for (var i = 0; i < _previousBlocks.size(); i++) {
             var block = _previousBlocks[i];
-            dc.setColor(_pinkTanColorGradient[(i)%32], Graphics.COLOR_BLACK);
+            dc.setColor(_forestGreenBrownGradient[(i)%32], Graphics.COLOR_BLACK);
             dc.fillRoundedRectangle(
                 block[0], // x
                 (dc.getHeight() * 0.5) + blockHeight + ((_score - (block[1] + 1)) * blockHeight),                   // y
@@ -247,7 +287,7 @@ class TowerStackView extends WatchUi.View {
         }
 
         // Set color
-        dc.setColor(_pinkTanColorGradient[_score%32], Graphics.COLOR_BLACK);
+        dc.setColor(_forestGreenBrownGradient[_score%32], Graphics.COLOR_BLACK);
 
         // Draw rectangle
         dc.fillRoundedRectangle(

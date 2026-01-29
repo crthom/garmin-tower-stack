@@ -237,9 +237,9 @@ class TowerStackView extends WatchUi.View {
 
     var _gradients as Array = [
         _blueRedColorGradient,
-        _forestGreenBrownGradient,
-        _pinkTanColorGradient,
         _purpleBlueColorGradient,
+        _pinkTanColorGradient,
+        _forestGreenBrownGradient,
         _tealBlueColorGradient,
         _rainbowColorGradient,
     ];
@@ -284,7 +284,18 @@ class TowerStackView extends WatchUi.View {
         loadGradient();
         var blockHeight = (dc.getHeight() / 14);
         View.onUpdate(dc);
-        dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
+        //dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
+        var reverseGradient = _gradients[_selectedGradient].reverse();
+        for (var i = 0; i < dc.getHeight()*((dc.getHeight()/14)/dc.getHeight()) + dc.getHeight()/blockHeight; i++) {
+            dc.setColor(reverseGradient[i%_gradients[_selectedGradient].size()], Graphics.COLOR_BLACK);
+            dc.fillRoundedRectangle(
+                dc.getWidth()/2-(getDeviceWidth()*0.4/2), // x
+                (dc.getHeight() * 0.5) + blockHeight + (blockHeight*_score) + blockHeight*i,                   // y
+                (getDeviceWidth()*0.4),                  // width
+                blockHeight,                   // height
+                2                     // corner radius 
+            );
+        }
         dc.setColor(_gradients[_selectedGradient][0], Graphics.COLOR_BLACK);
         dc.fillRoundedRectangle(
             dc.getWidth()/2-(getDeviceWidth()*0.4/2), // x

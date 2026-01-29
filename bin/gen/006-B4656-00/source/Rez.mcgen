@@ -10,6 +10,12 @@ module Rez {
     } // Drawables
 
     module Layouts {
+        function CustomizeLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_header = new WatchUi.Text({:identifier=>"header", :color=>Gfx.COLOR_PURPLE, :locX=>(dc.getWidth() * 0.5), :locY=>(dc.getHeight() * (15 / 100.0)), :text=>"Tower Color", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+
+            return [rez_cmp_local_text_header] as Array<WatchUi.Drawable>;
+        }
+
         function MenuLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var rez_cmp_local_var_dc_getHeight = dc.getHeight();
 

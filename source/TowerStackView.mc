@@ -9,6 +9,11 @@ class TowerStackView extends WatchUi.View {
     private var _xPosition = 0;
     private var _previousBlocks as Array<Array> = [];
     private var _selectedGradient;
+    
+    private var _fallingBlock = false;
+    private var fallingI;
+    private var fallingLeft;
+    private var fallingWidth;
 
     function rgbToDec( rr, gg, bb ) as Number {
         return rr*65536 + gg*256 + bb;
@@ -51,7 +56,7 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(8, 78, 199),
     ];
 
-    //unlocked at high score of 35 
+    //unlocked at high score of 25 
     private var _purpleBlueColorGradient = [
         rgbToDec(103, 27, 162),
         rgbToDec(102, 43, 171),
@@ -83,12 +88,12 @@ class TowerStackView extends WatchUi.View {
         rgbToDec(97, 87, 202),
         rgbToDec(98, 77, 195),
         rgbToDec(99, 67, 187),
-        rgbToDec(102, 43, 171),
         rgbToDec(101, 55, 179),
+        rgbToDec(102, 43, 171),
         rgbToDec(103, 27, 162),
     ];
 
-    //unlocked at high score of 25
+    //unlocked at high score of 35
     private var _forestGreenBrownGradient = [
         rgbToDec(34, 139, 34),
         rgbToDec(40, 134, 30),
@@ -250,6 +255,13 @@ class TowerStackView extends WatchUi.View {
     
         return fullScreenWidth;
     }
+
+    function getDeviceHeight() as Lang.Number {
+        var deviceSettings = System.getDeviceSettings();
+        var fullScreenHeight = deviceSettings.screenHeight;
+    
+        return fullScreenHeight;
+    }
     
     var _currentWidth = getDeviceWidth()*0.4;
     var _score = 0;
@@ -284,7 +296,6 @@ class TowerStackView extends WatchUi.View {
         loadGradient();
         var blockHeight = (dc.getHeight() / 14);
         View.onUpdate(dc);
-        //dc.drawLine(0, (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score), dc.getWidth(), (dc.getHeight() * 0.5) + (blockHeight * 2) + (blockHeight * _score));
         var reverseGradient = _gradients[_selectedGradient].reverse();
         for (var i = 0; i < dc.getHeight()*((dc.getHeight()/14)/dc.getHeight()) + dc.getHeight()/blockHeight; i++) {
             dc.setColor(reverseGradient[i%_gradients[_selectedGradient].size()], Graphics.COLOR_BLACK);
@@ -327,6 +338,16 @@ class TowerStackView extends WatchUi.View {
             blockHeight,                   // height
             2                     // corner radius
         );
+
+        if (_fallingBlock) {
+            dc.fillRoundedRectangle(
+                fallingLeft,
+                ((getDeviceHeight() * 0.5) + fallingI),
+                fallingWidth,
+                (dc.getHeight() / 14),
+                2
+            );
+        }
     }
 
     // Called when this View is removed from the screen. Save the

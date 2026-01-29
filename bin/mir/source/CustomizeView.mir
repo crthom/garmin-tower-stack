@@ -12,27 +12,459 @@ import Toybox.Graphics;
 class CustomizeView extends WatchUi.View {
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 7; ]
     <init> {
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 14 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 13 8 ]
         %tmp.1 = newa 6;
-        %tmp.2 = "Thermal shift";
-        %tmp.3 = dup %tmp.1;
-        %tmp.4 = aputv %tmp.3 0 %tmp.2;
-        %tmp.5 = "Forest";
-        %tmp.6 = dup %tmp.4;
-        %tmp.7 = aputv %tmp.6 1 %tmp.5;
-        %tmp.8 = "Rose sand";
-        %tmp.9 = dup %tmp.7;
-        %tmp.10 = aputv %tmp.9 2 %tmp.8;
-        %tmp.11 = "Indigo Drift";
-        %tmp.12 = dup %tmp.10;
-        %tmp.13 = aputv %tmp.12 3 %tmp.11;
-        %tmp.14 = "Ocean flow";
-        %tmp.15 = dup %tmp.13;
-        %tmp.16 = aputv %tmp.15 4 %tmp.14;
-        %tmp.17 = "Rainbow";
-        %tmp.18 = dup %tmp.16;
-        %tmp.19 = aputv %tmp.18 5 %tmp.17;
-        putv self :_gradients %tmp.19;
+        %tmp.2 = newa 2;
+        %tmp.3 = "Thermal shift";
+        %tmp.4 = dup %tmp.2;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        %tmp.6 = 0;
+        %tmp.7 = dup %tmp.5;
+        %tmp.8 = aputv %tmp.7 1 %tmp.6;
+        %tmp.9 = dup %tmp.1;
+        %tmp.10 = aputv %tmp.9 0 %tmp.8;
+        %tmp.11 = newa 2;
+        %tmp.12 = "Indigo Drift";
+        %tmp.13 = dup %tmp.11;
+        %tmp.14 = aputv %tmp.13 0 %tmp.12;
+        %tmp.15 = 30;
+        %tmp.16 = dup %tmp.14;
+        %tmp.17 = aputv %tmp.16 1 %tmp.15;
+        %tmp.18 = dup %tmp.10;
+        %tmp.19 = aputv %tmp.18 1 %tmp.17;
+        %tmp.20 = newa 2;
+        %tmp.21 = "Rose sand";
+        %tmp.22 = dup %tmp.20;
+        %tmp.23 = aputv %tmp.22 0 %tmp.21;
+        %tmp.24 = 35;
+        %tmp.25 = dup %tmp.23;
+        %tmp.26 = aputv %tmp.25 1 %tmp.24;
+        %tmp.27 = dup %tmp.19;
+        %tmp.28 = aputv %tmp.27 2 %tmp.26;
+        %tmp.29 = newa 2;
+        %tmp.30 = "Forest";
+        %tmp.31 = dup %tmp.29;
+        %tmp.32 = aputv %tmp.31 0 %tmp.30;
+        %tmp.33 = 40;
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        %tmp.36 = dup %tmp.28;
+        %tmp.37 = aputv %tmp.36 3 %tmp.35;
+        %tmp.38 = newa 2;
+        %tmp.39 = "Ocean flow";
+        %tmp.40 = dup %tmp.38;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        %tmp.42 = 45;
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 1 %tmp.42;
+        %tmp.45 = dup %tmp.37;
+        %tmp.46 = aputv %tmp.45 4 %tmp.44;
+        %tmp.47 = newa 2;
+        %tmp.48 = "Rainbow";
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = 50;
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 1 %tmp.51;
+        %tmp.54 = dup %tmp.46;
+        %tmp.55 = aputv %tmp.54 5 %tmp.53;
+        putv self :_gradients %tmp.55;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 26 16 ]
+        %tmp.56 = newa 6;
+        %tmp.57 = self;
+        symbol [ rgbToDec %tmp.58 27 8 16 ];
+        %tmp.58 = getv function %tmp.57 :rgbToDec;
+        %tmp.59 = 8;
+        %tmp.60 = 78;
+        %tmp.61 = 199;
+        %tmp.62 = invoke %tmp.57 %tmp.58(%tmp.59, %tmp.60, %tmp.61);
+        %tmp.63 = dup %tmp.56;
+        %tmp.64 = aputv %tmp.63 0 %tmp.62;
+        %tmp.65 = self;
+        symbol [ rgbToDec %tmp.66 28 8 16 ];
+        %tmp.66 = getv function %tmp.65 :rgbToDec;
+        %tmp.67 = 34;
+        %tmp.68 = 36;
+        %tmp.69 = 114;
+        %tmp.70 = invoke %tmp.65 %tmp.66(%tmp.67, %tmp.68, %tmp.69);
+        %tmp.71 = dup %tmp.64;
+        %tmp.72 = aputv %tmp.71 1 %tmp.70;
+        %tmp.73 = self;
+        symbol [ rgbToDec %tmp.74 29 8 16 ];
+        %tmp.74 = getv function %tmp.73 :rgbToDec;
+        %tmp.75 = 104;
+        %tmp.76 = 18;
+        %tmp.77 = 62;
+        %tmp.78 = invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76, %tmp.77);
+        %tmp.79 = dup %tmp.72;
+        %tmp.80 = aputv %tmp.79 2 %tmp.78;
+        %tmp.81 = self;
+        symbol [ rgbToDec %tmp.82 30 8 16 ];
+        %tmp.82 = getv function %tmp.81 :rgbToDec;
+        %tmp.83 = 213;
+        %tmp.84 = 12;
+        %tmp.85 = 40;
+        %tmp.86 = invoke %tmp.81 %tmp.82(%tmp.83, %tmp.84, %tmp.85);
+        %tmp.87 = dup %tmp.80;
+        %tmp.88 = aputv %tmp.87 3 %tmp.86;
+        %tmp.89 = self;
+        symbol [ rgbToDec %tmp.90 31 8 16 ];
+        %tmp.90 = getv function %tmp.89 :rgbToDec;
+        %tmp.91 = 255;
+        %tmp.92 = 60;
+        %tmp.93 = 20;
+        %tmp.94 = invoke %tmp.89 %tmp.90(%tmp.91, %tmp.92, %tmp.93);
+        %tmp.95 = dup %tmp.88;
+        %tmp.96 = aputv %tmp.95 4 %tmp.94;
+        %tmp.97 = self;
+        symbol [ rgbToDec %tmp.98 32 8 16 ];
+        %tmp.98 = getv function %tmp.97 :rgbToDec;
+        %tmp.99 = 255;
+        %tmp.100 = 138;
+        %tmp.101 = 16;
+        %tmp.102 = invoke %tmp.97 %tmp.98(%tmp.99, %tmp.100, %tmp.101);
+        %tmp.103 = dup %tmp.96;
+        %tmp.104 = aputv %tmp.103 5 %tmp.102;
+        putv self :_blueRedColorGradient %tmp.104;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 35 16 ]
+        %tmp.105 = newa 6;
+        %tmp.106 = self;
+        symbol [ rgbToDec %tmp.107 36 8 16 ];
+        %tmp.107 = getv function %tmp.106 :rgbToDec;
+        %tmp.108 = 103;
+        %tmp.109 = 27;
+        %tmp.110 = 162;
+        %tmp.111 = invoke %tmp.106 %tmp.107(%tmp.108, %tmp.109, %tmp.110);
+        %tmp.112 = dup %tmp.105;
+        %tmp.113 = aputv %tmp.112 0 %tmp.111;
+        %tmp.114 = self;
+        symbol [ rgbToDec %tmp.115 37 8 16 ];
+        %tmp.115 = getv function %tmp.114 :rgbToDec;
+        %tmp.116 = 99;
+        %tmp.117 = 67;
+        %tmp.118 = 187;
+        %tmp.119 = invoke %tmp.114 %tmp.115(%tmp.116, %tmp.117, %tmp.118);
+        %tmp.120 = dup %tmp.113;
+        %tmp.121 = aputv %tmp.120 1 %tmp.119;
+        %tmp.122 = self;
+        symbol [ rgbToDec %tmp.123 38 8 16 ];
+        %tmp.123 = getv function %tmp.122 :rgbToDec;
+        %tmp.124 = 96;
+        %tmp.125 = 96;
+        %tmp.126 = 208;
+        %tmp.127 = invoke %tmp.122 %tmp.123(%tmp.124, %tmp.125, %tmp.126);
+        %tmp.128 = dup %tmp.121;
+        %tmp.129 = aputv %tmp.128 2 %tmp.127;
+        %tmp.130 = self;
+        symbol [ rgbToDec %tmp.131 39 8 16 ];
+        %tmp.131 = getv function %tmp.130 :rgbToDec;
+        %tmp.132 = 95;
+        %tmp.133 = 124;
+        %tmp.134 = 225;
+        %tmp.135 = invoke %tmp.130 %tmp.131(%tmp.132, %tmp.133, %tmp.134);
+        %tmp.136 = dup %tmp.129;
+        %tmp.137 = aputv %tmp.136 3 %tmp.135;
+        %tmp.138 = self;
+        symbol [ rgbToDec %tmp.139 40 8 16 ];
+        %tmp.139 = getv function %tmp.138 :rgbToDec;
+        %tmp.140 = 100;
+        %tmp.141 = 150;
+        %tmp.142 = 239;
+        %tmp.143 = invoke %tmp.138 %tmp.139(%tmp.140, %tmp.141, %tmp.142);
+        %tmp.144 = dup %tmp.137;
+        %tmp.145 = aputv %tmp.144 4 %tmp.143;
+        %tmp.146 = self;
+        symbol [ rgbToDec %tmp.147 41 8 16 ];
+        %tmp.147 = getv function %tmp.146 :rgbToDec;
+        %tmp.148 = 118;
+        %tmp.149 = 183;
+        %tmp.150 = 253;
+        %tmp.151 = invoke %tmp.146 %tmp.147(%tmp.148, %tmp.149, %tmp.150);
+        %tmp.152 = dup %tmp.145;
+        %tmp.153 = aputv %tmp.152 5 %tmp.151;
+        putv self :_purpleBlueColorGradient %tmp.153;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 44 16 ]
+        %tmp.154 = newa 6;
+        %tmp.155 = self;
+        symbol [ rgbToDec %tmp.156 45 8 16 ];
+        %tmp.156 = getv function %tmp.155 :rgbToDec;
+        %tmp.157 = 34;
+        %tmp.158 = 139;
+        %tmp.159 = 34;
+        %tmp.160 = invoke %tmp.155 %tmp.156(%tmp.157, %tmp.158, %tmp.159);
+        %tmp.161 = dup %tmp.154;
+        %tmp.162 = aputv %tmp.161 0 %tmp.160;
+        %tmp.163 = self;
+        symbol [ rgbToDec %tmp.164 46 8 16 ];
+        %tmp.164 = getv function %tmp.163 :rgbToDec;
+        %tmp.165 = 52;
+        %tmp.166 = 124;
+        %tmp.167 = 22;
+        %tmp.168 = invoke %tmp.163 %tmp.164(%tmp.165, %tmp.166, %tmp.167);
+        %tmp.169 = dup %tmp.162;
+        %tmp.170 = aputv %tmp.169 1 %tmp.168;
+        %tmp.171 = self;
+        symbol [ rgbToDec %tmp.172 47 8 16 ];
+        %tmp.172 = getv function %tmp.171 :rgbToDec;
+        %tmp.173 = 70;
+        %tmp.174 = 109;
+        %tmp.175 = 10;
+        %tmp.176 = invoke %tmp.171 %tmp.172(%tmp.173, %tmp.174, %tmp.175);
+        %tmp.177 = dup %tmp.170;
+        %tmp.178 = aputv %tmp.177 2 %tmp.176;
+        %tmp.179 = self;
+        symbol [ rgbToDec %tmp.180 48 8 16 ];
+        %tmp.180 = getv function %tmp.179 :rgbToDec;
+        %tmp.181 = 88;
+        %tmp.182 = 94;
+        %tmp.183 = 0;
+        %tmp.184 = invoke %tmp.179 %tmp.180(%tmp.181, %tmp.182, %tmp.183);
+        %tmp.185 = dup %tmp.178;
+        %tmp.186 = aputv %tmp.185 3 %tmp.184;
+        %tmp.187 = self;
+        symbol [ rgbToDec %tmp.188 49 8 16 ];
+        %tmp.188 = getv function %tmp.187 :rgbToDec;
+        %tmp.189 = 106;
+        %tmp.190 = 79;
+        %tmp.191 = 0;
+        %tmp.192 = invoke %tmp.187 %tmp.188(%tmp.189, %tmp.190, %tmp.191);
+        %tmp.193 = dup %tmp.186;
+        %tmp.194 = aputv %tmp.193 4 %tmp.192;
+        %tmp.195 = self;
+        symbol [ rgbToDec %tmp.196 50 8 16 ];
+        %tmp.196 = getv function %tmp.195 :rgbToDec;
+        %tmp.197 = 124;
+        %tmp.198 = 64;
+        %tmp.199 = 0;
+        %tmp.200 = invoke %tmp.195 %tmp.196(%tmp.197, %tmp.198, %tmp.199);
+        %tmp.201 = dup %tmp.194;
+        %tmp.202 = aputv %tmp.201 5 %tmp.200;
+        putv self :_forestGreenBrownGradient %tmp.202;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 53 16 ]
+        %tmp.203 = newa 6;
+        %tmp.204 = self;
+        symbol [ rgbToDec %tmp.205 54 8 16 ];
+        %tmp.205 = getv function %tmp.204 :rgbToDec;
+        %tmp.206 = 255;
+        %tmp.207 = 105;
+        %tmp.208 = 180;
+        %tmp.209 = invoke %tmp.204 %tmp.205(%tmp.206, %tmp.207, %tmp.208);
+        %tmp.210 = dup %tmp.203;
+        %tmp.211 = aputv %tmp.210 0 %tmp.209;
+        %tmp.212 = self;
+        symbol [ rgbToDec %tmp.213 55 8 16 ];
+        %tmp.213 = getv function %tmp.212 :rgbToDec;
+        %tmp.214 = 255;
+        %tmp.215 = 133;
+        %tmp.216 = 164;
+        %tmp.217 = invoke %tmp.212 %tmp.213(%tmp.214, %tmp.215, %tmp.216);
+        %tmp.218 = dup %tmp.211;
+        %tmp.219 = aputv %tmp.218 1 %tmp.217;
+        %tmp.220 = self;
+        symbol [ rgbToDec %tmp.221 56 8 16 ];
+        %tmp.221 = getv function %tmp.220 :rgbToDec;
+        %tmp.222 = 255;
+        %tmp.223 = 154;
+        %tmp.224 = 152;
+        %tmp.225 = invoke %tmp.220 %tmp.221(%tmp.222, %tmp.223, %tmp.224);
+        %tmp.226 = dup %tmp.219;
+        %tmp.227 = aputv %tmp.226 2 %tmp.225;
+        %tmp.228 = self;
+        symbol [ rgbToDec %tmp.229 57 8 16 ];
+        %tmp.229 = getv function %tmp.228 :rgbToDec;
+        %tmp.230 = 255;
+        %tmp.231 = 175;
+        %tmp.232 = 140;
+        %tmp.233 = invoke %tmp.228 %tmp.229(%tmp.230, %tmp.231, %tmp.232);
+        %tmp.234 = dup %tmp.227;
+        %tmp.235 = aputv %tmp.234 3 %tmp.233;
+        %tmp.236 = self;
+        symbol [ rgbToDec %tmp.237 58 8 16 ];
+        %tmp.237 = getv function %tmp.236 :rgbToDec;
+        %tmp.238 = 255;
+        %tmp.239 = 196;
+        %tmp.240 = 128;
+        %tmp.241 = invoke %tmp.236 %tmp.237(%tmp.238, %tmp.239, %tmp.240);
+        %tmp.242 = dup %tmp.235;
+        %tmp.243 = aputv %tmp.242 4 %tmp.241;
+        %tmp.244 = self;
+        symbol [ rgbToDec %tmp.245 59 8 16 ];
+        %tmp.245 = getv function %tmp.244 :rgbToDec;
+        %tmp.246 = 255;
+        %tmp.247 = 217;
+        %tmp.248 = 116;
+        %tmp.249 = invoke %tmp.244 %tmp.245(%tmp.246, %tmp.247, %tmp.248);
+        %tmp.250 = dup %tmp.243;
+        %tmp.251 = aputv %tmp.250 5 %tmp.249;
+        putv self :_pinkTanColorGradient %tmp.251;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 62 16 ]
+        %tmp.252 = newa 9;
+        %tmp.253 = self;
+        symbol [ rgbToDec %tmp.254 63 8 16 ];
+        %tmp.254 = getv function %tmp.253 :rgbToDec;
+        %tmp.255 = 148;
+        %tmp.256 = 0;
+        %tmp.257 = 211;
+        %tmp.258 = invoke %tmp.253 %tmp.254(%tmp.255, %tmp.256, %tmp.257);
+        %tmp.259 = dup %tmp.252;
+        %tmp.260 = aputv %tmp.259 0 %tmp.258;
+        %tmp.261 = self;
+        symbol [ rgbToDec %tmp.262 64 8 16 ];
+        %tmp.262 = getv function %tmp.261 :rgbToDec;
+        %tmp.263 = 60;
+        %tmp.264 = 40;
+        %tmp.265 = 255;
+        %tmp.266 = invoke %tmp.261 %tmp.262(%tmp.263, %tmp.264, %tmp.265);
+        %tmp.267 = dup %tmp.260;
+        %tmp.268 = aputv %tmp.267 1 %tmp.266;
+        %tmp.269 = self;
+        symbol [ rgbToDec %tmp.270 65 8 16 ];
+        %tmp.270 = getv function %tmp.269 :rgbToDec;
+        %tmp.271 = 0;
+        %tmp.272 = 145;
+        %tmp.273 = 255;
+        %tmp.274 = invoke %tmp.269 %tmp.270(%tmp.271, %tmp.272, %tmp.273);
+        %tmp.275 = dup %tmp.268;
+        %tmp.276 = aputv %tmp.275 2 %tmp.274;
+        %tmp.277 = self;
+        symbol [ rgbToDec %tmp.278 66 8 16 ];
+        %tmp.278 = getv function %tmp.277 :rgbToDec;
+        %tmp.279 = 0;
+        %tmp.280 = 230;
+        %tmp.281 = 255;
+        %tmp.282 = invoke %tmp.277 %tmp.278(%tmp.279, %tmp.280, %tmp.281);
+        %tmp.283 = dup %tmp.276;
+        %tmp.284 = aputv %tmp.283 3 %tmp.282;
+        %tmp.285 = self;
+        symbol [ rgbToDec %tmp.286 67 8 16 ];
+        %tmp.286 = getv function %tmp.285 :rgbToDec;
+        %tmp.287 = 80;
+        %tmp.288 = 255;
+        %tmp.289 = 0;
+        %tmp.290 = invoke %tmp.285 %tmp.286(%tmp.287, %tmp.288, %tmp.289);
+        %tmp.291 = dup %tmp.284;
+        %tmp.292 = aputv %tmp.291 4 %tmp.290;
+        %tmp.293 = self;
+        symbol [ rgbToDec %tmp.294 68 8 16 ];
+        %tmp.294 = getv function %tmp.293 :rgbToDec;
+        %tmp.295 = 230;
+        %tmp.296 = 255;
+        %tmp.297 = 0;
+        %tmp.298 = invoke %tmp.293 %tmp.294(%tmp.295, %tmp.296, %tmp.297);
+        %tmp.299 = dup %tmp.292;
+        %tmp.300 = aputv %tmp.299 5 %tmp.298;
+        %tmp.301 = self;
+        symbol [ rgbToDec %tmp.302 69 8 16 ];
+        %tmp.302 = getv function %tmp.301 :rgbToDec;
+        %tmp.303 = 255;
+        %tmp.304 = 190;
+        %tmp.305 = 0;
+        %tmp.306 = invoke %tmp.301 %tmp.302(%tmp.303, %tmp.304, %tmp.305);
+        %tmp.307 = dup %tmp.300;
+        %tmp.308 = aputv %tmp.307 6 %tmp.306;
+        %tmp.309 = self;
+        symbol [ rgbToDec %tmp.310 70 8 16 ];
+        %tmp.310 = getv function %tmp.309 :rgbToDec;
+        %tmp.311 = 255;
+        %tmp.312 = 80;
+        %tmp.313 = 0;
+        %tmp.314 = invoke %tmp.309 %tmp.310(%tmp.311, %tmp.312, %tmp.313);
+        %tmp.315 = dup %tmp.308;
+        %tmp.316 = aputv %tmp.315 7 %tmp.314;
+        %tmp.317 = self;
+        symbol [ rgbToDec %tmp.318 71 8 16 ];
+        %tmp.318 = getv function %tmp.317 :rgbToDec;
+        %tmp.319 = 255;
+        %tmp.320 = 0;
+        %tmp.321 = 60;
+        %tmp.322 = invoke %tmp.317 %tmp.318(%tmp.319, %tmp.320, %tmp.321);
+        %tmp.323 = dup %tmp.316;
+        %tmp.324 = aputv %tmp.323 8 %tmp.322;
+        putv self :_rainbowColorGradient %tmp.324;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 74 16 ]
+        %tmp.325 = newa 6;
+        %tmp.326 = self;
+        symbol [ rgbToDec %tmp.327 75 8 16 ];
+        %tmp.327 = getv function %tmp.326 :rgbToDec;
+        %tmp.328 = 0;
+        %tmp.329 = 200;
+        %tmp.330 = 180;
+        %tmp.331 = invoke %tmp.326 %tmp.327(%tmp.328, %tmp.329, %tmp.330);
+        %tmp.332 = dup %tmp.325;
+        %tmp.333 = aputv %tmp.332 0 %tmp.331;
+        %tmp.334 = self;
+        symbol [ rgbToDec %tmp.335 76 8 16 ];
+        %tmp.335 = getv function %tmp.334 :rgbToDec;
+        %tmp.336 = 0;
+        %tmp.337 = 184;
+        %tmp.338 = 192;
+        %tmp.339 = invoke %tmp.334 %tmp.335(%tmp.336, %tmp.337, %tmp.338);
+        %tmp.340 = dup %tmp.333;
+        %tmp.341 = aputv %tmp.340 1 %tmp.339;
+        %tmp.342 = self;
+        symbol [ rgbToDec %tmp.343 77 8 16 ];
+        %tmp.343 = getv function %tmp.342 :rgbToDec;
+        %tmp.344 = 0;
+        %tmp.345 = 172;
+        %tmp.346 = 201;
+        %tmp.347 = invoke %tmp.342 %tmp.343(%tmp.344, %tmp.345, %tmp.346);
+        %tmp.348 = dup %tmp.341;
+        %tmp.349 = aputv %tmp.348 2 %tmp.347;
+        %tmp.350 = self;
+        symbol [ rgbToDec %tmp.351 78 8 16 ];
+        %tmp.351 = getv function %tmp.350 :rgbToDec;
+        %tmp.352 = 0;
+        %tmp.353 = 160;
+        %tmp.354 = 210;
+        %tmp.355 = invoke %tmp.350 %tmp.351(%tmp.352, %tmp.353, %tmp.354);
+        %tmp.356 = dup %tmp.349;
+        %tmp.357 = aputv %tmp.356 3 %tmp.355;
+        %tmp.358 = self;
+        symbol [ rgbToDec %tmp.359 79 8 16 ];
+        %tmp.359 = getv function %tmp.358 :rgbToDec;
+        %tmp.360 = 0;
+        %tmp.361 = 148;
+        %tmp.362 = 219;
+        %tmp.363 = invoke %tmp.358 %tmp.359(%tmp.360, %tmp.361, %tmp.362);
+        %tmp.364 = dup %tmp.357;
+        %tmp.365 = aputv %tmp.364 4 %tmp.363;
+        %tmp.366 = self;
+        symbol [ rgbToDec %tmp.367 80 8 16 ];
+        %tmp.367 = getv function %tmp.366 :rgbToDec;
+        %tmp.368 = 0;
+        %tmp.369 = 136;
+        %tmp.370 = 228;
+        %tmp.371 = invoke %tmp.366 %tmp.367(%tmp.368, %tmp.369, %tmp.370);
+        %tmp.372 = dup %tmp.365;
+        %tmp.373 = aputv %tmp.372 5 %tmp.371;
+        putv self :_tealBlueColorGradient %tmp.373;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 83 8 ]
+        %tmp.374 = newa 6;
+        symbol [ _blueRedColorGradient %tmp.376 84 8 29 ];
+        %tmp.376 = getv ? :_blueRedColorGradient;
+        %tmp.377 = dup %tmp.374;
+        %tmp.378 = aputv %tmp.377 0 %tmp.376;
+        symbol [ _purpleBlueColorGradient %tmp.380 85 8 32 ];
+        %tmp.380 = getv ? :_purpleBlueColorGradient;
+        %tmp.381 = dup %tmp.378;
+        %tmp.382 = aputv %tmp.381 1 %tmp.380;
+        symbol [ _pinkTanColorGradient %tmp.384 86 8 29 ];
+        %tmp.384 = getv ? :_pinkTanColorGradient;
+        %tmp.385 = dup %tmp.382;
+        %tmp.386 = aputv %tmp.385 2 %tmp.384;
+        symbol [ _forestGreenBrownGradient %tmp.388 87 8 33 ];
+        %tmp.388 = getv ? :_forestGreenBrownGradient;
+        %tmp.389 = dup %tmp.386;
+        %tmp.390 = aputv %tmp.389 3 %tmp.388;
+        symbol [ _tealBlueColorGradient %tmp.392 88 8 30 ];
+        %tmp.392 = getv ? :_tealBlueColorGradient;
+        %tmp.393 = dup %tmp.390;
+        %tmp.394 = aputv %tmp.393 4 %tmp.392;
+        symbol [ _rainbowColorGradient %tmp.396 89 8 29 ];
+        %tmp.396 = getv ? :_rainbowColorGradient;
+        %tmp.397 = dup %tmp.394;
+        %tmp.398 = aputv %tmp.397 5 %tmp.396;
+        putv self :_miniGradients %tmp.398;
     }
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 7; ]
     static
@@ -40,332 +472,730 @@ class CustomizeView extends WatchUi.View {
     }
     [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 8; @position = 8; @symbol_vardef = [highScore,8,8,17]; @symbol_type<0> = [Number,8,21,27]; ]
     var highScore as Number;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 9; @position = 16; @symbol_vardef = [_highScoreElement,9,16,33]; ]
-    private
-    var _highScoreElement;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 10; @position = 16; @symbol_vardef = [_selectedGradient,10,16,33]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 9; @position = 16; @symbol_vardef = [_selectedGradient,9,16,33]; ]
     private
     var _selectedGradient;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 12; @position = 8; @symbol_vardef = [_gradientIndex,12,8,22]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 11; @position = 8; @symbol_vardef = [_gradientIndex,11,8,22]; ]
     var _gradientIndex = 0;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 14; @position = 8; @symbol_vardef = [_gradients,14,8,18]; @symbol_type<0> = [Array,14,22,27]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 13; @position = 8; @symbol_vardef = [_gradients,13,8,18]; @symbol_type<0> = [Array,13,22,27]; ]
     var _gradients as Array;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 23; @symbol_functiondef = [initialize,23,13,23]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 22; @symbol_functiondef = [rgbToDec,22,13,21]; @symbol_param<0> = [rr,22,23,25]; @symbol_param<1> = [gg,22,27,29]; @symbol_param<2> = [bb,22,31,33]; @symbol_return<0> = [Number,22,39,45]; ]
+    function rgbToDec(rr, gg, bb) as Number {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_22_46_24_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 23 8 ]
+        %tmp.1 = lgetv %rr;
+        symbol [ rr %tmp.1 23 15 17 ];
+        %tmp.2 = 65536;
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        %tmp.4 = lgetv %gg;
+        symbol [ gg %tmp.4 23 26 28 ];
+        %tmp.5 = 256;
+        %tmp.6 = mul %tmp.4 %tmp.5;
+        %tmp.7 = add %tmp.3 %tmp.6;
+        %tmp.8 = lgetv %bb;
+        symbol [ bb %tmp.8 23 35 37 ];
+        %tmp.9 = add %tmp.7 %tmp.8;
+        ret %tmp.9;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_22_46_24_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 26; @position = 16; @symbol_vardef = [_blueRedColorGradient,26,16,37]; ]
+    private
+    var _blueRedColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 35; @position = 16; @symbol_vardef = [_purpleBlueColorGradient,35,16,40]; ]
+    private
+    var _purpleBlueColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 44; @position = 16; @symbol_vardef = [_forestGreenBrownGradient,44,16,41]; ]
+    private
+    var _forestGreenBrownGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 53; @position = 16; @symbol_vardef = [_pinkTanColorGradient,53,16,37]; ]
+    private
+    var _pinkTanColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 62; @position = 16; @symbol_vardef = [_rainbowColorGradient,62,16,37]; ]
+    private
+    var _rainbowColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 74; @position = 16; @symbol_vardef = [_tealBlueColorGradient,74,16,38]; ]
+    private
+    var _tealBlueColorGradient;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 83; @position = 8; @symbol_vardef = [_miniGradients,83,8,22]; @symbol_type<0> = [Array,83,26,31]; ]
+    var _miniGradients as Array;
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 92; @symbol_functiondef = [initialize,92,13,23]; ]
     function initialize() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_23_26_28_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 24 8 ]
-        symbol [ View %tmp.2 24 8 12 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_92_26_97_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 93 8 ]
+        symbol [ View %tmp.2 93 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 24 13 23 ];
+        symbol [ initialize %tmp.3 93 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 26 8 ]
-        symbol [ App %tmp.4 26 20 23 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 95 8 ]
+        symbol [ App %tmp.4 95 20 23 ];
         %tmp.4 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.5 26 24 34 ];
+        symbol [ Properties %tmp.5 95 24 34 ];
         %tmp.5 = getv %tmp.4 :Properties;
-        symbol [ getValue %tmp.6 26 35 43 ];
+        symbol [ getValue %tmp.6 95 35 43 ];
         %tmp.6 = getv function %tmp.5 :getValue;
         %tmp.7 = "highScore";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
-        symbol [ highScore ? 26 8 17 ];
+        symbol [ highScore ? 95 8 17 ];
         putv self :highScore %tmp.8;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 27 8 ]
-        symbol [ App %tmp.9 27 28 31 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 96 8 ]
+        symbol [ App %tmp.9 96 28 31 ];
         %tmp.9 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.10 27 32 42 ];
+        symbol [ Properties %tmp.10 96 32 42 ];
         %tmp.10 = getv %tmp.9 :Properties;
-        symbol [ getValue %tmp.11 27 43 51 ];
+        symbol [ getValue %tmp.11 96 43 51 ];
         %tmp.11 = getv function %tmp.10 :getValue;
         %tmp.12 = "selectedGradientIndex";
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
-        symbol [ _selectedGradient ? 27 8 25 ];
+        symbol [ _selectedGradient ? 96 8 25 ];
         putv self :_selectedGradient %tmp.13;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_23_26_28_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_92_26_97_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 30; @symbol_functiondef = [onShow,30,13,19]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 99; @symbol_functiondef = [onShow,99,13,19]; ]
     function onShow() {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_30_22_34_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 31 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_99_22_103_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 100 8 ]
         %tmp.1 = self;
-        symbol [ loadHighScore %tmp.2 31 8 21 ];
+        symbol [ loadHighScore %tmp.2 100 8 21 ];
         %tmp.2 = getv function %tmp.1 :loadHighScore;
         invoke %tmp.1 %tmp.2();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 32 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 101 8 ]
         %tmp.3 = self;
-        symbol [ loadGradient %tmp.4 32 8 20 ];
+        symbol [ loadGradient %tmp.4 101 8 20 ];
         %tmp.4 = getv function %tmp.3 :loadGradient;
         invoke %tmp.3 %tmp.4();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 33 8 ]
-        symbol [ WatchUi %tmp.5 33 8 15 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 102 8 ]
+        symbol [ WatchUi %tmp.5 102 8 15 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.6 33 16 29 ];
+        symbol [ requestUpdate %tmp.6 102 16 29 ];
         %tmp.6 = getv function %tmp.5 :requestUpdate;
         invoke %tmp.5 %tmp.6();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_30_22_34_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_99_22_103_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 36; @symbol_functiondef = [loadHighScore,36,13,26]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 105; @symbol_functiondef = [loadHighScore,105,13,26]; ]
     function loadHighScore() {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_36_29_38_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 37 8 ]
-        symbol [ App %tmp.1 37 20 23 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_105_29_107_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 106 8 ]
+        symbol [ App %tmp.1 106 20 23 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.2 37 24 34 ];
+        symbol [ Properties %tmp.2 106 24 34 ];
         %tmp.2 = getv %tmp.1 :Properties;
-        symbol [ getValue %tmp.3 37 35 43 ];
+        symbol [ getValue %tmp.3 106 35 43 ];
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "highScore";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
-        symbol [ highScore ? 37 8 17 ];
+        symbol [ highScore ? 106 8 17 ];
         putv self :highScore %tmp.5;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_36_29_38_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_105_29_107_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 40; @symbol_functiondef = [loadGradient,40,13,25]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 109; @symbol_functiondef = [loadGradient,109,13,25]; ]
     function loadGradient() {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_40_28_42_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 41 8 ]
-        symbol [ App %tmp.1 41 28 31 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_109_28_111_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 110 8 ]
+        symbol [ App %tmp.1 110 28 31 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.2 41 32 42 ];
+        symbol [ Properties %tmp.2 110 32 42 ];
         %tmp.2 = getv %tmp.1 :Properties;
-        symbol [ getValue %tmp.3 41 43 51 ];
+        symbol [ getValue %tmp.3 110 43 51 ];
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "selectedGradientIndex";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
-        symbol [ _selectedGradient ? 41 8 25 ];
+        symbol [ _selectedGradient ? 110 8 25 ];
         putv self :_selectedGradient %tmp.5;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_40_28_42_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_109_28_111_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 45; @symbol_functiondef = [onLayout,45,13,21]; @symbol_param<0> = [dc,45,22,24]; @symbol_param<0>_type<0> = [Graphics,45,28,36]; @symbol_param<0>_type<1> = [Dc,45,37,39]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 114; @symbol_functiondef = [onLayout,114,13,21]; @symbol_param<0> = [dc,114,22,24]; @symbol_param<0>_type<0> = [Graphics,114,28,36]; @symbol_param<0>_type<1> = [Dc,114,37,39]; ]
     function onLayout(dc as Graphics.Dc) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_45_49_48_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 46 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_114_49_117_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 115 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 46 8 17 ];
+        symbol [ setLayout %tmp.2 115 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 46 18 21 ];
+        symbol [ Rez %tmp.4 115 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 46 22 29 ];
+        symbol [ Layouts %tmp.5 115 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ CustomizeLayout %tmp.6 46 30 45 ];
+        symbol [ CustomizeLayout %tmp.6 115 30 45 ];
         %tmp.6 = getv function %tmp.5 :CustomizeLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 46 46 48 ];
+        symbol [ dc %tmp.7 115 46 48 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_45_49_48_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_114_49_117_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 50; @symbol_functiondef = [onUpdate,50,13,21]; @symbol_param<0> = [dc,50,22,24]; @symbol_param<0>_type<0> = [Graphics,50,28,36]; @symbol_param<0>_type<1> = [Dc,50,37,39]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 119; @symbol_functiondef = [onUpdate,119,13,21]; @symbol_param<0> = [dc,119,22,24]; @symbol_param<0>_type<0> = [Graphics,119,28,36]; @symbol_param<0>_type<1> = [Dc,119,37,39]; ]
     function onUpdate(dc as Graphics.Dc) {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_50_41_77_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 51 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_119_41_173_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 120 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 51 8 10 ];
-        symbol [ clear %tmp.2 51 11 16 ];
+        symbol [ dc %tmp.1 120 8 10 ];
+        symbol [ clear %tmp.2 120 11 16 ];
         %tmp.2 = getv function %tmp.1 :clear;
         invoke %tmp.1 %tmp.2();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 52 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 121 8 ]
         %tmp.3 = self;
-        symbol [ loadHighScore %tmp.4 52 8 21 ];
+        symbol [ loadHighScore %tmp.4 121 8 21 ];
         %tmp.4 = getv function %tmp.3 :loadHighScore;
         invoke %tmp.3 %tmp.4();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 53 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 122 8 ]
         %tmp.5 = self;
-        symbol [ loadGradient %tmp.6 53 8 20 ];
+        symbol [ loadGradient %tmp.6 122 8 20 ];
         %tmp.6 = getv function %tmp.5 :loadGradient;
         invoke %tmp.5 %tmp.6();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 54 8 ]
-        symbol [ View %tmp.8 54 8 12 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 123 8 ]
+        symbol [ View %tmp.8 123 8 12 ];
         %tmp.8 = getv ? :View;
-        symbol [ onUpdate %tmp.9 54 13 21 ];
+        symbol [ onUpdate %tmp.9 123 13 21 ];
         %tmp.9 = getv function %tmp.8 :onUpdate;
         %tmp.10 = lgetv %dc;
-        symbol [ dc %tmp.10 54 22 24 ];
+        symbol [ dc %tmp.10 123 22 24 ];
         invoke %tmp.8 %tmp.9(%tmp.10);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 55 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 124 8 ]
         %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 55 8 10 ];
-        symbol [ setColor %tmp.12 55 11 19 ];
+        symbol [ dc %tmp.11 124 8 10 ];
+        symbol [ setColor %tmp.12 124 11 19 ];
         %tmp.12 = getv function %tmp.11 :setColor;
-        symbol [ Graphics %tmp.13 55 20 28 ];
+        symbol [ Graphics %tmp.13 124 20 28 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.14 55 29 39 ];
-        %tmp.14 = getv %tmp.13 :COLOR_BLUE;
-        symbol [ Graphics %tmp.15 55 41 49 ];
+        symbol [ COLOR_WHITE %tmp.14 124 29 40 ];
+        %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+        symbol [ Graphics %tmp.15 124 42 50 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.16 55 50 61 ];
+        symbol [ COLOR_BLACK %tmp.16 124 51 62 ];
         %tmp.16 = getv %tmp.15 :COLOR_BLACK;
         invoke %tmp.11 %tmp.12(%tmp.14, %tmp.16);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 56 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 125 8 ]
         %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 56 8 10 ];
-        symbol [ drawLine %tmp.18 56 11 19 ];
-        %tmp.18 = getv function %tmp.17 :drawLine;
-        %tmp.19 = 0;
-        %tmp.20 = lgetv %dc;
-        symbol [ dc %tmp.20 56 24 26 ];
-        symbol [ getHeight %tmp.21 56 27 36 ];
-        %tmp.21 = getv function %tmp.20 :getHeight;
-        %tmp.22 = invoke %tmp.20 %tmp.21();
-        %tmp.23 = 0.3;
-        %tmp.24 = mul %tmp.22 %tmp.23;
-        %tmp.25 = lgetv %dc;
-        symbol [ dc %tmp.25 56 47 49 ];
-        symbol [ getWidth %tmp.26 56 50 58 ];
-        %tmp.26 = getv function %tmp.25 :getWidth;
-        %tmp.27 = invoke %tmp.25 %tmp.26();
-        %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 56 63 65 ];
-        symbol [ getHeight %tmp.29 56 66 75 ];
-        %tmp.29 = getv function %tmp.28 :getHeight;
-        %tmp.30 = invoke %tmp.28 %tmp.29();
-        %tmp.31 = 0.3;
-        %tmp.32 = mul %tmp.30 %tmp.31;
-        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.24, %tmp.27, %tmp.32);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 57 8 ]
-        %tmp.33 = lgetv %dc;
-        symbol [ dc %tmp.33 57 8 10 ];
-        symbol [ setColor %tmp.34 57 11 19 ];
-        %tmp.34 = getv function %tmp.33 :setColor;
-        symbol [ Graphics %tmp.35 57 20 28 ];
-        %tmp.35 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.36 57 29 40 ];
-        %tmp.36 = getv %tmp.35 :COLOR_WHITE;
-        symbol [ Graphics %tmp.37 57 42 50 ];
-        %tmp.37 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.38 57 51 62 ];
-        %tmp.38 = getv %tmp.37 :COLOR_BLACK;
-        invoke %tmp.33 %tmp.34(%tmp.36, %tmp.38);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 58 8 ]
-        %tmp.39 = lgetv %dc;
-        symbol [ dc %tmp.39 58 8 10 ];
-        symbol [ drawText %tmp.40 58 11 19 ];
-        %tmp.40 = getv function %tmp.39 :drawText;
-        %tmp.41 = lgetv %dc;
-        symbol [ dc %tmp.41 59 12 14 ];
-        symbol [ getWidth %tmp.42 59 15 23 ];
-        %tmp.42 = getv function %tmp.41 :getWidth;
-        %tmp.43 = invoke %tmp.41 %tmp.42();
-        %tmp.44 = 2;
-        %tmp.45 = div %tmp.43 %tmp.44;
-        %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 60 12 14 ];
-        symbol [ getHeight %tmp.47 60 15 24 ];
-        %tmp.47 = getv function %tmp.46 :getHeight;
-        %tmp.48 = invoke %tmp.46 %tmp.47();
-        %tmp.49 = 2;
-        %tmp.50 = div %tmp.48 %tmp.49;
-        %tmp.51 = lgetv %dc;
-        symbol [ dc %tmp.51 60 29 31 ];
-        symbol [ getHeight %tmp.52 60 32 41 ];
-        %tmp.52 = getv function %tmp.51 :getHeight;
-        %tmp.53 = invoke %tmp.51 %tmp.52();
-        %tmp.54 = 0.15;
-        %tmp.55 = mul %tmp.53 %tmp.54;
-        %tmp.56 = sub %tmp.50 %tmp.55;
-        symbol [ Graphics %tmp.57 61 12 20 ];
+        symbol [ dc %tmp.17 125 8 10 ];
+        symbol [ drawText %tmp.18 125 11 19 ];
+        %tmp.18 = getv function %tmp.17 :drawText;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 126 12 14 ];
+        symbol [ getWidth %tmp.20 126 15 23 ];
+        %tmp.20 = getv function %tmp.19 :getWidth;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = 2;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 127 12 14 ];
+        symbol [ getHeight %tmp.25 127 15 24 ];
+        %tmp.25 = getv function %tmp.24 :getHeight;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        symbol [ Graphics %tmp.29 128 12 20 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.30 128 21 31 ];
+        %tmp.30 = getv %tmp.29 :FONT_SMALL;
+        symbol [ _gradients %tmp.32 129 12 22 ];
+        %tmp.32 = getv ? :_gradients;
+        symbol [ _gradientIndex %tmp.34 129 23 37 ];
+        %tmp.34 = getv ? :_gradientIndex;
+        %tmp.35 = agetv %tmp.32 %tmp.34;
+        %tmp.36 = 0;
+        %tmp.37 = agetv %tmp.35 %tmp.36;
+        symbol [ Graphics %tmp.38 130 12 20 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.39 130 21 40 ];
+        %tmp.39 = getv %tmp.38 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.17 %tmp.18(%tmp.23, %tmp.28, %tmp.30, %tmp.37, %tmp.39);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 132 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_stmt:
+        symbol [ highScore %tmp.41 132 12 21 ];
+        %tmp.41 = getv ? :highScore;
+        symbol [ _gradients %tmp.43 132 25 35 ];
+        %tmp.43 = getv ? :_gradients;
+        symbol [ _gradientIndex %tmp.45 132 36 50 ];
+        %tmp.45 = getv ? :_gradientIndex;
+        %tmp.46 = agetv %tmp.43 %tmp.45;
+        %tmp.47 = 1;
+        %tmp.48 = agetv %tmp.46 %tmp.47;
+        %tmp.49 = gte %tmp.41 %tmp.48;
+        bf %tmp.49 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_56_145_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 133 12 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_stmt:
+        symbol [ _selectedGradient %tmp.51 133 16 33 ];
+        %tmp.51 = getv ? :_selectedGradient;
+        symbol [ _gradientIndex %tmp.53 133 37 51 ];
+        %tmp.53 = getv ? :_gradientIndex;
+        %tmp.54 = eq %tmp.51 %tmp.53;
+        bf %tmp.54 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_53_135_12_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 134 16 ]
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 134 16 18 ];
+        symbol [ setColor %tmp.56 134 19 27 ];
+        %tmp.56 = getv function %tmp.55 :setColor;
+        symbol [ Graphics %tmp.57 134 28 36 ];
         %tmp.57 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.58 61 21 31 ];
-        %tmp.58 = getv %tmp.57 :FONT_SMALL;
-        symbol [ _gradients %tmp.60 62 12 22 ];
-        %tmp.60 = getv ? :_gradients;
-        symbol [ _gradientIndex %tmp.62 62 23 37 ];
-        %tmp.62 = getv ? :_gradientIndex;
-        %tmp.63 = agetv %tmp.60 %tmp.62;
-        symbol [ Graphics %tmp.64 63 12 20 ];
-        %tmp.64 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.65 63 21 40 ];
-        %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.39 %tmp.40(%tmp.45, %tmp.56, %tmp.58, %tmp.63, %tmp.65);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 65 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_stmt:
-        symbol [ _selectedGradient %tmp.67 65 12 29 ];
-        %tmp.67 = getv ? :_selectedGradient;
-        symbol [ _gradientIndex %tmp.69 65 33 47 ];
-        %tmp.69 = getv ? :_gradientIndex;
-        %tmp.70 = eq %tmp.67 %tmp.69;
-        bf %tmp.70 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_49_67_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 66 12 ]
-        %tmp.71 = lgetv %dc;
-        symbol [ dc %tmp.71 66 12 14 ];
-        symbol [ setColor %tmp.72 66 15 23 ];
-        %tmp.72 = getv function %tmp.71 :setColor;
-        symbol [ Graphics %tmp.73 66 24 32 ];
-        %tmp.73 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.74 66 33 43 ];
-        %tmp.74 = getv %tmp.73 :COLOR_BLUE;
-        symbol [ Graphics %tmp.75 66 45 53 ];
-        %tmp.75 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.76 66 54 65 ];
-        %tmp.76 = getv %tmp.75 :COLOR_BLACK;
-        invoke %tmp.71 %tmp.72(%tmp.74, %tmp.76);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_49_67_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_else_false:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_67_15_69_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 68 12 ]
-        %tmp.77 = lgetv %dc;
-        symbol [ dc %tmp.77 68 12 14 ];
-        symbol [ setColor %tmp.78 68 15 23 ];
-        %tmp.78 = getv function %tmp.77 :setColor;
-        symbol [ Graphics %tmp.79 68 24 32 ];
-        %tmp.79 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.80 68 33 44 ];
-        %tmp.80 = getv %tmp.79 :COLOR_WHITE;
-        symbol [ Graphics %tmp.81 68 46 54 ];
-        %tmp.81 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.82 68 55 66 ];
-        %tmp.82 = getv %tmp.81 :COLOR_BLACK;
-        invoke %tmp.77 %tmp.78(%tmp.80, %tmp.82);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_67_15_69_8_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_65_8_69_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 70 8 ]
-        %tmp.83 = lgetv %dc;
-        symbol [ dc %tmp.83 70 8 10 ];
-        symbol [ drawText %tmp.84 70 11 19 ];
-        %tmp.84 = getv function %tmp.83 :drawText;
-        %tmp.85 = lgetv %dc;
-        symbol [ dc %tmp.85 71 12 14 ];
-        symbol [ getWidth %tmp.86 71 15 23 ];
-        %tmp.86 = getv function %tmp.85 :getWidth;
-        %tmp.87 = invoke %tmp.85 %tmp.86();
-        %tmp.88 = 2;
-        %tmp.89 = div %tmp.87 %tmp.88;
-        %tmp.90 = lgetv %dc;
-        symbol [ dc %tmp.90 72 12 14 ];
-        symbol [ getHeight %tmp.91 72 15 24 ];
-        %tmp.91 = getv function %tmp.90 :getHeight;
-        %tmp.92 = invoke %tmp.90 %tmp.91();
-        %tmp.93 = 2;
-        %tmp.94 = div %tmp.92 %tmp.93;
-        symbol [ Graphics %tmp.95 73 12 20 ];
+        symbol [ COLOR_BLUE %tmp.58 134 37 47 ];
+        %tmp.58 = getv %tmp.57 :COLOR_BLUE;
+        symbol [ Graphics %tmp.59 134 49 57 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.60 134 58 69 ];
+        %tmp.60 = getv %tmp.59 :COLOR_BLACK;
+        invoke %tmp.55 %tmp.56(%tmp.58, %tmp.60);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_53_135_12_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_135_19_137_12_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 136 16 ]
+        %tmp.61 = lgetv %dc;
+        symbol [ dc %tmp.61 136 16 18 ];
+        symbol [ setColor %tmp.62 136 19 27 ];
+        %tmp.62 = getv function %tmp.61 :setColor;
+        symbol [ Graphics %tmp.63 136 28 36 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.64 136 37 48 ];
+        %tmp.64 = getv %tmp.63 :COLOR_WHITE;
+        symbol [ Graphics %tmp.65 136 50 58 ];
+        %tmp.65 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.66 136 59 70 ];
+        %tmp.66 = getv %tmp.65 :COLOR_BLACK;
+        invoke %tmp.61 %tmp.62(%tmp.64, %tmp.66);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_135_19_137_12_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_133_12_137_12_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 138 12 ]
+        %tmp.67 = lgetv %dc;
+        symbol [ dc %tmp.67 138 12 14 ];
+        symbol [ drawText %tmp.68 138 15 23 ];
+        %tmp.68 = getv function %tmp.67 :drawText;
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 139 16 18 ];
+        symbol [ getWidth %tmp.70 139 19 27 ];
+        %tmp.70 = getv function %tmp.69 :getWidth;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 140 16 18 ];
+        symbol [ getHeight %tmp.75 140 19 28 ];
+        %tmp.75 = getv function %tmp.74 :getHeight;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = 2;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 140 33 35 ];
+        symbol [ getHeight %tmp.80 140 36 45 ];
+        %tmp.80 = getv function %tmp.79 :getHeight;
+        %tmp.81 = invoke %tmp.79 %tmp.80();
+        %tmp.82 = 0.15;
+        %tmp.83 = mul %tmp.81 %tmp.82;
+        %tmp.84 = add %tmp.78 %tmp.83;
+        symbol [ Graphics %tmp.85 141 16 24 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.86 141 25 34 ];
+        %tmp.86 = getv %tmp.85 :FONT_TINY;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_begin:
+        symbol [ _selectedGradient %tmp.88 142 16 33 ];
+        %tmp.88 = getv ? :_selectedGradient;
+        symbol [ _gradientIndex %tmp.90 142 35 49 ];
+        %tmp.90 = getv ? :_gradientIndex;
+        %tmp.91 = eq %tmp.88 %tmp.90;
+        bf %tmp.91 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_true:
+        %tmp.92 = "Selected";
+        push %tmp.92;
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_else_false:
+        %tmp.93 = "Press start to select";
+        push %tmp.93;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_end:
+        %tmp.94 = phi [%tmp.91 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_begin] [%tmp.92 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_true] [%tmp.93 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_else_false] [%tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_142_16_142_65_end];
+        symbol [ Graphics %tmp.95 143 16 24 ];
         %tmp.95 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.96 73 21 31 ];
-        %tmp.96 = getv %tmp.95 :FONT_SMALL;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_begin:
-        symbol [ _selectedGradient %tmp.98 74 12 29 ];
-        %tmp.98 = getv ? :_selectedGradient;
-        symbol [ _gradientIndex %tmp.100 74 31 45 ];
-        %tmp.100 = getv ? :_gradientIndex;
-        %tmp.101 = eq %tmp.98 %tmp.100;
-        bf %tmp.101 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_true:
-        %tmp.102 = "Selected";
-        push %tmp.102;
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_else_false:
-        %tmp.103 = "Press start to select";
-        push %tmp.103;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_end:
-        %tmp.104 = phi [%tmp.101 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_begin] [%tmp.102 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_true] [%tmp.103 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_else_false] [%tmp.104 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_74_12_74_61_end];
-        symbol [ Graphics %tmp.105 75 12 20 ];
-        %tmp.105 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.106 75 21 40 ];
-        %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.83 %tmp.84(%tmp.89, %tmp.94, %tmp.96, %tmp.104, %tmp.106);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_50_41_77_4_stop:
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.96 143 25 44 ];
+        %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.67 %tmp.68(%tmp.73, %tmp.84, %tmp.86, %tmp.94, %tmp.96);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_56_145_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_145_15_153_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 146 12 ]
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 146 12 14 ];
+        symbol [ drawText %tmp.98 146 15 23 ];
+        %tmp.98 = getv function %tmp.97 :drawText;
+        %tmp.99 = lgetv %dc;
+        symbol [ dc %tmp.99 147 16 18 ];
+        symbol [ getWidth %tmp.100 147 19 27 ];
+        %tmp.100 = getv function %tmp.99 :getWidth;
+        %tmp.101 = invoke %tmp.99 %tmp.100();
+        %tmp.102 = 2;
+        %tmp.103 = div %tmp.101 %tmp.102;
+        %tmp.104 = lgetv %dc;
+        symbol [ dc %tmp.104 148 16 18 ];
+        symbol [ getHeight %tmp.105 148 19 28 ];
+        %tmp.105 = getv function %tmp.104 :getHeight;
+        %tmp.106 = invoke %tmp.104 %tmp.105();
+        %tmp.107 = 2;
+        %tmp.108 = div %tmp.106 %tmp.107;
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 148 33 35 ];
+        symbol [ getHeight %tmp.110 148 36 45 ];
+        %tmp.110 = getv function %tmp.109 :getHeight;
+        %tmp.111 = invoke %tmp.109 %tmp.110();
+        %tmp.112 = 0.15;
+        %tmp.113 = mul %tmp.111 %tmp.112;
+        %tmp.114 = add %tmp.108 %tmp.113;
+        symbol [ Graphics %tmp.115 149 16 24 ];
+        %tmp.115 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.116 149 25 34 ];
+        %tmp.116 = getv %tmp.115 :FONT_TINY;
+        %tmp.117 = "Score ";
+        symbol [ _gradients %tmp.119 150 27 37 ];
+        %tmp.119 = getv ? :_gradients;
+        symbol [ _gradientIndex %tmp.121 150 38 52 ];
+        %tmp.121 = getv ? :_gradientIndex;
+        %tmp.122 = agetv %tmp.119 %tmp.121;
+        %tmp.123 = 1;
+        %tmp.124 = agetv %tmp.122 %tmp.123;
+        symbol [ toString %tmp.125 150 57 65 ];
+        %tmp.125 = getv function %tmp.124 :toString;
+        %tmp.126 = invoke %tmp.124 %tmp.125();
+        %tmp.127 = add %tmp.117 %tmp.126;
+        %tmp.128 = " to unlock";
+        %tmp.129 = add %tmp.127 %tmp.128;
+        symbol [ Graphics %tmp.130 151 16 24 ];
+        %tmp.130 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.131 151 25 44 ];
+        %tmp.131 = getv %tmp.130 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.97 %tmp.98(%tmp.103, %tmp.114, %tmp.116, %tmp.129, %tmp.131);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_145_15_153_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_132_8_153_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 154 8 ]
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 154 8 10 ];
+        symbol [ setColor %tmp.133 154 11 19 ];
+        %tmp.133 = getv function %tmp.132 :setColor;
+        symbol [ Graphics %tmp.134 154 20 28 ];
+        %tmp.134 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.135 154 29 40 ];
+        %tmp.135 = getv %tmp.134 :COLOR_WHITE;
+        symbol [ Graphics %tmp.136 154 42 50 ];
+        %tmp.136 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.137 154 51 62 ];
+        %tmp.137 = getv %tmp.136 :COLOR_BLACK;
+        invoke %tmp.132 %tmp.133(%tmp.135, %tmp.137);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 156 8 ]
+        %tmp.138 = lgetv %dc;
+        symbol [ dc %tmp.138 156 8 10 ];
+        symbol [ drawLine %tmp.139 156 11 19 ];
+        %tmp.139 = getv function %tmp.138 :drawLine;
+        %tmp.140 = lgetv %dc;
+        symbol [ dc %tmp.140 156 20 22 ];
+        symbol [ getWidth %tmp.141 156 23 31 ];
+        %tmp.141 = getv function %tmp.140 :getWidth;
+        %tmp.142 = invoke %tmp.140 %tmp.141();
+        %tmp.143 = 0.95;
+        %tmp.144 = mul %tmp.142 %tmp.143;
+        %tmp.145 = lgetv %dc;
+        symbol [ dc %tmp.145 156 40 42 ];
+        symbol [ getHeight %tmp.146 156 43 52 ];
+        %tmp.146 = getv function %tmp.145 :getHeight;
+        %tmp.147 = invoke %tmp.145 %tmp.146();
+        %tmp.148 = 2;
+        %tmp.149 = div %tmp.147 %tmp.148;
+        %tmp.150 = lgetv %dc;
+        symbol [ dc %tmp.150 156 58 60 ];
+        symbol [ getWidth %tmp.151 156 61 69 ];
+        %tmp.151 = getv function %tmp.150 :getWidth;
+        %tmp.152 = invoke %tmp.150 %tmp.151();
+        %tmp.153 = 0.95;
+        %tmp.154 = mul %tmp.152 %tmp.153;
+        %tmp.155 = lgetv %dc;
+        symbol [ dc %tmp.155 156 79 81 ];
+        symbol [ getWidth %tmp.156 156 82 90 ];
+        %tmp.156 = getv function %tmp.155 :getWidth;
+        %tmp.157 = invoke %tmp.155 %tmp.156();
+        %tmp.158 = 0.05;
+        %tmp.159 = mul %tmp.157 %tmp.158;
+        %tmp.160 = sub %tmp.154 %tmp.159;
+        %tmp.161 = lgetv %dc;
+        symbol [ dc %tmp.161 156 99 101 ];
+        symbol [ getHeight %tmp.162 156 102 111 ];
+        %tmp.162 = getv function %tmp.161 :getHeight;
+        %tmp.163 = invoke %tmp.161 %tmp.162();
+        %tmp.164 = 2;
+        %tmp.165 = div %tmp.163 %tmp.164;
+        %tmp.166 = lgetv %dc;
+        symbol [ dc %tmp.166 156 118 120 ];
+        symbol [ getHeight %tmp.167 156 121 130 ];
+        %tmp.167 = getv function %tmp.166 :getHeight;
+        %tmp.168 = invoke %tmp.166 %tmp.167();
+        %tmp.169 = 0.05;
+        %tmp.170 = mul %tmp.168 %tmp.169;
+        %tmp.171 = sub %tmp.165 %tmp.170;
+        invoke %tmp.138 %tmp.139(%tmp.144, %tmp.149, %tmp.160, %tmp.171);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 157 8 ]
+        %tmp.172 = lgetv %dc;
+        symbol [ dc %tmp.172 157 8 10 ];
+        symbol [ drawLine %tmp.173 157 11 19 ];
+        %tmp.173 = getv function %tmp.172 :drawLine;
+        %tmp.174 = lgetv %dc;
+        symbol [ dc %tmp.174 157 20 22 ];
+        symbol [ getWidth %tmp.175 157 23 31 ];
+        %tmp.175 = getv function %tmp.174 :getWidth;
+        %tmp.176 = invoke %tmp.174 %tmp.175();
+        %tmp.177 = 0.95;
+        %tmp.178 = mul %tmp.176 %tmp.177;
+        %tmp.179 = lgetv %dc;
+        symbol [ dc %tmp.179 157 40 42 ];
+        symbol [ getHeight %tmp.180 157 43 52 ];
+        %tmp.180 = getv function %tmp.179 :getHeight;
+        %tmp.181 = invoke %tmp.179 %tmp.180();
+        %tmp.182 = 2;
+        %tmp.183 = div %tmp.181 %tmp.182;
+        %tmp.184 = lgetv %dc;
+        symbol [ dc %tmp.184 157 58 60 ];
+        symbol [ getWidth %tmp.185 157 61 69 ];
+        %tmp.185 = getv function %tmp.184 :getWidth;
+        %tmp.186 = invoke %tmp.184 %tmp.185();
+        %tmp.187 = 0.95;
+        %tmp.188 = mul %tmp.186 %tmp.187;
+        %tmp.189 = lgetv %dc;
+        symbol [ dc %tmp.189 157 79 81 ];
+        symbol [ getWidth %tmp.190 157 82 90 ];
+        %tmp.190 = getv function %tmp.189 :getWidth;
+        %tmp.191 = invoke %tmp.189 %tmp.190();
+        %tmp.192 = 0.05;
+        %tmp.193 = mul %tmp.191 %tmp.192;
+        %tmp.194 = sub %tmp.188 %tmp.193;
+        %tmp.195 = lgetv %dc;
+        symbol [ dc %tmp.195 157 99 101 ];
+        symbol [ getHeight %tmp.196 157 102 111 ];
+        %tmp.196 = getv function %tmp.195 :getHeight;
+        %tmp.197 = invoke %tmp.195 %tmp.196();
+        %tmp.198 = 2;
+        %tmp.199 = div %tmp.197 %tmp.198;
+        %tmp.200 = lgetv %dc;
+        symbol [ dc %tmp.200 157 118 120 ];
+        symbol [ getHeight %tmp.201 157 121 130 ];
+        %tmp.201 = getv function %tmp.200 :getHeight;
+        %tmp.202 = invoke %tmp.200 %tmp.201();
+        %tmp.203 = 0.05;
+        %tmp.204 = mul %tmp.202 %tmp.203;
+        %tmp.205 = add %tmp.199 %tmp.204;
+        invoke %tmp.172 %tmp.173(%tmp.178, %tmp.183, %tmp.194, %tmp.205);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 159 8 ]
+        %tmp.206 = lgetv %dc;
+        symbol [ dc %tmp.206 159 8 10 ];
+        symbol [ drawLine %tmp.207 159 11 19 ];
+        %tmp.207 = getv function %tmp.206 :drawLine;
+        %tmp.208 = lgetv %dc;
+        symbol [ dc %tmp.208 159 20 22 ];
+        symbol [ getWidth %tmp.209 159 23 31 ];
+        %tmp.209 = getv function %tmp.208 :getWidth;
+        %tmp.210 = invoke %tmp.208 %tmp.209();
+        %tmp.211 = 0.05;
+        %tmp.212 = mul %tmp.210 %tmp.211;
+        %tmp.213 = lgetv %dc;
+        symbol [ dc %tmp.213 159 40 42 ];
+        symbol [ getHeight %tmp.214 159 43 52 ];
+        %tmp.214 = getv function %tmp.213 :getHeight;
+        %tmp.215 = invoke %tmp.213 %tmp.214();
+        %tmp.216 = 2;
+        %tmp.217 = div %tmp.215 %tmp.216;
+        %tmp.218 = lgetv %dc;
+        symbol [ dc %tmp.218 159 58 60 ];
+        symbol [ getWidth %tmp.219 159 61 69 ];
+        %tmp.219 = getv function %tmp.218 :getWidth;
+        %tmp.220 = invoke %tmp.218 %tmp.219();
+        %tmp.221 = 0.05;
+        %tmp.222 = mul %tmp.220 %tmp.221;
+        %tmp.223 = lgetv %dc;
+        symbol [ dc %tmp.223 159 79 81 ];
+        symbol [ getWidth %tmp.224 159 82 90 ];
+        %tmp.224 = getv function %tmp.223 :getWidth;
+        %tmp.225 = invoke %tmp.223 %tmp.224();
+        %tmp.226 = 0.05;
+        %tmp.227 = mul %tmp.225 %tmp.226;
+        %tmp.228 = add %tmp.222 %tmp.227;
+        %tmp.229 = lgetv %dc;
+        symbol [ dc %tmp.229 159 99 101 ];
+        symbol [ getHeight %tmp.230 159 102 111 ];
+        %tmp.230 = getv function %tmp.229 :getHeight;
+        %tmp.231 = invoke %tmp.229 %tmp.230();
+        %tmp.232 = 2;
+        %tmp.233 = div %tmp.231 %tmp.232;
+        %tmp.234 = lgetv %dc;
+        symbol [ dc %tmp.234 159 118 120 ];
+        symbol [ getHeight %tmp.235 159 121 130 ];
+        %tmp.235 = getv function %tmp.234 :getHeight;
+        %tmp.236 = invoke %tmp.234 %tmp.235();
+        %tmp.237 = 0.05;
+        %tmp.238 = mul %tmp.236 %tmp.237;
+        %tmp.239 = add %tmp.233 %tmp.238;
+        invoke %tmp.206 %tmp.207(%tmp.212, %tmp.217, %tmp.228, %tmp.239);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 160 8 ]
+        %tmp.240 = lgetv %dc;
+        symbol [ dc %tmp.240 160 8 10 ];
+        symbol [ drawLine %tmp.241 160 11 19 ];
+        %tmp.241 = getv function %tmp.240 :drawLine;
+        %tmp.242 = lgetv %dc;
+        symbol [ dc %tmp.242 160 20 22 ];
+        symbol [ getWidth %tmp.243 160 23 31 ];
+        %tmp.243 = getv function %tmp.242 :getWidth;
+        %tmp.244 = invoke %tmp.242 %tmp.243();
+        %tmp.245 = 0.05;
+        %tmp.246 = mul %tmp.244 %tmp.245;
+        %tmp.247 = lgetv %dc;
+        symbol [ dc %tmp.247 160 40 42 ];
+        symbol [ getHeight %tmp.248 160 43 52 ];
+        %tmp.248 = getv function %tmp.247 :getHeight;
+        %tmp.249 = invoke %tmp.247 %tmp.248();
+        %tmp.250 = 2;
+        %tmp.251 = div %tmp.249 %tmp.250;
+        %tmp.252 = lgetv %dc;
+        symbol [ dc %tmp.252 160 58 60 ];
+        symbol [ getWidth %tmp.253 160 61 69 ];
+        %tmp.253 = getv function %tmp.252 :getWidth;
+        %tmp.254 = invoke %tmp.252 %tmp.253();
+        %tmp.255 = 0.05;
+        %tmp.256 = mul %tmp.254 %tmp.255;
+        %tmp.257 = lgetv %dc;
+        symbol [ dc %tmp.257 160 79 81 ];
+        symbol [ getWidth %tmp.258 160 82 90 ];
+        %tmp.258 = getv function %tmp.257 :getWidth;
+        %tmp.259 = invoke %tmp.257 %tmp.258();
+        %tmp.260 = 0.05;
+        %tmp.261 = mul %tmp.259 %tmp.260;
+        %tmp.262 = add %tmp.256 %tmp.261;
+        %tmp.263 = lgetv %dc;
+        symbol [ dc %tmp.263 160 99 101 ];
+        symbol [ getHeight %tmp.264 160 102 111 ];
+        %tmp.264 = getv function %tmp.263 :getHeight;
+        %tmp.265 = invoke %tmp.263 %tmp.264();
+        %tmp.266 = 2;
+        %tmp.267 = div %tmp.265 %tmp.266;
+        %tmp.268 = lgetv %dc;
+        symbol [ dc %tmp.268 160 118 120 ];
+        symbol [ getHeight %tmp.269 160 121 130 ];
+        %tmp.269 = getv function %tmp.268 :getHeight;
+        %tmp.270 = invoke %tmp.268 %tmp.269();
+        %tmp.271 = 0.05;
+        %tmp.272 = mul %tmp.270 %tmp.271;
+        %tmp.273 = sub %tmp.267 %tmp.272;
+        invoke %tmp.240 %tmp.241(%tmp.246, %tmp.251, %tmp.262, %tmp.273);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 163 8 ]
+        for @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_test @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_incr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_init:
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_begin" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 163 17 18 ];
+        %tmp.274 = 0;
+        lputv %i.1 %tmp.274;
+        symbol [ i %i.1 163 17 18 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_test:
+        %tmp.275 = lgetv %i.1;
+        symbol [ i %tmp.275 163 24 25 ];
+        symbol [ _miniGradients %tmp.277 163 28 42 ];
+        %tmp.277 = getv ? :_miniGradients;
+        symbol [ _gradientIndex %tmp.279 163 43 57 ];
+        %tmp.279 = getv ? :_gradientIndex;
+        %tmp.280 = agetv %tmp.277 %tmp.279;
+        symbol [ size %tmp.281 163 59 63 ];
+        %tmp.281 = getv function %tmp.280 :size;
+        %tmp.282 = invoke %tmp.280 %tmp.281();
+        %tmp.283 = lt %tmp.275 %tmp.282;
+        bf %tmp.283 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_begin:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_72_171_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 164 12 ]
+        %tmp.284 = lgetv %dc;
+        symbol [ dc %tmp.284 164 12 14 ];
+        symbol [ setColor %tmp.285 164 15 23 ];
+        %tmp.285 = getv function %tmp.284 :setColor;
+        symbol [ _miniGradients %tmp.287 164 24 38 ];
+        %tmp.287 = getv ? :_miniGradients;
+        symbol [ _gradientIndex %tmp.289 164 39 53 ];
+        %tmp.289 = getv ? :_gradientIndex;
+        %tmp.290 = agetv %tmp.287 %tmp.289;
+        %tmp.291 = lgetv %i.1;
+        symbol [ i %tmp.291 164 55 56 ];
+        %tmp.292 = agetv %tmp.290 %tmp.291;
+        symbol [ Graphics %tmp.293 164 59 67 ];
+        %tmp.293 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.294 164 68 79 ];
+        %tmp.294 = getv %tmp.293 :COLOR_BLACK;
+        invoke %tmp.284 %tmp.285(%tmp.292, %tmp.294);
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 165 12 ]
+        %tmp.295 = lgetv %dc;
+        symbol [ dc %tmp.295 165 12 14 ];
+        symbol [ fillRectangle %tmp.296 165 15 28 ];
+        %tmp.296 = getv function %tmp.295 :fillRectangle;
+        %tmp.297 = lgetv %dc;
+        symbol [ dc %tmp.297 166 16 18 ];
+        symbol [ getWidth %tmp.298 166 19 27 ];
+        %tmp.298 = getv function %tmp.297 :getWidth;
+        %tmp.299 = invoke %tmp.297 %tmp.298();
+        %tmp.300 = 0.2;
+        %tmp.301 = mul %tmp.299 %tmp.300;
+        %tmp.302 = lgetv %i.1;
+        symbol [ i %tmp.302 166 37 38 ];
+        %tmp.303 = lgetv %dc;
+        symbol [ dc %tmp.303 166 42 44 ];
+        symbol [ getWidth %tmp.304 166 45 53 ];
+        %tmp.304 = getv function %tmp.303 :getWidth;
+        %tmp.305 = invoke %tmp.303 %tmp.304();
+        %tmp.306 = 0.6;
+        %tmp.307 = mul %tmp.305 %tmp.306;
+        symbol [ _miniGradients %tmp.309 166 60 74 ];
+        %tmp.309 = getv ? :_miniGradients;
+        symbol [ _gradientIndex %tmp.311 166 75 89 ];
+        %tmp.311 = getv ? :_gradientIndex;
+        %tmp.312 = agetv %tmp.309 %tmp.311;
+        symbol [ size %tmp.313 166 91 95 ];
+        %tmp.313 = getv function %tmp.312 :size;
+        %tmp.314 = invoke %tmp.312 %tmp.313();
+        %tmp.315 = div %tmp.307 %tmp.314;
+        %tmp.316 = mul %tmp.302 %tmp.315;
+        %tmp.317 = add %tmp.301 %tmp.316;
+        %tmp.318 = lgetv %dc;
+        symbol [ dc %tmp.318 167 16 18 ];
+        symbol [ getHeight %tmp.319 167 19 28 ];
+        %tmp.319 = getv function %tmp.318 :getHeight;
+        %tmp.320 = invoke %tmp.318 %tmp.319();
+        %tmp.321 = 0.35;
+        %tmp.322 = mul %tmp.320 %tmp.321;
+        %tmp.323 = lgetv %dc;
+        symbol [ dc %tmp.323 168 16 18 ];
+        symbol [ getWidth %tmp.324 168 19 27 ];
+        %tmp.324 = getv function %tmp.323 :getWidth;
+        %tmp.325 = invoke %tmp.323 %tmp.324();
+        %tmp.326 = 0.6;
+        %tmp.327 = mul %tmp.325 %tmp.326;
+        symbol [ _miniGradients %tmp.329 168 34 48 ];
+        %tmp.329 = getv ? :_miniGradients;
+        symbol [ _gradientIndex %tmp.331 168 49 63 ];
+        %tmp.331 = getv ? :_gradientIndex;
+        %tmp.332 = agetv %tmp.329 %tmp.331;
+        symbol [ size %tmp.333 168 65 69 ];
+        %tmp.333 = getv function %tmp.332 :size;
+        %tmp.334 = invoke %tmp.332 %tmp.333();
+        %tmp.335 = div %tmp.327 %tmp.334;
+        %tmp.336 = lgetv %dc;
+        symbol [ dc %tmp.336 169 16 18 ];
+        symbol [ getHeight %tmp.337 169 19 28 ];
+        %tmp.337 = getv function %tmp.336 :getHeight;
+        %tmp.338 = invoke %tmp.336 %tmp.337();
+        %tmp.339 = 0.1;
+        %tmp.340 = mul %tmp.338 %tmp.339;
+        invoke %tmp.295 %tmp.296(%tmp.317, %tmp.322, %tmp.335, %tmp.340);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_72_171_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_incr:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc" 163 ]
+        %tmp.343 = lgetv %i.1;
+        symbol [ i %tmp.343 163 67 68 ];
+        %tmp.344 = add %tmp.343 1;
+        lputv %i.1 %tmp.344;
+        symbol [ i %i.1 163 67 68 ];
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_test;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_163_8_171_8_for_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_CustomizeView_mc_119_41_173_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/CustomizeView.mc"; @line = 1; ]

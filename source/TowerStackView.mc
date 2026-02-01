@@ -9,11 +9,8 @@ class TowerStackView extends WatchUi.View {
     private var _xPosition = 0;
     private var _previousBlocks as Array<Array> = [];
     private var _selectedGradient;
-    
-    private var _fallingBlock = false;
-    private var fallingI;
-    private var fallingLeft;
-    private var fallingWidth;
+
+    var _perfect = 0;
 
     function rgbToDec( rr, gg, bb ) as Number {
         return rr*65536 + gg*256 + bb;
@@ -276,7 +273,6 @@ class TowerStackView extends WatchUi.View {
         _selectedGradient = App.Properties.getValue("selectedGradientIndex");
     }
 
-
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
@@ -339,13 +335,14 @@ class TowerStackView extends WatchUi.View {
             2                     // corner radius
         );
 
-        if (_fallingBlock) {
-            dc.fillRoundedRectangle(
-                fallingLeft,
-                ((getDeviceHeight() * 0.5) + fallingI),
-                fallingWidth,
-                (dc.getHeight() / 14),
-                2
+        if (_perfect!= 0) {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            dc.drawText(
+                dc.getWidth()/2,
+                (dc.getHeight() * 0.3),
+                Graphics.FONT_SMALL,
+                "Perfect x" +_perfect.toString(),
+                Graphics.TEXT_JUSTIFY_CENTER
             );
         }
     }

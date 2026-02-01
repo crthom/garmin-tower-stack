@@ -10,8 +10,32 @@ module Rez {
     } // Drawables
 
     module Layouts {
+        function CustomizeLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_header = new WatchUi.Text({:identifier=>"header", :color=>Gfx.COLOR_PURPLE, :locX=>(dc.getWidth() * 0.5), :locY=>(dc.getHeight() * (15 / 100.0)), :text=>"Tower Color", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+
+            return [rez_cmp_local_text_header] as Array<WatchUi.Drawable>;
+        }
+
+        function MenuLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_var_dc_getHeight = dc.getHeight();
+
+            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
+
+            var rez_cmp_local_text_title1 = new WatchUi.Text({:identifier=>"title1", :color=>Gfx.COLOR_BLUE, :locX=>(rez_cmp_local_var_dc_getWidth * (30 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (15 / 100.0)), :text=>"Tower", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+
+            var rez_cmp_local_text_title2 = new WatchUi.Text({:identifier=>"title2", :color=>Gfx.COLOR_RED, :locX=>(rez_cmp_local_var_dc_getWidth * (70 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (15 / 100.0)), :text=>"Stack", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+
+            var rez_cmp_local_text_highScore = new WatchUi.Text({:identifier=>"highScore", :color=>Gfx.COLOR_PURPLE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (30 / 100.0)), :text=>"High score: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            var rez_cmp_local_text_start = new WatchUi.Text({:identifier=>"start", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (50 / 100.0)), :text=>"New Game [select]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            var rez_cmp_local_text_customize = new WatchUi.Text({:identifier=>"customize", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (65 / 100.0)), :text=>"Customize [up]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            return [rez_cmp_local_text_title1, rez_cmp_local_text_title2, rez_cmp_local_text_highScore, rez_cmp_local_text_start, rez_cmp_local_text_customize] as Array<WatchUi.Drawable>;
+        }
+
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_score = new WatchUi.Text({:identifier=>"score", :locX=>(dc.getWidth() * 0.5), :locY=>(dc.getHeight() * (20 / 100.0)), :text=>"0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_text_score = new WatchUi.Text({:identifier=>"score", :locX=>(dc.getWidth() * 0.5), :locY=>(dc.getHeight() * (10 / 100.0)), :text=>"0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
 
             return [rez_cmp_local_text_score] as Array<WatchUi.Drawable>;
         }

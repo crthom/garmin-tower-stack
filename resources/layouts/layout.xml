@@ -3,7 +3,7 @@
         id="score"
         text="0" 
         x="center"
-        y="20%"
+        y="10%"
         font="Gfx.FONT_MEDIUM"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />

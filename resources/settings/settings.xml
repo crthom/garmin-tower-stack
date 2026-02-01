@@ -2,5 +2,7 @@
     <properties>
         <property id="highScore" type="number">0</property>
         <property id="selectedGradientIndex" type="number">0</property>
+        <property id="soundEnabled" type="boolean">true</property>
+        <property id="vibrationEnabled" type="boolean">true</property>
     </properties>
 </resources>

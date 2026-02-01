@@ -4,6 +4,9 @@ import Toybox.WatchUi;
 import Toybox.Timer;
 import Toybox.Lang;
 using Toybox.Application as App;
+using Toybox.Math;
+using Toybox.Attention;
+import Toybox.Application.Storage;
 
 class TowerStackDelegate extends WatchUi.BehaviorDelegate {
     
@@ -73,6 +76,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         _rightBorder = _leftBorder + getDeviceWidth()*0.4;
         _nextWidth = getDeviceWidth()*0.4;
         _currentWidth = getDeviceWidth()*0.4;
+        _view._perfect = 0;
     }
 
     function updateX() as Void{
@@ -81,16 +85,33 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             return;
         }
         if (_stoppedX != null) {
-            if (_stoppedX == _leftBorder) {
+            if (_stoppedX == _leftBorder || (_stoppedX - _leftBorder).abs() < getDeviceWidth()*0.015) {
+                var soundEnabled = Storage.getValue("soundEnabled");
+                if (soundEnabled == null) { soundEnabled = true; }
+                if (soundEnabled == true && Attention has :playTone) {
+                    try {
+                        Attention.playTone(Attention.TONE_KEY);
+                    } catch (ex) {}
+                }
                 _nextWidth = _currentWidth;
+                _view._perfect += 1;
             } else if (_stoppedX < _leftBorder) {
                 _nextWidth = (_stoppedX + _currentWidth) - _leftBorder;
                 _rightBorder = _leftBorder + _nextWidth;
+                _view._perfect = 0;
             } else {
                 _nextWidth = _rightBorder - _stoppedX;
                 _leftBorder = _stoppedX;
+                _view._perfect = 0;
             }
             if (_nextWidth <= 0 || _nextWidth < (getDeviceWidth()*0.01)) {
+                var soundEnabled = Storage.getValue("soundEnabled");
+                if (soundEnabled == null) { soundEnabled = true; }
+                if (soundEnabled == true && Attention has :playTone) {
+                    try {
+                        Attention.playTone(Attention.TONE_ERROR);
+                    } catch (ex) {}
+                }
                 _gameOver = true;
                 _inProgress = false;
                 if (_view._score > highScore) {
@@ -98,9 +119,28 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
                 }
                 WatchUi.popView(WatchUi.SLIDE_RIGHT);
             } else {
+                var vibrationEnabled = Storage.getValue("vibrationEnabled");
+                if (vibrationEnabled == null) { vibrationEnabled = true; }
+                if (vibrationEnabled == true && Attention has :vibrate) {
+                    Attention.vibrate([new Attention.VibeProfile(50, 100)]);
+                }
                 _currentWidth = _nextWidth;
                 _stoppedX = null;
-                _view.newBlock(_leftBorder, _currentWidth);
+                if (_view._perfect >= 5){
+                    // Reward perfect stacks with a width increase over 5 perfects
+                    _currentWidth += getDeviceWidth()*0.01;
+                    if (_currentWidth > getDeviceWidth()*0.4) {
+                        _currentWidth = getDeviceWidth()*0.4;
+                    }
+                    _rightBorder = _leftBorder + _currentWidth;
+                    if (_rightBorder > getDeviceWidth()/2 - (getDeviceWidth()*0.4/2) + getDeviceWidth()*0.4) {
+                        _rightBorder = getDeviceWidth()/2 - (getDeviceWidth()*0.4/2) + getDeviceWidth()*0.4;
+                        _leftBorder = _rightBorder - _currentWidth;
+                    }
+                    _view.newBlock(_leftBorder,  _currentWidth);
+                } else {
+                    _view.newBlock(_leftBorder,  _currentWidth);
+                }
                 _xPosition = 0;
                 _direction = 1;
                 _view._currentWidth = _currentWidth;
@@ -115,7 +155,7 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
             _direction = 1;
         }
         
-        _speed = (((((_view._score+1)*0.002)+0.1)*(getDeviceHeight()/5)));
+        _speed = (((((_view._score+1)*0.002)+0.08)*(getDeviceHeight()/5)));
         if (_speed > (getDeviceWidth()/20)) {
             _speed = (getDeviceWidth()/20);
         }

@@ -36,7 +36,7 @@ class CustomizeView extends WatchUi.View {
         %tmp.21 = "Rose sand";
         %tmp.22 = dup %tmp.20;
         %tmp.23 = aputv %tmp.22 0 %tmp.21;
-        %tmp.24 = 35;
+        %tmp.24 = 40;
         %tmp.25 = dup %tmp.23;
         %tmp.26 = aputv %tmp.25 1 %tmp.24;
         %tmp.27 = dup %tmp.19;
@@ -45,7 +45,7 @@ class CustomizeView extends WatchUi.View {
         %tmp.30 = "Forest";
         %tmp.31 = dup %tmp.29;
         %tmp.32 = aputv %tmp.31 0 %tmp.30;
-        %tmp.33 = 40;
+        %tmp.33 = 50;
         %tmp.34 = dup %tmp.32;
         %tmp.35 = aputv %tmp.34 1 %tmp.33;
         %tmp.36 = dup %tmp.28;
@@ -54,7 +54,7 @@ class CustomizeView extends WatchUi.View {
         %tmp.39 = "Ocean flow";
         %tmp.40 = dup %tmp.38;
         %tmp.41 = aputv %tmp.40 0 %tmp.39;
-        %tmp.42 = 45;
+        %tmp.42 = 60;
         %tmp.43 = dup %tmp.41;
         %tmp.44 = aputv %tmp.43 1 %tmp.42;
         %tmp.45 = dup %tmp.37;
@@ -63,7 +63,7 @@ class CustomizeView extends WatchUi.View {
         %tmp.48 = "Rainbow";
         %tmp.49 = dup %tmp.47;
         %tmp.50 = aputv %tmp.49 0 %tmp.48;
-        %tmp.51 = 50;
+        %tmp.51 = 75;
         %tmp.52 = dup %tmp.50;
         %tmp.53 = aputv %tmp.52 1 %tmp.51;
         %tmp.54 = dup %tmp.46;

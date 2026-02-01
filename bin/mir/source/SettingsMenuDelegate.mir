@@ -1,0 +1,149 @@
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Application,2,13,24]; @symbol_usingdef<2> = [Storage,2,25,32]; ]
+using Toybox.Application.Storage;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 4; @symbol_classdef = [SettingsMenuDelegate,4,6,26]; @symbol_extends<0> = [WatchUi,4,35,42]; @symbol_extends<1> = [Menu2InputDelegate,4,43,61]; ]
+class SettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_6_26_8_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 7 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 7 8 26 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 7 27 37 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 10; @symbol_functiondef = [onSelect,10,13,21]; @symbol_param<0> = [item,10,22,26]; ]
+    function onSelect(item) as Void {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_10_36_22_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 11 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_10_36_22_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_10_36_22_4_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 11 12 14 ];
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 11 17 21 ];
+        symbol [ getId %tmp.2 11 22 27 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %id.1 %tmp.3;
+        symbol [ id %id.1 11 12 14 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 13 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_stmt:
+        %tmp.4 = lgetv %id.1;
+        symbol [ id %tmp.4 13 12 14 ];
+        symbol [ equals %tmp.5 13 15 21 ];
+        %tmp.5 = getv function %tmp.4 :equals;
+        %tmp.6 = "sound";
+        %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
+        bf %tmp.7 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_32_17_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 14 12 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_32_17_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_32_17_8_stop" ]
+        %currentValue.2 = local;
+        symbol [ currentValue %currentValue.2 14 16 28 ];
+        symbol [ Storage %tmp.8 14 31 38 ];
+        %tmp.8 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.9 14 39 47 ];
+        %tmp.9 = getv function %tmp.8 :getValue;
+        %tmp.10 = "soundEnabled";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        lputv %currentValue.2 %tmp.11;
+        symbol [ currentValue %currentValue.2 14 16 28 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 15 12 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_12_15_61_if_stmt:
+        %tmp.12 = lgetv %currentValue.2;
+        symbol [ currentValue %tmp.12 15 16 28 ];
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_12_15_61_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_12_15_61_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_38_15_61_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 15 40 ]
+        %tmp.15 = true;
+        lputv %currentValue.2 %tmp.15;
+        symbol [ currentValue %currentValue.2 15 40 52 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_38_15_61_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_12_15_61_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_15_12_15_61_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 16 12 ]
+        symbol [ Storage %tmp.16 16 12 19 ];
+        %tmp.16 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.17 16 20 28 ];
+        %tmp.17 = getv function %tmp.16 :setValue;
+        %tmp.18 = "soundEnabled";
+        %tmp.19 = lgetv %currentValue.2;
+        symbol [ currentValue %tmp.19 16 46 58 ];
+        %tmp.20 = not %tmp.19;
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.20);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_32_17_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_false:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 17 15 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_15_21_8_if_stmt:
+        %tmp.21 = lgetv %id.1;
+        symbol [ id %tmp.21 17 19 21 ];
+        symbol [ equals %tmp.22 17 22 28 ];
+        %tmp.22 = getv function %tmp.21 :equals;
+        %tmp.23 = "vibration";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        bf %tmp.24 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_15_21_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_15_21_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_43_21_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 18 12 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_43_21_8_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_43_21_8_stop" ]
+        %currentValue.3 = local;
+        symbol [ currentValue %currentValue.3 18 16 28 ];
+        symbol [ Storage %tmp.25 18 31 38 ];
+        %tmp.25 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.26 18 39 47 ];
+        %tmp.26 = getv function %tmp.25 :getValue;
+        %tmp.27 = "vibrationEnabled";
+        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
+        lputv %currentValue.3 %tmp.28;
+        symbol [ currentValue %currentValue.3 18 16 28 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 19 12 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_12_19_61_if_stmt:
+        %tmp.29 = lgetv %currentValue.3;
+        symbol [ currentValue %tmp.29 19 16 28 ];
+        %tmp.30 = null;
+        %tmp.31 = eq %tmp.29 %tmp.30;
+        bf %tmp.31 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_12_19_61_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_12_19_61_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_38_19_61_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 19 40 ]
+        %tmp.32 = true;
+        lputv %currentValue.3 %tmp.32;
+        symbol [ currentValue %currentValue.3 19 40 52 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_38_19_61_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_12_19_61_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_19_12_19_61_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc" 20 12 ]
+        symbol [ Storage %tmp.33 20 12 19 ];
+        %tmp.33 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.34 20 20 28 ];
+        %tmp.34 = getv function %tmp.33 :setValue;
+        %tmp.35 = "vibrationEnabled";
+        %tmp.36 = lgetv %currentValue.3;
+        symbol [ currentValue %tmp.36 20 50 62 ];
+        %tmp.37 = not %tmp.36;
+        invoke %tmp.33 %tmp.34(%tmp.35, %tmp.37);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_43_21_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_15_21_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_17_15_21_8_if_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_13_8_21_8_if_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_SettingsMenuDelegate_mc_10_36_22_4_stop:
+    }
+}
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/SettingsMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

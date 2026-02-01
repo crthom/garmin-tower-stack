@@ -21,7 +21,7 @@
         id="highScore"
         text="High score: 0" 
         x="center"
-        y="40%"
+        y="30%"
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
         color="Gfx.COLOR_PURPLE"
@@ -30,7 +30,7 @@
         id="start"
         text="New Game [select]" 
         x="center"
-        y="55%"
+        y="50%"
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
@@ -38,7 +38,7 @@
         id="customize"
         text="Customize [up]" 
         x="center"
-        y="70%"
+        y="65%"
         font="Gfx.FONT_SMALL"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />

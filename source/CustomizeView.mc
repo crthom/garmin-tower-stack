@@ -13,10 +13,10 @@ class CustomizeView extends WatchUi.View {
     var _gradients as Array = [
         ["Thermal shift", 0],
         ["Indigo Drift", 30],
-        ["Rose sand", 35],
-        ["Forest", 40],
-        ["Ocean flow", 45],
-        ["Rainbow", 50],
+        ["Rose sand", 40],
+        ["Forest", 50],
+        ["Ocean flow", 60],
+        ["Rainbow", 75],
     ];
 
     function rgbToDec( rr, gg, bb ) as Number {

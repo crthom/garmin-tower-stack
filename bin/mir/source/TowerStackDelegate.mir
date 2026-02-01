@@ -10,19 +10,25 @@ import Toybox.Timer;
 import Toybox.Lang;
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Application,6,13,24]; @symbol_usingAlias = [App,6,28,31]; ]
 using Toybox.Application as :App;
-[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 8; @symbol_classdef = [TowerStackDelegate,8,6,24]; @symbol_extends<0> = [WatchUi,8,33,40]; @symbol_extends<1> = [BehaviorDelegate,8,41,57]; ]
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [Math,7,13,17]; ]
+using Toybox.Math;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [Attention,8,13,22]; ]
+using Toybox.Attention;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [Application,9,14,25]; @symbol_importdef<2> = [Storage,9,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 11; @symbol_classdef = [TowerStackDelegate,11,6,24]; @symbol_extends<0> = [WatchUi,11,33,40]; @symbol_extends<1> = [BehaviorDelegate,11,41,57]; ]
 class TowerStackDelegate extends WatchUi.BehaviorDelegate {
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 8; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 11; ]
     <init> {
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 50 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 53 16 ]
         %tmp.1 = self;
-        symbol [ getDeviceWidth %tmp.2 50 30 44 ];
+        symbol [ getDeviceWidth %tmp.2 53 30 44 ];
         %tmp.2 = getv function %tmp.1 :getDeviceWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = 2;
         %tmp.5 = div %tmp.3 %tmp.4;
         %tmp.6 = self;
-        symbol [ getDeviceWidth %tmp.7 50 52 66 ];
+        symbol [ getDeviceWidth %tmp.7 53 52 66 ];
         %tmp.7 = getv function %tmp.6 :getDeviceWidth;
         %tmp.8 = invoke %tmp.6 %tmp.7();
         %tmp.9 = 0.4;
@@ -31,276 +37,276 @@ class TowerStackDelegate extends WatchUi.BehaviorDelegate {
         %tmp.12 = div %tmp.10 %tmp.11;
         %tmp.13 = sub %tmp.5 %tmp.12;
         putv self :_leftBorder %tmp.13;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 51 16 ]
-        symbol [ _leftBorder %tmp.15 51 31 42 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 54 16 ]
+        symbol [ _leftBorder %tmp.15 54 31 42 ];
         %tmp.15 = getv ? :_leftBorder;
         %tmp.16 = self;
-        symbol [ getDeviceWidth %tmp.17 51 45 59 ];
+        symbol [ getDeviceWidth %tmp.17 54 45 59 ];
         %tmp.17 = getv function %tmp.16 :getDeviceWidth;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         %tmp.19 = 0.4;
         %tmp.20 = mul %tmp.18 %tmp.19;
         %tmp.21 = add %tmp.15 %tmp.20;
         putv self :_rightBorder %tmp.21;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 52 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 55 16 ]
         %tmp.22 = self;
-        symbol [ getDeviceWidth %tmp.23 52 29 43 ];
+        symbol [ getDeviceWidth %tmp.23 55 29 43 ];
         %tmp.23 = getv function %tmp.22 :getDeviceWidth;
         %tmp.24 = invoke %tmp.22 %tmp.23();
         %tmp.25 = 0.4;
         %tmp.26 = mul %tmp.24 %tmp.25;
         putv self :_nextWidth %tmp.26;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 53 16 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 56 16 ]
         %tmp.27 = self;
-        symbol [ getDeviceWidth %tmp.28 53 32 46 ];
+        symbol [ getDeviceWidth %tmp.28 56 32 46 ];
         %tmp.28 = getv function %tmp.27 :getDeviceWidth;
         %tmp.29 = invoke %tmp.27 %tmp.28();
         %tmp.30 = 0.4;
         %tmp.31 = mul %tmp.29 %tmp.30;
         putv self :_currentWidth %tmp.31;
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 8; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 11; ]
     static
     <init> {
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 10; @position = 16; @symbol_vardef = [_inProgress,10,16,27]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 13; @position = 16; @symbol_vardef = [_inProgress,13,16,27]; ]
     private
     var _inProgress = false;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 11; @position = 16; @symbol_vardef = [_gameOver,11,16,25]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 14; @position = 16; @symbol_vardef = [_gameOver,14,16,25]; ]
     private
     var _gameOver = false;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 13; @position = 16; @symbol_vardef = [_xPosition,13,16,26]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 16; @position = 16; @symbol_vardef = [_xPosition,16,16,26]; ]
     private
     var _xPosition = 0;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 14; @position = 16; @symbol_vardef = [_direction,14,16,26]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 17; @position = 16; @symbol_vardef = [_direction,17,16,26]; ]
     private
     var _direction = 1;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 15; @position = 16; @symbol_vardef = [_timer,15,16,22]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 18; @position = 16; @symbol_vardef = [_timer,18,16,22]; ]
     private
     var _timer;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 16; @position = 16; @symbol_vardef = [_stoppedX,16,16,25]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 19; @position = 16; @symbol_vardef = [_stoppedX,19,16,25]; ]
     private
     var _stoppedX;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 18; @position = 16; @symbol_vardef = [_view,18,16,21]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 21; @position = 16; @symbol_vardef = [_view,21,16,21]; ]
     private
     var _view;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 19; @position = 8; @symbol_vardef = [highScore,19,8,17]; @symbol_type<0> = [Number,19,21,27]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 22; @position = 8; @symbol_vardef = [highScore,22,8,17]; @symbol_type<0> = [Number,22,21,27]; ]
     var highScore as Number;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 21; @symbol_functiondef = [initialize,21,13,23]; @symbol_param<0> = [view,21,24,28]; @symbol_param<0>_type<0> = [TowerStackView,21,32,46]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 24; @symbol_functiondef = [initialize,24,13,23]; @symbol_param<0> = [view,24,24,28]; @symbol_param<0>_type<0> = [TowerStackView,24,32,46]; ]
     function initialize(view as TowerStackView) as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_21_48_26_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 22 8 ]
-        symbol [ BehaviorDelegate %tmp.2 22 8 24 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_24_48_29_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 25 8 ]
+        symbol [ BehaviorDelegate %tmp.2 25 8 24 ];
         %tmp.2 = getv ? :BehaviorDelegate;
-        symbol [ initialize %tmp.3 22 25 35 ];
+        symbol [ initialize %tmp.3 25 25 35 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 23 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 26 8 ]
         %tmp.4 = lgetv %view;
-        symbol [ view %tmp.4 23 16 20 ];
-        symbol [ _view ? 23 8 13 ];
+        symbol [ view %tmp.4 26 16 20 ];
+        symbol [ _view ? 26 8 13 ];
         putv self :_view %tmp.4;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 25 8 ]
-        symbol [ App %tmp.5 25 20 23 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 28 8 ]
+        symbol [ App %tmp.5 28 20 23 ];
         %tmp.5 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.6 25 24 34 ];
+        symbol [ Properties %tmp.6 28 24 34 ];
         %tmp.6 = getv %tmp.5 :Properties;
-        symbol [ getValue %tmp.7 25 35 43 ];
+        symbol [ getValue %tmp.7 28 35 43 ];
         %tmp.7 = getv function %tmp.6 :getValue;
         %tmp.8 = "highScore";
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        symbol [ highScore ? 25 8 17 ];
+        symbol [ highScore ? 28 8 17 ];
         putv self :highScore %tmp.9;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_21_48_26_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_24_48_29_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 28; @symbol_functiondef = [saveHighScore,28,13,26]; @symbol_param<0> = [score,28,27,32]; @symbol_param<0>_type<0> = [Number,28,36,42]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 31; @symbol_functiondef = [saveHighScore,31,13,26]; @symbol_param<0> = [score,31,27,32]; @symbol_param<0>_type<0> = [Number,31,36,42]; ]
     function saveHighScore(score as Number) {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_28_44_31_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 29 8 ]
-        symbol [ App %tmp.1 29 8 11 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_31_44_34_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 32 8 ]
+        symbol [ App %tmp.1 32 8 11 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Properties %tmp.2 29 12 22 ];
+        symbol [ Properties %tmp.2 32 12 22 ];
         %tmp.2 = getv %tmp.1 :Properties;
-        symbol [ setValue %tmp.3 29 23 31 ];
+        symbol [ setValue %tmp.3 32 23 31 ];
         %tmp.3 = getv function %tmp.2 :setValue;
         %tmp.4 = "highScore";
         %tmp.5 = lgetv %score;
-        symbol [ score %tmp.5 29 45 50 ];
+        symbol [ score %tmp.5 32 45 50 ];
         invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 30 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 33 8 ]
         %tmp.6 = lgetv %score;
-        symbol [ score %tmp.6 30 20 25 ];
-        symbol [ highScore ? 30 8 17 ];
+        symbol [ score %tmp.6 33 20 25 ];
+        symbol [ highScore ? 33 8 17 ];
         putv self :highScore %tmp.6;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_28_44_31_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_31_44_34_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 33; @symbol_functiondef = [loadHighScore,33,13,26]; @symbol_return<0> = [Number,33,32,38]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 36; @symbol_functiondef = [loadHighScore,36,13,26]; @symbol_return<0> = [Number,36,32,38]; ]
     function loadHighScore() as Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_33_39_35_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 34 8 ]
-        symbol [ highScore %tmp.2 34 15 24 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_36_39_38_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 37 8 ]
+        symbol [ highScore %tmp.2 37 15 24 ];
         %tmp.2 = getv ? :highScore;
         ret %tmp.2;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_33_39_35_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_36_39_38_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 37; @symbol_functiondef = [getDeviceWidth,37,13,27]; @symbol_return<0> = [Lang,37,33,37]; @symbol_return<1> = [Number,37,38,44]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 40; @symbol_functiondef = [getDeviceWidth,40,13,27]; @symbol_return<0> = [Lang,40,33,37]; @symbol_return<1> = [Number,40,38,44]; ]
     function getDeviceWidth() as Lang.Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 38 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_stop" ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 41 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_stop" ]
         %deviceSettings.1 = local;
-        symbol [ deviceSettings %deviceSettings.1 38 12 26 ];
-        symbol [ System %tmp.1 38 29 35 ];
+        symbol [ deviceSettings %deviceSettings.1 41 12 26 ];
+        symbol [ System %tmp.1 41 29 35 ];
         %tmp.1 = getm $.Toybox.System;
-        symbol [ getDeviceSettings %tmp.2 38 36 53 ];
+        symbol [ getDeviceSettings %tmp.2 41 36 53 ];
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %deviceSettings.1 %tmp.3;
-        symbol [ deviceSettings %deviceSettings.1 38 12 26 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 39 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_stop" ]
+        symbol [ deviceSettings %deviceSettings.1 41 12 26 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 42 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_stop" ]
         %fullScreenWidth.2 = local;
-        symbol [ fullScreenWidth %fullScreenWidth.2 39 12 27 ];
+        symbol [ fullScreenWidth %fullScreenWidth.2 42 12 27 ];
         %tmp.4 = lgetv %deviceSettings.1;
-        symbol [ deviceSettings %tmp.4 39 30 44 ];
-        symbol [ screenWidth %tmp.5 39 45 56 ];
+        symbol [ deviceSettings %tmp.4 42 30 44 ];
+        symbol [ screenWidth %tmp.5 42 45 56 ];
         %tmp.5 = getv %tmp.4 :screenWidth;
         lputv %fullScreenWidth.2 %tmp.5;
-        symbol [ fullScreenWidth %fullScreenWidth.2 39 12 27 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 41 8 ]
-        %tmp.6 = lgetv %fullScreenWidth.2;
-        symbol [ fullScreenWidth %tmp.6 41 15 30 ];
-        ret %tmp.6;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_37_45_42_4_stop:
-    }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 43; @symbol_functiondef = [getDeviceHeight,43,13,28]; @symbol_return<0> = [Lang,43,34,38]; @symbol_return<1> = [Number,43,39,45]; ]
-    function getDeviceHeight() as Lang.Number {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_start:
+        symbol [ fullScreenWidth %fullScreenWidth.2 42 12 27 ];
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 44 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_stop" ]
+        %tmp.6 = lgetv %fullScreenWidth.2;
+        symbol [ fullScreenWidth %tmp.6 44 15 30 ];
+        ret %tmp.6;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_40_45_45_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 46; @symbol_functiondef = [getDeviceHeight,46,13,28]; @symbol_return<0> = [Lang,46,34,38]; @symbol_return<1> = [Number,46,39,45]; ]
+    function getDeviceHeight() as Lang.Number {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 47 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_stop" ]
         %deviceSettings.1 = local;
-        symbol [ deviceSettings %deviceSettings.1 44 12 26 ];
-        symbol [ System %tmp.1 44 29 35 ];
+        symbol [ deviceSettings %deviceSettings.1 47 12 26 ];
+        symbol [ System %tmp.1 47 29 35 ];
         %tmp.1 = getm $.Toybox.System;
-        symbol [ getDeviceSettings %tmp.2 44 36 53 ];
+        symbol [ getDeviceSettings %tmp.2 47 36 53 ];
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %deviceSettings.1 %tmp.3;
-        symbol [ deviceSettings %deviceSettings.1 44 12 26 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 45 8 ]
-        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_stop" ]
+        symbol [ deviceSettings %deviceSettings.1 47 12 26 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 48 8 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_stop" ]
         %fullScreenHeight.2 = local;
-        symbol [ fullScreenHeight %fullScreenHeight.2 45 12 28 ];
+        symbol [ fullScreenHeight %fullScreenHeight.2 48 12 28 ];
         %tmp.4 = lgetv %deviceSettings.1;
-        symbol [ deviceSettings %tmp.4 45 31 45 ];
-        symbol [ screenHeight %tmp.5 45 46 58 ];
+        symbol [ deviceSettings %tmp.4 48 31 45 ];
+        symbol [ screenHeight %tmp.5 48 46 58 ];
         %tmp.5 = getv %tmp.4 :screenHeight;
         lputv %fullScreenHeight.2 %tmp.5;
-        symbol [ fullScreenHeight %fullScreenHeight.2 45 12 28 ];
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 47 8 ]
+        symbol [ fullScreenHeight %fullScreenHeight.2 48 12 28 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 50 8 ]
         %tmp.6 = lgetv %fullScreenHeight.2;
-        symbol [ fullScreenHeight %tmp.6 47 15 31 ];
+        symbol [ fullScreenHeight %tmp.6 50 15 31 ];
         ret %tmp.6;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_43_46_48_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_46_46_51_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 50; @position = 16; @symbol_vardef = [_leftBorder,50,16,27]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 53; @position = 16; @symbol_vardef = [_leftBorder,53,16,27]; ]
     private
     var _leftBorder;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 51; @position = 16; @symbol_vardef = [_rightBorder,51,16,28]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 54; @position = 16; @symbol_vardef = [_rightBorder,54,16,28]; ]
     private
     var _rightBorder;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 52; @position = 16; @symbol_vardef = [_nextWidth,52,16,26]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 55; @position = 16; @symbol_vardef = [_nextWidth,55,16,26]; ]
     private
     var _nextWidth;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 53; @position = 16; @symbol_vardef = [_currentWidth,53,16,29]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 56; @position = 16; @symbol_vardef = [_currentWidth,56,16,29]; ]
     private
     var _currentWidth;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 54; @position = 16; @symbol_vardef = [_speed,54,16,22]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 57; @position = 16; @symbol_vardef = [_speed,57,16,22]; ]
     private
     var _speed;
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 56; @symbol_functiondef = [onSelect,56,13,21]; @symbol_return<0> = [Boolean,56,27,34]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 59; @symbol_functiondef = [onSelect,59,13,21]; @symbol_return<0> = [Boolean,59,27,34]; ]
     function onSelect() as Boolean {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_56_35_64_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 57 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_stmt:
-        symbol [ _inProgress %tmp.2 57 12 23 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_59_35_67_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 60 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_stmt:
+        symbol [ _inProgress %tmp.2 60 12 23 ];
         %tmp.2 = getv ? :_inProgress;
         %tmp.3 = false;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_34_60_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 58 12 ]
+        bf %tmp.4 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_34_63_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 61 12 ]
         %tmp.5 = true;
-        symbol [ _inProgress ? 58 12 23 ];
+        symbol [ _inProgress ? 61 12 23 ];
         putv self :_inProgress %tmp.5;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 59 12 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 62 12 ]
         %tmp.6 = self;
-        symbol [ startGame %tmp.7 59 12 21 ];
+        symbol [ startGame %tmp.7 62 12 21 ];
         %tmp.7 = getv function %tmp.6 :startGame;
         invoke %tmp.6 %tmp.7();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_34_60_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_else_false:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_15_62_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 61 12 ]
-        symbol [ _xPosition %tmp.9 61 24 34 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_34_63_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_63_15_65_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 64 12 ]
+        symbol [ _xPosition %tmp.9 64 24 34 ];
         %tmp.9 = getv ? :_xPosition;
-        symbol [ _stoppedX ? 61 12 21 ];
+        symbol [ _stoppedX ? 64 12 21 ];
         putv self :_stoppedX %tmp.9;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_15_62_8_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_57_8_62_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 63 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_63_15_65_8_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_60_8_65_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 66 8 ]
         %tmp.10 = true;
         ret %tmp.10;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_56_35_64_4_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_59_35_67_4_stop:
     }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 66; @symbol_functiondef = [startGame,66,13,22]; ]
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 69; @symbol_functiondef = [startGame,69,13,22]; ]
     function startGame() {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_66_25_76_4_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 67 8 ]
-        symbol [ Timer %tmp.3 67 21 26 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_69_25_80_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 70 8 ]
+        symbol [ Timer %tmp.3 70 21 26 ];
         %tmp.3 = getm $.Toybox.Timer;
-        symbol [ Timer %tmp.4 67 27 32 ];
+        symbol [ Timer %tmp.4 70 27 32 ];
         %tmp.4 = getv function ? %tmp.3 :Timer;
         %tmp.1 = newc %tmp.4 ();
-        symbol [ _timer ? 67 8 14 ];
+        symbol [ _timer ? 70 8 14 ];
         putv self :_timer %tmp.1;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 68 8 ]
-        symbol [ _timer %tmp.6 68 8 14 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 71 8 ]
+        symbol [ _timer %tmp.6 71 8 14 ];
         %tmp.6 = getv ? :_timer;
-        symbol [ start %tmp.7 68 15 20 ];
+        symbol [ start %tmp.7 71 15 20 ];
         %tmp.7 = getv function %tmp.6 :start;
         %tmp.8 = self;
-        symbol [ method %tmp.9 68 21 27 ];
+        symbol [ method %tmp.9 71 21 27 ];
         %tmp.9 = getv function %tmp.8 :method;
         %tmp.11 = const :updateX;
-        symbol [ updateX %tmp.11 68 29 36 const ];
+        symbol [ updateX %tmp.11 71 29 36 const ];
         %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
         %tmp.13 = 10;
         %tmp.14 = true;
         invoke %tmp.6 %tmp.7(%tmp.12, %tmp.13, %tmp.14);
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 69 8 ]
-        %tmp.15 = 0;
-        symbol [ _xPosition ? 69 8 18 ];
-        putv self :_xPosition %tmp.15;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 70 8 ]
-        %tmp.16 = 1;
-        symbol [ _direction ? 70 8 18 ];
-        putv self :_direction %tmp.16;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 71 8 ]
-        %tmp.17 = false;
-        symbol [ _gameOver ? 71 8 17 ];
-        putv self :_gameOver %tmp.17;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 72 8 ]
+        %tmp.15 = 0;
+        symbol [ _xPosition ? 72 8 18 ];
+        putv self :_xPosition %tmp.15;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 73 8 ]
+        %tmp.16 = 1;
+        symbol [ _direction ? 73 8 18 ];
+        putv self :_direction %tmp.16;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 74 8 ]
+        %tmp.17 = false;
+        symbol [ _gameOver ? 74 8 17 ];
+        putv self :_gameOver %tmp.17;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 75 8 ]
         %tmp.18 = self;
-        symbol [ getDeviceWidth %tmp.19 72 22 36 ];
+        symbol [ getDeviceWidth %tmp.19 75 22 36 ];
         %tmp.19 = getv function %tmp.18 :getDeviceWidth;
         %tmp.20 = invoke %tmp.18 %tmp.19();
         %tmp.21 = 2;
         %tmp.22 = div %tmp.20 %tmp.21;
         %tmp.23 = self;
-        symbol [ getDeviceWidth %tmp.24 72 44 58 ];
+        symbol [ getDeviceWidth %tmp.24 75 44 58 ];
         %tmp.24 = getv function %tmp.23 :getDeviceWidth;
         %tmp.25 = invoke %tmp.23 %tmp.24();
         %tmp.26 = 0.4;
@@ -308,391 +314,822 @@ _Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDele
         %tmp.28 = 2;
         %tmp.29 = div %tmp.27 %tmp.28;
         %tmp.30 = sub %tmp.22 %tmp.29;
-        symbol [ _leftBorder ? 72 8 19 ];
+        symbol [ _leftBorder ? 75 8 19 ];
         putv self :_leftBorder %tmp.30;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 73 8 ]
-        symbol [ _leftBorder %tmp.32 73 23 34 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 76 8 ]
+        symbol [ _leftBorder %tmp.32 76 23 34 ];
         %tmp.32 = getv ? :_leftBorder;
         %tmp.33 = self;
-        symbol [ getDeviceWidth %tmp.34 73 37 51 ];
+        symbol [ getDeviceWidth %tmp.34 76 37 51 ];
         %tmp.34 = getv function %tmp.33 :getDeviceWidth;
         %tmp.35 = invoke %tmp.33 %tmp.34();
         %tmp.36 = 0.4;
         %tmp.37 = mul %tmp.35 %tmp.36;
         %tmp.38 = add %tmp.32 %tmp.37;
-        symbol [ _rightBorder ? 73 8 20 ];
+        symbol [ _rightBorder ? 76 8 20 ];
         putv self :_rightBorder %tmp.38;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 74 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 77 8 ]
         %tmp.39 = self;
-        symbol [ getDeviceWidth %tmp.40 74 21 35 ];
+        symbol [ getDeviceWidth %tmp.40 77 21 35 ];
         %tmp.40 = getv function %tmp.39 :getDeviceWidth;
         %tmp.41 = invoke %tmp.39 %tmp.40();
         %tmp.42 = 0.4;
         %tmp.43 = mul %tmp.41 %tmp.42;
-        symbol [ _nextWidth ? 74 8 18 ];
+        symbol [ _nextWidth ? 77 8 18 ];
         putv self :_nextWidth %tmp.43;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 75 8 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 78 8 ]
         %tmp.44 = self;
-        symbol [ getDeviceWidth %tmp.45 75 24 38 ];
+        symbol [ getDeviceWidth %tmp.45 78 24 38 ];
         %tmp.45 = getv function %tmp.44 :getDeviceWidth;
         %tmp.46 = invoke %tmp.44 %tmp.45();
         %tmp.47 = 0.4;
         %tmp.48 = mul %tmp.46 %tmp.47;
-        symbol [ _currentWidth ? 75 8 21 ];
+        symbol [ _currentWidth ? 78 8 21 ];
         putv self :_currentWidth %tmp.48;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_66_25_76_4_stop:
-    }
-    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 78; @symbol_functiondef = [updateX,78,13,20]; ]
-    function updateX() as Void {
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_78_30_125_4_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 79 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_8_82_8_if_stmt:
-        symbol [ _gameOver %tmp.2 79 12 21 ];
+        symbol [ _view %tmp.49 79 8 13 ];
+        %tmp.49 = getv self :_view;
+        %tmp.50 = 0;
+        symbol [ _perfect ? 79 14 22 ];
+        putv %tmp.49 :_perfect %tmp.50;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_69_25_80_4_stop:
+    }
+    [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 82; @symbol_functiondef = [updateX,82,13,20]; ]
+    function updateX() as Void {
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_82_30_165_4_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 83 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_86_8_if_stmt:
+        symbol [ _gameOver %tmp.2 83 12 21 ];
         %tmp.2 = getv ? :_gameOver;
         %tmp.3 = true;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_8_82_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_8_82_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_31_82_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 80 12 ]
-        symbol [ _timer %tmp.6 80 12 18 ];
+        bf %tmp.4 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_86_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_86_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_31_86_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 84 12 ]
+        symbol [ _timer %tmp.6 84 12 18 ];
         %tmp.6 = getv ? :_timer;
-        symbol [ stop %tmp.7 80 19 23 ];
+        symbol [ stop %tmp.7 84 19 23 ];
         %tmp.7 = getv function %tmp.6 :stop;
         invoke %tmp.6 %tmp.7();
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 81 12 ]
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 85 12 ]
         ret ?;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_31_82_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_8_82_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_79_8_82_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 83 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_110_8_if_stmt:
-        symbol [ _stoppedX %tmp.9 83 12 21 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_31_86_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_86_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_86_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 87 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_8_150_8_if_stmt:
+        symbol [ _stoppedX %tmp.9 87 12 21 ];
         %tmp.9 = getv ? :_stoppedX;
         %tmp.10 = null;
         %tmp.11 = ne %tmp.9 %tmp.10;
-        bf %tmp.11 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_110_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_110_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_31_110_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 84 12 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_stmt:
-        symbol [ _stoppedX %tmp.13 84 16 25 ];
+        bf %tmp.11 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_8_150_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_8_150_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_31_150_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 88 12 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_16_88_95_begin:
+        symbol [ _stoppedX %tmp.13 88 16 25 ];
         %tmp.13 = getv ? :_stoppedX;
         %tmp.14 = as %tmp.13 { (!Null) };
-        symbol [ _leftBorder %tmp.16 84 29 40 ];
+        symbol [ _leftBorder %tmp.16 88 29 40 ];
         %tmp.16 = getv ? :_leftBorder;
         %tmp.17 = eq %tmp.14 %tmp.16;
-        bf %tmp.17 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_42_86_12_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 85 16 ]
-        symbol [ _currentWidth %tmp.19 85 29 42 ];
-        %tmp.19 = getv ? :_currentWidth;
-        symbol [ _nextWidth ? 85 16 26 ];
-        putv self :_nextWidth %tmp.19;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_42_86_12_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_false:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 86 19 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_stmt:
-        symbol [ _stoppedX %tmp.21 86 23 32 ];
-        %tmp.21 = getv ? :_stoppedX;
-        %tmp.22 = as %tmp.21 { (!Null) };
-        symbol [ _leftBorder %tmp.24 86 35 46 ];
-        %tmp.24 = getv ? :_leftBorder;
-        %tmp.25 = lt %tmp.22 %tmp.24;
-        bf %tmp.25 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_48_89_12_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 87 16 ]
-        symbol [ _stoppedX %tmp.27 87 30 39 ];
-        %tmp.27 = getv ? :_stoppedX;
-        %tmp.28 = as %tmp.27 { (!Null) };
-        symbol [ _currentWidth %tmp.30 87 42 55 ];
-        %tmp.30 = getv ? :_currentWidth;
-        %tmp.31 = add %tmp.28 %tmp.30;
-        symbol [ _leftBorder %tmp.33 87 59 70 ];
-        %tmp.33 = getv ? :_leftBorder;
-        %tmp.34 = sub %tmp.31 %tmp.33;
-        symbol [ _nextWidth ? 87 16 26 ];
-        putv self :_nextWidth %tmp.34;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 88 16 ]
-        symbol [ _leftBorder %tmp.36 88 31 42 ];
-        %tmp.36 = getv ? :_leftBorder;
-        symbol [ _nextWidth %tmp.38 88 45 55 ];
-        %tmp.38 = getv ? :_nextWidth;
-        %tmp.39 = add %tmp.36 %tmp.38;
-        symbol [ _rightBorder ? 88 16 28 ];
-        putv self :_rightBorder %tmp.39;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_48_89_12_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_else_false:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_89_19_92_12_start:
+        bt %tmp.17 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_true;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_44_88_95_false:
+        symbol [ _stoppedX %tmp.19 88 45 54 ];
+        %tmp.19 = getv ? :_stoppedX;
+        %tmp.20 = as %tmp.19 { (!Null) };
+        symbol [ _leftBorder %tmp.22 88 57 68 ];
+        %tmp.22 = getv ? :_leftBorder;
+        %tmp.23 = sub %tmp.20 %tmp.22;
+        symbol [ abs %tmp.24 88 70 73 ];
+        %tmp.24 = getv function %tmp.23 :abs;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        %tmp.26 = self;
+        symbol [ getDeviceWidth %tmp.27 88 78 92 ];
+        %tmp.27 = getv function %tmp.26 :getDeviceWidth;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        %tmp.29 = 0.015;
+        %tmp.30 = mul %tmp.28 %tmp.29;
+        %tmp.31 = lt %tmp.25 %tmp.30;
+        push %tmp.31;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_44_88_95_end:
+        %tmp.32 = phi [%tmp.17 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_16_88_95_begin] [%tmp.31 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_44_88_95_false] [%tmp.32 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_44_88_95_end];
+        bf %tmp.32 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_102_98_12_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 89 16 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_102_98_12_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_102_98_12_stop" ]
+        %soundEnabled.1 = local;
+        symbol [ soundEnabled %soundEnabled.1 89 20 32 ];
+        symbol [ Storage %tmp.33 89 35 42 ];
+        %tmp.33 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.34 89 43 51 ];
+        %tmp.34 = getv function %tmp.33 :getValue;
+        %tmp.35 = "soundEnabled";
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        lputv %soundEnabled.1 %tmp.36;
+        symbol [ soundEnabled %soundEnabled.1 89 20 32 ];
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 90 16 ]
-        symbol [ _rightBorder %tmp.41 90 29 41 ];
-        %tmp.41 = getv ? :_rightBorder;
-        symbol [ _stoppedX %tmp.43 90 44 53 ];
-        %tmp.43 = getv ? :_stoppedX;
-        %tmp.44 = as %tmp.43 { (!Null) };
-        %tmp.45 = sub %tmp.41 %tmp.44;
-        symbol [ _nextWidth ? 90 16 26 ];
-        putv self :_nextWidth %tmp.45;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_16_90_65_if_stmt:
+        %tmp.37 = lgetv %soundEnabled.1;
+        symbol [ soundEnabled %tmp.37 90 20 32 ];
+        %tmp.38 = null;
+        %tmp.39 = eq %tmp.37 %tmp.38;
+        bf %tmp.39 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_16_90_65_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_16_90_65_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_42_90_65_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 90 44 ]
+        %tmp.40 = true;
+        lputv %soundEnabled.1 %tmp.40;
+        symbol [ soundEnabled %soundEnabled.1 90 44 56 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_42_90_65_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_16_90_65_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_90_16_90_65_if_end:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 91 16 ]
-        symbol [ _stoppedX %tmp.47 91 30 39 ];
-        %tmp.47 = getv ? :_stoppedX;
-        %tmp.48 = as %tmp.47 { (!Null) };
-        symbol [ _leftBorder ? 91 16 27 ];
-        putv self :_leftBorder %tmp.48;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_89_19_92_12_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_86_19_92_12_if_end:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_84_12_92_12_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 93 12 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_stmt:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_16_93_70_begin:
-        symbol [ _nextWidth %tmp.50 93 16 26 ];
-        %tmp.50 = getv ? :_nextWidth;
-        %tmp.51 = 0;
-        %tmp.52 = lte %tmp.50 %tmp.51;
-        bt %tmp.52 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_true;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_35_93_70_false:
-        symbol [ _nextWidth %tmp.54 93 35 45 ];
-        %tmp.54 = getv ? :_nextWidth;
-        %tmp.55 = self;
-        symbol [ getDeviceWidth %tmp.56 93 49 63 ];
-        %tmp.56 = getv function %tmp.55 :getDeviceWidth;
-        %tmp.57 = invoke %tmp.55 %tmp.56();
-        %tmp.58 = 0.01;
-        %tmp.59 = mul %tmp.57 %tmp.58;
-        %tmp.60 = lt %tmp.54 %tmp.59;
-        push %tmp.60;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_35_93_70_end:
-        %tmp.61 = phi [%tmp.52 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_16_93_70_begin] [%tmp.60 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_35_93_70_false] [%tmp.61 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_35_93_70_end];
-        bf %tmp.61 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_else_false;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_73_100_12_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 94 16 ]
-        %tmp.62 = true;
-        symbol [ _gameOver ? 94 16 25 ];
-        putv self :_gameOver %tmp.62;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 95 16 ]
-        %tmp.63 = false;
-        symbol [ _inProgress ? 95 16 27 ];
-        putv self :_inProgress %tmp.63;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_20_91_59_begin:
+        %tmp.41 = lgetv %soundEnabled.1;
+        symbol [ soundEnabled %tmp.41 91 20 32 ];
+        %tmp.42 = true;
+        %tmp.43 = eq %tmp.41 %tmp.42;
+        bf %tmp.43 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_44_91_59_true:
+        symbol [ Attention %tmp.44 91 44 53 ];
+        %tmp.44 = getm $.Toybox.Attention;
+        %tmp.46 = const :playTone;
+        symbol [ playTone %tmp.46 91 59 67 const ];
+        %tmp.47 = canhazplz %tmp.44 %tmp.46;
+        push %tmp.47;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_44_91_59_end:
+        %tmp.48 = phi [%tmp.43 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_20_91_59_begin] [%tmp.47 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_44_91_59_true] [%tmp.48 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_44_91_59_end];
+        bf %tmp.48 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_69_95_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 92 20 ]
+        try @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_beginTry @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_endTry @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_catch @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_beginTry:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_24_94_20_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 93 24 ]
+        symbol [ Attention %tmp.49 93 24 33 ];
+        %tmp.49 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.50 93 34 42 ];
+        %tmp.50 = getv function %tmp.49 :playTone;
+        symbol [ Attention %tmp.51 93 43 52 ];
+        %tmp.51 = getm $.Toybox.Attention;
+        symbol [ TONE_KEY %tmp.52 93 53 61 ];
+        %tmp.52 = getv %tmp.51 :TONE_KEY;
+        invoke %tmp.49 %tmp.50(%tmp.52);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_24_94_20_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_endTry:
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally;
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_catch:
+        %tmp.53 = exception;
+        push %tmp.53;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 94 22 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_catch" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_94_22_94_34_end" ]
+        %ex.2 = local;
+        symbol [ ex %ex.2 94 29 31 ];
+        %tmp.54 = dup %tmp.53;
+        lputv %ex.2 %tmp.54;
+        symbol [ ex %ex.2 94 29 31 ];
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally;
+        pop;
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_94_22_94_34_end:
+        try @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_catch @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_94_22_94_34_end @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_94_22_94_34_end @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally;
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally;
+        throw %tmp.53;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_finally:
+        jsrret;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_92_20_94_34_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_69_95_16_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_91_16_95_16_if_end:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 96 16 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_16_98_16_if_stmt:
-        symbol [ _view %tmp.65 96 20 25 ];
-        %tmp.65 = getv ? :_view;
-        symbol [ _score %tmp.66 96 26 32 ];
-        %tmp.66 = getv %tmp.65 :_score;
-        symbol [ highScore %tmp.68 96 35 44 ];
-        %tmp.68 = getv ? :highScore;
-        %tmp.69 = gt %tmp.66 %tmp.68;
-        bf %tmp.69 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_16_98_16_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_16_98_16_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_46_98_16_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 97 20 ]
-        %tmp.70 = self;
-        symbol [ saveHighScore %tmp.71 97 20 33 ];
-        %tmp.71 = getv function %tmp.70 :saveHighScore;
-        symbol [ _view %tmp.73 97 34 39 ];
-        %tmp.73 = getv ? :_view;
-        symbol [ _score %tmp.74 97 40 46 ];
-        %tmp.74 = getv %tmp.73 :_score;
-        invoke %tmp.70 %tmp.71(%tmp.74);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_46_98_16_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_16_98_16_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_96_16_98_16_if_end:
+        symbol [ _currentWidth %tmp.56 96 29 42 ];
+        %tmp.56 = getv ? :_currentWidth;
+        symbol [ _nextWidth ? 96 16 26 ];
+        putv self :_nextWidth %tmp.56;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 97 16 ]
+        symbol [ _view %tmp.57 97 16 21 ];
+        %tmp.57 = getv self :_view;
+        symbol [ _view %tmp.58 97 16 21 ];
+        %tmp.58 = getv self :_view;
+        symbol [ _perfect %tmp.59 97 22 30 ];
+        %tmp.59 = getv %tmp.58 :_perfect;
+        %tmp.60 = 1;
+        %tmp.61 = add %tmp.59 %tmp.60;
+        symbol [ _perfect ? 97 22 30 ];
+        putv %tmp.57 :_perfect dup %tmp.61;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_102_98_12_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_false:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 98 19 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_stmt:
+        symbol [ _stoppedX %tmp.63 98 23 32 ];
+        %tmp.63 = getv ? :_stoppedX;
+        symbol [ _leftBorder %tmp.65 98 35 46 ];
+        %tmp.65 = getv ? :_leftBorder;
+        %tmp.66 = lt %tmp.63 %tmp.65;
+        bf %tmp.66 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_48_102_12_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 99 16 ]
-        symbol [ WatchUi %tmp.75 99 16 23 ];
-        %tmp.75 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.76 99 24 31 ];
-        %tmp.76 = getv function %tmp.75 :popView;
-        symbol [ WatchUi %tmp.77 99 32 39 ];
-        %tmp.77 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.78 99 40 51 ];
-        %tmp.78 = getv %tmp.77 :SLIDE_RIGHT;
-        invoke %tmp.75 %tmp.76(%tmp.78);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_73_100_12_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_else_false:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_100_19_108_12_start:
+        symbol [ _stoppedX %tmp.68 99 30 39 ];
+        %tmp.68 = getv ? :_stoppedX;
+        symbol [ _currentWidth %tmp.70 99 42 55 ];
+        %tmp.70 = getv ? :_currentWidth;
+        %tmp.71 = add %tmp.68 %tmp.70;
+        symbol [ _leftBorder %tmp.73 99 59 70 ];
+        %tmp.73 = getv ? :_leftBorder;
+        %tmp.74 = sub %tmp.71 %tmp.73;
+        symbol [ _nextWidth ? 99 16 26 ];
+        putv self :_nextWidth %tmp.74;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 100 16 ]
+        symbol [ _leftBorder %tmp.76 100 31 42 ];
+        %tmp.76 = getv ? :_leftBorder;
+        symbol [ _nextWidth %tmp.78 100 45 55 ];
+        %tmp.78 = getv ? :_nextWidth;
+        %tmp.79 = add %tmp.76 %tmp.78;
+        symbol [ _rightBorder ? 100 16 28 ];
+        putv self :_rightBorder %tmp.79;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 101 16 ]
-        symbol [ _nextWidth %tmp.80 101 32 42 ];
-        %tmp.80 = getv ? :_nextWidth;
-        symbol [ _currentWidth ? 101 16 29 ];
-        putv self :_currentWidth %tmp.80;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 102 16 ]
-        %tmp.81 = null;
-        symbol [ _stoppedX ? 102 16 25 ];
-        putv self :_stoppedX %tmp.81;
+        symbol [ _view %tmp.80 101 16 21 ];
+        %tmp.80 = getv self :_view;
+        %tmp.81 = 0;
+        symbol [ _perfect ? 101 22 30 ];
+        putv %tmp.80 :_perfect %tmp.81;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_48_102_12_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_102_19_106_12_start:
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 103 16 ]
-        symbol [ _view %tmp.83 103 16 21 ];
-        %tmp.83 = getv ? :_view;
-        symbol [ newBlock %tmp.84 103 22 30 ];
-        %tmp.84 = getv function %tmp.83 :newBlock;
-        symbol [ _leftBorder %tmp.86 103 31 42 ];
-        %tmp.86 = getv ? :_leftBorder;
-        symbol [ _currentWidth %tmp.88 103 44 57 ];
-        %tmp.88 = getv ? :_currentWidth;
-        invoke %tmp.83 %tmp.84(%tmp.86, %tmp.88);
+        symbol [ _rightBorder %tmp.83 103 29 41 ];
+        %tmp.83 = getv ? :_rightBorder;
+        symbol [ _stoppedX %tmp.85 103 44 53 ];
+        %tmp.85 = getv ? :_stoppedX;
+        %tmp.86 = sub %tmp.83 %tmp.85;
+        symbol [ _nextWidth ? 103 16 26 ];
+        putv self :_nextWidth %tmp.86;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 104 16 ]
-        %tmp.89 = 0;
-        symbol [ _xPosition ? 104 16 26 ];
-        putv self :_xPosition %tmp.89;
+        symbol [ _stoppedX %tmp.88 104 30 39 ];
+        %tmp.88 = getv ? :_stoppedX;
+        symbol [ _leftBorder ? 104 16 27 ];
+        putv self :_leftBorder %tmp.88;
 [ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 105 16 ]
-        %tmp.90 = 1;
-        symbol [ _direction ? 105 16 26 ];
-        putv self :_direction %tmp.90;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 106 16 ]
-        symbol [ _view %tmp.91 106 16 21 ];
-        %tmp.91 = getv self :_view;
-        symbol [ _currentWidth %tmp.93 106 38 51 ];
-        %tmp.93 = getv ? :_currentWidth;
-        symbol [ _currentWidth ? 106 22 35 ];
-        putv %tmp.91 :_currentWidth %tmp.93;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 107 16 ]
-        symbol [ _view %tmp.95 107 16 21 ];
-        %tmp.95 = getv ? :_view;
-        symbol [ updateScore %tmp.96 107 22 33 ];
-        %tmp.96 = getv function %tmp.95 :updateScore;
-        invoke %tmp.95 %tmp.96();
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_100_19_108_12_stop:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_93_12_108_12_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 109 12 ]
-        ret ?;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_31_110_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_110_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_83_8_110_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 111 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_stmt:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_12_111_90_begin:
-        symbol [ _xPosition %tmp.98 111 12 22 ];
-        %tmp.98 = getv ? :_xPosition;
-        %tmp.99 = self;
-        symbol [ getDeviceWidth %tmp.100 111 26 40 ];
-        %tmp.100 = getv function %tmp.99 :getDeviceWidth;
-        %tmp.101 = invoke %tmp.99 %tmp.100();
-        symbol [ _currentWidth %tmp.103 111 43 56 ];
-        %tmp.103 = getv ? :_currentWidth;
-        %tmp.104 = sub %tmp.101 %tmp.103;
-        %tmp.105 = eq %tmp.98 %tmp.104;
-        bt %tmp.105 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_true;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_60_111_90_false:
-        symbol [ _xPosition %tmp.107 111 60 70 ];
-        %tmp.107 = getv ? :_xPosition;
-        %tmp.108 = self;
-        symbol [ getDeviceWidth %tmp.109 111 73 87 ];
-        %tmp.109 = getv function %tmp.108 :getDeviceWidth;
-        %tmp.110 = invoke %tmp.108 %tmp.109();
-        symbol [ _currentWidth %tmp.112 111 90 103 ];
-        %tmp.112 = getv ? :_currentWidth;
-        %tmp.113 = sub %tmp.110 %tmp.112;
-        %tmp.114 = gt %tmp.107 %tmp.113;
-        push %tmp.114;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_60_111_90_end:
-        %tmp.115 = phi [%tmp.105 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_12_111_90_begin] [%tmp.114 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_60_111_90_false] [%tmp.115 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_60_111_90_end];
-        bf %tmp.115 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_104_113_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 112 12 ]
-        %tmp.116 = -1;
-        symbol [ _direction ? 112 12 22 ];
-        putv self :_direction %tmp.116;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_104_113_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_8_113_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 114 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_stmt:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_12_114_44_begin:
-        symbol [ _xPosition %tmp.118 114 12 22 ];
-        %tmp.118 = getv ? :_xPosition;
-        %tmp.119 = 0;
-        %tmp.120 = eq %tmp.118 %tmp.119;
-        bt %tmp.120 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_true;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_31_114_44_false:
-        symbol [ _xPosition %tmp.122 114 31 41 ];
-        %tmp.122 = getv ? :_xPosition;
-        %tmp.123 = 0;
-        %tmp.124 = lt %tmp.122 %tmp.123;
+        symbol [ _view %tmp.89 105 16 21 ];
+        %tmp.89 = getv self :_view;
+        %tmp.90 = 0;
+        symbol [ _perfect ? 105 22 30 ];
+        putv %tmp.89 :_perfect %tmp.90;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_102_19_106_12_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_98_19_106_12_if_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_88_12_106_12_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 107 12 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_16_107_70_begin:
+        symbol [ _nextWidth %tmp.92 107 16 26 ];
+        %tmp.92 = getv ? :_nextWidth;
+        %tmp.93 = 0;
+        %tmp.94 = lte %tmp.92 %tmp.93;
+        bt %tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_true;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_35_107_70_false:
+        symbol [ _nextWidth %tmp.96 107 35 45 ];
+        %tmp.96 = getv ? :_nextWidth;
+        %tmp.97 = self;
+        symbol [ getDeviceWidth %tmp.98 107 49 63 ];
+        %tmp.98 = getv function %tmp.97 :getDeviceWidth;
+        %tmp.99 = invoke %tmp.97 %tmp.98();
+        %tmp.100 = 0.01;
+        %tmp.101 = mul %tmp.99 %tmp.100;
+        %tmp.102 = lt %tmp.96 %tmp.101;
+        push %tmp.102;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_35_107_70_end:
+        %tmp.103 = phi [%tmp.94 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_16_107_70_begin] [%tmp.102 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_35_107_70_false] [%tmp.103 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_35_107_70_end];
+        bf %tmp.103 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_73_121_12_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 108 16 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_73_121_12_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_73_121_12_stop" ]
+        %soundEnabled.3 = local;
+        symbol [ soundEnabled %soundEnabled.3 108 20 32 ];
+        symbol [ Storage %tmp.104 108 35 42 ];
+        %tmp.104 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.105 108 43 51 ];
+        %tmp.105 = getv function %tmp.104 :getValue;
+        %tmp.106 = "soundEnabled";
+        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
+        lputv %soundEnabled.3 %tmp.107;
+        symbol [ soundEnabled %soundEnabled.3 108 20 32 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 109 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_16_109_65_if_stmt:
+        %tmp.108 = lgetv %soundEnabled.3;
+        symbol [ soundEnabled %tmp.108 109 20 32 ];
+        %tmp.109 = null;
+        %tmp.110 = eq %tmp.108 %tmp.109;
+        bf %tmp.110 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_16_109_65_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_16_109_65_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_42_109_65_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 109 44 ]
+        %tmp.111 = true;
+        lputv %soundEnabled.3 %tmp.111;
+        symbol [ soundEnabled %soundEnabled.3 109 44 56 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_42_109_65_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_16_109_65_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_109_16_109_65_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 110 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_20_110_59_begin:
+        %tmp.112 = lgetv %soundEnabled.3;
+        symbol [ soundEnabled %tmp.112 110 20 32 ];
+        %tmp.113 = true;
+        %tmp.114 = eq %tmp.112 %tmp.113;
+        bf %tmp.114 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_44_110_59_true:
+        symbol [ Attention %tmp.115 110 44 53 ];
+        %tmp.115 = getm $.Toybox.Attention;
+        %tmp.117 = const :playTone;
+        symbol [ playTone %tmp.117 110 59 67 const ];
+        %tmp.118 = canhazplz %tmp.115 %tmp.117;
+        push %tmp.118;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_44_110_59_end:
+        %tmp.119 = phi [%tmp.114 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_20_110_59_begin] [%tmp.118 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_44_110_59_true] [%tmp.119 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_44_110_59_end];
+        bf %tmp.119 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_69_114_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 111 20 ]
+        try @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_beginTry @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_endTry @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_catch @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_beginTry:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_24_113_20_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 112 24 ]
+        symbol [ Attention %tmp.120 112 24 33 ];
+        %tmp.120 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.121 112 34 42 ];
+        %tmp.121 = getv function %tmp.120 :playTone;
+        symbol [ Attention %tmp.122 112 43 52 ];
+        %tmp.122 = getm $.Toybox.Attention;
+        symbol [ TONE_ERROR %tmp.123 112 53 63 ];
+        %tmp.123 = getv %tmp.122 :TONE_ERROR;
+        invoke %tmp.120 %tmp.121(%tmp.123);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_24_113_20_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_endTry:
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally;
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_catch:
+        %tmp.124 = exception;
         push %tmp.124;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_31_114_44_end:
-        %tmp.125 = phi [%tmp.120 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_12_114_44_begin] [%tmp.124 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_31_114_44_false] [%tmp.125 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_31_114_44_end];
-        bf %tmp.125 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_46_116_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 115 12 ]
-        %tmp.126 = 1;
-        symbol [ _direction ? 115 12 22 ];
-        putv self :_direction %tmp.126;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_46_116_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_114_8_116_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 118 8 ]
-        symbol [ _view %tmp.128 118 22 27 ];
-        %tmp.128 = getv ? :_view;
-        symbol [ _score %tmp.129 118 28 34 ];
-        %tmp.129 = getv %tmp.128 :_score;
-        %tmp.130 = 1;
-        %tmp.131 = add %tmp.129 %tmp.130;
-        %tmp.132 = 0.002;
-        %tmp.133 = mul %tmp.131 %tmp.132;
-        %tmp.134 = 0.1;
-        %tmp.135 = add %tmp.133 %tmp.134;
-        %tmp.136 = self;
-        symbol [ getDeviceHeight %tmp.137 118 51 66 ];
-        %tmp.137 = getv function %tmp.136 :getDeviceHeight;
-        %tmp.138 = invoke %tmp.136 %tmp.137();
-        %tmp.139 = 5;
-        %tmp.140 = div %tmp.138 %tmp.139;
-        %tmp.141 = mul %tmp.135 %tmp.140;
-        symbol [ _speed ? 118 8 14 ];
-        putv self :_speed %tmp.141;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 119 8 ]
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_8_121_8_if_stmt:
-        symbol [ _speed %tmp.143 119 12 18 ];
-        %tmp.143 = getv ? :_speed;
-        %tmp.144 = self;
-        symbol [ getDeviceWidth %tmp.145 119 22 36 ];
-        %tmp.145 = getv function %tmp.144 :getDeviceWidth;
-        %tmp.146 = invoke %tmp.144 %tmp.145();
-        %tmp.147 = 20;
-        %tmp.148 = div %tmp.146 %tmp.147;
-        %tmp.149 = gt %tmp.143 %tmp.148;
-        bf %tmp.149 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_8_121_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_8_121_8_if_true:
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_44_121_8_start:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 120 12 ]
-        %tmp.150 = self;
-        symbol [ getDeviceWidth %tmp.151 120 22 36 ];
-        %tmp.151 = getv function %tmp.150 :getDeviceWidth;
-        %tmp.152 = invoke %tmp.150 %tmp.151();
-        %tmp.153 = 20;
-        %tmp.154 = div %tmp.152 %tmp.153;
-        symbol [ _speed ? 120 12 18 ];
-        putv self :_speed %tmp.154;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_44_121_8_stop:
-        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_8_121_8_if_end;
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_119_8_121_8_if_end:
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 122 8 ]
-        symbol [ _xPosition %tmp.155 122 8 18 ];
-        %tmp.155 = getv self :_xPosition;
-        symbol [ _speed %tmp.157 122 22 28 ];
-        %tmp.157 = getv ? :_speed;
-        symbol [ _direction %tmp.159 122 31 41 ];
-        %tmp.159 = getv ? :_direction;
-        %tmp.160 = mul %tmp.157 %tmp.159;
-        %tmp.161 = add %tmp.155 %tmp.160;
-        symbol [ _xPosition ? 122 8 18 ];
-        putv self :_xPosition dup %tmp.161;
-[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 124 8 ]
-        symbol [ _view %tmp.163 124 8 13 ];
-        %tmp.163 = getv ? :_view;
-        symbol [ setXPosition %tmp.164 124 14 26 ];
-        %tmp.164 = getv function %tmp.163 :setXPosition;
-        symbol [ _xPosition %tmp.166 124 27 37 ];
-        %tmp.166 = getv ? :_xPosition;
-        invoke %tmp.163 %tmp.164(%tmp.166);
-_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_78_30_125_4_stop:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 113 22 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_catch" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_113_22_113_34_end" ]
+        %ex.4 = local;
+        symbol [ ex %ex.4 113 29 31 ];
+        %tmp.125 = dup %tmp.124;
+        lputv %ex.4 %tmp.125;
+        symbol [ ex %ex.4 113 29 31 ];
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally;
+        pop;
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_113_22_113_34_end:
+        try @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_catch @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_113_22_113_34_end @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_113_22_113_34_end @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally;
+        jsr @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally;
+        throw %tmp.124;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_finally:
+        jsrret;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_111_20_113_34_end:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_69_114_16_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_110_16_114_16_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 115 16 ]
+        %tmp.126 = true;
+        symbol [ _gameOver ? 115 16 25 ];
+        putv self :_gameOver %tmp.126;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 116 16 ]
+        %tmp.127 = false;
+        symbol [ _inProgress ? 116 16 27 ];
+        putv self :_inProgress %tmp.127;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 117 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_16_119_16_if_stmt:
+        symbol [ _view %tmp.129 117 20 25 ];
+        %tmp.129 = getv ? :_view;
+        symbol [ _score %tmp.130 117 26 32 ];
+        %tmp.130 = getv %tmp.129 :_score;
+        symbol [ highScore %tmp.132 117 35 44 ];
+        %tmp.132 = getv ? :highScore;
+        %tmp.133 = gt %tmp.130 %tmp.132;
+        bf %tmp.133 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_16_119_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_16_119_16_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_46_119_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 118 20 ]
+        %tmp.134 = self;
+        symbol [ saveHighScore %tmp.135 118 20 33 ];
+        %tmp.135 = getv function %tmp.134 :saveHighScore;
+        symbol [ _view %tmp.137 118 34 39 ];
+        %tmp.137 = getv ? :_view;
+        symbol [ _score %tmp.138 118 40 46 ];
+        %tmp.138 = getv %tmp.137 :_score;
+        invoke %tmp.134 %tmp.135(%tmp.138);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_46_119_16_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_16_119_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_117_16_119_16_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 120 16 ]
+        symbol [ WatchUi %tmp.139 120 16 23 ];
+        %tmp.139 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.140 120 24 31 ];
+        %tmp.140 = getv function %tmp.139 :popView;
+        symbol [ WatchUi %tmp.141 120 32 39 ];
+        %tmp.141 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.142 120 40 51 ];
+        %tmp.142 = getv %tmp.141 :SLIDE_RIGHT;
+        invoke %tmp.139 %tmp.140(%tmp.142);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_73_121_12_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_121_19_148_12_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 122 16 ]
+        [ "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_121_19_148_12_start" "_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_121_19_148_12_stop" ]
+        %vibrationEnabled.5 = local;
+        symbol [ vibrationEnabled %vibrationEnabled.5 122 20 36 ];
+        symbol [ Storage %tmp.143 122 39 46 ];
+        %tmp.143 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.144 122 47 55 ];
+        %tmp.144 = getv function %tmp.143 :getValue;
+        %tmp.145 = "vibrationEnabled";
+        %tmp.146 = invoke %tmp.143 %tmp.144(%tmp.145);
+        lputv %vibrationEnabled.5 %tmp.146;
+        symbol [ vibrationEnabled %vibrationEnabled.5 122 20 36 ];
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 123 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_16_123_73_if_stmt:
+        %tmp.147 = lgetv %vibrationEnabled.5;
+        symbol [ vibrationEnabled %tmp.147 123 20 36 ];
+        %tmp.148 = null;
+        %tmp.149 = eq %tmp.147 %tmp.148;
+        bf %tmp.149 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_16_123_73_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_16_123_73_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_46_123_73_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 123 48 ]
+        %tmp.150 = true;
+        lputv %vibrationEnabled.5 %tmp.150;
+        symbol [ vibrationEnabled %vibrationEnabled.5 123 48 64 ];
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_46_123_73_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_16_123_73_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_123_16_123_73_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 124 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_20_124_63_begin:
+        %tmp.151 = lgetv %vibrationEnabled.5;
+        symbol [ vibrationEnabled %tmp.151 124 20 36 ];
+        %tmp.152 = true;
+        %tmp.153 = eq %tmp.151 %tmp.152;
+        bf %tmp.153 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_48_124_63_true:
+        symbol [ Attention %tmp.154 124 48 57 ];
+        %tmp.154 = getm $.Toybox.Attention;
+        %tmp.156 = const :vibrate;
+        symbol [ vibrate %tmp.156 124 63 70 const ];
+        %tmp.157 = canhazplz %tmp.154 %tmp.156;
+        push %tmp.157;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_48_124_63_end:
+        %tmp.158 = phi [%tmp.153 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_20_124_63_begin] [%tmp.157 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_48_124_63_true] [%tmp.158 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_48_124_63_end];
+        bf %tmp.158 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_72_126_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 125 20 ]
+        symbol [ Attention %tmp.159 125 20 29 ];
+        %tmp.159 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.160 125 30 37 ];
+        %tmp.160 = getv function %tmp.159 :vibrate;
+        %tmp.161 = newa 1;
+        symbol [ Attention %tmp.164 125 43 52 ];
+        %tmp.164 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.165 125 53 64 ];
+        %tmp.165 = getv function ? %tmp.164 :VibeProfile;
+        %tmp.166 = 50;
+        %tmp.167 = 100;
+        %tmp.162 = newc %tmp.165 (%tmp.166, %tmp.167);
+        %tmp.168 = dup %tmp.161;
+        %tmp.169 = aputv %tmp.168 0 %tmp.162;
+        invoke %tmp.159 %tmp.160(%tmp.169);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_72_126_16_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_124_16_126_16_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 127 16 ]
+        symbol [ _nextWidth %tmp.171 127 32 42 ];
+        %tmp.171 = getv ? :_nextWidth;
+        symbol [ _currentWidth ? 127 16 29 ];
+        putv self :_currentWidth %tmp.171;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 128 16 ]
+        %tmp.172 = null;
+        symbol [ _stoppedX ? 128 16 25 ];
+        putv self :_stoppedX %tmp.172;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 129 16 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_stmt:
+        symbol [ _view %tmp.174 129 20 25 ];
+        %tmp.174 = getv ? :_view;
+        symbol [ _perfect %tmp.175 129 26 34 ];
+        %tmp.175 = getv %tmp.174 :_perfect;
+        %tmp.176 = 5;
+        %tmp.177 = gte %tmp.175 %tmp.176;
+        bf %tmp.177 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_else_false;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_40_141_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 131 20 ]
+        symbol [ _currentWidth %tmp.178 131 20 33 ];
+        %tmp.178 = getv self :_currentWidth;
+        %tmp.179 = self;
+        symbol [ getDeviceWidth %tmp.180 131 37 51 ];
+        %tmp.180 = getv function %tmp.179 :getDeviceWidth;
+        %tmp.181 = invoke %tmp.179 %tmp.180();
+        %tmp.182 = 0.01;
+        %tmp.183 = mul %tmp.181 %tmp.182;
+        %tmp.184 = add %tmp.178 %tmp.183;
+        symbol [ _currentWidth ? 131 20 33 ];
+        putv self :_currentWidth dup %tmp.184;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 132 20 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_20_134_20_if_stmt:
+        symbol [ _currentWidth %tmp.186 132 24 37 ];
+        %tmp.186 = getv ? :_currentWidth;
+        %tmp.187 = self;
+        symbol [ getDeviceWidth %tmp.188 132 40 54 ];
+        %tmp.188 = getv function %tmp.187 :getDeviceWidth;
+        %tmp.189 = invoke %tmp.187 %tmp.188();
+        %tmp.190 = 0.4;
+        %tmp.191 = mul %tmp.189 %tmp.190;
+        %tmp.192 = gt %tmp.186 %tmp.191;
+        bf %tmp.192 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_20_134_20_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_20_134_20_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_62_134_20_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 133 24 ]
+        %tmp.193 = self;
+        symbol [ getDeviceWidth %tmp.194 133 40 54 ];
+        %tmp.194 = getv function %tmp.193 :getDeviceWidth;
+        %tmp.195 = invoke %tmp.193 %tmp.194();
+        %tmp.196 = 0.4;
+        %tmp.197 = mul %tmp.195 %tmp.196;
+        symbol [ _currentWidth ? 133 24 37 ];
+        putv self :_currentWidth %tmp.197;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_62_134_20_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_20_134_20_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_132_20_134_20_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 135 20 ]
+        symbol [ _leftBorder %tmp.199 135 35 46 ];
+        %tmp.199 = getv ? :_leftBorder;
+        symbol [ _currentWidth %tmp.201 135 49 62 ];
+        %tmp.201 = getv ? :_currentWidth;
+        %tmp.202 = add %tmp.199 %tmp.201;
+        symbol [ _rightBorder ? 135 20 32 ];
+        putv self :_rightBorder %tmp.202;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 136 20 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_20_139_20_if_stmt:
+        symbol [ _rightBorder %tmp.204 136 24 36 ];
+        %tmp.204 = getv ? :_rightBorder;
+        %tmp.205 = self;
+        symbol [ getDeviceWidth %tmp.206 136 39 53 ];
+        %tmp.206 = getv function %tmp.205 :getDeviceWidth;
+        %tmp.207 = invoke %tmp.205 %tmp.206();
+        %tmp.208 = 2;
+        %tmp.209 = div %tmp.207 %tmp.208;
+        %tmp.210 = self;
+        symbol [ getDeviceWidth %tmp.211 136 61 75 ];
+        %tmp.211 = getv function %tmp.210 :getDeviceWidth;
+        %tmp.212 = invoke %tmp.210 %tmp.211();
+        %tmp.213 = 0.4;
+        %tmp.214 = mul %tmp.212 %tmp.213;
+        %tmp.215 = 2;
+        %tmp.216 = div %tmp.214 %tmp.215;
+        %tmp.217 = sub %tmp.209 %tmp.216;
+        %tmp.218 = self;
+        symbol [ getDeviceWidth %tmp.219 136 87 101 ];
+        %tmp.219 = getv function %tmp.218 :getDeviceWidth;
+        %tmp.220 = invoke %tmp.218 %tmp.219();
+        %tmp.221 = 0.4;
+        %tmp.222 = mul %tmp.220 %tmp.221;
+        %tmp.223 = add %tmp.217 %tmp.222;
+        %tmp.224 = gt %tmp.204 %tmp.223;
+        bf %tmp.224 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_20_139_20_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_20_139_20_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_109_139_20_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 137 24 ]
+        %tmp.225 = self;
+        symbol [ getDeviceWidth %tmp.226 137 39 53 ];
+        %tmp.226 = getv function %tmp.225 :getDeviceWidth;
+        %tmp.227 = invoke %tmp.225 %tmp.226();
+        %tmp.228 = 2;
+        %tmp.229 = div %tmp.227 %tmp.228;
+        %tmp.230 = self;
+        symbol [ getDeviceWidth %tmp.231 137 61 75 ];
+        %tmp.231 = getv function %tmp.230 :getDeviceWidth;
+        %tmp.232 = invoke %tmp.230 %tmp.231();
+        %tmp.233 = 0.4;
+        %tmp.234 = mul %tmp.232 %tmp.233;
+        %tmp.235 = 2;
+        %tmp.236 = div %tmp.234 %tmp.235;
+        %tmp.237 = sub %tmp.229 %tmp.236;
+        %tmp.238 = self;
+        symbol [ getDeviceWidth %tmp.239 137 87 101 ];
+        %tmp.239 = getv function %tmp.238 :getDeviceWidth;
+        %tmp.240 = invoke %tmp.238 %tmp.239();
+        %tmp.241 = 0.4;
+        %tmp.242 = mul %tmp.240 %tmp.241;
+        %tmp.243 = add %tmp.237 %tmp.242;
+        symbol [ _rightBorder ? 137 24 36 ];
+        putv self :_rightBorder %tmp.243;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 138 24 ]
+        symbol [ _rightBorder %tmp.245 138 38 50 ];
+        %tmp.245 = getv ? :_rightBorder;
+        symbol [ _currentWidth %tmp.247 138 53 66 ];
+        %tmp.247 = getv ? :_currentWidth;
+        %tmp.248 = sub %tmp.245 %tmp.247;
+        symbol [ _leftBorder ? 138 24 35 ];
+        putv self :_leftBorder %tmp.248;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_109_139_20_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_20_139_20_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_136_20_139_20_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 140 20 ]
+        symbol [ _view %tmp.250 140 20 25 ];
+        %tmp.250 = getv ? :_view;
+        symbol [ newBlock %tmp.251 140 26 34 ];
+        %tmp.251 = getv function %tmp.250 :newBlock;
+        symbol [ _leftBorder %tmp.253 140 35 46 ];
+        %tmp.253 = getv ? :_leftBorder;
+        symbol [ _currentWidth %tmp.255 140 49 62 ];
+        %tmp.255 = getv ? :_currentWidth;
+        invoke %tmp.250 %tmp.251(%tmp.253, %tmp.255);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_40_141_16_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_else_false:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_141_23_143_16_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 142 20 ]
+        symbol [ _view %tmp.257 142 20 25 ];
+        %tmp.257 = getv ? :_view;
+        symbol [ newBlock %tmp.258 142 26 34 ];
+        %tmp.258 = getv function %tmp.257 :newBlock;
+        symbol [ _leftBorder %tmp.260 142 35 46 ];
+        %tmp.260 = getv ? :_leftBorder;
+        symbol [ _currentWidth %tmp.262 142 49 62 ];
+        %tmp.262 = getv ? :_currentWidth;
+        invoke %tmp.257 %tmp.258(%tmp.260, %tmp.262);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_141_23_143_16_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_129_16_143_16_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 144 16 ]
+        %tmp.263 = 0;
+        symbol [ _xPosition ? 144 16 26 ];
+        putv self :_xPosition %tmp.263;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 145 16 ]
+        %tmp.264 = 1;
+        symbol [ _direction ? 145 16 26 ];
+        putv self :_direction %tmp.264;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 146 16 ]
+        symbol [ _view %tmp.265 146 16 21 ];
+        %tmp.265 = getv self :_view;
+        symbol [ _currentWidth %tmp.267 146 38 51 ];
+        %tmp.267 = getv ? :_currentWidth;
+        symbol [ _currentWidth ? 146 22 35 ];
+        putv %tmp.265 :_currentWidth %tmp.267;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 147 16 ]
+        symbol [ _view %tmp.269 147 16 21 ];
+        %tmp.269 = getv ? :_view;
+        symbol [ updateScore %tmp.270 147 22 33 ];
+        %tmp.270 = getv function %tmp.269 :updateScore;
+        invoke %tmp.269 %tmp.270();
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_121_19_148_12_stop:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_107_12_148_12_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 149 12 ]
+        ret ?;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_31_150_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_8_150_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_87_8_150_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 151 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_12_151_90_begin:
+        symbol [ _xPosition %tmp.272 151 12 22 ];
+        %tmp.272 = getv ? :_xPosition;
+        %tmp.273 = self;
+        symbol [ getDeviceWidth %tmp.274 151 26 40 ];
+        %tmp.274 = getv function %tmp.273 :getDeviceWidth;
+        %tmp.275 = invoke %tmp.273 %tmp.274();
+        symbol [ _currentWidth %tmp.277 151 43 56 ];
+        %tmp.277 = getv ? :_currentWidth;
+        %tmp.278 = sub %tmp.275 %tmp.277;
+        %tmp.279 = eq %tmp.272 %tmp.278;
+        bt %tmp.279 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_true;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_60_151_90_false:
+        symbol [ _xPosition %tmp.281 151 60 70 ];
+        %tmp.281 = getv ? :_xPosition;
+        %tmp.282 = self;
+        symbol [ getDeviceWidth %tmp.283 151 73 87 ];
+        %tmp.283 = getv function %tmp.282 :getDeviceWidth;
+        %tmp.284 = invoke %tmp.282 %tmp.283();
+        symbol [ _currentWidth %tmp.286 151 90 103 ];
+        %tmp.286 = getv ? :_currentWidth;
+        %tmp.287 = sub %tmp.284 %tmp.286;
+        %tmp.288 = gt %tmp.281 %tmp.287;
+        push %tmp.288;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_60_151_90_end:
+        %tmp.289 = phi [%tmp.279 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_12_151_90_begin] [%tmp.288 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_60_151_90_false] [%tmp.289 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_60_151_90_end];
+        bf %tmp.289 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_104_153_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 152 12 ]
+        %tmp.290 = -1;
+        symbol [ _direction ? 152 12 22 ];
+        putv self :_direction %tmp.290;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_104_153_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_151_8_153_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 154 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_stmt:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_12_154_44_begin:
+        symbol [ _xPosition %tmp.292 154 12 22 ];
+        %tmp.292 = getv ? :_xPosition;
+        %tmp.293 = 0;
+        %tmp.294 = eq %tmp.292 %tmp.293;
+        bt %tmp.294 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_true;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_31_154_44_false:
+        symbol [ _xPosition %tmp.296 154 31 41 ];
+        %tmp.296 = getv ? :_xPosition;
+        %tmp.297 = 0;
+        %tmp.298 = lt %tmp.296 %tmp.297;
+        push %tmp.298;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_31_154_44_end:
+        %tmp.299 = phi [%tmp.294 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_12_154_44_begin] [%tmp.298 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_31_154_44_false] [%tmp.299 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_31_154_44_end];
+        bf %tmp.299 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_46_156_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 155 12 ]
+        %tmp.300 = 1;
+        symbol [ _direction ? 155 12 22 ];
+        putv self :_direction %tmp.300;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_46_156_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_154_8_156_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 158 8 ]
+        symbol [ _view %tmp.302 158 22 27 ];
+        %tmp.302 = getv ? :_view;
+        symbol [ _score %tmp.303 158 28 34 ];
+        %tmp.303 = getv %tmp.302 :_score;
+        %tmp.304 = 1;
+        %tmp.305 = add %tmp.303 %tmp.304;
+        %tmp.306 = 0.002;
+        %tmp.307 = mul %tmp.305 %tmp.306;
+        %tmp.308 = 0.08;
+        %tmp.309 = add %tmp.307 %tmp.308;
+        %tmp.310 = self;
+        symbol [ getDeviceHeight %tmp.311 158 52 67 ];
+        %tmp.311 = getv function %tmp.310 :getDeviceHeight;
+        %tmp.312 = invoke %tmp.310 %tmp.311();
+        %tmp.313 = 5;
+        %tmp.314 = div %tmp.312 %tmp.313;
+        %tmp.315 = mul %tmp.309 %tmp.314;
+        symbol [ _speed ? 158 8 14 ];
+        putv self :_speed %tmp.315;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 159 8 ]
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_8_161_8_if_stmt:
+        symbol [ _speed %tmp.317 159 12 18 ];
+        %tmp.317 = getv ? :_speed;
+        %tmp.318 = self;
+        symbol [ getDeviceWidth %tmp.319 159 22 36 ];
+        %tmp.319 = getv function %tmp.318 :getDeviceWidth;
+        %tmp.320 = invoke %tmp.318 %tmp.319();
+        %tmp.321 = 20;
+        %tmp.322 = div %tmp.320 %tmp.321;
+        %tmp.323 = gt %tmp.317 %tmp.322;
+        bf %tmp.323 @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_8_161_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_8_161_8_if_true:
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_44_161_8_start:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 160 12 ]
+        %tmp.324 = self;
+        symbol [ getDeviceWidth %tmp.325 160 22 36 ];
+        %tmp.325 = getv function %tmp.324 :getDeviceWidth;
+        %tmp.326 = invoke %tmp.324 %tmp.325();
+        %tmp.327 = 20;
+        %tmp.328 = div %tmp.326 %tmp.327;
+        symbol [ _speed ? 160 12 18 ];
+        putv self :_speed %tmp.328;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_44_161_8_stop:
+        goto @_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_8_161_8_if_end;
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_159_8_161_8_if_end:
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 162 8 ]
+        symbol [ _xPosition %tmp.329 162 8 18 ];
+        %tmp.329 = getv self :_xPosition;
+        symbol [ _speed %tmp.331 162 22 28 ];
+        %tmp.331 = getv ? :_speed;
+        symbol [ _direction %tmp.333 162 31 41 ];
+        %tmp.333 = getv ? :_direction;
+        %tmp.334 = mul %tmp.331 %tmp.333;
+        %tmp.335 = add %tmp.329 %tmp.334;
+        symbol [ _xPosition ? 162 8 18 ];
+        putv self :_xPosition dup %tmp.335;
+[ "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc" 164 8 ]
+        symbol [ _view %tmp.337 164 8 13 ];
+        %tmp.337 = getv ? :_view;
+        symbol [ setXPosition %tmp.338 164 14 26 ];
+        %tmp.338 = getv function %tmp.337 :setXPosition;
+        symbol [ _xPosition %tmp.340 164 27 37 ];
+        %tmp.340 = getv ? :_xPosition;
+        invoke %tmp.337 %tmp.338(%tmp.340);
+_Users_christopherthom_Documents_GitHub_garmin_tower_stack_source_TowerStackDelegate_mc_82_30_165_4_stop:
     }
 }
 [ @file = "/Users/christopherthom/Documents/GitHub/garmin-tower-stack/source/TowerStackDelegate.mc"; @line = 1; ]

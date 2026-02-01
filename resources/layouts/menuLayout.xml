@@ -31,15 +31,23 @@
         text="New Game [select]" 
         x="center"
         y="50%"
-        font="Gfx.FONT_SMALL"
+        font="Gfx.FONT_TINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
     <label
         id="customize"
         text="Customize [up]" 
         x="center"
-        y="65%"
-        font="Gfx.FONT_SMALL"
+        y="60%"
+        font="Gfx.FONT_TINY"
+        justification="Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id="settings"
+        text="Settings [hold up]" 
+        x="center"
+        y="70%"
+        font="Gfx.FONT_TINY"
         justification="Gfx.TEXT_JUSTIFY_CENTER"
     />
 </layout>

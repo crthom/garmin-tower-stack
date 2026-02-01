@@ -14,11 +14,6 @@ class MenuView extends WatchUi.View {
         highScore = App.Properties.getValue("highScore");
     }
 
-    function saveHighScore(score as Number) {
-        App.Properties.setValue("highScore", score);
-        highScore = score; // update cached value
-    }
-
     function onShow() {
         loadHighScore();
         WatchUi.requestUpdate();

@@ -27,11 +27,13 @@ module Rez {
 
             var rez_cmp_local_text_highScore = new WatchUi.Text({:identifier=>"highScore", :color=>Gfx.COLOR_PURPLE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (30 / 100.0)), :text=>"High score: 0", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
 
-            var rez_cmp_local_text_start = new WatchUi.Text({:identifier=>"start", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (50 / 100.0)), :text=>"New Game [select]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_start = new WatchUi.Text({:identifier=>"start", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (50 / 100.0)), :text=>"New Game [select]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
 
-            var rez_cmp_local_text_customize = new WatchUi.Text({:identifier=>"customize", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (65 / 100.0)), :text=>"Customize [up]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_customize = new WatchUi.Text({:identifier=>"customize", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (60 / 100.0)), :text=>"Customize [up]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
 
-            return [rez_cmp_local_text_title1, rez_cmp_local_text_title2, rez_cmp_local_text_highScore, rez_cmp_local_text_start, rez_cmp_local_text_customize] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_settings = new WatchUi.Text({:identifier=>"settings", :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>(rez_cmp_local_var_dc_getHeight * (70 / 100.0)), :text=>"Settings [hold up]", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_TINY});
+
+            return [rez_cmp_local_text_title1, rez_cmp_local_text_title2, rez_cmp_local_text_highScore, rez_cmp_local_text_start, rez_cmp_local_text_customize, rez_cmp_local_text_settings] as Array<WatchUi.Drawable>;
         }
 
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {

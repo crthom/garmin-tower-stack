@@ -3,17 +3,23 @@ import Toybox.Lang;
 import Toybox.Application.Storage;
 
 class MenuDelegate extends WatchUi.BehaviorDelegate {
+    private var _gameView;
+    private var _gameDelegate;
+
 
     function initialize() {
         BehaviorDelegate.initialize();
+
+        _gameView = new TowerStackView();
+        _gameDelegate = new TowerStackDelegate(_gameView);
     }
 
     function onSelect() as Boolean {
-        var gameView = new TowerStackView();
-
+        // Reuse the same instances
+        // onShow() in the delegate will handle resetting _inProgress and _gameOver
         WatchUi.pushView(
-            gameView,
-            new TowerStackDelegate(gameView),
+            _gameView,
+            _gameDelegate,
             WatchUi.SLIDE_LEFT
         );
         return true;
@@ -31,6 +37,7 @@ class MenuDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onBack() as Boolean {
+        // Just pop the view - no manual reset needed
         WatchUi.popView(WatchUi.SLIDE_RIGHT);
         return true;
     }

@@ -5,12 +5,24 @@ using Toybox.Math as Math;
 using Toybox.Application as App;
 
 class TowerStackView extends WatchUi.View {
-    private var _scoreElement;
-    private var _xPosition = 0;
-    private var _previousBlocks as Array<Array> = [];
-    private var _selectedGradient;
-
+    var _scoreElement;
+    var _xPosition = 0;
+    var _previousBlocks as Array<Array> = [];
+    var _selectedGradient;
+    var _fallingPieces as Array<Array> = [];
+    
     var _perfect = 0;
+    
+    // Game state variables
+    var _inProgress = false;
+    var _gameOver = false;
+    var _direction = 1;
+    var _stoppedX;
+    var _leftBorder;
+    var _rightBorder;
+    var _nextWidth;
+    var _currentWidth;
+    var _score = 0;
 
     function rgbToDec( rr, gg, bb ) as Number {
         return rr*65536 + gg*256 + bb;
@@ -259,13 +271,9 @@ class TowerStackView extends WatchUi.View {
     
         return fullScreenHeight;
     }
-    
-    var _currentWidth = getDeviceWidth()*0.4;
-    var _score = 0;
 
     function initialize() {
         View.initialize();
-
         _selectedGradient = App.Properties.getValue("selectedGradientIndex");
     }
 
@@ -284,6 +292,24 @@ class TowerStackView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        // Reset the view
+        resetGame();
+        
+        // Reset all game state in view
+        _inProgress = false;
+        _gameOver = false;
+        _stoppedX = null;
+        _xPosition = 0;
+        _direction = 1;
+        
+        _leftBorder = getDeviceWidth()/2 - (getDeviceWidth()*0.4/2);
+        _rightBorder = _leftBorder + getDeviceWidth()*0.4;
+        _nextWidth = getDeviceWidth()*0.4;
+        _currentWidth = getDeviceWidth()*0.4;
+        
+        _perfect = 0;
+        
+        WatchUi.requestUpdate();
     }
 
     // Update the view
@@ -323,6 +349,35 @@ class TowerStackView extends WatchUi.View {
             );
         }
 
+        // Draw and update falling pieces
+        for (var i = _fallingPieces.size() - 1; i >= 0; i--) {
+            var piece = _fallingPieces[i];
+            var pieceX = piece[0];
+            var pieceY = piece[1];
+            var pieceWidth = piece[2];
+            var pieceColorIndex = piece[3];
+            var pieceVelocity = piece[4];
+            
+            // Draw the falling piece
+            dc.setColor(_gradients[_selectedGradient][pieceColorIndex % _gradients[_selectedGradient].size()], Graphics.COLOR_BLACK);
+            dc.fillRoundedRectangle(
+                pieceX,
+                pieceY,
+                pieceWidth,
+                blockHeight,
+                2
+            );
+            
+            // Update position (gravity effect)
+            piece[1] = pieceY + pieceVelocity;
+            piece[4] = pieceVelocity + 0.5; // Acceleration due to gravity
+            
+            // Remove if off screen
+            if (pieceY > dc.getHeight()) {
+                _fallingPieces.remove(piece);
+            }
+        }
+
         // Set color
         dc.setColor(_gradients[_selectedGradient][_score%_gradients[_selectedGradient].size()], Graphics.COLOR_BLACK);
 
@@ -347,10 +402,47 @@ class TowerStackView extends WatchUi.View {
         }
     }
 
+    function addFallingPiece(x as Number, y as Number, width as Number, colorIndex as Number) as Void {
+        _fallingPieces.add([x, y, width, colorIndex, 2.0]); // Start with initial downward velocity
+    }
+
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        var highScore = App.Properties.getValue("highScore");
+        if (_score > highScore) {
+            App.Properties.setValue("highScore", _score);
+        }
+        
+        // Reset the view
+        resetGame();
+        
+        // Reset all game state in view
+        _inProgress = false;
+        _gameOver = false;
+        _stoppedX = null;
+        _xPosition = 0;
+        _direction = 1;
+        
+        _leftBorder = getDeviceWidth()/2 - (getDeviceWidth()*0.4/2);
+        _rightBorder = _leftBorder + getDeviceWidth()*0.4;
+        _nextWidth = getDeviceWidth()*0.4;
+        _currentWidth = getDeviceWidth()*0.4;
+        
+        _perfect = 0;
+        
+        WatchUi.requestUpdate();
+    }
+
+    function resetGame() as Void {
+        _fallingPieces = [];
+        _previousBlocks = [];
+        _score = 0;
+        _perfect = 0;
+        _currentWidth = getDeviceWidth()*0.4;
+        _xPosition = 0;
+        _scoreElement.setText("0");
     }
 
     function setXPosition(x as Number) as Void {
